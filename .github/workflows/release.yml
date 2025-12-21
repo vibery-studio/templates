@@ -52,21 +52,61 @@ jobs:
           npm version ${VERSION#v} --no-git-tag-version
           npm run generate
 
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.version.outputs.version }}
-          name: Templates ${{ steps.version.outputs.version }}
-          body: |
-            Automated release of Vibery templates.
+      - name: Create Release (empty)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          gh release create "$VERSION" \
+            --title "Templates $VERSION" \
+            --notes "Automated release of Vibery templates.
 
-            ## Download
-            - Individual templates: `{type}--{name}.tar.gz`
-            - Registry: `registry.json`
+          ## Download
+          - Individual templates: \`{type}--{name}.tar.gz\`
+          - Raw files: \`{type}--{name}.md\` or \`.json\`
+          - Registry: \`registry.json\`
 
-            ## Usage
-            ```bash
-            vibery install <template-name>
-            ```
-          files: dist/*
-          generate_release_notes: true
+          ## Usage
+          \`\`\`bash
+          vibery install <template-name>
+          \`\`\`"
+
+      - name: Upload files in batches
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          cd dist
+
+          # Upload registry first
+          gh release upload "$VERSION" registry.json --clobber
+
+          # Get all files except registry
+          FILES=$(ls -1 | grep -v registry.json)
+
+          # Upload in batches of 50 with delay
+          BATCH_SIZE=50
+          COUNT=0
+          BATCH=""
+
+          for FILE in $FILES; do
+            BATCH="$BATCH $FILE"
+            COUNT=$((COUNT + 1))
+
+            if [ $COUNT -ge $BATCH_SIZE ]; then
+              echo "Uploading batch of $COUNT files..."
+              gh release upload "$VERSION" $BATCH --clobber
+              BATCH=""
+              COUNT=0
+              # Wait to avoid rate limit
+              sleep 3
+            fi
+          done
+
+          # Upload remaining files
+          if [ -n "$BATCH" ]; then
+            echo "Uploading final batch of $COUNT files..."
+            gh release upload "$VERSION" $BATCH --clobber
+          fi
+
+          echo "All files uploaded successfully!"
