@@ -32,9 +32,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Generate release assets
-        run: npm run generate
-
       - name: Get next version
         id: version
         run: |

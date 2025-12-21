@@ -10,9 +10,20 @@ const tar = require('tar');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const DIST_DIR = path.join(ROOT_DIR, 'dist');
+const MAX_DEPTH = 10; // Prevent infinite recursion
 
 // Template types and their directories
 const TEMPLATE_TYPES = ['agents', 'skills', 'commands', 'mcps', 'hooks', 'settings'];
+
+/**
+ * Validate filename to prevent path traversal
+ */
+function isSafeFilename(filename) {
+  return !filename.includes('..') &&
+         !filename.includes('/') &&
+         !filename.includes('\\') &&
+         !filename.startsWith('.');
+}
 
 /**
  * Extract description from markdown file (first line after # heading or first paragraph)
@@ -44,16 +55,19 @@ function getTemplateName(filePath) {
 }
 
 /**
- * Calculate directory size recursively
+ * Calculate directory size recursively (with symlink and depth protection)
  */
-function getDirSize(dirPath) {
+function getDirSize(dirPath, depth = 0) {
+  if (depth > MAX_DEPTH) return 0;
   let size = 0;
   const files = fs.readdirSync(dirPath);
   for (const file of files) {
+    if (!isSafeFilename(file)) continue;
     const filePath = path.join(dirPath, file);
-    const stat = fs.statSync(filePath);
+    const stat = fs.lstatSync(filePath); // Use lstat to detect symlinks
+    if (stat.isSymbolicLink()) continue; // Skip symlinks
     if (stat.isDirectory()) {
-      size += getDirSize(filePath);
+      size += getDirSize(filePath, depth + 1);
     } else {
       size += stat.size;
     }
@@ -62,16 +76,19 @@ function getDirSize(dirPath) {
 }
 
 /**
- * Count files in directory recursively
+ * Count files in directory recursively (with symlink and depth protection)
  */
-function countFiles(dirPath) {
+function countFiles(dirPath, depth = 0) {
+  if (depth > MAX_DEPTH) return 0;
   let count = 0;
   const files = fs.readdirSync(dirPath);
   for (const file of files) {
+    if (!isSafeFilename(file)) continue;
     const filePath = path.join(dirPath, file);
-    const stat = fs.statSync(filePath);
+    const stat = fs.lstatSync(filePath);
+    if (stat.isSymbolicLink()) continue;
     if (stat.isDirectory()) {
-      count += countFiles(filePath);
+      count += countFiles(filePath, depth + 1);
     } else {
       count++;
     }
@@ -88,38 +105,41 @@ async function processSingleFileTemplates(type) {
 
   const templates = [];
   const files = fs.readdirSync(typeDir).filter(f =>
-    f.endsWith('.md') || f.endsWith('.json')
+    isSafeFilename(f) && (f.endsWith('.md') || f.endsWith('.json'))
   );
 
   for (const file of files) {
     const filePath = path.join(typeDir, file);
-    const stat = fs.statSync(filePath);
+    const stat = fs.lstatSync(filePath);
 
-    if (!stat.isFile()) continue;
+    if (!stat.isFile() || stat.isSymbolicLink()) continue;
 
     const name = getTemplateName(file);
     const archiveName = `${type.slice(0, -1)}--${name}.tar.gz`;
     const archivePath = path.join(DIST_DIR, archiveName);
 
-    // Create tar.gz with single file
-    await tar.create(
-      {
-        gzip: true,
-        file: archivePath,
-        cwd: typeDir,
-      },
-      [file]
-    );
+    try {
+      await tar.create(
+        {
+          gzip: true,
+          file: archivePath,
+          cwd: typeDir,
+        },
+        [file]
+      );
 
-    templates.push({
-      name,
-      type: type.slice(0, -1), // Remove trailing 's'
-      description: extractDescription(filePath),
-      size: stat.size,
-      archive: archiveName,
-    });
+      templates.push({
+        name,
+        type: type.slice(0, -1),
+        description: extractDescription(filePath),
+        size: stat.size,
+        archive: archiveName,
+      });
 
-    console.log(`  Created: ${archiveName}`);
+      console.log(`  Created: ${archiveName}`);
+    } catch (err) {
+      console.error(`  Failed: ${archiveName} - ${err.message}`);
+    }
   }
 
   return templates;
@@ -134,8 +154,10 @@ async function processDirectoryTemplates(type) {
 
   const templates = [];
   const dirs = fs.readdirSync(typeDir).filter(d => {
+    if (!isSafeFilename(d)) return false;
     const dirPath = path.join(typeDir, d);
-    return fs.statSync(dirPath).isDirectory();
+    const stat = fs.lstatSync(dirPath);
+    return stat.isDirectory() && !stat.isSymbolicLink();
   });
 
   for (const dir of dirs) {
@@ -144,38 +166,41 @@ async function processDirectoryTemplates(type) {
     const archiveName = `${type.slice(0, -1)}--${name}.tar.gz`;
     const archivePath = path.join(DIST_DIR, archiveName);
 
-    // Create tar.gz with directory contents
-    await tar.create(
-      {
-        gzip: true,
-        file: archivePath,
-        cwd: typeDir,
-      },
-      [dir]
-    );
+    try {
+      await tar.create(
+        {
+          gzip: true,
+          file: archivePath,
+          cwd: typeDir,
+        },
+        [dir]
+      );
 
-    // Try to get description from SKILL.md or first .md file
-    let description = '';
-    const skillMd = path.join(dirPath, 'SKILL.md');
-    if (fs.existsSync(skillMd)) {
-      description = extractDescription(skillMd);
-    } else {
-      const mdFiles = fs.readdirSync(dirPath).filter(f => f.endsWith('.md'));
-      if (mdFiles.length > 0) {
-        description = extractDescription(path.join(dirPath, mdFiles[0]));
+      // Try to get description from SKILL.md or first .md file
+      let description = '';
+      const skillMd = path.join(dirPath, 'SKILL.md');
+      if (fs.existsSync(skillMd)) {
+        description = extractDescription(skillMd);
+      } else {
+        const mdFiles = fs.readdirSync(dirPath).filter(f => isSafeFilename(f) && f.endsWith('.md'));
+        if (mdFiles.length > 0) {
+          description = extractDescription(path.join(dirPath, mdFiles[0]));
+        }
       }
+
+      templates.push({
+        name,
+        type: type.slice(0, -1),
+        description,
+        size: getDirSize(dirPath),
+        files: countFiles(dirPath),
+        archive: archiveName,
+      });
+
+      console.log(`  Created: ${archiveName}`);
+    } catch (err) {
+      console.error(`  Failed: ${archiveName} - ${err.message}`);
     }
-
-    templates.push({
-      name,
-      type: type.slice(0, -1),
-      description,
-      size: getDirSize(dirPath),
-      files: countFiles(dirPath),
-      archive: archiveName,
-    });
-
-    console.log(`  Created: ${archiveName}`);
   }
 
   return templates;
