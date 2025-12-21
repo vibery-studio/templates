@@ -1,0 +1,19 @@
+{
+  "description": "Allow pnpm package manager commands for efficient dependency management",
+  "permissions": {
+    "allow": [
+      "Bash(pnpm:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm remove:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pnpm exec:*)",
+      "Bash(pnpm dlx:*)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm dev:*)",
+      "Bash(pnpm update:*)",
+      "Bash(pnpm audit:*)"
+    ]
+  }
+}

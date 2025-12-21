@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "redis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-redis"
+      ],
+      "env": {
+        "REDIS_URL": "${REDIS_URL}"
+      }
+    }
+  }
+}

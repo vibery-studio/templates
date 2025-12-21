@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sqlite": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic-ai/mcp-server-sqlite",
+        "--db-path",
+        "${DB_PATH}"
+      ]
+    }
+  }
+}

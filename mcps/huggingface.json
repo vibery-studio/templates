@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "huggingface": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-huggingface"
+      ],
+      "env": {
+        "HF_TOKEN": "${HF_TOKEN}"
+      }
+    }
+  }
+}

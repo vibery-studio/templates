@@ -1,0 +1,15 @@
+{
+  "description": "Allow Bun runtime commands (bun, bunx) for fast JavaScript/TypeScript execution",
+  "permissions": {
+    "allow": [
+      "Bash(bun:*)",
+      "Bash(bunx:*)",
+      "Bash(bun run:*)",
+      "Bash(bun install:*)",
+      "Bash(bun add:*)",
+      "Bash(bun remove:*)",
+      "Bash(bun test:*)",
+      "Bash(bun build:*)"
+    ]
+  }
+}

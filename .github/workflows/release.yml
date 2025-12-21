@@ -1,0 +1,75 @@
+name: Release Templates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'agents/**'
+      - 'skills/**'
+      - 'commands/**'
+      - 'mcps/**'
+      - 'hooks/**'
+      - 'settings/**'
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate release assets
+        run: npm run generate
+
+      - name: Get next version
+        id: version
+        run: |
+          # Get latest tag or default to v0.0.0
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          # Extract version numbers
+          VERSION=${LATEST_TAG#v}
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
+          # Increment patch version
+          NEW_PATCH=$((PATCH + 1))
+          NEW_VERSION="v${MAJOR}.${MINOR}.${NEW_PATCH}"
+          echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "New version: $NEW_VERSION"
+
+      - name: Update package.json version
+        run: |
+          VERSION=${{ steps.version.outputs.version }}
+          npm version ${VERSION#v} --no-git-tag-version
+          npm run generate
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: Templates ${{ steps.version.outputs.version }}
+          body: |
+            Automated release of Vibery templates.
+
+            ## Download
+            - Individual templates: `{type}--{name}.tar.gz`
+            - Registry: `registry.json`
+
+            ## Usage
+            ```bash
+            vibery install <template-name>
+            ```
+          files: dist/*
+          generate_release_notes: true

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash(npm run build:*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Build completed - check bundle analyzer for performance metrics'"
+          }
+        ]
+      }
+    ]
+  }
+}

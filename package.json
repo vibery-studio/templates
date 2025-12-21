@@ -1,0 +1,18 @@
+{
+  "name": "@vibery-studio/templates",
+  "version": "1.0.0",
+  "description": "Curated templates for Claude Code - agents, skills, commands, MCPs, and more",
+  "private": true,
+  "scripts": {
+    "generate": "node scripts/generate-release.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "tar": "^7.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vibery-studio/templates.git"
+  },
+  "license": "MIT"
+}

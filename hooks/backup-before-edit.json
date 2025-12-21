@@ -1,0 +1,16 @@
+{
+  "description": "Create backup before editing files",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cp \"$CLAUDE_TOOL_FILE_PATH\" \"$CLAUDE_TOOL_FILE_PATH.backup.$(date +%s)\" 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}
