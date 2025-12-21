@@ -81,32 +81,56 @@ jobs:
           # Upload registry first
           gh release upload "$VERSION" registry.json --clobber
 
-          # Get all files except registry
-          FILES=$(ls -1 | grep -v registry.json)
+          # Create combined archive for faster download
+          echo "Creating combined archive..."
+          tar -czf all-templates.tar.gz --exclude=registry.json --exclude=all-templates.tar.gz *
+          gh release upload "$VERSION" all-templates.tar.gz --clobber
 
-          # Upload in batches of 50 with delay
-          BATCH_SIZE=50
+          # Get all files except registry and combined archive
+          FILES=$(ls -1 | grep -v registry.json | grep -v all-templates.tar.gz)
+
+          # Upload in smaller batches with longer delay to avoid rate limit
+          BATCH_SIZE=20
           COUNT=0
           BATCH=""
+          BATCH_NUM=0
+
+          upload_with_retry() {
+            local files="$1"
+            local max_retries=3
+            local retry=0
+            while [ $retry -lt $max_retries ]; do
+              if gh release upload "$VERSION" $files --clobber 2>/dev/null; then
+                return 0
+              fi
+              retry=$((retry + 1))
+              echo "Retry $retry/$max_retries after rate limit..."
+              sleep 30
+            done
+            echo "Failed to upload after $max_retries retries"
+            return 1
+          }
 
           for FILE in $FILES; do
             BATCH="$BATCH $FILE"
             COUNT=$((COUNT + 1))
 
             if [ $COUNT -ge $BATCH_SIZE ]; then
-              echo "Uploading batch of $COUNT files..."
-              gh release upload "$VERSION" $BATCH --clobber
+              BATCH_NUM=$((BATCH_NUM + 1))
+              echo "Uploading batch $BATCH_NUM ($COUNT files)..."
+              upload_with_retry "$BATCH"
               BATCH=""
               COUNT=0
-              # Wait to avoid rate limit
-              sleep 3
+              # Longer delay between batches
+              sleep 5
             fi
           done
 
           # Upload remaining files
           if [ -n "$BATCH" ]; then
-            echo "Uploading final batch of $COUNT files..."
-            gh release upload "$VERSION" $BATCH --clobber
+            BATCH_NUM=$((BATCH_NUM + 1))
+            echo "Uploading final batch $BATCH_NUM ($COUNT files)..."
+            upload_with_retry "$BATCH"
           fi
 
           echo "All files uploaded successfully!"
