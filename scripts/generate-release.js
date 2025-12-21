@@ -98,6 +98,7 @@ function countFiles(dirPath, depth = 0) {
 
 /**
  * Process single-file templates (agents, commands, etc.)
+ * Creates both .tar.gz archive AND copies raw file for direct download
  */
 async function processSingleFileTemplates(type) {
   const typeDir = path.join(ROOT_DIR, type);
@@ -115,10 +116,14 @@ async function processSingleFileTemplates(type) {
     if (!stat.isFile() || stat.isSymbolicLink()) continue;
 
     const name = getTemplateName(file);
+    const ext = path.extname(file); // .md or .json
     const archiveName = `${type.slice(0, -1)}--${name}.tar.gz`;
+    const rawFileName = `${type.slice(0, -1)}--${name}${ext}`;
     const archivePath = path.join(DIST_DIR, archiveName);
+    const rawFilePath = path.join(DIST_DIR, rawFileName);
 
     try {
+      // Create tar.gz archive
       await tar.create(
         {
           gzip: true,
@@ -128,15 +133,19 @@ async function processSingleFileTemplates(type) {
         [file]
       );
 
+      // Copy raw file for direct download
+      await fs.copy(filePath, rawFilePath);
+
       templates.push({
         name,
         type: type.slice(0, -1),
         description: extractDescription(filePath),
         size: stat.size,
         archive: archiveName,
+        rawFile: rawFileName, // Direct download option
       });
 
-      console.log(`  Created: ${archiveName}`);
+      console.log(`  Created: ${archiveName} + ${rawFileName}`);
     } catch (err) {
       console.error(`  Failed: ${archiveName} - ${err.message}`);
     }
