@@ -1,97 +1,93 @@
 ---
 name: sequential-thinking
-description: Use when complex problems require systematic step-by-step reasoning with ability to revise thoughts, branch into alternative approaches, or dynamically adjust scope.
+description: Use when complex problems require systematic step-by-step reasoning with ability to revise thoughts, branch into alternative approaches, or dynamically adjust scope. Ideal for multi-stage analysis, design planning, problem decomposition, or tasks with initially unclear scope.
 license: MIT
 ---
 
 # Sequential Thinking
 
-Structured problem-solving through iterative reasoning with dynamic scope adjustment.
-
-## When to Use
-
-- Complex problems requiring systematic analysis
-- Multi-step reasoning with potential revisions
-- Exploring alternative approaches
-- Problems where scope may change during analysis
+Enables structured problem-solving through iterative reasoning with revision and branching capabilities.
 
 ## Core Capabilities
 
-1. Break complex problems into sequential thought steps
-2. Adjust scope dynamically
-3. Track revisions to previous thoughts
-4. Explore alternative reasoning paths
-5. Maintain full context throughout analysis
+- **Iterative reasoning**: Break complex problems into sequential thought steps
+- **Dynamic scope**: Adjust total thought count as understanding evolves
+- **Revision tracking**: Reconsider and modify previous conclusions
+- **Branch exploration**: Explore alternative reasoning paths from any point
+- **Maintained context**: Keep track of reasoning chain throughout analysis
 
-## Implementation Pattern
+## When to Use
 
-### Basic Workflow
+Use `mcp__reasoning__sequentialthinking` when:
+- Problem requires multiple interconnected reasoning steps
+- Initial scope or approach is uncertain
+- Need to filter through complexity to find core issues
+- May need to backtrack or revise earlier conclusions
+- Want to explore alternative solution paths
 
-```
-Thought 1: Initial analysis of problem
-→ nextThoughtNeeded: true
-→ estimatedSteps: 5
+**Don't use for**: Simple queries, direct facts, or single-step tasks.
 
-Thought 2: Deeper exploration
-→ nextThoughtNeeded: true
-→ estimatedSteps: 4 (refined)
+## Basic Usage
 
-...
+The MCP tool `mcp__reasoning__sequentialthinking` accepts these parameters:
 
-Thought N: Conclusion reached
-→ nextThoughtNeeded: false
-```
+### Required Parameters
 
-### Revision Pattern
+- `thought` (string): Current reasoning step
+- `nextThoughtNeeded` (boolean): Whether more reasoning is needed
+- `thoughtNumber` (integer): Current step number (starts at 1)
+- `totalThoughts` (integer): Estimated total steps needed
 
-```
-Thought 3: Revising assumption from Thought 1
-→ isRevision: true
-→ revisesThought: 1
-```
+### Optional Parameters
 
-### Branching Pattern
+- `isRevision` (boolean): Indicates this revises previous thinking
+- `revisesThought` (integer): Which thought number is being reconsidered
+- `branchFromThought` (integer): Thought number to branch from
+- `branchId` (string): Identifier for this reasoning branch
 
-```
-Thought 4: Exploring alternative approach
-→ branchFromThought: 2
-→ branchId: "alternative-A"
-```
-
-## Key Parameters
-
-| Parameter | Required | Description |
-|-----------|----------|-------------|
-| thought | Yes | Current reasoning step |
-| nextThoughtNeeded | Yes | Continue reasoning? |
-| thoughtNumber | Yes | Current step (starts at 1) |
-| totalThoughts | Yes | Estimated total steps |
-| isRevision | No | Reconsidering prior thought? |
-| revisesThought | No | Which thought being revised |
-| branchFromThought | No | Branch point |
-| branchId | No | Branch identifier |
-
-## Practical Guidance
-
-1. Begin with rough estimates for total thoughts
-2. Refine estimates as progress is made
-3. Use revisions when assumptions prove incorrect
-4. Branch when multiple viable approaches exist
-5. Express uncertainty explicitly
-6. Adjust scope freely as understanding develops
-
-## Example
+## Workflow Pattern
 
 ```
-Problem: "Design a caching strategy for API responses"
-
-Thought 1: Identify cache requirements (TTL, invalidation, size)
-Thought 2: Evaluate caching layers (CDN, Redis, in-memory)
-Thought 3: [Revision] Reconsider TTL based on data volatility
-Thought 4: Design invalidation strategy
-Thought 5: Implement monitoring and fallback
+1. Start with initial thought (thoughtNumber: 1)
+2. For each step:
+   - Express current reasoning in `thought`
+   - Estimate remaining work via `totalThoughts` (adjust dynamically)
+   - Set `nextThoughtNeeded: true` to continue
+3. When reaching conclusion, set `nextThoughtNeeded: false`
 ```
 
-## Credits
+## Simple Example
 
-Source: https://github.com/mrgoonie/claudekit-skills
+```typescript
+// First thought
+{
+  thought: "Problem involves optimizing database queries. Need to identify bottlenecks first.",
+  thoughtNumber: 1,
+  totalThoughts: 5,
+  nextThoughtNeeded: true
+}
+
+// Second thought
+{
+  thought: "Analyzing query patterns reveals N+1 problem in user fetches.",
+  thoughtNumber: 2,
+  totalThoughts: 6, // Adjusted scope
+  nextThoughtNeeded: true
+}
+
+// ... continue until done
+```
+
+## Advanced Features
+
+For revision patterns, branching strategies, and complex workflows, see:
+- [Advanced Usage](references/advanced.md) - Revision and branching patterns
+- [Examples](references/examples.md) - Real-world use cases
+
+## Tips
+
+- Start with rough estimate for `totalThoughts`, refine as you progress
+- Use revision when assumptions prove incorrect
+- Branch when multiple approaches seem viable
+- Express uncertainty explicitly in thoughts
+- Adjust scope freely - accuracy matters less than progress visibility
