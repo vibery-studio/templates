@@ -343,7 +343,10 @@
       "scripts/requirements.txt",
       "scripts/tests/test_better_auth_init.py"
     ],
-    "brand-guidelines": ["LICENSE.txt", "SKILL.md"],
+    "brand-guidelines": [
+      "LICENSE.txt",
+      "SKILL.md"
+    ],
     "canvas-design": [
       "LICENSE.txt",
       "SKILL.md",
@@ -530,7 +533,9 @@
       "scripts/tests/test_cloudflare_deploy.py",
       "scripts/tests/test_docker_optimize.py"
     ],
-    "doc-coauthoring": ["SKILL.md"],
+    "doc-coauthoring": [
+      "SKILL.md"
+    ],
     "docs-seeker": [
       "SKILL.md",
       "WORKFLOWS.md",
@@ -602,7 +607,10 @@
       "scripts/templates/people.xml",
       "scripts/utilities.py"
     ],
-    "frontend-design": ["LICENSE.txt", "SKILL.md"],
+    "frontend-design": [
+      "LICENSE.txt",
+      "SKILL.md"
+    ],
     "frontend-development": [
       "SKILL.md",
       "resources/common-patterns.md",
@@ -616,7 +624,9 @@
       "resources/styling-guide.md",
       "resources/typescript-standards.md"
     ],
-    "google-adk-python": ["SKILL.md"],
+    "google-adk-python": [
+      "SKILL.md"
+    ],
     "internal-comms": [
       "LICENSE.txt",
       "SKILL.md",
@@ -793,7 +803,9 @@
       "core/validators.py",
       "requirements.txt"
     ],
-    "template-skill": ["SKILL.md"],
+    "template-skill": [
+      "SKILL.md"
+    ],
     "theme-factory": [
       "LICENSE.txt",
       "SKILL.md",
@@ -963,6 +975,10 @@
       "examples/static_html_automation.py",
       "scripts/with_server.py"
     ],
-    "xlsx": ["LICENSE.txt", "SKILL.md", "recalc.py"]
+    "xlsx": [
+      "LICENSE.txt",
+      "SKILL.md",
+      "recalc.py"
+    ]
   }
 }
