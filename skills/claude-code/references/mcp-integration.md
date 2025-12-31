@@ -5,6 +5,7 @@ Model Context Protocol (MCP) integration for connecting Claude Code to external 
 ## What is MCP?
 
 Model Context Protocol enables Claude Code to:
+
 - Connect to external tools and services
 - Access resources (files, databases, APIs)
 - Use custom tools
@@ -15,6 +16,7 @@ Model Context Protocol enables Claude Code to:
 MCP servers are configured in `.claude/mcp.json`:
 
 ### Basic Configuration
+
 ```json
 {
   "mcpServers": {
@@ -30,12 +32,17 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 ### Example Configuration
+
 ```json
 {
   "mcpServers": {
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/allowed/path"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/allowed/path"
+      ],
       "env": {}
     },
     "github": {
@@ -59,6 +66,7 @@ MCP servers are configured in `.claude/mcp.json`:
 ## Common MCP Servers
 
 ### Filesystem Access
+
 ```json
 {
   "filesystem": {
@@ -73,12 +81,14 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 **Capabilities:**
+
 - Read/write files
 - List directories
 - File search
 - Path restrictions for security
 
 ### GitHub Integration
+
 ```json
 {
   "github": {
@@ -92,12 +102,14 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 **Capabilities:**
+
 - Repository access
 - Issues and PRs
 - Code search
 - Workflow management
 
 ### PostgreSQL Database
+
 ```json
 {
   "postgres": {
@@ -111,12 +123,14 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 **Capabilities:**
+
 - Query execution
 - Schema inspection
 - Transaction management
 - Connection pooling
 
 ### Brave Search
+
 ```json
 {
   "brave-search": {
@@ -130,12 +144,14 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 **Capabilities:**
+
 - Web search
 - News search
 - Local search
 - Result filtering
 
 ### Puppeteer (Browser Automation)
+
 ```json
 {
   "puppeteer": {
@@ -146,6 +162,7 @@ MCP servers are configured in `.claude/mcp.json`:
 ```
 
 **Capabilities:**
+
 - Browser automation
 - Screenshots
 - PDF generation
@@ -156,6 +173,7 @@ MCP servers are configured in `.claude/mcp.json`:
 Connect to MCP servers over HTTP/SSE:
 
 ### Basic Remote Server
+
 ```json
 {
   "mcpServers": {
@@ -167,6 +185,7 @@ Connect to MCP servers over HTTP/SSE:
 ```
 
 ### With Authentication
+
 ```json
 {
   "mcpServers": {
@@ -182,6 +201,7 @@ Connect to MCP servers over HTTP/SSE:
 ```
 
 ### With Proxy
+
 ```json
 {
   "mcpServers": {
@@ -198,6 +218,7 @@ Connect to MCP servers over HTTP/SSE:
 Use environment variables for sensitive data:
 
 ### .env File
+
 ```bash
 # .claude/.env
 GITHUB_TOKEN=ghp_xxxxx
@@ -207,6 +228,7 @@ API_TOKEN=token_xxxxx
 ```
 
 ### Reference in mcp.json
+
 ```json
 {
   "mcpServers": {
@@ -224,17 +246,20 @@ API_TOKEN=token_xxxxx
 ## Testing MCP Servers
 
 ### Inspector Tool
+
 ```bash
 npx @modelcontextprotocol/inspector
 ```
 
 Opens web UI for testing MCP servers:
+
 - List available tools
 - Test tool invocations
 - View resources
 - Debug connections
 
 ### Manual Testing
+
 ```bash
 # Test server command
 npx -y @modelcontextprotocol/server-filesystem /tmp
@@ -247,6 +272,7 @@ echo '{"jsonrpc":"2.0","method":"initialize","params":{}}' | \
 ## Creating Custom MCP Servers
 
 ### Python Server
+
 ```python
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
@@ -263,6 +289,7 @@ if __name__ == "__main__":
 ```
 
 ### Configuration
+
 ```json
 {
   "mcpServers": {
@@ -275,18 +302,22 @@ if __name__ == "__main__":
 ```
 
 ### Node.js Server
+
 ```javascript
 import { Server } from "@modelcontextprotocol/server-node";
 
 const server = new Server("my-server");
 
-server.tool({
-  name: "my-tool",
-  description: "Tool description",
-  parameters: { arg: "string" }
-}, async ({ arg }) => {
-  return `Result: ${arg}`;
-});
+server.tool(
+  {
+    name: "my-tool",
+    description: "Tool description",
+    parameters: { arg: "string" },
+  },
+  async ({ arg }) => {
+    return `Result: ${arg}`;
+  },
+);
 
 server.listen();
 ```
@@ -294,24 +325,28 @@ server.listen();
 ## Security Considerations
 
 ### Filesystem Access
+
 - Restrict to specific directories
 - Use read-only access when possible
 - Validate file paths
 - Monitor access logs
 
 ### API Credentials
+
 - Use environment variables
 - Never commit credentials
 - Rotate keys regularly
 - Implement least-privilege access
 
 ### Network Access
+
 - Whitelist allowed domains
 - Use HTTPS only
 - Implement timeouts
 - Rate limit requests
 
 ### Remote Servers
+
 - Validate server certificates
 - Use authentication
 - Implement request signing
@@ -320,6 +355,7 @@ server.listen();
 ## Troubleshooting
 
 ### Server Not Starting
+
 ```bash
 # Check server command
 npx -y @modelcontextprotocol/server-filesystem /tmp
@@ -332,6 +368,7 @@ cat ~/.claude/logs/mcp-*.log
 ```
 
 ### Connection Errors
+
 ```bash
 # Test network connectivity
 curl https://api.example.com/mcp
@@ -343,6 +380,7 @@ echo $HTTP_PROXY
 ```
 
 ### Permission Errors
+
 ```bash
 # Verify file permissions
 ls -la /path/to/allowed/files
@@ -353,6 +391,7 @@ groups
 ```
 
 ### Tool Not Found
+
 - Verify server is running
 - Check server configuration
 - Inspect server capabilities
@@ -361,18 +400,21 @@ groups
 ## Best Practices
 
 ### Configuration Management
+
 - Use environment variables for secrets
 - Document server purposes
 - Version control mcp.json (without secrets)
 - Test configurations thoroughly
 
 ### Performance
+
 - Use local servers when possible
 - Implement caching
 - Set appropriate timeouts
 - Monitor resource usage
 
 ### Maintenance
+
 - Update servers regularly
 - Monitor server health
 - Review access logs

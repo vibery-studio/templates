@@ -3,10 +3,10 @@
  * MCP Management CLI - Command-line interface for MCP operations
  */
 
-import { MCPClientManager } from './mcp-client.js';
-import { writeFileSync, mkdirSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { MCPClientManager } from "./mcp-client.js";
+import { writeFileSync, mkdirSync } from "fs";
+import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -20,26 +20,26 @@ async function main() {
   try {
     // Load config
     await manager.loadConfig();
-    console.log('✓ Config loaded');
+    console.log("✓ Config loaded");
 
     // Connect to all servers
     await manager.connectAll();
-    console.log('✓ Connected to all MCP servers\n');
+    console.log("✓ Connected to all MCP servers\n");
 
     switch (command) {
-      case 'list-tools':
+      case "list-tools":
         await listTools(manager);
         break;
 
-      case 'list-prompts':
+      case "list-prompts":
         await listPrompts(manager);
         break;
 
-      case 'list-resources':
+      case "list-resources":
         await listResources(manager);
         break;
 
-      case 'call-tool':
+      case "call-tool":
         await callTool(manager, args[1], args[2], args[3]);
         break;
 
@@ -49,7 +49,7 @@ async function main() {
 
     await manager.cleanup();
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
     process.exit(1);
   }
 }
@@ -62,14 +62,16 @@ async function listTools(manager: MCPClientManager) {
     console.log(`📦 ${tool.serverName} / ${tool.name}`);
     console.log(`   ${tool.description}`);
     if (tool.inputSchema?.properties) {
-      console.log(`   Parameters: ${Object.keys(tool.inputSchema.properties).join(', ')}`);
+      console.log(
+        `   Parameters: ${Object.keys(tool.inputSchema.properties).join(", ")}`,
+      );
     }
-    console.log('');
+    console.log("");
   }
 
   // Save tools to JSON file
-  const assetsDir = join(__dirname, '..', 'assets');
-  const toolsPath = join(assetsDir, 'tools.json');
+  const assetsDir = join(__dirname, "..", "assets");
+  const toolsPath = join(assetsDir, "tools.json");
 
   try {
     mkdirSync(assetsDir, { recursive: true });
@@ -88,9 +90,11 @@ async function listPrompts(manager: MCPClientManager) {
     console.log(`💬 ${prompt.serverName} / ${prompt.name}`);
     console.log(`   ${prompt.description}`);
     if (prompt.arguments && prompt.arguments.length > 0) {
-      console.log(`   Arguments: ${prompt.arguments.map((a: any) => a.name).join(', ')}`);
+      console.log(
+        `   Arguments: ${prompt.arguments.map((a: any) => a.name).join(", ")}`,
+      );
     }
-    console.log('');
+    console.log("");
   }
 }
 
@@ -107,7 +111,7 @@ async function listResources(manager: MCPClientManager) {
     if (resource.mimeType) {
       console.log(`   Type: ${resource.mimeType}`);
     }
-    console.log('');
+    console.log("");
   }
 }
 
@@ -115,10 +119,10 @@ async function callTool(
   manager: MCPClientManager,
   serverName: string,
   toolName: string,
-  argsJson: string
+  argsJson: string,
 ) {
   if (!serverName || !toolName || !argsJson) {
-    console.error('Usage: cli.ts call-tool <server> <tool> <json-args>');
+    console.error("Usage: cli.ts call-tool <server> <tool> <json-args>");
     process.exit(1);
   }
 
@@ -126,7 +130,7 @@ async function callTool(
   console.log(`Calling ${serverName}/${toolName}...`);
 
   const result = await manager.callTool(serverName, toolName, args);
-  console.log('\nResult:');
+  console.log("\nResult:");
   console.log(JSON.stringify(result, null, 2));
 }
 

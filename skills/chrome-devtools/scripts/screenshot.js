@@ -6,11 +6,18 @@
  *   - CSS: node screenshot.js --selector ".main-content" --output page.png
  *   - XPath: node screenshot.js --selector "//div[@class='main-content']" --output page.png
  */
-import { getBrowser, getPage, closeBrowser, parseArgs, outputJSON, outputError } from './lib/browser.js';
-import { parseSelector, getElement, enhanceError } from './lib/selector.js';
-import fs from 'fs/promises';
-import path from 'path';
-import { execSync } from 'child_process';
+import {
+  getBrowser,
+  getPage,
+  closeBrowser,
+  parseArgs,
+  outputJSON,
+  outputError,
+} from "./lib/browser.js";
+import { parseSelector, getElement, enhanceError } from "./lib/selector.js";
+import fs from "fs/promises";
+import path from "path";
+import { execSync } from "child_process";
 
 /**
  * Compress image using ImageMagick if it exceeds max size
@@ -30,12 +37,14 @@ async function compressImageIfNeeded(filePath, maxSizeMB = 5) {
   try {
     // Check if ImageMagick is available
     try {
-      execSync('magick -version', { stdio: 'pipe' });
+      execSync("magick -version", { stdio: "pipe" });
     } catch {
       try {
-        execSync('convert -version', { stdio: 'pipe' });
+        execSync("convert -version", { stdio: "pipe" });
       } catch {
-        console.error('Warning: ImageMagick not found. Install it to enable automatic compression.');
+        console.error(
+          "Warning: ImageMagick not found. Install it to enable automatic compression.",
+        );
         return { compressed: false, originalSize, finalSize: originalSize };
       }
     }
@@ -45,19 +54,19 @@ async function compressImageIfNeeded(filePath, maxSizeMB = 5) {
 
     // Determine compression strategy based on file type
     let compressionCmd;
-    if (ext === '.png') {
+    if (ext === ".png") {
       // For PNG: resize and compress with quality
       compressionCmd = `magick "${filePath}" -strip -resize 90% -quality 85 "${tempPath}"`;
-    } else if (ext === '.jpg' || ext === '.jpeg') {
+    } else if (ext === ".jpg" || ext === ".jpeg") {
       // For JPEG: compress with quality and progressive
       compressionCmd = `magick "${filePath}" -strip -quality 80 -interlace Plane "${tempPath}"`;
     } else {
       // For other formats: convert to JPEG with compression
-      compressionCmd = `magick "${filePath}" -strip -quality 80 "${tempPath.replace(ext, '.jpg')}"`;
+      compressionCmd = `magick "${filePath}" -strip -quality 80 "${tempPath.replace(ext, ".jpg")}"`;
     }
 
     // Try compression
-    execSync(compressionCmd, { stdio: 'pipe' });
+    execSync(compressionCmd, { stdio: "pipe" });
 
     const compressedStats = await fs.stat(tempPath);
     const compressedSize = compressedStats.size;
@@ -67,13 +76,13 @@ async function compressImageIfNeeded(filePath, maxSizeMB = 5) {
       const finalPath = filePath.replace(ext, `.final${ext}`);
       let aggressiveCmd;
 
-      if (ext === '.png') {
+      if (ext === ".png") {
         aggressiveCmd = `magick "${tempPath}" -strip -resize 75% -quality 70 "${finalPath}"`;
       } else {
         aggressiveCmd = `magick "${tempPath}" -strip -quality 60 -sampling-factor 4:2:0 "${finalPath}"`;
       }
 
-      execSync(aggressiveCmd, { stdio: 'pipe' });
+      execSync(aggressiveCmd, { stdio: "pipe" });
       await fs.unlink(tempPath);
       await fs.rename(finalPath, filePath);
     } else {
@@ -83,10 +92,13 @@ async function compressImageIfNeeded(filePath, maxSizeMB = 5) {
     const finalStats = await fs.stat(filePath);
     return { compressed: true, originalSize, finalSize: finalStats.size };
   } catch (error) {
-    console.error('Compression error:', error.message);
+    console.error("Compression error:", error.message);
     // If compression fails, keep original file
     try {
-      const tempPath = filePath.replace(path.extname(filePath), '.temp' + path.extname(filePath));
+      const tempPath = filePath.replace(
+        path.extname(filePath),
+        ".temp" + path.extname(filePath),
+      );
       await fs.unlink(tempPath).catch(() => {});
     } catch {}
     return { compressed: false, originalSize, finalSize: originalSize };
@@ -97,13 +109,13 @@ async function screenshot() {
   const args = parseArgs(process.argv.slice(2));
 
   if (!args.output) {
-    outputError(new Error('--output is required'));
+    outputError(new Error("--output is required"));
     return;
   }
 
   try {
     const browser = await getBrowser({
-      headless: args.headless !== 'false'
+      headless: args.headless !== "false",
     });
 
     const page = await getPage(browser);
@@ -111,14 +123,14 @@ async function screenshot() {
     // Navigate if URL provided
     if (args.url) {
       await page.goto(args.url, {
-        waitUntil: args['wait-until'] || 'networkidle2'
+        waitUntil: args["wait-until"] || "networkidle2",
       });
     }
 
     const screenshotOptions = {
       path: args.output,
-      type: args.format || 'png',
-      fullPage: args['full-page'] === 'true'
+      type: args.format || "png",
+      fullPage: args["full-page"] === "true",
     };
 
     if (args.quality) {
@@ -144,25 +156,32 @@ async function screenshot() {
       success: true,
       output: path.resolve(args.output),
       size: buffer.length,
-      url: page.url()
+      url: page.url(),
     };
 
     // Compress image if needed (unless --no-compress flag is set)
-    if (args['no-compress'] !== 'true') {
-      const maxSize = args['max-size'] ? parseFloat(args['max-size']) : 5;
-      const compressionResult = await compressImageIfNeeded(args.output, maxSize);
+    if (args["no-compress"] !== "true") {
+      const maxSize = args["max-size"] ? parseFloat(args["max-size"]) : 5;
+      const compressionResult = await compressImageIfNeeded(
+        args.output,
+        maxSize,
+      );
 
       if (compressionResult.compressed) {
         result.compressed = true;
         result.originalSize = compressionResult.originalSize;
         result.size = compressionResult.finalSize;
-        result.compressionRatio = ((1 - compressionResult.finalSize / compressionResult.originalSize) * 100).toFixed(2) + '%';
+        result.compressionRatio =
+          (
+            (1 - compressionResult.finalSize / compressionResult.originalSize) *
+            100
+          ).toFixed(2) + "%";
       }
     }
 
     outputJSON(result);
 
-    if (args.close !== 'false') {
+    if (args.close !== "false") {
       await closeBrowser();
     }
   } catch (error) {

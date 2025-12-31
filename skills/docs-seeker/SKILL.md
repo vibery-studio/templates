@@ -30,6 +30,7 @@ Intelligent discovery and analysis of technical documentation through multiple s
    **First: Try context7.com patterns**
 
    For GitHub repositories:
+
    ```
    Pattern: https://context7.com/{org}/{repo}/llms.txt
    Examples:
@@ -39,6 +40,7 @@ Intelligent discovery and analysis of technical documentation through multiple s
    ```
 
    For websites:
+
    ```
    Pattern: https://context7.com/websites/{normalized-domain-path}/llms.txt
    Examples:
@@ -49,6 +51,7 @@ Intelligent discovery and analysis of technical documentation through multiple s
    ```
 
    **Topic-specific searches** (when user asks about specific feature):
+
    ```
    Pattern: https://context7.com/{path}/llms.txt?topic={query}
    Examples:
@@ -59,9 +62,11 @@ Intelligent discovery and analysis of technical documentation through multiple s
    ```
 
    **Fallback: Traditional llms.txt search**
+
    ```
    WebSearch: "[library name] llms.txt site:[docs domain]"
    ```
+
    Common patterns:
    - `https://docs.[library].com/llms.txt`
    - `https://[library].dev/llms.txt`
@@ -73,16 +78,19 @@ Intelligent discovery and analysis of technical documentation through multiple s
 ### Phase 2: llms.txt Processing
 
 **Single URL:**
+
 - WebFetch to retrieve content
 - Extract and present information
 
 **Multiple URLs (3+):**
+
 - **CRITICAL**: Launch multiple Explorer agents in parallel
 - One agent per major documentation section (max 5 in first batch)
 - Each agent reads assigned URLs
 - Aggregate findings into consolidated report
 
 Example:
+
 ```
 Launch 3 Explorer agents simultaneously:
 - Agent 1: getting-started.md, installation.md
@@ -105,6 +113,7 @@ Launch 3 Explorer agents simultaneously:
 3. Read repomix-output.xml and extract documentation
 
 **Repomix benefits:**
+
 - Entire repository in single AI-friendly file
 - Preserves directory structure
 - Optimized for AI consumption
@@ -112,6 +121,7 @@ Launch 3 Explorer agents simultaneously:
 ### Phase 4: Fallback Research
 
 **When no GitHub repository exists:**
+
 - Launch multiple Researcher agents in parallel
 - Focus areas: official docs, tutorials, API references, community guides
 - Aggregate findings into consolidated report
@@ -125,10 +135,12 @@ Launch 3 Explorer agents simultaneously:
 ## Version Handling
 
 **Latest (default):**
+
 - Search without version specifier
 - Use current documentation paths
 
 **Specific version:**
+
 - Include version in search: `[library] v[version] llms.txt`
 - Check versioned paths: `/v[version]/llms.txt`
 - For repositories: checkout specific tag/branch
@@ -139,23 +151,28 @@ Launch 3 Explorer agents simultaneously:
 # Documentation for [Library] [Version]
 
 ## Source
+
 - Method: [llms.txt / Repository / Research]
 - URLs: [list of sources]
 - Date accessed: [current date]
 
 ## Key Information
+
 [Extracted relevant information organized by topic]
 
 ## Additional Resources
+
 [Related links, examples, references]
 
 ## Notes
+
 [Any limitations, missing information, or caveats]
 ```
 
 ## Quick Reference
 
 **Tool selection:**
+
 - WebSearch → Find llms.txt URLs, GitHub repositories
 - WebFetch → Read single documentation pages
 - Task (Explore) → Multiple URLs, parallel exploration
@@ -163,6 +180,7 @@ Launch 3 Explorer agents simultaneously:
 - Repomix → Complete codebase analysis
 
 **Popular llms.txt locations (try context7.com first):**
+
 - Astro: https://context7.com/withastro/astro/llms.txt
 - Next.js: https://context7.com/vercel/next.js/llms.txt
 - Remix: https://context7.com/remix-run/remix/llms.txt
@@ -170,6 +188,7 @@ Launch 3 Explorer agents simultaneously:
 - Better Auth: https://context7.com/better-auth/better-auth/llms.txt
 
 **Fallback to official sites if context7.com unavailable:**
+
 - Astro: https://docs.astro.build/llms.txt
 - Next.js: https://nextjs.org/llms.txt
 - Remix: https://remix.run/llms.txt
@@ -196,9 +215,11 @@ Launch 3 Explorer agents simultaneously:
 For comprehensive guides, examples, and best practices:
 
 **Workflows:**
+
 - [WORKFLOWS.md](./WORKFLOWS.md) — Detailed workflow examples and strategies
 
 **Reference guides:**
+
 - [Tool Selection](./references/tool-selection.md) — Complete guide to choosing and using tools
 - [Documentation Sources](./references/documentation-sources.md) — Common sources and patterns across ecosystems
 - [Error Handling](./references/error-handling.md) — Troubleshooting and resolution strategies

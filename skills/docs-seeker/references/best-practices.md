@@ -71,6 +71,7 @@ Total time: ~5 minutes
 ### When Not Available
 
 Fallback strategy when context7.com unavailable:
+
 - If context7.com returns 404 → try WebSearch for llms.txt
 - If WebSearch finds nothing in 30 seconds → move to repository
 - If domain is incorrect → try 2-3 alternatives, then move on
@@ -88,6 +89,7 @@ Fallback strategy when context7.com unavailable:
 ### Guidelines
 
 **Always use parallel for 3+ URLs:**
+
 ```
 3 URLs → 1 Explorer agent (acceptable)
 4-10 URLs → 3-5 Explorer agents (optimal)
@@ -95,6 +97,7 @@ Fallback strategy when context7.com unavailable:
 ```
 
 **Launch all agents in single message:**
+
 ```
 Good:
 [Send one message with 5 Task tool calls]
@@ -110,6 +113,7 @@ Bad:
 ### Distribution Strategy
 
 **Even distribution:**
+
 ```
 10 URLs, 5 agents:
 Agent 1: URLs 1-2
@@ -120,6 +124,7 @@ Agent 5: URLs 9-10
 ```
 
 **Topic-based distribution:**
+
 ```
 10 URLs, 3 agents:
 Agent 1: Installation & Setup (URLs 1-3)
@@ -146,6 +151,7 @@ Agent 3: Examples & Guides (URLs 8-10)
 ### Verification Checklist
 
 **For llms.txt:**
+
 ```
 [ ] Domain matches official site
 [ ] HTTPS connection
@@ -155,6 +161,7 @@ Agent 3: Examples & Guides (URLs 8-10)
 ```
 
 **For repositories:**
+
 ```
 [ ] Organization matches official entity
 [ ] Star count appropriate for library
@@ -165,6 +172,7 @@ Agent 3: Examples & Guides (URLs 8-10)
 ```
 
 **For documentation:**
+
 ```
 [ ] Domain is official
 [ ] Version matches user request
@@ -176,6 +184,7 @@ Agent 3: Examples & Guides (URLs 8-10)
 ### Red Flags
 
 ⚠️ **Unofficial sources:**
+
 - Personal GitHub forks
 - Outdated tutorials (>2 years old)
 - Unmaintained repositories
@@ -186,6 +195,7 @@ Agent 3: Examples & Guides (URLs 8-10)
 ### When to Use Unofficial Sources
 
 Acceptable when:
+
 - No official documentation exists
 - Clearly labeled as community resource
 - Recent and well-maintained
@@ -204,6 +214,7 @@ Acceptable when:
 ### What to Include
 
 **Always report:**
+
 ```markdown
 ## Source
 
@@ -215,6 +226,7 @@ Acceptable when:
 ```
 
 **For llms.txt:**
+
 ```markdown
 **Method**: llms.txt
 **URL**: https://docs.astro.build/llms.txt
@@ -224,6 +236,7 @@ Acceptable when:
 ```
 
 **For repository:**
+
 ```markdown
 **Method**: Repository analysis (Repomix)
 **Repository**: https://github.com/org/library
@@ -233,20 +246,23 @@ Acceptable when:
 ```
 
 **For research:**
+
 ```markdown
 **Method**: Multi-source research
 **Sources**:
+
 - Official website: [url]
 - Package registry: [url]
 - Stack Overflow: [url]
 - Community tutorials: [urls]
-**Date accessed**: 2025-10-26
-**Note**: No official llms.txt or repository available
+  **Date accessed**: 2025-10-26
+  **Note**: No official llms.txt or repository available
 ```
 
 ### Limitations Disclosure
 
 Always note:
+
 ```markdown
 ## ⚠️ Limitations
 
@@ -268,6 +284,7 @@ Always note:
 ### Version Detection
 
 **Check these sources:**
+
 ```
 1. URL path: /docs/v2/
 2. Page header/title
@@ -280,6 +297,7 @@ Always note:
 ### Version Handling Rules
 
 **User specifies version:**
+
 ```
 Request: "Documentation for React 18"
 → Search: "React v18 documentation"
@@ -288,6 +306,7 @@ Request: "Documentation for React 18"
 ```
 
 **User doesn't specify:**
+
 ```
 Request: "Documentation for Next.js"
 → Default: Assume latest
@@ -296,6 +315,7 @@ Request: "Documentation for Next.js"
 ```
 
 **Version mismatch found:**
+
 ```
 Request: "Docs for v2"
 Found: Only v3 documentation
@@ -305,6 +325,7 @@ Found: Only v3 documentation
 ### Multi-Version Scenarios
 
 **Comparison request:**
+
 ```
 Request: "Compare v1 and v2"
 → Find both versions
@@ -313,6 +334,7 @@ Request: "Compare v1 and v2"
 ```
 
 **Migration request:**
+
 ```
 Request: "How to migrate from v1 to v2"
 → Find v2 migration guide
@@ -346,6 +368,7 @@ Agent 3 found:
 ```
 
 Problems:
+
 - Redundant information repeated
 - No synthesis
 - Hard to scan
@@ -353,7 +376,7 @@ Problems:
 
 ### Good Aggregation (Do This)
 
-```markdown
+````markdown
 ## Installation
 
 [Synthesized from agents 1 & 2]
@@ -363,8 +386,10 @@ Three installation methods available:
    ```bash
    npm install library-name
    ```
+````
 
 2. **CDN**: [from agent 1]
+
    ```html
    <script src="..."></script>
    ```
@@ -385,6 +410,7 @@ The library is built around three main concepts:
 
 [From agents 3 & 5, deduplicated]
 ...
+
 ```
 
 Benefits:
@@ -397,22 +423,28 @@ Benefits:
 
 **Deduplication:**
 ```
+
 Agent 1: "Install with npm install foo"
 Agent 2: "You can install using npm: npm install foo"
 → Synthesized: "Install: `npm install foo`"
+
 ```
 
 **Prioritization:**
 ```
+
 Agent 1: Basic usage example
 Agent 2: Basic usage example (same)
 Agent 3: Advanced usage example
 → Keep: Basic (from agent 1) + Advanced (from agent 3)
+
 ```
 
 **Organization:**
 ```
+
 Agents returned mixed information:
+
 - Installation steps
 - Configuration
 - Usage example
@@ -420,9 +452,11 @@ Agents returned mixed information:
 - More usage examples
 
 → Reorganize:
+
 1. Installation (requirements + steps)
 2. Configuration
 3. Usage (all examples together)
+
 ```
 
 ## 7. Time Management
@@ -438,52 +472,64 @@ Agents returned mixed information:
 
 **Set explicit timeouts:**
 ```
+
 WebSearch: 30 seconds
 WebFetch: 60 seconds
 Repository clone: 5 minutes
 Repomix processing: 10 minutes
 Explorer agent: 5 minutes per URL
 Researcher agent: 10 minutes
+
 ```
 
 ### Time Budgets
 
 **Simple query (single library, latest version):**
 ```
+
 Target: <2 minutes total
 
 Phase 1 (Discovery): 30 seconds
+
 - llms.txt search: 15 seconds
 - Fetch llms.txt: 15 seconds
 
 Phase 2 (Exploration): 60 seconds
+
 - Launch agents: 5 seconds
 - Agents fetch URLs: 60 seconds (parallel)
 
 Phase 3 (Aggregation): 30 seconds
+
 - Synthesize results
 - Format output
 
 Total: ~2 minutes
+
 ```
 
 **Complex query (multiple versions, comparison):**
 ```
+
 Target: <5 minutes total
 
 Phase 1 (Discovery): 60 seconds
+
 - Search both versions
 - Fetch both llms.txt files
 
 Phase 2 (Exploration): 180 seconds
+
 - Launch 6 agents (2 sets of 3)
 - Parallel exploration
 
 Phase 3 (Comparison): 60 seconds
+
 - Analyze differences
 - Format side-by-side
 
 Total: ~5 minutes
+
 ```
 
 ### When to Extend Timeouts
@@ -515,75 +561,93 @@ Move to next method after:
 
 **High value (always cache):**
 ```
+
 - Repomix output (large, expensive to generate)
 - llms.txt content (static, frequently referenced)
 - Repository README (relatively static)
 - Package registry metadata (changes rarely)
+
 ```
 
 **Medium value (cache within session):**
 ```
+
 - Documentation page content
 - Search results
 - Repository structure
 - Version lists
+
 ```
 
 **Low value (don't cache):**
 ```
+
 - Real-time data (latest releases)
 - User-specific content
 - Time-sensitive information
+
 ```
 
 ### Cache Duration
 
 ```
+
 Within conversation:
+
 - All fetched content (reuse freely)
 
 Within session:
+
 - Repomix output (until conversation ends)
 - llms.txt content (until new version requested)
 
 Across sessions:
+
 - Don't cache (start fresh each time)
+
 ```
 
 ### Cache Invalidation
 
 Refresh cache when:
 ```
+
 - User requests specific different version
 - User says "get latest" or "refresh"
 - Explicit time reference ("docs from today")
 - Previous cache is from different library
+
 ```
 
 ### Implementation
 
 ```
+
 # First request for library X
+
 1. Fetch llms.txt
 2. Store content in session variable
 3. Use for processing
 
 # Second request for library X (same session)
+
 1. Check if llms.txt cached
 2. Reuse cached content
 3. Skip redundant fetch
 
 # Request for library Y
+
 1. Don't reuse library X cache
 2. Fetch fresh for library Y
-```
+
+````
 
 ### Cache Hit Messages
 
 ```markdown
 ℹ️ Using cached llms.txt from 5 minutes ago.
 To fetch fresh, say "refresh" or "get latest".
-```
+````
 
 ## Quick Reference Checklist
 
@@ -623,6 +687,7 @@ To fetch fresh, say "refresh" or "get latest".
 ### Quality Gates
 
 Ask before presenting:
+
 - [ ] Is information accurate?
 - [ ] Are sources official?
 - [ ] Does version match request?

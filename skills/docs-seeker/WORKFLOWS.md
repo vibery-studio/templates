@@ -7,6 +7,7 @@ This document provides comprehensive workflow examples for the docs-seeker skill
 ### When to Use Multiple Agents
 
 Deploy parallel agents when:
+
 - llms.txt contains more than 3 URLs
 - Repository has multiple documentation directories
 - Need to check multiple versions
@@ -18,6 +19,7 @@ Use Task tool with `Explore` subagent:
 
 ```markdown
 Example for 5 URLs:
+
 1. Launch all 5 Explore agents in single message
 2. Each agent gets specific URLs to read
 3. Each agent extracts relevant information
@@ -28,16 +30,19 @@ Example for 5 URLs:
 ### Agent Distribution Guidelines
 
 **Small documentation sets (1-3 URLs):**
+
 - Deploy 2 Explore agents to handle all URLs
 - Simple, straightforward extraction
 - Fastest for small amounts
 
 **Medium documentation sets (4-10 URLs):**
+
 - Deploy 3-6 Explore agents
 - Balance workload evenly
 - Group related URLs together
 
 **Large documentation sets (11+ URLs):**
+
 - Deploy 7-15 Explore agents (max)
 - Prioritize most relevant URLs first
 - Group related URLs together
@@ -309,6 +314,7 @@ Step 6: Comprehensive Report
 ### Minimize Sequential Operations
 
 **Bad approach:**
+
 ```
 1. Read URL 1 with WebFetch
 2. Wait for result
@@ -320,6 +326,7 @@ Time: 3x single URL fetch time
 ```
 
 **Good approach:**
+
 ```
 1. Launch 3 Explorer agents simultaneously
 2. Each reads one URL
@@ -331,6 +338,7 @@ Time: ~1x single URL fetch time
 ### Batch Related Operations
 
 **Group by topic:**
+
 ```
 Agent 1: Authentication (login.md, oauth.md, sessions.md)
 Agent 2: Database (models.md, queries.md, migrations.md)
@@ -338,6 +346,7 @@ Agent 3: API (routes.md, middleware.md, validation.md)
 ```
 
 **Group by content type:**
+
 ```
 Agent 1: Tutorials (getting-started.md, quickstart.md)
 Agent 2: Reference (api-ref.md, config-ref.md)
@@ -347,6 +356,7 @@ Agent 3: Guides (best-practices.md, troubleshooting.md)
 ### Use Caching Effectively
 
 **Repository analysis:**
+
 ```
 1. First request: Clone + Repomix (slow)
 2. Save repomix-output.xml
@@ -355,6 +365,7 @@ Agent 3: Guides (best-practices.md, troubleshooting.md)
 ```
 
 **llms.txt content:**
+
 ```
 1. First fetch: WebFetch llms.txt
 2. Store URL list in session
@@ -365,6 +376,7 @@ Agent 3: Guides (best-practices.md, troubleshooting.md)
 ### Fail Fast Strategy
 
 **Set timeouts:**
+
 ```
 1. WebSearch: 30 seconds max
 2. WebFetch: 60 seconds max
@@ -373,6 +385,7 @@ Agent 3: Guides (best-practices.md, troubleshooting.md)
 ```
 
 **Quick fallback:**
+
 ```
 1. Try llms.txt (30 sec timeout)
 2. If fails → immediately try repository
@@ -465,6 +478,7 @@ Two-phase approach:
 **Challenge**: Documentation in multiple languages
 
 **Approach**:
+
 1. Identify target language from user
 2. Search for language-specific llms.txt
 3. If not found, search for English version
@@ -476,6 +490,7 @@ Two-phase approach:
 **Challenge**: Core framework + 50 plugin docs
 
 **Approach**:
+
 1. Focus on core framework first
 2. Ask user which plugins they need
 3. Launch targeted search for specific plugins
@@ -487,6 +502,7 @@ Two-phase approach:
 **Challenge**: New release with incomplete docs
 
 **Approach**:
+
 1. Note documentation status upfront
 2. Combine available docs with repository analysis
 3. Check GitHub issues for documentation requests
@@ -498,6 +514,7 @@ Two-phase approach:
 **Challenge**: Multiple sources with different approaches
 
 **Approach**:
+
 1. Identify primary official source
 2. Note version differences between sources
 3. Present both approaches with context

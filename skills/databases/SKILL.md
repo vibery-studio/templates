@@ -11,6 +11,7 @@ Unified guide for working with MongoDB (document-oriented) and PostgreSQL (relat
 ## When to Use This Skill
 
 Use when:
+
 - Designing database schemas and data models
 - Writing queries (SQL or MongoDB query language)
 - Building aggregation pipelines or complex joins
@@ -25,6 +26,7 @@ Use when:
 ## Database Selection Guide
 
 ### Choose MongoDB When:
+
 - Schema flexibility: frequent structure changes, heterogeneous data
 - Document-centric: natural JSON/BSON data model
 - Horizontal scaling: need to shard across multiple servers
@@ -35,6 +37,7 @@ Use when:
 **Best for:** Content management, catalogs, IoT time series, real-time analytics, mobile apps, user profiles
 
 ### Choose PostgreSQL When:
+
 - Strong consistency: ACID transactions critical
 - Complex relationships: many-to-many joins, referential integrity
 - SQL requirement: team expertise, reporting tools, BI systems
@@ -45,6 +48,7 @@ Use when:
 **Best for:** Financial systems, e-commerce transactions, ERP, CRM, data warehousing, analytics
 
 ### Both Support:
+
 - JSON/JSONB storage and querying
 - Full-text search capabilities
 - Geospatial queries and indexing
@@ -98,10 +102,11 @@ DELETE FROM users WHERE name = 'Alice';
 ## Common Operations
 
 ### Create/Insert
+
 ```javascript
 // MongoDB
-db.users.insertOne({ name: "Bob", email: "bob@example.com" })
-db.users.insertMany([{ name: "Alice" }, { name: "Charlie" }])
+db.users.insertOne({ name: "Bob", email: "bob@example.com" });
+db.users.insertMany([{ name: "Alice" }, { name: "Charlie" }]);
 ```
 
 ```sql
@@ -111,10 +116,11 @@ INSERT INTO users (name, email) VALUES ('Alice', NULL), ('Charlie', NULL);
 ```
 
 ### Read/Query
+
 ```javascript
 // MongoDB
-db.users.find({ age: { $gte: 18 } })
-db.users.findOne({ email: "bob@example.com" })
+db.users.find({ age: { $gte: 18 } });
+db.users.findOne({ email: "bob@example.com" });
 ```
 
 ```sql
@@ -124,10 +130,11 @@ SELECT * FROM users WHERE email = 'bob@example.com' LIMIT 1;
 ```
 
 ### Update
+
 ```javascript
 // MongoDB
-db.users.updateOne({ name: "Bob" }, { $set: { age: 25 } })
-db.users.updateMany({ status: "pending" }, { $set: { status: "active" } })
+db.users.updateOne({ name: "Bob" }, { $set: { age: 25 } });
+db.users.updateMany({ status: "pending" }, { $set: { status: "active" } });
 ```
 
 ```sql
@@ -137,10 +144,11 @@ UPDATE users SET status = 'active' WHERE status = 'pending';
 ```
 
 ### Delete
+
 ```javascript
 // MongoDB
-db.users.deleteOne({ name: "Bob" })
-db.users.deleteMany({ status: "deleted" })
+db.users.deleteOne({ name: "Bob" });
+db.users.deleteMany({ status: "deleted" });
 ```
 
 ```sql
@@ -150,10 +158,11 @@ DELETE FROM users WHERE status = 'deleted';
 ```
 
 ### Indexing
+
 ```javascript
 // MongoDB
-db.users.createIndex({ email: 1 })
-db.users.createIndex({ status: 1, createdAt: -1 })
+db.users.createIndex({ email: 1 });
+db.users.createIndex({ status: 1, createdAt: -1 });
 ```
 
 ```sql
@@ -165,12 +174,14 @@ CREATE INDEX idx_users_status_created ON users(status, created_at DESC);
 ## Reference Navigation
 
 ### MongoDB References
+
 - **[mongodb-crud.md](references/mongodb-crud.md)** - CRUD operations, query operators, atomic updates
 - **[mongodb-aggregation.md](references/mongodb-aggregation.md)** - Aggregation pipeline, stages, operators, patterns
 - **[mongodb-indexing.md](references/mongodb-indexing.md)** - Index types, compound indexes, performance optimization
 - **[mongodb-atlas.md](references/mongodb-atlas.md)** - Atlas cloud setup, clusters, monitoring, search
 
 ### PostgreSQL References
+
 - **[postgresql-queries.md](references/postgresql-queries.md)** - SELECT, JOINs, subqueries, CTEs, window functions
 - **[postgresql-psql-cli.md](references/postgresql-psql-cli.md)** - psql commands, meta-commands, scripting
 - **[postgresql-performance.md](references/postgresql-performance.md)** - EXPLAIN, query optimization, vacuum, indexes
@@ -179,6 +190,7 @@ CREATE INDEX idx_users_status_created ON users(status, created_at DESC);
 ## Python Utilities
 
 Database utility scripts in `scripts/`:
+
 - **db_migrate.py** - Generate and apply migrations for both databases
 - **db_backup.py** - Backup and restore MongoDB and PostgreSQL
 - **db_performance_check.py** - Analyze slow queries and recommend indexes
@@ -196,19 +208,20 @@ python scripts/db_performance_check.py --db mongodb --threshold 100ms
 
 ## Key Differences Summary
 
-| Feature | MongoDB | PostgreSQL |
-|---------|---------|------------|
-| Data Model | Document (JSON/BSON) | Relational (Tables/Rows) |
-| Schema | Flexible, dynamic | Strict, predefined |
-| Query Language | MongoDB Query Language | SQL |
-| Joins | $lookup (limited) | Native, optimized |
-| Transactions | Multi-document (4.0+) | Native ACID |
-| Scaling | Horizontal (sharding) | Vertical (primary), Horizontal (extensions) |
-| Indexes | Single, compound, text, geo, etc | B-tree, hash, GiST, GIN, etc |
+| Feature        | MongoDB                          | PostgreSQL                                  |
+| -------------- | -------------------------------- | ------------------------------------------- |
+| Data Model     | Document (JSON/BSON)             | Relational (Tables/Rows)                    |
+| Schema         | Flexible, dynamic                | Strict, predefined                          |
+| Query Language | MongoDB Query Language           | SQL                                         |
+| Joins          | $lookup (limited)                | Native, optimized                           |
+| Transactions   | Multi-document (4.0+)            | Native ACID                                 |
+| Scaling        | Horizontal (sharding)            | Vertical (primary), Horizontal (extensions) |
+| Indexes        | Single, compound, text, geo, etc | B-tree, hash, GiST, GIN, etc                |
 
 ## Best Practices
 
 **MongoDB:**
+
 - Use embedded documents for 1-to-few relationships
 - Reference documents for 1-to-many or many-to-many
 - Index frequently queried fields
@@ -217,6 +230,7 @@ python scripts/db_performance_check.py --db mongodb --threshold 100ms
 - Use Atlas for managed hosting
 
 **PostgreSQL:**
+
 - Normalize schema to 3NF, denormalize for performance
 - Use foreign keys for referential integrity
 - Index foreign keys and frequently filtered columns

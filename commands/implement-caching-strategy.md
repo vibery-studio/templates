@@ -25,10 +25,10 @@ npm run implement-caching-strategy -- --option value
 
 ## Options
 
-| Option | Description |
-|--------|-------------|
+| Option    | Description          |
+| --------- | -------------------- |
 | --verbose | Show detailed output |
-| --dry-run | Preview changes |
+| --dry-run | Preview changes      |
 
 ## Output
 

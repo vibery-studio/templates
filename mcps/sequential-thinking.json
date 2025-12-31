@@ -2,10 +2,7 @@
   "mcpServers": {
     "sequential-thinking": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@anthropic-ai/mcp-server-sequential-thinking"
-      ]
+      "args": ["-y", "@anthropic-ai/mcp-server-sequential-thinking"]
     }
   }
 }

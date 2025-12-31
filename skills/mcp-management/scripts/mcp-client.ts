@@ -3,10 +3,11 @@
  * MCP Client - Core client for interacting with MCP servers
  */
 
-import { Client } from '@modelcontextprotocol/sdk/client/index.js';
-import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js';
-import { readFile } from 'fs/promises';
-import { resolve } from 'path';
+import { Client } from "@modelcontextprotocol/sdk/client/index.js";
+import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { readFile } from "fs/promises";
+import { resolve } from "path";
+import { homedir } from "os";
 
 interface MCPConfig {
   mcpServers: {
@@ -45,9 +46,13 @@ export class MCPClientManager {
   private config: MCPConfig | null = null;
   private clients: Map<string, Client> = new Map();
 
-  async loadConfig(configPath: string = '.claude/.mcp.json'): Promise<MCPConfig> {
-    const fullPath = resolve(process.cwd(), configPath);
-    const content = await readFile(fullPath, 'utf-8');
+  async loadConfig(configPath?: string): Promise<MCPConfig> {
+    // Default to ~/.claude/.mcp.json (user's home directory)
+    const defaultPath = resolve(homedir(), ".claude", ".mcp.json");
+    const fullPath = configPath
+      ? resolve(process.cwd(), configPath)
+      : defaultPath;
+    const content = await readFile(fullPath, "utf-8");
     const config = JSON.parse(content) as MCPConfig;
     this.config = config;
     return config;
@@ -62,13 +67,16 @@ export class MCPClientManager {
     const transport = new StdioClientTransport({
       command: serverConfig.command,
       args: serverConfig.args,
-      env: serverConfig.env
+      env: serverConfig.env,
     });
 
-    const client = new Client({
-      name: `mcp-manager-${serverName}`,
-      version: '1.0.0'
-    }, { capabilities: {} });
+    const client = new Client(
+      {
+        name: `mcp-manager-${serverName}`,
+        version: "1.0.0",
+      },
+      { capabilities: {} },
+    );
 
     await client.connect(transport);
     this.clients.set(serverName, client);
@@ -77,11 +85,11 @@ export class MCPClientManager {
 
   async connectAll(): Promise<void> {
     if (!this.config) {
-      throw new Error('Config not loaded. Call loadConfig() first.');
+      throw new Error("Config not loaded. Call loadConfig() first.");
     }
 
-    const connections = Object.keys(this.config.mcpServers).map(name =>
-      this.connectToServer(name)
+    const connections = Object.keys(this.config.mcpServers).map((name) =>
+      this.connectToServer(name),
     );
     await Promise.all(connections);
   }
@@ -94,9 +102,9 @@ export class MCPClientManager {
         allTools.push({
           serverName,
           name: tool.name,
-          description: tool.description || '',
+          description: tool.description || "",
           inputSchema: tool.inputSchema,
-          outputSchema: (tool as any).outputSchema
+          outputSchema: (tool as any).outputSchema,
         });
       }
     }
@@ -111,8 +119,8 @@ export class MCPClientManager {
         allPrompts.push({
           serverName,
           name: prompt.name,
-          description: prompt.description || '',
-          arguments: prompt.arguments
+          description: prompt.description || "",
+          arguments: prompt.arguments,
         });
       }
     }
@@ -129,23 +137,36 @@ export class MCPClientManager {
           uri: resource.uri,
           name: resource.name,
           description: resource.description,
-          mimeType: resource.mimeType
+          mimeType: resource.mimeType,
         });
       }
     }
     return allResources;
   }
 
-  async callTool(serverName: string, toolName: string, args: any): Promise<any> {
+  async callTool(
+    serverName: string,
+    toolName: string,
+    args: any,
+  ): Promise<any> {
     const client = this.clients.get(serverName);
     if (!client) throw new Error(`Not connected to server: ${serverName}`);
-    return await client.callTool({ name: toolName, arguments: args }, { timeout: 300000 });
+    return await client.callTool({ name: toolName, arguments: args }, {
+      timeout: 300000,
+    } as any);
   }
 
-  async getPrompt(serverName: string, promptName: string, args?: any): Promise<any> {
+  async getPrompt(
+    serverName: string,
+    promptName: string,
+    args?: any,
+  ): Promise<any> {
     const client = this.clients.get(serverName);
     if (!client) throw new Error(`Not connected to server: ${serverName}`);
-    return await client.getPrompt({ name: promptName, arguments: args }, { timeout: 300000 });
+    return await client.getPrompt(
+      { name: promptName, arguments: args },
+      { timeout: 300000 },
+    );
   }
 
   async readResource(serverName: string, uri: string): Promise<any> {

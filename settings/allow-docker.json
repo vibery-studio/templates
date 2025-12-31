@@ -1,8 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "Bash(docker:*)",
-      "Bash(docker-compose:*)"
-    ]
+    "allow": ["Bash(docker:*)", "Bash(docker-compose:*)"]
   }
 }

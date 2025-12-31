@@ -9,6 +9,7 @@ Complete reference for choosing and using the right tools for documentation disc
 **Patterns:**
 
 GitHub repositories:
+
 ```
 Pattern: https://context7.com/{org}/{repo}/llms.txt
 Examples:
@@ -17,6 +18,7 @@ Examples:
 ```
 
 Websites:
+
 ```
 Pattern: https://context7.com/websites/{normalized-path}/llms.txt
 Examples:
@@ -25,6 +27,7 @@ Examples:
 ```
 
 Topic-specific searches:
+
 ```
 Pattern: https://context7.com/{path}/llms.txt?topic={query}
 Examples:
@@ -34,6 +37,7 @@ Examples:
 ```
 
 **Benefits:**
+
 - Comprehensive aggregator of documentation
 - Up-to-date content
 - Topic filtering for targeted results
@@ -41,6 +45,7 @@ Examples:
 - Reduces search time
 
 **When to use:**
+
 - ALWAYS try context7.com first before WebSearch
 - Use topic parameter when user asks about specific feature
 - Fall back to WebSearch only if context7.com returns 404
@@ -48,6 +53,7 @@ Examples:
 ## WebSearch
 
 **Use when:**
+
 - context7.com unavailable or returns 404
 - Finding GitHub repository URLs
 - Locating official documentation sites
@@ -55,6 +61,7 @@ Examples:
 - Searching for specific versions
 
 **Best practices:**
+
 - Try context7.com FIRST
 - Include domain in query: `site:docs.example.com`
 - Specify version when needed: `v2.0 llms.txt`
@@ -62,6 +69,7 @@ Examples:
 - Check multiple domains if first fails
 
 **Example queries:**
+
 ```
 Good: "Next.js llms.txt site:nextjs.org"
 Good: "React v18 documentation site:react.dev"
@@ -74,6 +82,7 @@ Avoid: "best react tutorial" (not official)
 ## WebFetch
 
 **Use when:**
+
 - Reading llms.txt content
 - Accessing single documentation pages
 - Retrieving specific URLs
@@ -81,6 +90,7 @@ Avoid: "best react tutorial" (not official)
 - Verifying content availability
 
 **Best practices:**
+
 - Use specific prompt: "Extract all documentation URLs"
 - Handle redirects properly
 - Check for rate limiting
@@ -88,6 +98,7 @@ Avoid: "best react tutorial" (not official)
 - Note last-modified dates when available
 
 **Limitations:**
+
 - Single URL at a time (use Explorer for multiple)
 - May timeout on very large pages
 - Cannot handle dynamic content
@@ -96,6 +107,7 @@ Avoid: "best react tutorial" (not official)
 ## Task Tool with Explore Subagent
 
 **Use when:**
+
 - Multiple URLs to read (3+)
 - Need parallel exploration
 - Comprehensive documentation coverage
@@ -103,6 +115,7 @@ Avoid: "best react tutorial" (not official)
 - Large documentation sets
 
 **Best practices:**
+
 - Launch all agents in single message
 - Distribute workload evenly
 - Group related URLs per agent
@@ -110,6 +123,7 @@ Avoid: "best react tutorial" (not official)
 - Provide clear extraction goals
 
 **Example prompt:**
+
 ```
 "Read the following URLs and extract:
 1. Installation instructions
@@ -126,6 +140,7 @@ URLs:
 ## Task Tool with Researcher Subagent
 
 **Use when:**
+
 - No structured documentation found
 - Need diverse information sources
 - Community knowledge required
@@ -133,6 +148,7 @@ URLs:
 - Comparative analysis needed
 
 **Best practices:**
+
 - Assign specific research areas per agent
 - Request source verification
 - Ask for date/version information
@@ -140,6 +156,7 @@ URLs:
 - Cross-reference findings
 
 **Example prompt:**
+
 ```
 "Research [library] focusing on:
 1. Official installation methods
@@ -153,6 +170,7 @@ Prioritize official sources and note version/date for all findings."
 ## Repomix
 
 **Use when:**
+
 - GitHub repository available
 - Need complete codebase analysis
 - Documentation scattered in repository
@@ -160,6 +178,7 @@ Prioritize official sources and note version/date for all findings."
 - API documentation in code comments
 
 **Installation:**
+
 ```bash
 # Check if installed
 which repomix
@@ -172,6 +191,7 @@ repomix --version
 ```
 
 **Usage:**
+
 ```bash
 # Basic usage
 git clone [repo-url] /tmp/docs-analysis
@@ -186,6 +206,7 @@ repomix --exclude "*.png,*.jpg,*.pdf" --output repomix-output.xml
 ```
 
 **When Repomix may fail:**
+
 - Repository > 1GB (too large)
 - Requires authentication (private repo)
 - Slow network connection
@@ -193,6 +214,7 @@ repomix --exclude "*.png,*.jpg,*.pdf" --output repomix-output.xml
 - Binary-heavy repository
 
 **Alternatives if Repomix fails:**
+
 ```bash
 # Option 1: Focus on docs directory only
 repomix --include "docs/**,README.md" --output docs.xml
@@ -251,12 +273,12 @@ No structured docs?
 
 ## Quick Reference
 
-| Tool | Best For | Speed | Coverage | Complexity |
-|------|----------|-------|----------|------------|
-| context7.com | llms.txt lookup | Instant | High | Low |
-| context7.com?topic= | Targeted search | Instant | Focused | Low |
-| WebSearch | Finding URLs | Fast | Narrow | Low |
-| WebFetch | Single page | Fast | Single | Low |
-| Explorer | Multiple URLs | Fast | Medium | Medium |
-| Researcher | Scattered info | Slow | Wide | High |
-| Repomix | Repository | Medium | Complete | Medium |
+| Tool                | Best For        | Speed   | Coverage | Complexity |
+| ------------------- | --------------- | ------- | -------- | ---------- |
+| context7.com        | llms.txt lookup | Instant | High     | Low        |
+| context7.com?topic= | Targeted search | Instant | Focused  | Low        |
+| WebSearch           | Finding URLs    | Fast    | Narrow   | Low        |
+| WebFetch            | Single page     | Fast    | Single   | Low        |
+| Explorer            | Multiple URLs   | Fast    | Medium   | Medium     |
+| Researcher          | Scattered info  | Slow    | Wide     | High       |
+| Repomix             | Repository      | Medium  | Complete | Medium     |

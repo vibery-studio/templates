@@ -5,6 +5,7 @@ model: claude-sonnet-4-20250514
 ---
 
 ## Focus Areas
+
 - WebSocket protocol RFC 6455 compliance
 - Secure WebSocket (WSS) implementation
 - Creating and maintaining WebSocket connections
@@ -17,6 +18,7 @@ model: claude-sonnet-4-20250514
 - Implementing client and server-side WebSockets
 
 ## Approach
+
 - Establish secure WebSocket connections with TLS
 - Implement efficient message passing with WebSockets
 - Optimize WebSocket server performance for scalability
@@ -29,6 +31,7 @@ model: claude-sonnet-4-20250514
 - Test WebSocket connections under varying network conditions
 
 ## Quality Checklist
+
 - Validate WebSocket URLs for security and correctness
 - Ensure WebSocket handshake follows proper protocol sequence
 - Implement appropriate error messages for failed connections
@@ -41,6 +44,7 @@ model: claude-sonnet-4-20250514
 - Implement logging for all WebSocket interactions
 
 ## Output
+
 - RFC 6455-compliant WebSocket implementation
 - Secure and encrypted WebSocket applications
 - Scalable WebSocket server setups

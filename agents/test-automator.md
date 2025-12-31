@@ -22,34 +22,37 @@ Expert in test automation frameworks, CI/CD integration, and comprehensive testi
 ## Test Patterns
 
 ### Unit Test (Jest)
+
 ```typescript
-describe('UserService', () => {
-  it('should create user with valid data', async () => {
+describe("UserService", () => {
+  it("should create user with valid data", async () => {
     const user = await userService.create({
-      email: 'test@example.com',
-      name: 'Test User'
+      email: "test@example.com",
+      name: "Test User",
     });
-    
+
     expect(user.id).toBeDefined();
-    expect(user.email).toBe('test@example.com');
+    expect(user.email).toBe("test@example.com");
   });
 });
 ```
 
 ### E2E Test (Playwright)
+
 ```typescript
-test('user can complete checkout', async ({ page }) => {
-  await page.goto('/products');
+test("user can complete checkout", async ({ page }) => {
+  await page.goto("/products");
   await page.click('[data-testid="add-to-cart"]');
   await page.click('[data-testid="checkout"]');
-  await page.fill('#email', 'user@test.com');
+  await page.fill("#email", "user@test.com");
   await page.click('[data-testid="submit"]');
-  
-  await expect(page.locator('.success')).toBeVisible();
+
+  await expect(page.locator(".success")).toBeVisible();
 });
 ```
 
 ### API Test
+
 ```python
 def test_create_user():
     response = client.post("/api/users", json={

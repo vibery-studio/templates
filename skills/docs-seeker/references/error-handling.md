@@ -16,18 +16,21 @@ Comprehensive troubleshooting and error resolution strategies for documentation 
 **1. Verify URL pattern:**
 
 For GitHub repos:
+
 ```
 ✓ Correct: https://context7.com/vercel/next.js/llms.txt
 ✗ Wrong: https://context7.com/nextjs/llms.txt
 ```
 
 For websites:
+
 ```
 ✓ Correct: https://context7.com/websites/imgix/llms.txt
 ✗ Wrong: https://context7.com/docs.imgix.com/llms.txt
 ```
 
 **2. Try official llms.txt as fallback:**
+
 ```
 https://docs.[library].com/llms.txt
 https://[library].dev/llms.txt
@@ -35,12 +38,14 @@ https://[library].io/llms.txt
 ```
 
 **3. Search for llms.txt if still not found:**
+
 ```
 WebSearch: "[library] llms.txt"
 WebSearch: "[library] documentation AI format"
 ```
 
 **4. Fall back to repository analysis:**
+
 - If no llms.txt available anywhere
 - Note in report: "llms.txt not available, used repository analysis"
 
@@ -76,11 +81,13 @@ Steps:
 ### Troubleshooting Steps
 
 **1. ALWAYS try context7.com first:**
+
 ```
 https://context7.com/{org}/{repo}/llms.txt
 ```
 
 **2. Try alternative official domains:**
+
 ```
 https://[name].dev/llms.txt
 https://[name].io/llms.txt
@@ -90,23 +97,27 @@ https://www.[name].com/llms.txt
 ```
 
 **3. Check for redirects:**
+
 - Old domain → new domain
 - Non-HTTPS → HTTPS
 - www → non-www or vice versa
 - Root → /docs subdirectory
 
 **4. Search for llms.txt mention:**
+
 ```
 WebSearch: "[library] llms.txt"
 WebSearch: "[library] documentation AI format"
 ```
 
 **5. Check documentation announcements:**
+
 - Blog posts about llms.txt
 - GitHub discussions
 - Recent release notes
 
 **6. If all fail:**
+
 - Fall back to repository analysis (Phase 3)
 - Note in report: "llms.txt not available"
 
@@ -141,11 +152,13 @@ Steps:
 ### Troubleshooting Steps
 
 **1. Search official website:**
+
 ```
 WebSearch: "[library] official website"
 ```
 
 **2. Check package registries:**
+
 ```
 WebSearch: "[library] npm"
 WebSearch: "[library] pypi"
@@ -153,18 +166,21 @@ WebSearch: "[library] crates.io"
 ```
 
 **3. Look for organization GitHub:**
+
 ```
 WebSearch: "[company] github organization"
 WebSearch: "[library] github org:[known-org]"
 ```
 
 **4. Check for mirrors or forks:**
+
 ```
 WebSearch: "[library] github mirror"
 WebSearch: "[library] source code"
 ```
 
 **5. Verify through package manager:**
+
 ```bash
 # npm example
 npm info [package-name] repository
@@ -174,6 +190,7 @@ pip show [package-name]
 ```
 
 **6. If all fail:**
+
 - Use Researcher agents (Phase 4)
 - Note: "No public repository available"
 
@@ -188,6 +205,7 @@ pip show [package-name]
 ### Verification Checklist
 
 When you find a repository, verify:
+
 - [ ] Organization/user matches official entity
 - [ ] Star count appropriate for library popularity
 - [ ] Recent commits (active maintenance)
@@ -208,6 +226,7 @@ When you find a repository, verify:
 ### Troubleshooting Steps
 
 **1. Check repository size:**
+
 ```bash
 # Clone and check size
 git clone [url] /tmp/test-repo
@@ -217,16 +236,19 @@ du -sh /tmp/test-repo
 ```
 
 **2. Focus on documentation only:**
+
 ```bash
 repomix --include "docs/**,README.md,*.md" --output docs.xml
 ```
 
 **3. Exclude large files:**
+
 ```bash
 repomix --exclude "*.png,*.jpg,*.pdf,*.zip,dist/**,build/**,node_modules/**" --output repomix-output.xml
 ```
 
 **4. Use shallow clone:**
+
 ```bash
 git clone --depth 1 [url] /tmp/docs-analysis
 cd /tmp/docs-analysis
@@ -234,6 +256,7 @@ repomix --output repomix-output.xml
 ```
 
 **5. Alternative: Explorer agents**
+
 ```
 If Repomix fails completely:
 1. Read README.md directly
@@ -243,6 +266,7 @@ If Repomix fails completely:
 ```
 
 **6. Check system resources:**
+
 ```bash
 # Check disk space
 df -h /tmp
@@ -266,13 +290,13 @@ pkill -9 repomix
 
 ### Size Guidelines
 
-| Repo Size | Strategy |
-|-----------|----------|
-| <50MB | Full Repomix |
-| 50-200MB | Exclude binaries |
-| 200-500MB | Focus on /docs |
+| Repo Size | Strategy              |
+| --------- | --------------------- |
+| <50MB     | Full Repomix          |
+| 50-200MB  | Exclude binaries      |
+| 200-500MB | Focus on /docs        |
 | 500MB-1GB | Shallow clone + focus |
-| >1GB | Explorer agents only |
+| >1GB      | Explorer agents only  |
 
 ## Multiple Conflicting Sources
 
@@ -287,6 +311,7 @@ pkill -9 repomix
 ### Resolution Steps
 
 **1. Check version of each source:**
+
 ```
 - Note documentation version number
 - Check last-updated date
@@ -295,6 +320,7 @@ pkill -9 repomix
 ```
 
 **2. Prioritize sources:**
+
 ```
 Priority order:
 1. Official docs (latest version)
@@ -307,12 +333,15 @@ Priority order:
 ```
 
 **3. Present both with context:**
+
 ```markdown
 ## Installation (v1.x - Legacy)
+
 [old method]
 Source: [link] (Last updated: [date])
 
 ## Installation (v2.x - Current)
+
 [new method]
 Source: [link] (Last updated: [date])
 
@@ -321,12 +350,14 @@ Migration guide: [link]
 ```
 
 **4. Cross-reference:**
+
 - Check if conflict is intentional (breaking change)
 - Look for migration guides
 - Check changelog/release notes
 - Verify in GitHub issues/discussions
 
 **5. Document discrepancy:**
+
 ```markdown
 ## ⚠️ Conflicting Information Found
 
@@ -342,6 +373,7 @@ not yet updated. Confirmed via changelog [link].
 ### Version Identification
 
 **Check these locations:**
+
 ```
 - URL path: /docs/v2/...
 - Page header/footer
@@ -364,18 +396,21 @@ not yet updated. Confirmed via changelog [link].
 ### Solutions
 
 **1. Add delays between requests:**
+
 ```bash
 # Add 2-second delay
 sleep 2
 ```
 
 **2. Use alternative sources:**
+
 ```
 Priority fallback chain:
 GitHub → Official docs → Package registry → Repository → Archive
 ```
 
 **3. Batch operations:**
+
 ```
 Instead of:
 - WebFetch URL 1
@@ -387,6 +422,7 @@ Use:
 ```
 
 **4. Cache aggressively:**
+
 ```
 - Reuse fetched content within session
 - Don't re-fetch same URLs
@@ -395,6 +431,7 @@ Use:
 ```
 
 **5. Check rate limit headers:**
+
 ```
 If available:
 - X-RateLimit-Remaining
@@ -403,6 +440,7 @@ If available:
 ```
 
 **6. Respect robots.txt:**
+
 ```bash
 # Check before aggressive crawling
 curl https://example.com/robots.txt
@@ -411,6 +449,7 @@ curl https://example.com/robots.txt
 ### Rate Limit Recovery
 
 **GitHub API (if applicable):**
+
 ```
 - Anonymous: 60 requests/hour
 - Authenticated: 5000 requests/hour
@@ -418,6 +457,7 @@ curl https://example.com/robots.txt
 ```
 
 **General approach:**
+
 ```
 1. Detect rate limit (429 or slow responses)
 2. Switch to alternative source immediately
@@ -437,6 +477,7 @@ curl https://example.com/robots.txt
 ### Solutions
 
 **1. Set explicit timeouts:**
+
 ```
 WebSearch: 30 seconds max
 WebFetch: 60 seconds max
@@ -445,6 +486,7 @@ Repomix processing: 10 minutes max
 ```
 
 **2. Retry with timeout:**
+
 ```
 1st attempt: 60 seconds
 2nd attempt: 90 seconds (if needed)
@@ -452,6 +494,7 @@ Repomix processing: 10 minutes max
 ```
 
 **3. Check network connectivity:**
+
 ```bash
 # Test basic connectivity
 ping -c 3 8.8.8.8
@@ -464,6 +507,7 @@ curl -I https://docs.example.com
 ```
 
 **4. Use alternative endpoints:**
+
 ```
 If main site times out:
 - Try CDN version
@@ -472,6 +516,7 @@ If main site times out:
 ```
 
 **5. Fall back gracefully:**
+
 ```
 Main docs timeout → Repository → Package registry → Research
 ```
@@ -489,23 +534,28 @@ Main docs timeout → Repository → Package registry → Research
 ### Handling Strategy
 
 **1. Identify gaps:**
+
 ```markdown
 ## Documentation Status
 
 ✅ Available:
+
 - Installation guide
 - Basic usage examples
 
 ⚠️ Incomplete:
+
 - Advanced features (stub page)
 - API reference (404 links)
 
 ❌ Missing:
+
 - Migration guide
 - Performance optimization
 ```
 
 **2. Supplement from repository:**
+
 ```
 - Check /examples directory
 - Read test files for usage
@@ -514,6 +564,7 @@ Main docs timeout → Repository → Package registry → Research
 ```
 
 **3. Use community sources:**
+
 ```
 - Recent Stack Overflow answers
 - GitHub discussions
@@ -522,11 +573,13 @@ Main docs timeout → Repository → Package registry → Research
 ```
 
 **4. Note limitations clearly:**
+
 ```markdown
 ⚠️ **Documentation Limitations**
 
 Official docs incomplete (as of [date]).
 The following information inferred from:
+
 - Repository examples
 - TypeScript definitions
 - Community discussions
@@ -546,6 +599,7 @@ May not reflect official recommendations.
 ### Solutions
 
 **1. For private repositories:**
+
 ```
 - Note: "Repository is private"
 - Check for public mirror
@@ -554,6 +608,7 @@ May not reflect official recommendations.
 ```
 
 **2. For paywalled docs:**
+
 ```
 - Check for free tier/trial
 - Look for open-source alternative
@@ -562,10 +617,12 @@ May not reflect official recommendations.
 ```
 
 **3. Document access limitation:**
+
 ```markdown
 ## ⚠️ Access Limitation
 
 Official repository is private. This report based on:
+
 - Public documentation site: [url]
 - Package registry info: [url]
 - Community resources: [urls]
@@ -593,12 +650,15 @@ May not include internal implementation details.
 **Information completeness**: [percentage or description]
 
 **What was found**:
+
 - [list available information]
 
 **What is missing**:
+
 - [list gaps]
 
 **Recommended action**:
+
 - [how user can get missing info]
 ```
 

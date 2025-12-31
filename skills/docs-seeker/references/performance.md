@@ -9,6 +9,7 @@ Strategies and techniques for maximizing speed and efficiency in documentation d
 **Fastest Approach:**
 
 Direct URL construction instead of searching:
+
 ```
 Traditional: WebSearch (15-30s) → WebFetch (5-10s) = 20-40s
 context7.com: Direct WebFetch (5-10s) = 5-10s
@@ -17,12 +18,14 @@ Speed improvement: 2-4x faster
 ```
 
 **Benefits:**
+
 - No search required (instant URL construction)
 - Consistent URL patterns
 - Reliable availability
 - Topic filtering for targeted results
 
 **Examples:**
+
 ```
 GitHub repo:
 https://context7.com/vercel/next.js/llms.txt
@@ -38,6 +41,7 @@ https://context7.com/shadcn-ui/ui/llms.txt?topic=date
 ```
 
 **Performance Impact:**
+
 ```
 Without context7.com:
 1. WebSearch for llms.txt: 15s
@@ -61,11 +65,13 @@ Total: 5s (5x faster!)
 **The Problem:**
 
 Sequential operations add up linearly:
+
 ```
 Total Time = Op1 + Op2 + Op3 + ... + OpN
 ```
 
 Example:
+
 ```
 Fetch URL 1: 5 seconds
 Fetch URL 2: 5 seconds
@@ -76,11 +82,13 @@ Total: 15 seconds
 **The Solution:**
 
 Parallel operations complete in max time of slowest:
+
 ```
 Total Time = max(Op1, Op2, Op3, ..., OpN)
 ```
 
 Example:
+
 ```
 Launch 3 agents simultaneously
 All complete in: ~5 seconds
@@ -90,6 +98,7 @@ Total: 5 seconds (3x faster!)
 ### 2. Batch Related Operations
 
 **Benefits:**
+
 - Fewer context switches
 - Better resource utilization
 - Easier to track
@@ -98,6 +107,7 @@ Total: 5 seconds (3x faster!)
 **Grouping Strategies:**
 
 **By topic:**
+
 ```
 Agent 1: All authentication-related docs
 Agent 2: All database-related docs
@@ -105,6 +115,7 @@ Agent 3: All API-related docs
 ```
 
 **By content type:**
+
 ```
 Agent 1: All tutorials
 Agent 2: All reference docs
@@ -112,6 +123,7 @@ Agent 3: All examples
 ```
 
 **By priority:**
+
 ```
 Phase 1 (critical): Getting started, installation, core concepts
 Phase 2 (important): Guides, API reference, configuration
@@ -121,12 +133,14 @@ Phase 3 (optional): Advanced topics, internals, optimization
 ### 3. Smart Caching
 
 **What to cache:**
+
 - Repomix output (expensive to generate)
 - llms.txt content (static)
 - Repository structure (rarely changes)
 - Documentation URLs (reference list)
 
 **When to refresh:**
+
 - User requests specific version
 - Documentation updated (check last-modified)
 - Cache older than session
@@ -135,6 +149,7 @@ Phase 3 (optional): Advanced topics, internals, optimization
 ### 4. Early Termination
 
 **When to stop:**
+
 ```
 ✓ User's core needs met
 ✓ Critical information found
@@ -143,6 +158,7 @@ Phase 3 (optional): Advanced topics, internals, optimization
 ```
 
 **How to decide:**
+
 ```
 After Phase 1 (critical docs):
 - Review what was found
@@ -158,6 +174,7 @@ After Phase 1 (critical docs):
 **Scenario:** llms.txt contains 10 URLs
 
 **Slow approach (sequential):**
+
 ```
 Time: 10 URLs × 5 seconds = 50 seconds
 
@@ -169,6 +186,7 @@ Step 10: Fetch URL 10 (5s)
 ```
 
 **Fast approach (parallel):**
+
 ```
 Time: ~5-10 seconds total
 
@@ -190,6 +208,7 @@ Step 3: Aggregate results
 **Scenario:** Documentation has 30+ pages
 
 **Slow approach (fetch everything):**
+
 ```
 Time: 30 URLs × 5 seconds ÷ 5 agents = 30 seconds
 
@@ -199,6 +218,7 @@ Wasted: 25 pages × 5 seconds ÷ 5 = 25 seconds
 ```
 
 **Fast approach (priority loading):**
+
 ```
 Time: 10 URLs × 5 seconds ÷ 5 agents = 10 seconds
 
@@ -215,6 +235,7 @@ If no: Fetch additional as needed
 **Scenario:** llms.txt not found
 
 **Slow approach (exhaustive search):**
+
 ```
 Time: ~5 minutes
 
@@ -227,6 +248,7 @@ Then: Fall back to repository
 ```
 
 **Fast approach (quick fallback):**
+
 ```
 Time: ~1 minute
 
@@ -242,6 +264,7 @@ Not found → Immediately try repository (30s)
 **Scenario:** Large documentation set
 
 **Slow approach (all-or-nothing):**
+
 ```
 Time: 5 minutes until first result
 
@@ -252,6 +275,7 @@ User waits 5 minutes
 ```
 
 **Fast approach (streaming):**
+
 ```
 Time: 30 seconds to first result
 
@@ -359,17 +383,18 @@ Speedup: 50% less fetching
 
 ### Target Times
 
-| Scenario | Target Time | Acceptable | Too Slow |
-|----------|-------------|------------|----------|
-| Single URL | <10s | 10-20s | >20s |
-| llms.txt (5 URLs) | <30s | 30-60s | >60s |
-| llms.txt (15 URLs) | <60s | 60-120s | >120s |
-| Repository analysis | <2min | 2-5min | >5min |
-| Research fallback | <3min | 3-7min | >7min |
+| Scenario            | Target Time | Acceptable | Too Slow |
+| ------------------- | ----------- | ---------- | -------- |
+| Single URL          | <10s        | 10-20s     | >20s     |
+| llms.txt (5 URLs)   | <30s        | 30-60s     | >60s     |
+| llms.txt (15 URLs)  | <60s        | 60-120s    | >120s    |
+| Repository analysis | <2min       | 2-5min     | >5min    |
+| Research fallback   | <3min       | 3-7min     | >7min    |
 
 ### Real-World Examples
 
 **Fast case (Next.js with llms.txt):**
+
 ```
 00:00 - Start
 00:05 - Found llms.txt
@@ -381,6 +406,7 @@ Total: 55 seconds ✓
 ```
 
 **Medium case (Repository without llms.txt):**
+
 ```
 00:00 - Start
 00:15 - llms.txt not found
@@ -393,6 +419,7 @@ Total: 2m 45s ✓
 ```
 
 **Slow case (Scattered documentation):**
+
 ```
 00:00 - Start
 00:30 - llms.txt not found
@@ -418,6 +445,7 @@ Result: Slower than 5 agents with 3 URLs each
 ```
 
 **Solution:**
+
 ```
 Max 7 agents per batch
 Group URLs sensibly
@@ -437,6 +465,7 @@ Result: Sequential instead of parallel
 ```
 
 **Solution:**
+
 ```
 Launch all agents independently
 No dependencies between agents
@@ -455,6 +484,7 @@ Result: Wasted time
 ```
 
 **Solution:**
+
 ```
 Cache fetched content
 Check cache before fetching
@@ -473,6 +503,7 @@ Result: 5x time for marginal gain
 ```
 
 **Solution:**
+
 ```
 Check progress after critical phase
 If 80%+ covered → offer to stop
@@ -484,6 +515,7 @@ Only continue if user wants comprehensive
 ### Key Metrics
 
 **Track these times:**
+
 ```
 - llms.txt discovery: Target <30s
 - Repository clone: Target <60s
@@ -501,6 +533,7 @@ Only continue if user wants comprehensive
 **Method**: llms.txt + parallel exploration
 
 **Breakdown**:
+
 - Discovery: 15s (llms.txt search & fetch)
 - Exploration: 50s (4 agents, 12 URLs)
 - Aggregation: 20s (synthesis & formatting)
@@ -512,12 +545,14 @@ Only continue if user wants comprehensive
 ### When to Optimize Further
 
 Optimize if:
+
 - [ ] Total time >2x target
 - [ ] User explicitly requests "fast"
 - [ ] Repeated similar queries (cache benefit)
 - [ ] Large documentation set (>20 URLs)
 
 Don't over-optimize if:
+
 - [ ] Already meeting targets
 - [ ] One-time query
 - [ ] User values completeness over speed

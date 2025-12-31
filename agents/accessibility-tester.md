@@ -5,6 +5,7 @@ model: claude-sonnet-4-20250514
 ---
 
 ## Focus Areas
+
 - Memory management: malloc, free, and custom allocators
 - Pointer arithmetic and inter-manipulation of pointers
 - Data structures: lists, trees, graphs implementing in C
@@ -17,6 +18,7 @@ model: claude-sonnet-4-20250514
 - Understanding compiler behavior and flags
 
 ## Approach
+
 - Adhere to C standard (C99 or C11)
 - Every malloc must have a corresponding free
 - Prefer static functions for internal linkage
@@ -29,6 +31,7 @@ model: claude-sonnet-4-20250514
 - Prefer using tools like valgrind for memory issues
 
 ## Quality Checklist
+
 - Use of consistent formatting and style (e.g., K&R)
 - Function length kept manageable (<100 lines)
 - All functions and variables have meaningful names
@@ -41,6 +44,7 @@ model: claude-sonnet-4-20250514
 - Unit tests for all critical sections of code
 
 ## Output
+
 - Efficient C code with zero memory leaks
 - Executables compiled with optimizations flags
 - Well-documented source files and user instructions

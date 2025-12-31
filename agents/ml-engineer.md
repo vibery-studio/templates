@@ -26,7 +26,7 @@ import wandb
 
 def train(model, train_loader, optimizer, epochs):
     wandb.init(project="my-model")
-    
+
     for epoch in range(epochs):
         model.train()
         for batch in train_loader:
@@ -34,13 +34,13 @@ def train(model, train_loader, optimizer, epochs):
             loss = model.compute_loss(batch)
             loss.backward()
             optimizer.step()
-            
+
             wandb.log({"loss": loss.item()})
-        
+
         # Validation
         val_metrics = evaluate(model, val_loader)
         wandb.log(val_metrics)
-        
+
         # Checkpoint
         torch.save(model.state_dict(), f"model_epoch_{epoch}.pt")
 ```

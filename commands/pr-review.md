@@ -36,6 +36,7 @@ gh pr review <number> --request-changes --body "Issues found"
 ## Review Checklist
 
 ### Security
+
 - [ ] No hardcoded secrets or credentials
 - [ ] Input validation on user data
 - [ ] SQL injection prevention
@@ -43,6 +44,7 @@ gh pr review <number> --request-changes --body "Issues found"
 - [ ] Authentication/authorization checks
 
 ### Code Quality
+
 - [ ] Functions are single-purpose
 - [ ] No duplicate code
 - [ ] Proper error handling
@@ -50,12 +52,14 @@ gh pr review <number> --request-changes --body "Issues found"
 - [ ] Comments for complex logic
 
 ### Performance
+
 - [ ] No N+1 queries
 - [ ] Efficient algorithms
 - [ ] Proper caching considerations
 - [ ] No memory leaks
 
 ### Testing
+
 - [ ] Unit tests for new code
 - [ ] Edge cases covered
 - [ ] Integration tests if needed
@@ -69,7 +73,7 @@ gh pr review <number> --request-changes --body "Issues found"
 
 **Issue**: Description of the problem
 
-**Suggestion**: 
+**Suggestion**:
 \`\`\`typescript
 // Recommended fix
 \`\`\`

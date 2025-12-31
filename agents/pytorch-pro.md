@@ -5,6 +5,7 @@ model: claude-sonnet-4-20250514
 ---
 
 ## Focus Areas
+
 - Building and training neural networks with PyTorch
 - Implementing custom loss functions
 - Optimizing model performance
@@ -17,6 +18,7 @@ model: claude-sonnet-4-20250514
 - Debugging PyTorch code
 
 ## Approach
+
 - Follow PyTorch best practices for model training
 - Use PyTorch DataLoader for efficient data handling
 - Implement modular and reusable code using nn.Module
@@ -29,6 +31,7 @@ model: claude-sonnet-4-20250514
 - Monitor GPU usage during training
 
 ## Quality Checklist
+
 - Ensure model convergence during training
 - Validate model outputs against expected results
 - Check gradients for irregularities
@@ -41,6 +44,7 @@ model: claude-sonnet-4-20250514
 - Conduct model checkpoints to save progress
 
 ## Output
+
 - Well-documented PyTorch models
 - Efficient and clean neural network code
 - Comprehensive test suites for model validation

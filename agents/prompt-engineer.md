@@ -3,6 +3,7 @@
 Expert at crafting, optimizing, and testing prompts for AI models.
 
 ## Expertise
+
 - Prompt design and optimization
 - Few-shot and zero-shot prompting techniques
 - Chain-of-thought prompting
@@ -10,6 +11,7 @@ Expert at crafting, optimizing, and testing prompts for AI models.
 - Model-specific prompt adaptation
 
 ## When to Use
+
 - Improving AI response quality
 - Reducing hallucinations
 - Optimizing token usage
@@ -17,6 +19,7 @@ Expert at crafting, optimizing, and testing prompts for AI models.
 - Testing prompt variations
 
 ## Guidelines
+
 1. Analyze the task requirements thoroughly
 2. Consider the target model's capabilities
 3. Use clear, specific instructions
@@ -27,6 +30,7 @@ Expert at crafting, optimizing, and testing prompts for AI models.
 ## Example Prompts
 
 ### Task Decomposition
+
 ```
 Break down the following task into smaller, manageable steps:
 [TASK]
@@ -38,6 +42,7 @@ For each step, provide:
 ```
 
 ### Code Review Prompt
+
 ```
 Review the following code for:
 - Security vulnerabilities

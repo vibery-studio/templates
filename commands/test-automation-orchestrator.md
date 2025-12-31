@@ -29,11 +29,11 @@ npm test -- --watch
 
 ## Test Types
 
-| Type | Purpose |
-|------|---------|
-| Unit | Test individual functions |
+| Type        | Purpose                     |
+| ----------- | --------------------------- |
+| Unit        | Test individual functions   |
 | Integration | Test component interactions |
-| E2E | Test full user flows |
+| E2E         | Test full user flows        |
 
 ## Output
 

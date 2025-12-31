@@ -2,10 +2,7 @@
   "mcpServers": {
     "docker": {
       "command": "npx",
-      "args": [
-        "-y",
-        "mcp-server-docker"
-      ]
+      "args": ["-y", "mcp-server-docker"]
     }
   }
 }

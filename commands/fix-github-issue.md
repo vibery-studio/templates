@@ -50,15 +50,16 @@ Fixes #<issue-number>
 ## Linking Keywords
 
 These keywords auto-close issues when PR merges:
+
 - `Fixes #123`
 - `Closes #123`
 - `Resolves #123`
 
 ## Labels Mapping
 
-| Issue Label | Branch Prefix |
-|-------------|---------------|
-| bug | fix/ |
-| enhancement | feat/ |
-| documentation | docs/ |
-| performance | perf/ |
+| Issue Label   | Branch Prefix |
+| ------------- | ------------- |
+| bug           | fix/          |
+| enhancement   | feat/         |
+| documentation | docs/         |
+| performance   | perf/         |

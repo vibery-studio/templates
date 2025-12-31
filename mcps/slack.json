@@ -2,10 +2,7 @@
   "mcpServers": {
     "slack": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@anthropic-ai/mcp-server-slack"
-      ],
+      "args": ["-y", "@anthropic-ai/mcp-server-slack"],
       "env": {
         "SLACK_TOKEN": "${SLACK_TOKEN}"
       }

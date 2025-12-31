@@ -17,6 +17,7 @@ Run to generate coverage reports and identify untested code paths.
 ## Commands by Framework
 
 ### Jest (JavaScript/TypeScript)
+
 ```bash
 # Generate coverage report
 npx jest --coverage
@@ -29,6 +30,7 @@ npx jest --coverage --coverageReporters=html --coverageReporters=lcov
 ```
 
 ### Vitest
+
 ```bash
 npx vitest --coverage
 
@@ -37,6 +39,7 @@ npx vitest --coverage --ui
 ```
 
 ### pytest (Python)
+
 ```bash
 # Generate coverage
 pytest --cov=src --cov-report=html
@@ -46,6 +49,7 @@ pytest --cov=src --cov-branch --cov-report=term-missing
 ```
 
 ### Go
+
 ```bash
 go test -coverprofile=coverage.out ./...
 go tool cover -html=coverage.out -o coverage.html
@@ -53,20 +57,20 @@ go tool cover -html=coverage.out -o coverage.html
 
 ## Coverage Metrics
 
-| Metric | Description |
-|--------|-------------|
-| Line Coverage | % of lines executed |
-| Branch Coverage | % of branches (if/else) taken |
-| Function Coverage | % of functions called |
-| Statement Coverage | % of statements executed |
+| Metric             | Description                   |
+| ------------------ | ----------------------------- |
+| Line Coverage      | % of lines executed           |
+| Branch Coverage    | % of branches (if/else) taken |
+| Function Coverage  | % of functions called         |
+| Statement Coverage | % of statements executed      |
 
 ## Coverage Targets
 
-| Level | Coverage |
-|-------|----------|
-| Minimal | 60% |
-| Good | 80% |
-| Excellent | 90%+ |
+| Level     | Coverage |
+| --------- | -------- |
+| Minimal   | 60%      |
+| Good      | 80%      |
+| Excellent | 90%+     |
 
 ## Output
 

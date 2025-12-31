@@ -26,6 +26,7 @@ pip install google-adk
 ## Agent Types
 
 ### LlmAgent
+
 LLM-powered agents with dynamic routing and adaptive behavior.
 
 ```python
@@ -41,6 +42,7 @@ agent = LlmAgent(
 ```
 
 ### SequentialAgent
+
 Execute agents in defined order.
 
 ```python
@@ -53,6 +55,7 @@ workflow = SequentialAgent(
 ```
 
 ### ParallelAgent
+
 Run multiple agents concurrently.
 
 ```python

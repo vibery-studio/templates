@@ -257,12 +257,12 @@
 
 ## Usage Patterns Summary
 
-| Scenario | Pattern | Key Features |
-|----------|---------|--------------|
-| Linear problem-solving | Sequential thoughts | Steady progress, scope adjustment |
-| Exploring alternatives | Branching | Multiple paths from decision point |
-| Correcting mistakes | Revision | Reference earlier thought, update conclusion |
-| Complex analysis | Mixed | Combine all features as needed |
+| Scenario               | Pattern             | Key Features                                 |
+| ---------------------- | ------------------- | -------------------------------------------- |
+| Linear problem-solving | Sequential thoughts | Steady progress, scope adjustment            |
+| Exploring alternatives | Branching           | Multiple paths from decision point           |
+| Correcting mistakes    | Revision            | Reference earlier thought, update conclusion |
+| Complex analysis       | Mixed               | Combine all features as needed               |
 
 ## Tips for Effective Use
 

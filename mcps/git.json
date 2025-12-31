@@ -2,10 +2,7 @@
   "mcpServers": {
     "git": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-git"
-      ]
+      "args": ["-y", "@modelcontextprotocol/server-git"]
     }
   }
 }

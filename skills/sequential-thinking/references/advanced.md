@@ -16,6 +16,7 @@ When a thought proves incorrect or incomplete, use revision to correct the reaso
 ```
 
 **When to revise**:
+
 - New evidence contradicts earlier conclusions
 - Assumptions prove incorrect
 - Scope was misunderstood
@@ -56,6 +57,7 @@ Explore different solution paths by branching from a specific thought:
 ```
 
 **When to branch**:
+
 - Multiple viable approaches exist
 - Need to compare trade-offs
 - Exploring contingencies
@@ -105,6 +107,7 @@ Freely adjust `totalThoughts` as understanding evolves:
 ## Session Management
 
 Each reasoning session maintains its own context. The tool tracks:
+
 - All thoughts in sequence
 - Revision relationships
 - Branch hierarchies

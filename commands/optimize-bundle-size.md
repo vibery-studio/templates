@@ -29,11 +29,11 @@ node --inspect app.js
 
 ## Metrics
 
-| Metric | Target |
-|--------|--------|
-| LCP | < 2.5s |
-| FID | < 100ms |
-| CLS | < 0.1 |
+| Metric      | Target  |
+| ----------- | ------- |
+| LCP         | < 2.5s  |
+| FID         | < 100ms |
+| CLS         | < 0.1   |
 | Bundle Size | < 200KB |
 
 ## Output

@@ -21,6 +21,7 @@ Expert in natural language processing, specializing in text processing, language
 ## Common Patterns
 
 ### Text Classification
+
 ```python
 from transformers import AutoModelForSequenceClassification, Trainer
 
@@ -39,6 +40,7 @@ trainer.train()
 ```
 
 ### Named Entity Recognition
+
 ```python
 import spacy
 
@@ -50,6 +52,7 @@ for ent in doc.ents:
 ```
 
 ### Semantic Search with Embeddings
+
 ```python
 from sentence_transformers import SentenceTransformer
 

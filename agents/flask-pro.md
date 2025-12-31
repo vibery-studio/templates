@@ -5,6 +5,7 @@ model: claude-sonnet-4-20250514
 ---
 
 ## Focus Areas
+
 - Routing and URL building in Flask
 - Request and response lifecycle
 - Templating with Jinja2
@@ -17,6 +18,7 @@ model: claude-sonnet-4-20250514
 - RESTful API design with Flask
 
 ## Approach
+
 - Follow best practices in Flask routing and request handling
 - Use Jinja2 for clean and maintainable templates
 - Implement effective session and cookie management
@@ -29,6 +31,7 @@ model: claude-sonnet-4-20250514
 - Optimize for performance and scalability
 
 ## Quality Checklist
+
 - All routes and URLs are efficient and well-organized
 - Templating with Jinja2 follows conventions and best practices
 - Secure session and cookie management is implemented
@@ -41,6 +44,7 @@ model: claude-sonnet-4-20250514
 - Performance is optimized across the application
 
 ## Output
+
 - Flask applications with clean routing and URL handling
 - Maintainable templates using Jinja2
 - Secure session and cookie management practices

@@ -4,25 +4,34 @@
  * Creates individual .tar.gz for each template and registry.json
  */
 
-const fs = require('fs-extra');
-const path = require('path');
-const tar = require('tar');
+const fs = require("fs-extra");
+const path = require("path");
+const tar = require("tar");
 
-const ROOT_DIR = path.join(__dirname, '..');
-const DIST_DIR = path.join(ROOT_DIR, 'dist');
+const ROOT_DIR = path.join(__dirname, "..");
+const DIST_DIR = path.join(ROOT_DIR, "dist");
 const MAX_DEPTH = 10; // Prevent infinite recursion
 
 // Template types and their directories
-const TEMPLATE_TYPES = ['agents', 'skills', 'commands', 'mcps', 'hooks', 'settings'];
+const TEMPLATE_TYPES = [
+  "agents",
+  "skills",
+  "commands",
+  "mcps",
+  "hooks",
+  "settings",
+];
 
 /**
  * Validate filename to prevent path traversal
  */
 function isSafeFilename(filename) {
-  return !filename.includes('..') &&
-         !filename.includes('/') &&
-         !filename.includes('\\') &&
-         !filename.startsWith('.');
+  return (
+    !filename.includes("..") &&
+    !filename.includes("/") &&
+    !filename.includes("\\") &&
+    !filename.startsWith(".")
+  );
 }
 
 /**
@@ -30,20 +39,20 @@ function isSafeFilename(filename) {
  */
 function extractDescription(filePath) {
   try {
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
+    const content = fs.readFileSync(filePath, "utf-8");
+    const lines = content.split("\n");
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       // Skip empty lines and headings
-      if (!line || line.startsWith('#')) continue;
+      if (!line || line.startsWith("#")) continue;
       // Return first non-empty, non-heading line (truncated)
-      return line.slice(0, 150).replace(/[*_`]/g, '');
+      return line.slice(0, 150).replace(/[*_`]/g, "");
     }
   } catch (e) {
-    return '';
+    return "";
   }
-  return '';
+  return "";
 }
 
 /**
@@ -51,7 +60,7 @@ function extractDescription(filePath) {
  */
 function getTemplateName(filePath) {
   const basename = path.basename(filePath);
-  return basename.replace(/\.(md|json)$/, '');
+  return basename.replace(/\.(md|json)$/, "");
 }
 
 /**
@@ -105,9 +114,11 @@ async function processSingleFileTemplates(type) {
   if (!fs.existsSync(typeDir)) return [];
 
   const templates = [];
-  const files = fs.readdirSync(typeDir).filter(f =>
-    isSafeFilename(f) && (f.endsWith('.md') || f.endsWith('.json'))
-  );
+  const files = fs
+    .readdirSync(typeDir)
+    .filter(
+      (f) => isSafeFilename(f) && (f.endsWith(".md") || f.endsWith(".json")),
+    );
 
   for (const file of files) {
     const filePath = path.join(typeDir, file);
@@ -130,7 +141,7 @@ async function processSingleFileTemplates(type) {
           file: archivePath,
           cwd: typeDir,
         },
-        [file]
+        [file],
       );
 
       // Copy raw file for direct download
@@ -162,7 +173,7 @@ async function processDirectoryTemplates(type) {
   if (!fs.existsSync(typeDir)) return [];
 
   const templates = [];
-  const dirs = fs.readdirSync(typeDir).filter(d => {
+  const dirs = fs.readdirSync(typeDir).filter((d) => {
     if (!isSafeFilename(d)) return false;
     const dirPath = path.join(typeDir, d);
     const stat = fs.lstatSync(dirPath);
@@ -182,16 +193,18 @@ async function processDirectoryTemplates(type) {
           file: archivePath,
           cwd: typeDir,
         },
-        [dir]
+        [dir],
       );
 
       // Try to get description from SKILL.md or first .md file
-      let description = '';
-      const skillMd = path.join(dirPath, 'SKILL.md');
+      let description = "";
+      const skillMd = path.join(dirPath, "SKILL.md");
       if (fs.existsSync(skillMd)) {
         description = extractDescription(skillMd);
       } else {
-        const mdFiles = fs.readdirSync(dirPath).filter(f => isSafeFilename(f) && f.endsWith('.md'));
+        const mdFiles = fs
+          .readdirSync(dirPath)
+          .filter((f) => isSafeFilename(f) && f.endsWith(".md"));
         if (mdFiles.length > 0) {
           description = extractDescription(path.join(dirPath, mdFiles[0]));
         }
@@ -219,7 +232,7 @@ async function processDirectoryTemplates(type) {
  * Main function
  */
 async function main() {
-  console.log('Generating release assets...\n');
+  console.log("Generating release assets...\n");
 
   // Clean and create dist directory
   await fs.emptyDir(DIST_DIR);
@@ -230,7 +243,7 @@ async function main() {
     console.log(`Processing ${type}...`);
 
     let templates;
-    if (type === 'skills') {
+    if (type === "skills") {
       // Skills are directories
       templates = await processDirectoryTemplates(type);
     } else {
@@ -242,24 +255,27 @@ async function main() {
   }
 
   // Read version from package.json
-  const pkg = require('../package.json');
+  const pkg = require("../package.json");
 
   // Generate registry.json
   const registry = {
     version: pkg.version,
     updated: new Date().toISOString(),
-    base_url: 'https://github.com/vibery-studio/templates/releases/latest/download',
+    base_url:
+      "https://github.com/vibery-studio/templates/releases/latest/download",
     templates: allTemplates,
   };
 
-  const registryPath = path.join(DIST_DIR, 'registry.json');
+  const registryPath = path.join(DIST_DIR, "registry.json");
   await fs.writeJson(registryPath, registry, { spaces: 2 });
 
-  console.log(`\nGenerated registry.json with ${allTemplates.length} templates`);
+  console.log(
+    `\nGenerated registry.json with ${allTemplates.length} templates`,
+  );
   console.log(`Output directory: ${DIST_DIR}`);
 }
 
-main().catch(err => {
-  console.error('Error:', err);
+main().catch((err) => {
+  console.error("Error:", err);
   process.exit(1);
 });

@@ -7,6 +7,7 @@ Integrate Claude Code into development workflows with GitHub Actions and GitLab 
 ### Basic Workflow
 
 **.github/workflows/claude.yml:**
+
 ```yaml
 name: Claude Code CI
 
@@ -20,7 +21,7 @@ jobs:
 
       - uses: anthropic/claude-code-action@v1
         with:
-          command: '/fix:types && /test'
+          command: "/fix:types && /test"
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 ```
@@ -88,7 +89,7 @@ jobs:
         if: steps.test.outcome == 'failure'
         uses: anthropic/claude-code-action@v1
         with:
-          command: '/fix:test check test output and fix failures'
+          command: "/fix:test check test output and fix failures"
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
@@ -120,7 +121,7 @@ jobs:
       - name: Update Documentation
         uses: anthropic/claude-code-action@v1
         with:
-          command: '/docs:update'
+          command: "/docs:update"
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
@@ -138,6 +139,7 @@ jobs:
 ### Basic Pipeline
 
 **.gitlab-ci.yml:**
+
 ```yaml
 stages:
   - review
@@ -263,7 +265,7 @@ Run Claude only on certain conditions:
   if: ${{ github.event.pull_request.changed_files > 10 }}
   uses: anthropic/claude-code-action@v1
   with:
-    command: '/review:codebase analyze changes'
+    command: "/review:codebase analyze changes"
 ```
 
 ### Cost Control
@@ -287,12 +289,14 @@ Limit CI usage to control costs:
 ### API Key Management
 
 **GitHub:**
+
 ```
 Settings → Secrets and variables → Actions
 Add: ANTHROPIC_API_KEY
 ```
 
 **GitLab:**
+
 ```
 Settings → CI/CD → Variables
 Add: ANTHROPIC_API_KEY (Protected, Masked)
@@ -301,6 +305,7 @@ Add: ANTHROPIC_API_KEY (Protected, Masked)
 ### Restricted Permissions
 
 **GitHub Actions:**
+
 ```yaml
 permissions:
   contents: read
@@ -309,6 +314,7 @@ permissions:
 ```
 
 **GitLab CI:**
+
 ```yaml
 variables:
   GIT_STRATEGY: clone
@@ -333,6 +339,7 @@ Prevent API key exposure:
 ### Workflow Logs
 
 **GitHub Actions:**
+
 ```yaml
 - name: Debug Info
   run: |
@@ -342,6 +349,7 @@ Prevent API key exposure:
 ```
 
 **GitLab CI:**
+
 ```yaml
 debug:
   script:
@@ -388,6 +396,7 @@ artifacts:
 ### Caching
 
 **GitHub Actions:**
+
 ```yaml
 - uses: actions/cache@v3
   with:
@@ -396,6 +405,7 @@ artifacts:
 ```
 
 **GitLab CI:**
+
 ```yaml
 cache:
   key: claude-cache

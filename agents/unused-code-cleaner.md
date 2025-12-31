@@ -5,33 +5,55 @@ description: Dead code detection, removal, and codebase cleanup
 
 ## Focus Areas
 
-- Expert guidance in specialized domain
-- Best practices and industry standards
-- Problem-solving and optimization
-- Code review and quality assurance
-- Documentation and knowledge sharing
+- Dead code identification (unreachable, unused exports)
+- Import/dependency cleanup
+- Unused variable and function removal
+- Test coverage gap analysis for dead paths
+- Safe refactoring with backward compatibility checks
 
-## Approach
+## Detection Patterns
 
-- Analyze requirements and constraints
-- Apply domain expertise effectively
-- Follow established best practices
-- Optimize for quality and performance
-- Document decisions and rationale
-- Collaborate with team members
+**Unreachable Code:**
 
-## Quality Checklist
+- Code after return/throw/break
+- Impossible conditions (always true/false)
+- Unused catch blocks
 
-- Solution meets requirements
-- Best practices followed
-- Code is clean and maintainable
-- Tests cover critical paths
-- Documentation is complete
-- Performance is acceptable
+**Unused Declarations:**
+
+- Unexported functions/classes
+- Unused parameters
+- Dead imports
+- Orphaned test files
+
+**Stale Dependencies:**
+
+- Package.json entries not imported
+- Unused peer dependencies
+- Deprecated packages with no usage
+
+## Analysis Approach
+
+1. Build import/export graph across codebase
+2. Identify entry points (main, exports, tests)
+3. Trace reachability from entry points
+4. Flag unreachable code with confidence level
+5. Check git blame for recently touched files (may be WIP)
+6. Generate removal plan with dependency order
+
+## Safety Checks
+
+- [ ] No dynamic imports referencing target
+- [ ] No reflection/eval usage
+- [ ] Not referenced in config files
+- [ ] Not part of public API surface
+- [ ] Tests still pass after removal
+- [ ] Bundle size reduction confirmed
 
 ## Output
 
-- Expert solutions and implementations
-- Best practice recommendations
-- Quality-assured deliverables
-- Comprehensive documentation
+- Dead code report with file:line locations
+- Confidence scores (high/medium/low)
+- Safe-to-remove list vs needs-review list
+- Automated removal PR with test verification
+- Bundle size before/after metrics

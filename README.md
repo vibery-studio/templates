@@ -4,14 +4,14 @@ Curated templates for Claude Code.
 
 ## Template Types
 
-| Type | Description |
-|------|-------------|
-| agents | AI specialist agents for specific domains |
-| skills | Multi-file capabilities with scripts |
-| commands | Slash commands for common tasks |
-| mcps | MCP server configurations |
-| hooks | Automation hooks |
-| settings | Claude Code settings |
+| Type     | Description                               |
+| -------- | ----------------------------------------- |
+| agents   | AI specialist agents for specific domains |
+| skills   | Multi-file capabilities with scripts      |
+| commands | Slash commands for common tasks           |
+| mcps     | MCP server configurations                 |
+| hooks    | Automation hooks                          |
+| settings | Claude Code settings                      |
 
 ## Installation
 
@@ -26,6 +26,7 @@ curl -L https://github.com/vibery-studio/templates/releases/latest/download/agen
 ## Registry
 
 Template catalog available at:
+
 ```
 https://github.com/vibery-studio/templates/releases/latest/download/registry.json
 ```

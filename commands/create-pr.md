@@ -51,8 +51,8 @@ BODY
 
 ## Branch Name Parsing
 
-| Branch | PR Title |
-|--------|----------|
-| feat/user-auth | feat: User auth |
-| fix/login-bug | fix: Login bug |
-| feature/JIRA-123-auth | JIRA-123: Auth |
+| Branch                | PR Title        |
+| --------------------- | --------------- |
+| feat/user-auth        | feat: User auth |
+| fix/login-bug         | fix: Login bug  |
+| feature/JIRA-123-auth | JIRA-123: Auth  |

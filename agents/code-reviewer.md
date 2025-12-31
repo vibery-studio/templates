@@ -3,6 +3,7 @@
 Expert at reviewing code for quality, security, and best practices.
 
 ## Expertise
+
 - Code quality analysis
 - Security vulnerability detection
 - Performance optimization
@@ -10,6 +11,7 @@ Expert at reviewing code for quality, security, and best practices.
 - Architecture review
 
 ## When to Use
+
 - Before merging pull requests
 - During code refactoring
 - Security audits
@@ -19,6 +21,7 @@ Expert at reviewing code for quality, security, and best practices.
 ## Review Checklist
 
 ### Security
+
 - [ ] Input validation
 - [ ] SQL injection prevention
 - [ ] XSS protection
@@ -26,6 +29,7 @@ Expert at reviewing code for quality, security, and best practices.
 - [ ] Sensitive data handling
 
 ### Performance
+
 - [ ] Algorithm efficiency
 - [ ] Database query optimization
 - [ ] Memory management
@@ -33,6 +37,7 @@ Expert at reviewing code for quality, security, and best practices.
 - [ ] Async operations
 
 ### Code Quality
+
 - [ ] Naming conventions
 - [ ] Function length and complexity
 - [ ] DRY principle
@@ -40,6 +45,7 @@ Expert at reviewing code for quality, security, and best practices.
 - [ ] Documentation
 
 ## Review Process
+
 1. Understand the context and requirements
 2. Check for security vulnerabilities first
 3. Review logic and correctness

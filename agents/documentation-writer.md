@@ -3,6 +3,7 @@
 Expert at creating clear, comprehensive technical documentation.
 
 ## Expertise
+
 - API documentation
 - README files
 - Code comments
@@ -10,6 +11,7 @@ Expert at creating clear, comprehensive technical documentation.
 - Architecture documentation
 
 ## When to Use
+
 - New project setup
 - API development
 - Library/package creation
@@ -19,6 +21,7 @@ Expert at creating clear, comprehensive technical documentation.
 ## Documentation Standards
 
 ### README Structure
+
 1. Project title and description
 2. Installation instructions
 3. Quick start / Usage examples
@@ -28,6 +31,7 @@ Expert at creating clear, comprehensive technical documentation.
 7. License
 
 ### API Documentation
+
 - Endpoint descriptions
 - Request/response formats
 - Authentication requirements
@@ -36,6 +40,7 @@ Expert at creating clear, comprehensive technical documentation.
 - Code examples
 
 ### Code Comments
+
 - Function purpose (what, not how)
 - Parameter descriptions
 - Return value documentation
@@ -43,6 +48,7 @@ Expert at creating clear, comprehensive technical documentation.
 - TODO/FIXME with context
 
 ## Writing Guidelines
+
 1. Use clear, simple language
 2. Include working examples
 3. Keep content up-to-date
@@ -50,6 +56,7 @@ Expert at creating clear, comprehensive technical documentation.
 5. Add troubleshooting sections
 
 ## Quality Checklist
+
 - Documentation matches current code
 - All public APIs documented
 - Examples are tested and working

@@ -93,17 +93,20 @@ Use these only if context7.com returns 404:
 ### GitHub (Most Common)
 
 **URL patterns:**
+
 ```
 https://github.com/[org]/[repo]
 https://github.com/[user]/[repo]
 ```
 
 **Common organization names:**
+
 - Company name: `github.com/vercel/next.js`
 - Project name: `github.com/remix-run/remix`
 - Community: `github.com/facebook/react`
 
 **Documentation locations in repositories:**
+
 ```
 /docs/
 /documentation/
@@ -117,6 +120,7 @@ CONTRIBUTING.md
 ### GitLab
 
 **URL pattern:**
+
 ```
 https://gitlab.com/[org]/[repo]
 ```
@@ -124,6 +128,7 @@ https://gitlab.com/[org]/[repo]
 ### Bitbucket (Less Common)
 
 **URL pattern:**
+
 ```
 https://bitbucket.org/[org]/[repo]
 ```
@@ -135,6 +140,7 @@ https://bitbucket.org/[org]/[repo]
 **URL**: `https://npmjs.com/package/[name]`
 
 **Available info:**
+
 - Description
 - Homepage link
 - Repository link
@@ -142,6 +148,7 @@ https://bitbucket.org/[org]/[repo]
 - Dependencies
 
 **Useful for:**
+
 - Finding official links
 - Version information
 - Package metadata
@@ -151,6 +158,7 @@ https://bitbucket.org/[org]/[repo]
 **URL**: `https://pypi.org/project/[name]`
 
 **Available info:**
+
 - Description
 - Documentation link
 - Homepage
@@ -158,6 +166,7 @@ https://bitbucket.org/[org]/[repo]
 - Release history
 
 **Useful for:**
+
 - Python package documentation
 - Official links
 - Version compatibility
@@ -167,6 +176,7 @@ https://bitbucket.org/[org]/[repo]
 **URL**: `https://rubygems.org/gems/[name]`
 
 **Available info:**
+
 - Description
 - Homepage
 - Documentation
@@ -174,6 +184,7 @@ https://bitbucket.org/[org]/[repo]
 - Dependencies
 
 **Useful for:**
+
 - Ruby gem documentation
 - Version information
 
@@ -182,12 +193,14 @@ https://bitbucket.org/[org]/[repo]
 **URL**: `https://crates.io/crates/[name]`
 
 **Available info:**
+
 - Description
 - docs.rs link (auto-generated docs)
 - Repository
 - Version history
 
 **Useful for:**
+
 - Rust crate documentation
 - Auto-generated API docs
 - Repository link
@@ -197,12 +210,14 @@ https://bitbucket.org/[org]/[repo]
 **URL**: `https://search.maven.org/artifact/[group]/[artifact]`
 
 **Available info:**
+
 - Versions
 - Dependencies
 - Repository link
 - License
 
 **Useful for:**
+
 - Java library information
 - Dependency management
 
@@ -211,12 +226,14 @@ https://bitbucket.org/[org]/[repo]
 ### Read the Docs
 
 **URL patterns:**
+
 ```
 https://[project].readthedocs.io
 https://readthedocs.org/projects/[project]
 ```
 
 **Features:**
+
 - Version switching
 - Multiple formats (HTML, PDF, ePub)
 - Search functionality
@@ -225,12 +242,14 @@ https://readthedocs.org/projects/[project]
 ### GitBook
 
 **URL patterns:**
+
 ```
 https://[org].gitbook.io/[project]
 https://docs.[domain].com  (often GitBook-powered)
 ```
 
 **Features:**
+
 - Clean, modern interface
 - Good navigation
 - Often manually curated
@@ -239,17 +258,20 @@ https://docs.[domain].com  (often GitBook-powered)
 ### Docusaurus
 
 **URL patterns:**
+
 ```
 https://[project].io
 https://docs.[project].com
 ```
 
 **Common in:**
+
 - React ecosystem
 - Meta/Facebook projects
 - Modern open-source projects
 
 **Features:**
+
 - React-based
 - Fast, static site
 - Version management
@@ -258,12 +280,14 @@ https://docs.[project].com
 ### MkDocs
 
 **URL patterns:**
+
 ```
 https://[user].github.io/[project]
 https://[custom-domain].com
 ```
 
 **Features:**
+
 - Python ecosystem
 - Static site from Markdown
 - Often on GitHub Pages
@@ -272,17 +296,20 @@ https://[custom-domain].com
 ### VitePress
 
 **URL patterns:**
+
 ```
 https://[project].dev
 https://docs.[project].com
 ```
 
 **Common in:**
+
 - Vue ecosystem
 - Modern projects
 - Vite-based projects
 
 **Features:**
+
 - Vue-powered
 - Very fast
 - Clean design
@@ -295,26 +322,31 @@ https://docs.[project].com
 **ALWAYS try context7.com first:**
 
 For GitHub repositories:
+
 ```
 https://context7.com/{org}/{repo}/llms.txt
 ```
 
 For websites:
+
 ```
 https://context7.com/websites/{normalized-path}/llms.txt
 ```
 
 With topic filter:
+
 ```
 https://context7.com/{path}/llms.txt?topic={query}
 ```
 
 **Fallback: Traditional search if context7.com returns 404:**
+
 ```
 "[library] llms.txt site:[known-domain]"
 ```
 
 **Alternative domains to try:**
+
 ```
 site:docs.[library].com
 site:[library].dev
@@ -325,12 +357,14 @@ site:[library].org
 ### Finding Official Repository
 
 **Search pattern:**
+
 ```
 "[library] official github repository"
 "[library] source code github"
 ```
 
 **Verification checklist:**
+
 - Check organization/user is official
 - Verify star count (popular libraries have many)
 - Check last commit date (active maintenance)
@@ -339,6 +373,7 @@ site:[library].org
 ### Finding Official Documentation
 
 **Search patterns:**
+
 ```
 "[library] official documentation"
 "[library] docs site:official-domain"
@@ -346,6 +381,7 @@ site:[library].org
 ```
 
 **Domain patterns:**
+
 ```
 docs.[library].com
 [library].dev/docs
@@ -358,6 +394,7 @@ docs.[library].io
 ### Typical Section Names
 
 **Getting started:**
+
 - Getting Started
 - Quick Start
 - Introduction
@@ -365,6 +402,7 @@ docs.[library].io
 - Setup
 
 **Core concepts:**
+
 - Core Concepts
 - Fundamentals
 - Basics
@@ -372,6 +410,7 @@ docs.[library].io
 - Architecture
 
 **Guides:**
+
 - Guides
 - How-To Guides
 - Tutorials
@@ -379,6 +418,7 @@ docs.[library].io
 - Recipes
 
 **Reference:**
+
 - API Reference
 - API Documentation
 - Reference
@@ -386,6 +426,7 @@ docs.[library].io
 - CLI Reference
 
 **Advanced:**
+
 - Advanced
 - Advanced Topics
 - Deep Dives
@@ -411,6 +452,7 @@ FAQ.md
 ### React Ecosystem
 
 **Common patterns:**
+
 ```
 - Uses Docusaurus
 - Documentation at [project].dev or docs.[project].com
@@ -421,6 +463,7 @@ FAQ.md
 ### Vue Ecosystem
 
 **Common patterns:**
+
 ```
 - Uses VitePress
 - Documentation at [project].vuejs.org
@@ -431,6 +474,7 @@ FAQ.md
 ### Python Ecosystem
 
 **Common patterns:**
+
 ```
 - Read the Docs hosting
 - Sphinx-generated
@@ -441,6 +485,7 @@ FAQ.md
 ### Rust Ecosystem
 
 **Common patterns:**
+
 ```
 - docs.rs for API docs
 - Book format for guides ([project].rs/book)
@@ -450,12 +495,12 @@ FAQ.md
 
 ## Quick Lookup Table
 
-| Ecosystem | Registry | Docs Pattern | Common Host |
-|-----------|----------|--------------|-------------|
-| JavaScript/TS | npmjs.com | [name].dev | Docusaurus, VitePress |
-| Python | pypi.org | readthedocs.io | Read the Docs |
-| Rust | crates.io | docs.rs | docs.rs |
-| Ruby | rubygems.org | rubydoc.info | RDoc |
-| Go | pkg.go.dev | pkg.go.dev | pkg.go.dev |
-| PHP | packagist.org | [name].org | Various |
-| Java | maven.org | javadoc | Maven Central |
+| Ecosystem     | Registry      | Docs Pattern   | Common Host           |
+| ------------- | ------------- | -------------- | --------------------- |
+| JavaScript/TS | npmjs.com     | [name].dev     | Docusaurus, VitePress |
+| Python        | pypi.org      | readthedocs.io | Read the Docs         |
+| Rust          | crates.io     | docs.rs        | docs.rs               |
+| Ruby          | rubygems.org  | rubydoc.info   | RDoc                  |
+| Go            | pkg.go.dev    | pkg.go.dev     | pkg.go.dev            |
+| PHP           | packagist.org | [name].org     | Various               |
+| Java          | maven.org     | javadoc        | Maven Central         |

@@ -11,6 +11,7 @@ Process video, audio, and images using FFmpeg and ImageMagick command-line tools
 ## When to Use This Skill
 
 Use when:
+
 - Converting media formats (video, audio, images)
 - Encoding video with codecs (H.264, H.265, VP9, AV1)
 - Processing images (resize, crop, effects, watermarks)
@@ -25,7 +26,9 @@ Use when:
 ## Tool Selection Guide
 
 ### FFmpeg: Video/Audio Processing
+
 Use FFmpeg for:
+
 - Video encoding, conversion, transcoding
 - Audio extraction, conversion, mixing
 - Live streaming (RTMP, HLS, DASH)
@@ -36,7 +39,9 @@ Use FFmpeg for:
 - Codec selection and optimization
 
 ### ImageMagick: Image Processing
+
 Use ImageMagick for:
+
 - Image format conversion (PNG, JPEG, WebP, GIF)
 - Resizing, cropping, transformations
 - Batch image processing (mogrify)
@@ -48,30 +53,33 @@ Use ImageMagick for:
 
 ### Decision Matrix
 
-| Task | Tool | Why |
-|------|------|-----|
-| Video encoding | FFmpeg | Native video codec support |
-| Audio extraction | FFmpeg | Direct stream manipulation |
-| Image resize | ImageMagick | Optimized for still images |
-| Batch images | ImageMagick | mogrify for in-place edits |
-| Video thumbnails | FFmpeg | Frame extraction built-in |
-| GIF creation | FFmpeg or ImageMagick | FFmpeg for video source, ImageMagick for images |
-| Streaming | FFmpeg | Live streaming protocols |
-| Image effects | ImageMagick | Rich filter library |
+| Task             | Tool                  | Why                                             |
+| ---------------- | --------------------- | ----------------------------------------------- |
+| Video encoding   | FFmpeg                | Native video codec support                      |
+| Audio extraction | FFmpeg                | Direct stream manipulation                      |
+| Image resize     | ImageMagick           | Optimized for still images                      |
+| Batch images     | ImageMagick           | mogrify for in-place edits                      |
+| Video thumbnails | FFmpeg                | Frame extraction built-in                       |
+| GIF creation     | FFmpeg or ImageMagick | FFmpeg for video source, ImageMagick for images |
+| Streaming        | FFmpeg                | Live streaming protocols                        |
+| Image effects    | ImageMagick           | Rich filter library                             |
 
 ## Installation
 
 ### macOS
+
 ```bash
 brew install ffmpeg imagemagick
 ```
 
 ### Ubuntu/Debian
+
 ```bash
 sudo apt-get install ffmpeg imagemagick
 ```
 
 ### Windows
+
 ```bash
 # Using winget
 winget install ffmpeg
@@ -83,6 +91,7 @@ winget install ImageMagick.ImageMagick
 ```
 
 ### Verify Installation
+
 ```bash
 ffmpeg -version
 ffprobe -version
@@ -94,6 +103,7 @@ convert -version
 ## Quick Start Examples
 
 ### Video Conversion
+
 ```bash
 # Convert format (copy streams, fast)
 ffmpeg -i input.mkv -c copy output.mp4
@@ -106,6 +116,7 @@ ffmpeg -i input.mp4 -vf scale=-1:720 -c:a copy output.mp4
 ```
 
 ### Audio Extraction
+
 ```bash
 # Extract audio (no re-encoding)
 ffmpeg -i video.mp4 -vn -c:a copy audio.m4a
@@ -115,6 +126,7 @@ ffmpeg -i video.mp4 -vn -q:a 0 audio.mp3
 ```
 
 ### Image Processing
+
 ```bash
 # Convert format
 magick input.png output.jpg
@@ -127,6 +139,7 @@ magick input.jpg -resize 200x200^ -gravity center -extent 200x200 thumb.jpg
 ```
 
 ### Batch Image Resize
+
 ```bash
 # Resize all JPEGs to 800px width
 mogrify -resize 800x -quality 85 *.jpg
@@ -136,12 +149,14 @@ mogrify -path ./output -resize 800x600 *.jpg
 ```
 
 ### Video Thumbnail
+
 ```bash
 # Extract frame at 5 seconds
 ffmpeg -ss 00:00:05 -i video.mp4 -vframes 1 -vf scale=320:-1 thumb.jpg
 ```
 
 ### HLS Streaming
+
 ```bash
 # Generate HLS playlist
 ffmpeg -i input.mp4 \
@@ -152,6 +167,7 @@ ffmpeg -i input.mp4 \
 ```
 
 ### Image Watermark
+
 ```bash
 # Add watermark to corner
 magick input.jpg watermark.png -gravity southeast \
@@ -161,6 +177,7 @@ magick input.jpg watermark.png -gravity southeast \
 ## Common Workflows
 
 ### Optimize Video for Web
+
 ```bash
 # H.264 with good compression
 ffmpeg -i input.mp4 \
@@ -171,6 +188,7 @@ ffmpeg -i input.mp4 \
 ```
 
 ### Create Responsive Images
+
 ```bash
 # Generate multiple sizes
 for size in 320 640 1024 1920; do
@@ -179,6 +197,7 @@ done
 ```
 
 ### Extract Video Segment
+
 ```bash
 # From 1:30 to 3:00 (re-encode for precision)
 ffmpeg -i input.mp4 -ss 00:01:30 -to 00:03:00 \
@@ -186,18 +205,21 @@ ffmpeg -i input.mp4 -ss 00:01:30 -to 00:03:00 \
 ```
 
 ### Batch Image Optimization
+
 ```bash
 # Convert PNG to optimized JPEG
 mogrify -path ./optimized -format jpg -quality 85 -strip *.png
 ```
 
 ### Video GIF Creation
+
 ```bash
 # High quality GIF with palette
 ffmpeg -i input.mp4 -vf "fps=15,scale=640:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" output.gif
 ```
 
 ### Image Blur Effect
+
 ```bash
 # Gaussian blur
 magick input.jpg -gaussian-blur 0x8 output.jpg
@@ -206,6 +228,7 @@ magick input.jpg -gaussian-blur 0x8 output.jpg
 ## Advanced Techniques
 
 ### Multi-Pass Video Encoding
+
 ```bash
 # Pass 1 (analysis)
 ffmpeg -y -i input.mkv -c:v libx264 -b:v 2600k -pass 1 -an -f null /dev/null
@@ -215,6 +238,7 @@ ffmpeg -i input.mkv -c:v libx264 -b:v 2600k -pass 2 -c:a aac output.mp4
 ```
 
 ### Hardware-Accelerated Encoding
+
 ```bash
 # NVIDIA NVENC
 ffmpeg -hwaccel cuda -i input.mp4 -c:v h264_nvenc -preset fast -crf 22 output.mp4
@@ -224,6 +248,7 @@ ffmpeg -hwaccel qsv -c:v h264_qsv -i input.mp4 -c:v h264_qsv output.mp4
 ```
 
 ### Complex Image Pipeline
+
 ```bash
 # Resize, crop, border, adjust
 magick input.jpg \
@@ -237,6 +262,7 @@ magick input.jpg \
 ```
 
 ### Video Filter Chains
+
 ```bash
 # Scale, denoise, watermark
 ffmpeg -i video.mp4 -i logo.png \
@@ -245,6 +271,7 @@ ffmpeg -i video.mp4 -i logo.png \
 ```
 
 ### Animated GIF from Images
+
 ```bash
 # Create with delay
 magick -delay 100 -loop 0 frame*.png animated.gif
@@ -256,6 +283,7 @@ magick animated.gif -fuzz 5% -layers Optimize optimized.gif
 ## Media Analysis
 
 ### Inspect Video Properties
+
 ```bash
 # Detailed JSON output
 ffprobe -v quiet -print_format json -show_format -show_streams input.mp4
@@ -267,6 +295,7 @@ ffprobe -v error -select_streams v:0 \
 ```
 
 ### Image Information
+
 ```bash
 # Basic info
 identify image.jpg
@@ -305,6 +334,7 @@ Detailed guides in `references/`:
 ## Common Parameters
 
 ### FFmpeg Video
+
 - `-c:v` - Video codec (libx264, libx265, libvpx-vp9)
 - `-crf` - Quality (0-51, lower=better, 23=default)
 - `-preset` - Speed/compression (ultrafast to veryslow)
@@ -312,11 +342,13 @@ Detailed guides in `references/`:
 - `-vf` - Video filters
 
 ### FFmpeg Audio
+
 - `-c:a` - Audio codec (aac, mp3, opus)
 - `-b:a` - Audio bitrate (e.g., 128k, 192k)
 - `-ar` - Sample rate (44100, 48000)
 
 ### ImageMagick Geometry
+
 - `800x600` - Fit within (maintains aspect)
 - `800x600!` - Force exact size
 - `800x600^` - Fill (may crop)
@@ -327,6 +359,7 @@ Detailed guides in `references/`:
 ## Troubleshooting
 
 **FFmpeg "Unknown encoder"**
+
 ```bash
 # Check available encoders
 ffmpeg -encoders | grep h264
@@ -336,6 +369,7 @@ sudo apt-get install libx264-dev libx265-dev
 ```
 
 **ImageMagick "not authorized"**
+
 ```bash
 # Edit policy file
 sudo nano /etc/ImageMagick-7/policy.xml
@@ -344,6 +378,7 @@ sudo nano /etc/ImageMagick-7/policy.xml
 ```
 
 **Memory errors**
+
 ```bash
 # Limit memory usage
 ffmpeg -threads 4 input.mp4 output.mp4

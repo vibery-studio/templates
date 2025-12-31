@@ -11,6 +11,7 @@ npm install -g gemini-cli
 ```
 
 Verify installation:
+
 ```bash
 gemini --version
 ```
@@ -35,6 +36,7 @@ mklink .gemini\settings.json .claude\.mcp.json
 ### Security
 
 Add to `.gitignore`:
+
 ```
 .gemini/settings.json
 ```
@@ -61,26 +63,31 @@ gemini [flags] -p "<prompt>"
 ### Examples
 
 **Screenshot Capture**:
+
 ```bash
 gemini -y -m gemini-2.5-flash -p "Take a screenshot of https://www.google.com.vn"
 ```
 
 **Memory Operations**:
+
 ```bash
 gemini -y -m gemini-2.5-flash -p "Remember that Alice is a React developer working on e-commerce projects"
 ```
 
 **Web Research**:
+
 ```bash
 gemini -y -m gemini-2.5-flash -p "Search for latest Next.js 15 features and summarize the top 3"
 ```
 
 **Multi-Tool Orchestration**:
+
 ```bash
 gemini -y -m gemini-2.5-flash -p "Search for Claude AI documentation, take a screenshot of the homepage, and save both to memory"
 ```
 
 **Browser Automation**:
+
 ```bash
 gemini -y -m gemini-2.5-flash -p "Navigate to https://example.com, click the signup button, and take a screenshot"
 ```
@@ -160,6 +167,7 @@ gemini
 ```
 
 Shows:
+
 - Connected servers
 - Available tools
 - Configuration errors
@@ -186,11 +194,11 @@ Shows detailed MCP communication logs.
 
 ## Comparison with Alternatives
 
-| Method | Speed | Flexibility | Setup | Best For |
-|--------|-------|-------------|-------|----------|
-| Gemini CLI | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | All tasks |
-| Direct Scripts | ⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐ | Specific tools |
-| mcp-manager | ⭐ | ⭐⭐ | ⭐⭐⭐ | Fallback |
+| Method         | Speed  | Flexibility | Setup  | Best For       |
+| -------------- | ------ | ----------- | ------ | -------------- |
+| Gemini CLI     | ⭐⭐⭐ | ⭐⭐⭐      | ⭐⭐   | All tasks      |
+| Direct Scripts | ⭐⭐   | ⭐⭐⭐      | ⭐⭐⭐ | Specific tools |
+| mcp-manager    | ⭐     | ⭐⭐        | ⭐⭐⭐ | Fallback       |
 
 **Recommendation**: Use Gemini CLI as primary method, fallback to scripts/subagent when unavailable.
 

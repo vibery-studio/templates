@@ -2,10 +2,7 @@
   "mcpServers": {
     "brave-search": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@anthropic-ai/mcp-server-brave-search"
-      ],
+      "args": ["-y", "@anthropic-ai/mcp-server-brave-search"],
       "env": {
         "BRAVE_API_KEY": "${BRAVE_API_KEY}"
       }

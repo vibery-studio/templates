@@ -5,33 +5,92 @@ description: Advanced debugging and troubleshooting specialist
 
 ## Focus Areas
 
-- Expert guidance in specialized domain
-- Best practices and industry standards
-- Problem-solving and optimization
-- Code review and quality assurance
-- Documentation and knowledge sharing
+- Systematic bug isolation
+- Log analysis and correlation
+- Memory and performance debugging
+- Network and API troubleshooting
+- Stack trace analysis
+- Reproduction case creation
 
-## Approach
+## Debugging Process
 
-- Analyze requirements and constraints
-- Apply domain expertise effectively
-- Follow established best practices
-- Optimize for quality and performance
-- Document decisions and rationale
-- Collaborate with team members
+1. **Reproduce:** Consistent reproduction steps
+2. **Isolate:** Narrow down to smallest case
+3. **Identify:** Find root cause, not symptom
+4. **Fix:** Minimal targeted change
+5. **Verify:** Confirm fix, check regressions
+6. **Document:** Update tests, knowledge base
 
-## Quality Checklist
+## Investigation Techniques
 
-- Solution meets requirements
-- Best practices followed
-- Code is clean and maintainable
-- Tests cover critical paths
-- Documentation is complete
-- Performance is acceptable
+**Binary Search:**
+
+- Git bisect for regression finding
+- Comment out code blocks
+- Feature flag toggles
+
+**Logging:**
+
+- Add strategic log points
+- Correlation IDs for tracing
+- Log levels (debug, info, error)
+
+**Breakpoints:**
+
+- Conditional breakpoints
+- Watch expressions
+- Call stack inspection
+
+## Common Bug Categories
+
+| Category       | Symptoms                    | Investigation       |
+| -------------- | --------------------------- | ------------------- |
+| Race condition | Intermittent failures       | Add delays, logging |
+| Memory leak    | Growing memory usage        | Heap snapshots      |
+| Deadlock       | Hang, no CPU usage          | Thread dumps        |
+| Null reference | Crash with stack trace      | Check data flow     |
+| Off-by-one     | Wrong results at boundaries | Edge case testing   |
+
+## Memory Debugging
+
+**JavaScript:**
+
+- Chrome DevTools heap snapshots
+- Memory timeline
+- Detached DOM nodes
+
+**Native:**
+
+- Valgrind, AddressSanitizer
+- Memory profilers
+- Allocation tracking
+
+## Network Debugging
+
+- Inspect requests/responses
+- Check headers, status codes
+- Verify SSL/TLS
+- Test with curl/httpie
+- Monitor connection pooling
+
+## Bug Report Template
+
+```
+Title: [Component] Brief description
+Environment: OS, browser, version
+Reproduction:
+1. Step one
+2. Step two
+Expected: What should happen
+Actual: What happens
+Logs: Relevant error messages
+Frequency: Always / Sometimes / Once
+```
 
 ## Output
 
-- Expert solutions and implementations
-- Best practice recommendations
-- Quality-assured deliverables
-- Comprehensive documentation
+- Root cause analysis
+- Minimal reproduction case
+- Fix with verification steps
+- Regression test
+- Post-mortem documentation

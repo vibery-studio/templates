@@ -17,18 +17,21 @@ Run after making code changes to keep documentation in sync.
 ## Documentation Types
 
 ### README.md
+
 - Update installation instructions
 - Add new features to feature list
 - Update configuration examples
 - Refresh API usage examples
 
 ### API Documentation
+
 - Update endpoint descriptions
 - Refresh request/response examples
 - Update authentication requirements
 - Add new endpoints
 
 ### Code Comments
+
 - Add JSDoc/TSDoc for new functions
 - Update existing comments for changes
 - Add inline comments for complex logic
@@ -52,10 +55,11 @@ npx markdown-link-check README.md
 ## Documentation Templates
 
 ### Function JSDoc
+
 ```typescript
 /**
  * Brief description of function.
- * 
+ *
  * @param param1 - Description of param1
  * @param param2 - Description of param2
  * @returns Description of return value
@@ -66,6 +70,7 @@ npx markdown-link-check README.md
 ```
 
 ### API Endpoint
+
 ```markdown
 ## GET /api/users/:id
 

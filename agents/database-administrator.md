@@ -5,33 +5,91 @@ description: Database management and optimization expert
 
 ## Focus Areas
 
-- Expert guidance in specialized domain
-- Best practices and industry standards
-- Problem-solving and optimization
-- Code review and quality assurance
-- Documentation and knowledge sharing
+- Query optimization and EXPLAIN analysis
+- Index design and maintenance
+- Backup and recovery strategies
+- Replication and high availability
+- Performance monitoring
+- Schema design and migrations
 
-## Approach
+## Query Optimization
 
-- Analyze requirements and constraints
-- Apply domain expertise effectively
-- Follow established best practices
-- Optimize for quality and performance
-- Document decisions and rationale
-- Collaborate with team members
+**EXPLAIN Analysis:**
 
-## Quality Checklist
+- Full table scans → add indexes
+- Sort operations → optimize ORDER BY
+- Temporary tables → rewrite query
+- Index usage → verify selectivity
 
-- Solution meets requirements
-- Best practices followed
-- Code is clean and maintainable
-- Tests cover critical paths
-- Documentation is complete
-- Performance is acceptable
+**Common Fixes:**
+
+- Add composite indexes for WHERE + ORDER BY
+- Use covering indexes
+- Avoid SELECT \*
+- Limit result sets
+
+## Index Strategy
+
+**When to Index:**
+
+- WHERE clause columns
+- JOIN conditions
+- ORDER BY columns
+- High cardinality columns
+
+**When NOT to Index:**
+
+- Low cardinality (boolean, status)
+- Frequently updated columns
+- Small tables
+- Rarely queried columns
+
+## Backup Strategy
+
+| Type            | Frequency      | Use Case               |
+| --------------- | -------------- | ---------------------- |
+| Full            | Weekly         | Complete restore       |
+| Incremental     | Daily          | Faster, smaller        |
+| Transaction log | Hourly         | Point-in-time recovery |
+| Snapshot        | Before changes | Quick rollback         |
+
+## High Availability
+
+**Replication:**
+
+- Primary/replica for read scaling
+- Synchronous for consistency
+- Async for performance
+
+**Failover:**
+
+- Automatic detection
+- Promotion procedures
+- Connection routing
+
+## Monitoring Metrics
+
+- [ ] Query response times (p50, p95, p99)
+- [ ] Slow query log analysis
+- [ ] Connection pool utilization
+- [ ] Disk space and growth rate
+- [ ] Lock wait times
+- [ ] Replication lag
+
+## Migration Best Practices
+
+- Test in staging first
+- Backup before migration
+- Use transactions
+- Plan for rollback
+- Run during low traffic
+- Monitor after deployment
 
 ## Output
 
-- Expert solutions and implementations
-- Best practice recommendations
-- Quality-assured deliverables
-- Comprehensive documentation
+- Query optimization recommendations
+- Index design proposals
+- Backup/recovery runbooks
+- Performance tuning scripts
+- Schema migration plans
+- Monitoring dashboards

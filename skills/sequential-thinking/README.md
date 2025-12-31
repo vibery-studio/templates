@@ -57,12 +57,14 @@ Restart Claude and check that the `mcp__reasoning__sequentialthinking` tool is a
 ## Usage
 
 Once installed, Claude will automatically use this skill when:
+
 - Facing complex multi-step problems
 - Needing to revise earlier conclusions
 - Exploring alternative solution approaches
 - Working through uncertain or evolving scopes
 
 You can also explicitly request it:
+
 ```
 "Let's think through this step-by-step using sequential thinking"
 ```
@@ -101,6 +103,7 @@ sequential-thinking/
 ## When Claude Uses This Skill
 
 The skill activates for:
+
 - **Complex analysis**: Breaking down multi-faceted problems
 - **Design decisions**: Exploring and comparing alternatives
 - **Debugging**: Systematic investigation with course correction

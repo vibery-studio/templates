@@ -22,28 +22,31 @@ Run this command to update the changelog before a release.
 ## [1.2.0] - 2025-01-15
 
 ### Added
+
 - New user authentication flow (#123)
 - Dark mode support (#145)
 
 ### Fixed
+
 - Memory leak in dashboard component (#156)
 - API timeout handling (#162)
 
 ### Changed
+
 - Upgraded dependencies to latest versions
 ```
 
 ## Commit Type Mapping
 
-| Prefix | Section |
-|--------|---------|
-| feat | Added |
-| fix | Fixed |
-| docs | Documentation |
-| refactor | Changed |
-| perf | Performance |
-| test | Tests |
-| chore | Maintenance |
+| Prefix   | Section          |
+| -------- | ---------------- |
+| feat     | Added            |
+| fix      | Fixed            |
+| docs     | Documentation    |
+| refactor | Changed          |
+| perf     | Performance      |
+| test     | Tests            |
+| chore    | Maintenance      |
 | BREAKING | Breaking Changes |
 
 ## Instructions

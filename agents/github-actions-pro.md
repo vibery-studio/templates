@@ -1,6 +1,6 @@
 ---
 name: github-actions-pro
-description: Expert in GitHub Actions for automating workflows and CI/CD processes. 
+description: Expert in GitHub Actions for automating workflows and CI/CD processes.
 model: claude-sonnet-4-20250514
 ---
 

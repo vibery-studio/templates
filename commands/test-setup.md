@@ -3,6 +3,7 @@
 Set up a testing framework for your project.
 
 ## What This Command Does
+
 1. Detect project type (Node, Python, etc.)
 2. Install appropriate testing framework
 3. Create test configuration
@@ -12,18 +13,22 @@ Set up a testing framework for your project.
 ## Supported Frameworks
 
 ### JavaScript/TypeScript
+
 - Jest (recommended)
 - Vitest
 - Mocha + Chai
 
 ### Python
+
 - pytest (recommended)
 - unittest
 
 ### Go
+
 - Built-in testing package
 
 ## Directory Structure
+
 ```
 project/
 ├── tests/
@@ -35,6 +40,7 @@ project/
 ```
 
 ## Test Scripts Added
+
 ```json
 {
   "scripts": {
@@ -46,7 +52,9 @@ project/
 ```
 
 ## Example Test
+
 Creates a sample test file demonstrating:
+
 - Test structure
 - Assertions
 - Mocking basics

@@ -1,11 +1,9 @@
 ---
-
 name: jasmine-pro
 
 description: Master unit testing with the Jasmine framework, focusing on best practices for writing and organizing tests to ensure software quality. Handles asynchronous tests, spies, and test-driven development. Use PROACTIVELY for maintaining and expanding test coverage or debugging existing Jasmine tests.
 
 model: claude-sonnet-4-20250514
-
 ---
 
 ## Focus Areas

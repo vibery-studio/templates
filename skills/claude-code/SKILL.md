@@ -5,6 +5,7 @@ Claude Code is Anthropic's agentic coding tool that lives in the terminal and he
 ## When to Use This Skill
 
 Use when users need help with:
+
 - Understanding Claude Code features and capabilities
 - Installation, setup, and authentication
 - Using slash commands for development workflows
@@ -19,6 +20,7 @@ Use when users need help with:
 - Cost tracking and optimization
 
 **Activation examples:**
+
 - "How do I use Claude Code?"
 - "What slash commands are available?"
 - "How to set up MCP servers?"
@@ -45,17 +47,20 @@ Use when users need help with:
 Load these references when needed for detailed guidance:
 
 ### Getting Started
+
 - **Installation & Setup**: `references/getting-started.md`
   - Prerequisites, installation methods, authentication, first run
 
 ### Development Workflows
+
 - **Slash Commands**: `references/slash-commands.md`
-  - Complete command catalog: /cook, /plan, /debug, /test, /fix:*, /docs:*, /git:*, /design:*, /content:*
+  - Complete command catalog: /cook, /plan, /debug, /test, /fix:_, /docs:_, /git:_, /design:_, /content:\*
 
 - **Agent Skills**: `references/agent-skills.md`
   - Creating skills, skill.json format, best practices, API usage
 
 ### Integration & Extension
+
 - **MCP Integration**: `references/mcp-integration.md`
   - Configuration, common servers, remote servers
 
@@ -63,10 +68,12 @@ Load these references when needed for detailed guidance:
   - Hook types, configuration, environment variables, plugin structure, installation
 
 ### Configuration & Settings
+
 - **Configuration**: `references/configuration.md`
   - Settings hierarchy, key settings, model configuration, output styles
 
 ### Enterprise & Production
+
 - **Enterprise Features**: `references/enterprise-features.md`
   - IAM, SSO, RBAC, sandboxing, audit logging, deployment options, monitoring
 
@@ -77,6 +84,7 @@ Load these references when needed for detailed guidance:
   - GitHub Actions, GitLab CI/CD workflow examples
 
 ### Advanced Usage
+
 - **Advanced Features**: `references/advanced-features.md`
   - Extended thinking, prompt caching, checkpointing, memory management
 
@@ -92,6 +100,7 @@ Load these references when needed for detailed guidance:
 ## Common Workflows
 
 ### Feature Implementation
+
 ```bash
 /cook implement user authentication with JWT
 # Or plan first
@@ -99,6 +108,7 @@ Load these references when needed for detailed guidance:
 ```
 
 ### Bug Fixing
+
 ```bash
 /fix:fast the login button is not working
 /debug the API returns 500 errors intermittently
@@ -106,6 +116,7 @@ Load these references when needed for detailed guidance:
 ```
 
 ### Code Review & Testing
+
 ```bash
 claude "review my latest commit"
 /test
@@ -113,6 +124,7 @@ claude "review my latest commit"
 ```
 
 ### Documentation
+
 ```bash
 /docs:init      # Create initial documentation
 /docs:update    # Update existing docs
@@ -120,6 +132,7 @@ claude "review my latest commit"
 ```
 
 ### Git Operations
+
 ```bash
 /git:cm                    # Stage and commit
 /git:cp                    # Stage, commit, and push
@@ -127,6 +140,7 @@ claude "review my latest commit"
 ```
 
 ### Design & Content
+
 ```bash
 /design:fast create landing page for SaaS product
 /content:good write product description for new feature
@@ -143,6 +157,7 @@ When responding to Claude Code questions:
 5. **Reference documentation links** from llms.txt when appropriate
 
 **Loading references:**
+
 - Read reference files only when needed for the specific question
 - Multiple references can be loaded for complex queries
 - Use grep patterns if searching within references
@@ -174,6 +189,7 @@ When responding to Claude Code questions:
 **For best practices:** Load `references/best-practices.md`
 
 **Documentation links:**
+
 - Main docs: https://docs.claude.com/claude-code
 - GitHub: https://github.com/anthropics/claude-code
 - Support: support.claude.com

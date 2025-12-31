@@ -37,18 +37,22 @@ Hooks are configured in `.claude/hooks.json`:
 Available in hook scripts:
 
 **All hooks:**
+
 - `$TOOL_NAME`: Name of the tool being called
 - `$TOOL_ARGS`: JSON string of tool arguments
 
 **Post-tool only:**
+
 - `$TOOL_RESULT`: Tool execution result
 
 **User-prompt-submit only:**
+
 - `$USER_PROMPT`: User's prompt text
 
 ### Hook Examples
 
 #### Pre-tool: Security Validation
+
 ```bash
 #!/bin/bash
 # .claude/scripts/validate-bash.sh
@@ -63,6 +67,7 @@ echo "✓ Command validated"
 ```
 
 **Configuration:**
+
 ```json
 {
   "hooks": {
@@ -74,6 +79,7 @@ echo "✓ Command validated"
 ```
 
 #### Post-tool: Auto-format
+
 ```bash
 #!/bin/bash
 # .claude/scripts/format-code.sh
@@ -96,6 +102,7 @@ esac
 ```
 
 **Configuration:**
+
 ```json
 {
   "hooks": {
@@ -108,6 +115,7 @@ esac
 ```
 
 #### User-prompt-submit: Cost Tracking
+
 ```bash
 #!/bin/bash
 # .claude/scripts/track-usage.sh
@@ -121,6 +129,7 @@ echo "Estimated tokens: $TOKEN_COUNT"
 ```
 
 **Configuration:**
+
 ```json
 {
   "hooks": {
@@ -140,6 +149,7 @@ echo "Estimated tokens: $TOKEN_COUNT"
 ### Hook Errors
 
 When a hook fails:
+
 - Pre-tool hook failure blocks tool execution
 - Post-tool hook failure is logged but doesn't block
 - User can configure strict mode to block on all failures
@@ -191,24 +201,28 @@ my-plugin/
 ### Installing Plugins
 
 #### From GitHub
+
 ```bash
 claude plugin install gh:username/repo
 claude plugin install gh:username/repo@v1.0.0
 ```
 
 #### From npm
+
 ```bash
 claude plugin install npm:package-name
 claude plugin install npm:@scope/package-name
 ```
 
 #### From Local Path
+
 ```bash
 claude plugin install ./path/to/plugin
 claude plugin install ~/plugins/my-plugin
 ```
 
 #### From URL
+
 ```bash
 claude plugin install https://example.com/plugin.zip
 ```
@@ -216,22 +230,26 @@ claude plugin install https://example.com/plugin.zip
 ### Managing Plugins
 
 #### List Installed Plugins
+
 ```bash
 claude plugin list
 ```
 
 #### Update Plugin
+
 ```bash
 claude plugin update my-plugin
 claude plugin update --all
 ```
 
 #### Uninstall Plugin
+
 ```bash
 claude plugin uninstall my-plugin
 ```
 
 #### Enable/Disable Plugin
+
 ```bash
 claude plugin disable my-plugin
 claude plugin enable my-plugin
@@ -240,12 +258,14 @@ claude plugin enable my-plugin
 ### Creating Plugins
 
 #### Initialize Plugin
+
 ```bash
 mkdir my-plugin
 cd my-plugin
 ```
 
 #### Create plugin.json
+
 ```json
 {
   "name": "my-plugin",
@@ -258,6 +278,7 @@ cd my-plugin
 ```
 
 #### Add Components
+
 ```bash
 # Add slash command
 mkdir -p commands
@@ -278,6 +299,7 @@ EOF
 ```
 
 #### Package Plugin
+
 ```bash
 # Create archive
 tar -czf my-plugin.tar.gz .
@@ -289,6 +311,7 @@ zip -r my-plugin.zip .
 ### Publishing Plugins
 
 #### To GitHub
+
 ```bash
 git init
 git add .
@@ -298,6 +321,7 @@ git push origin main --tags
 ```
 
 #### To npm
+
 ```bash
 npm init
 npm publish
@@ -308,6 +332,7 @@ npm publish
 Organizations can create private plugin marketplaces.
 
 #### Configure Marketplace
+
 ```json
 {
   "marketplaces": [
@@ -324,6 +349,7 @@ Organizations can create private plugin marketplaces.
 ```
 
 #### Marketplace Catalog Format
+
 ```json
 {
   "plugins": [
@@ -339,6 +365,7 @@ Organizations can create private plugin marketplaces.
 ```
 
 #### Install from Marketplace
+
 ```bash
 claude plugin install company-internal:company-plugin
 ```
@@ -346,6 +373,7 @@ claude plugin install company-internal:company-plugin
 ## Example Plugin: Code Quality
 
 ### Structure
+
 ```
 code-quality-plugin/
 ├── plugin.json
@@ -363,6 +391,7 @@ code-quality-plugin/
 ```
 
 ### plugin.json
+
 ```json
 {
   "name": "code-quality",
@@ -375,6 +404,7 @@ code-quality-plugin/
 ```
 
 ### commands/lint.md
+
 ```markdown
 # Lint
 
@@ -382,6 +412,7 @@ Run linter on {{files}} and fix all issues automatically.
 ```
 
 ### hooks/hooks.json
+
 ```json
 {
   "hooks": {
@@ -395,6 +426,7 @@ Run linter on {{files}} and fix all issues automatically.
 ## Security Considerations
 
 ### Hook Security
+
 - Validate all inputs
 - Use whitelists for allowed commands
 - Implement timeouts
@@ -402,6 +434,7 @@ Run linter on {{files}} and fix all issues automatically.
 - Review hook scripts regularly
 
 ### Plugin Security
+
 - Verify plugin sources
 - Review code before installation
 - Use signed packages when available
@@ -409,6 +442,7 @@ Run linter on {{files}} and fix all issues automatically.
 - Keep plugins updated
 
 ### Best Practices
+
 - Install plugins from trusted sources only
 - Review plugin permissions
 - Use plugin sandboxing when available
@@ -418,18 +452,21 @@ Run linter on {{files}} and fix all issues automatically.
 ## Troubleshooting
 
 ### Hooks Not Running
+
 - Check hooks.json syntax
 - Verify script permissions (`chmod +x`)
 - Check script paths
 - Review logs in `.claude/logs/`
 
 ### Plugin Installation Failures
+
 - Verify internet connectivity
 - Check plugin URL/path
 - Review error messages
 - Clear cache: `claude plugin cache clear`
 
 ### Plugin Conflicts
+
 - Check for conflicting commands
 - Review plugin load order
 - Disable conflicting plugins
