@@ -941,6 +941,17 @@
       "scripts/core.py",
       "scripts/search.py"
     ],
+    "vibery-manager": [
+      "SKILL.md",
+      "scripts/batch-create-kits.py",
+      "scripts/manage.py",
+      "scripts/operations/__init__.py",
+      "scripts/operations/kit.py",
+      "scripts/operations/publish.py",
+      "scripts/operations/sync.py",
+      "scripts/operations/template.py",
+      "scripts/validate-kits.py"
+    ],
     "web-artifacts-builder": [
       "LICENSE.txt",
       "SKILL.md",

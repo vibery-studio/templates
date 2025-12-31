@@ -1,0 +1,1614 @@
+{
+  "version": "1.0.0",
+  "source": "generated",
+  "generated": "2025-12-31T08:32:26.884Z",
+  "templates": {
+    "agents": [
+      {
+        "name": "accessibility-tester",
+        "path": "accessibility-tester.md",
+        "description": "C language expert specializing in efficient, reliable systems-level programming."
+      },
+      {
+        "name": "actix-pro",
+        "path": "actix-pro.md",
+        "description": "Expert in Actix for building high-performance web applications with Rust"
+      },
+      {
+        "name": "ai-engineer",
+        "path": "ai-engineer.md",
+        "description": "Create a Claude Code Agent that is an expert in the Gin web framework for Go, focusing on efficient web server implementation and optimization."
+      },
+      {
+        "name": "ai-ethics-advisor",
+        "path": "ai-ethics-advisor.md",
+        "description": "Responsible AI practices, bias detection, and EU AI Act compliance"
+      },
+      {
+        "name": "android-pro",
+        "path": "android-pro.md",
+        "description": "Expert in Android development, specializing in modern Android practices, optimizing performance, and ensuring robust application architecture. Use ..."
+      },
+      {
+        "name": "angular-architect",
+        "path": "angular-architect.md",
+        "description": "Write idiomatic Angular code with best practices, performance optimizations, and modern Angular features. Specializes in component architecture, Rx..."
+      },
+      {
+        "name": "angularjs-pro",
+        "path": "angularjs-pro.md",
+        "description": "Expert in AngularJS development, focusing on optimizing code structure, improving performance, and ensuring best practices."
+      },
+      {
+        "name": "ansible-pro",
+        "path": "ansible-pro.md",
+        "description": "Master Ansible automation for configuration management, application deployment, and task orchestration. Use PROACTIVELY for Ansible optimization, p..."
+      },
+      {
+        "name": "api-designer",
+        "path": "api-designer.md",
+        "description": "Expert in GraphQL API design, query optimization, and implementation. Master introspection, schemas, and GraphQL best practices. Use PROACTIVELY fo..."
+      },
+      {
+        "name": "api-documenter",
+        "path": "api-documenter.md",
+        "description": "Expert in designing, documenting, and optimizing APIs using OpenAPI specifications."
+      },
+      {
+        "name": "api-security-auditor",
+        "path": "api-security-auditor.md",
+        "description": "API endpoint security assessment for auth, injection, and rate limiting"
+      },
+      {
+        "name": "architect-reviewer",
+        "path": "architect-reviewer.md",
+        "description": "Architecture review and design patterns expert"
+      },
+      {
+        "name": "aspnet-core-pro",
+        "path": "aspnet-core-pro.md",
+        "description": "Expert in ASP.NET Core web application development, optimization, and best practices."
+      },
+      {
+        "name": "astro-pro",
+        "path": "astro-pro.md",
+        "description": "Expert in Astro with deep understanding of component architecture, content collections, and static site optimization. Specializes in leveraging Ast..."
+      },
+      {
+        "name": "auth0-pro",
+        "path": "auth0-pro.md",
+        "description": "Expert in Auth0 implementation, configuration, and best practices"
+      },
+      {
+        "name": "backend-architect",
+        "path": "backend-architect.md",
+        "description": "FastAPI development with an emphasis on best practices, optimization, and robust design patterns."
+      },
+      {
+        "name": "backend-developer",
+        "path": "backend-developer.md",
+        "description": "Specializes in Node.js development, focusing on performance optimization, asynchronous programming, and best practices for building scalable server..."
+      },
+      {
+        "name": "bash-pro",
+        "path": "bash-pro.md",
+        "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell s..."
+      },
+      {
+        "name": "blockchain-developer",
+        "path": "blockchain-developer.md",
+        "description": "Web3, smart contracts, and DeFi specialist"
+      },
+      {
+        "name": "braintree-pro",
+        "path": "braintree-pro.md",
+        "description": "Braintree specialist focusing on payment gateways, integrations, and optimization."
+      },
+      {
+        "name": "build-engineer",
+        "path": "build-engineer.md",
+        "description": "Build system and toolchain specialist"
+      },
+      {
+        "name": "bullmq-pro",
+        "path": "bullmq-pro.md",
+        "description": "Expert in BullMQ task queue library for Node.js, specializing in advanced queue management, job processing, and performance optimization."
+      },
+      {
+        "name": "bun-pro",
+        "path": "bun-pro.md",
+        "description": "Expertise in Bun, focusing on high-performance JavaScript runtime, efficient module execution, and optimized bundling."
+      },
+      {
+        "name": "business-analyst",
+        "path": "business-analyst.md",
+        "description": "Requirements gathering and analysis specialist"
+      },
+      {
+        "name": "cassandra-pro",
+        "path": "cassandra-pro.md",
+        "description": "Master in Cassandra database design, optimization, and management. Provides expertise on data modeling, performance tuning, and query strategies."
+      },
+      {
+        "name": "celery-pro",
+        "path": "celery-pro.md",
+        "description": "Expert in Celery for distributed task queue management, optimizing task execution, and ensuring robust Celery deployments."
+      },
+      {
+        "name": "chaos-engineer",
+        "path": "chaos-engineer.md",
+        "description": "System resilience and chaos testing expert"
+      },
+      {
+        "name": "circleci-pro",
+        "path": "circleci-pro.md",
+        "description": "Expert in CircleCI configuration, optimization, and troubleshooting for seamless continuous integration and delivery."
+      },
+      {
+        "name": "cli-developer",
+        "path": "cli-developer.md",
+        "description": "Command-line tool and CLI framework expert"
+      },
+      {
+        "name": "clojure-pro",
+        "path": "clojure-pro.md",
+        "description": "Master Clojure development with a focus on functional programming, immutability, concurrency, and Lisp macros. Use PROACTIVELY for Clojure optimiza..."
+      },
+      {
+        "name": "cloud-architect",
+        "path": "cloud-architect.md",
+        "description": "Expert in infrastructure-as-code using Terraform, specializing in efficient and reliable infrastructure provisioning and management."
+      },
+      {
+        "name": "cockroachdb-pro",
+        "path": "cockroachdb-pro.md",
+        "description": "Specializes in CockroachDB setup, optimization, and best practices. Handles deployment, configuration, and performance tuning. Use PROACTIVELY for ..."
+      },
+      {
+        "name": "code-reviewer",
+        "path": "code-reviewer.md",
+        "description": "Expert at reviewing code for quality, security, and best practices."
+      },
+      {
+        "name": "competitive-analyst",
+        "path": "competitive-analyst.md",
+        "description": "Competitive intelligence specialist"
+      },
+      {
+        "name": "compliance-auditor",
+        "path": "compliance-auditor.md",
+        "description": "Regulatory compliance (GDPR, HIPAA, SOC2) expert"
+      },
+      {
+        "name": "cpp-pro",
+        "path": "cpp-pro.md",
+        "description": "Expert in writing high-quality, efficient, and modern C++ code."
+      },
+      {
+        "name": "csharp-pro",
+        "path": "csharp-pro.md",
+        "description": "Expert in C# programming focusing on best practices, performance optimization, and code quality. Use PROACTIVELY for C# refactoring, optimization, ..."
+      },
+      {
+        "name": "css-pro",
+        "path": "css-pro.md",
+        "description": "Master CSS stylist with expertise in layouts, responsive design, animations, and accessibility. Handles complex layouts, and optimizes for performa..."
+      },
+      {
+        "name": "cypress-pro",
+        "path": "cypress-pro.md",
+        "description": "Expert in Cypress testing framework for end-to-end testing and automation. Handles browser-based testing, custom commands, and Cypress plugins. Use..."
+      },
+      {
+        "name": "dart-pro",
+        "path": "dart-pro.md",
+        "description": "Write idiomatic Dart code, optimize for Dart VM, and ensure cross-platform compatibility for Flutter applications."
+      },
+      {
+        "name": "data-analyst",
+        "path": "data-analyst.md",
+        "description": "Data insights and visualization specialist"
+      },
+      {
+        "name": "data-engineer",
+        "path": "data-engineer.md",
+        "description": "Expert data engineer specializing in data pipelines, ETL/ELT processes, data warehousing, and analytics infrastructure."
+      },
+      {
+        "name": "data-scientist",
+        "path": "data-scientist.md",
+        "description": "Analytics, modeling, and insights expert"
+      },
+      {
+        "name": "database-administrator",
+        "path": "database-administrator.md",
+        "description": "Database management and optimization expert"
+      },
+      {
+        "name": "database-architect",
+        "path": "database-architect.md",
+        "description": "Master MongoDB operations, schema design, performance optimization, and data modeling. Handles indexing, aggregations, and replication. Use PROACTI..."
+      },
+      {
+        "name": "database-optimizer",
+        "path": "database-optimizer.md",
+        "description": "Master Elasticsearch operations, query optimizations, and cluster management. Expert in indexing, searching, and aggregating data efficiently. Use ..."
+      },
+      {
+        "name": "debugger",
+        "path": "debugger.md",
+        "description": "Advanced debugging and troubleshooting specialist"
+      },
+      {
+        "name": "deno-pro",
+        "path": "deno-pro.md",
+        "description": "Expert in Deno for modern JavaScript and TypeScript runtime, security, performance, and tooling."
+      },
+      {
+        "name": "dependency-manager",
+        "path": "dependency-manager.md",
+        "description": "Package and dependency management specialist"
+      },
+      {
+        "name": "deployment-engineer",
+        "path": "deployment-engineer.md",
+        "description": "Deployment automation and release management"
+      },
+      {
+        "name": "devops-engineer",
+        "path": "devops-engineer.md",
+        "description": "Expert in all aspects of Docker, including containerization, image creation, and orchestration."
+      },
+      {
+        "name": "django-developer",
+        "path": "django-developer.md",
+        "description": "Write expert Django code with optimized models, views, and templates. Handles complex queries, middleware, and RESTful APIs. Use proactively for Dj..."
+      },
+      {
+        "name": "documentation-engineer",
+        "path": "documentation-engineer.md",
+        "description": "Technical documentation architect"
+      },
+      {
+        "name": "documentation-writer",
+        "path": "documentation-writer.md",
+        "description": "Expert at creating clear, comprehensive technical documentation."
+      },
+      {
+        "name": "dynamodb-pro",
+        "path": "dynamodb-pro.md",
+        "description": "Expert in DynamoDB optimization, best practices, and data modeling. Use PROACTIVELY for performance tuning, efficient querying, and DynamoDB schema..."
+      },
+      {
+        "name": "electron-pro",
+        "path": "electron-pro.md",
+        "description": "Specializes in building cross-platform desktop applications using Electron. Focuses on performance optimization, security best practices, and deliv..."
+      },
+      {
+        "name": "elixir-pro",
+        "path": "elixir-pro.md",
+        "description": "Expertise in Elixir programming, specializing in functional programming, concurrency, and fault-tolerant systems. Utilizes OTP, pattern matching, a..."
+      },
+      {
+        "name": "elk-pro",
+        "path": "elk-pro.md",
+        "description": "Expert in ELK stack management, optimization, and deployment. Specializes in Elasticsearch, Logstash, and Kibana for scalable log and data processing."
+      },
+      {
+        "name": "embedded-systems",
+        "path": "embedded-systems.md",
+        "description": "Embedded and real-time systems expert"
+      },
+      {
+        "name": "erlang-pro",
+        "path": "erlang-pro.md",
+        "description": "Expert in writing efficient, concurrent, and robust Erlang applications. Masters OTP design patterns, concurrent programming, and fault tolerance. ..."
+      },
+      {
+        "name": "expo-pro",
+        "path": "expo-pro.md",
+        "description": "Expert in developing, optimizing, and maintaining applications using the Expo framework for React Native."
+      },
+      {
+        "name": "express-pro",
+        "path": "express-pro.md",
+        "description": "Specializes in building performant and scalable web applications using Express.js."
+      },
+      {
+        "name": "fastify-pro",
+        "path": "fastify-pro.md",
+        "description": "Expert in building high-performance Node.js applications using Fastify framework. Specializes in plugins, lifecycle management, and performance opt..."
+      },
+      {
+        "name": "fiber-pro",
+        "path": "fiber-pro.md",
+        "description": "Master in fiber technology specializing in manufacturing, properties, applications, and innovations in fiber industry."
+      },
+      {
+        "name": "fintech-engineer",
+        "path": "fintech-engineer.md",
+        "description": "Financial technology and payment systems expert"
+      },
+      {
+        "name": "flask-pro",
+        "path": "flask-pro.md",
+        "description": "Expert in developing and optimizing web applications using the Flask framework. Masters routing, templating, request handling, and Flask extensions..."
+      },
+      {
+        "name": "flutter-expert",
+        "path": "flutter-expert.md",
+        "description": "Flutter 3+ cross-platform mobile expert"
+      },
+      {
+        "name": "flyway-pro",
+        "path": "flyway-pro.md",
+        "description": "Master Flyway for database migrations, versioning, and schema management. Optimizes migration scripts, ensures version compatibility, and improves ..."
+      },
+      {
+        "name": "frontend-developer",
+        "path": "frontend-developer.md",
+        "description": "UI/UX specialist for React, Vue, and Angular applications"
+      },
+      {
+        "name": "fullstack-developer",
+        "path": "fullstack-developer.md",
+        "description": "End-to-end feature development across the entire stack"
+      },
+      {
+        "name": "game-developer",
+        "path": "game-developer.md",
+        "description": "Game development and engine expert"
+      },
+      {
+        "name": "git-workflow-manager",
+        "path": "git-workflow-manager.md",
+        "description": "Git workflow and branching strategy expert"
+      },
+      {
+        "name": "github-actions-pro",
+        "path": "github-actions-pro.md",
+        "description": "Expert in GitHub Actions for automating workflows and CI/CD processes."
+      },
+      {
+        "name": "gitlab-ci-pro",
+        "path": "gitlab-ci-pro.md",
+        "description": "Expert in configuring, optimizing, and maintaining GitLab CI/CD pipelines for efficient software delivery."
+      },
+      {
+        "name": "golang-pro",
+        "path": "golang-pro.md",
+        "description": "Go concurrency and performance specialist"
+      },
+      {
+        "name": "grpc-pro",
+        "path": "grpc-pro.md",
+        "description": "Specialist in gRPC protocol, mastering streaming, services, and transport optimization for scalable, high-performance systems."
+      },
+      {
+        "name": "haskell-pro",
+        "path": "haskell-pro.md",
+        "description": "Write idiomatic Haskell code with advanced type system features, monads, and functional programming techniques. Optimizes for purity, laziness, and..."
+      },
+      {
+        "name": "html-pro",
+        "path": "html-pro.md",
+        "description": "Expert in HTML structure, semantics, and best practices for building clean, accessible, and optimized web pages."
+      },
+      {
+        "name": "incident-responder",
+        "path": "incident-responder.md",
+        "description": "System incident response and recovery expert"
+      },
+      {
+        "name": "ios-pro",
+        "path": "ios-pro.md",
+        "description": "Write high-quality iOS applications using Swift and SwiftUI, ensuring optimal performance, user-friendly interfaces, and adherence to Apple's guide..."
+      },
+      {
+        "name": "iot-engineer",
+        "path": "iot-engineer.md",
+        "description": "IoT systems and edge computing developer"
+      },
+      {
+        "name": "jasmine-pro",
+        "path": "jasmine-pro.md",
+        "description": "Master unit testing with the Jasmine framework, focusing on best practices for writing and organizing tests to ensure software quality. Handles asy..."
+      },
+      {
+        "name": "java-architect",
+        "path": "java-architect.md",
+        "description": "Expert in Ava for running tests and managing test suites efficiently."
+      },
+      {
+        "name": "javascript-pro",
+        "path": "javascript-pro.md",
+        "description": "Expert in modern JavaScript specializing in language features, optimization, and best practices. Handles asynchronous patterns, code quality, and p..."
+      },
+      {
+        "name": "jenkins-pro",
+        "path": "jenkins-pro.md",
+        "description": "Jenkins expert specializing in continuous integration, delivery, and deployment automation. Mastery of Jenkinsfile scripting, pipelines, and integr..."
+      },
+      {
+        "name": "jquery-pro",
+        "path": "jquery-pro.md",
+        "description": "jQuery specialist focusing on efficient DOM manipulation, event handling, and AJAX interactions. Expert in optimizing jQuery code and ensuring cros..."
+      },
+      {
+        "name": "jwt-pro",
+        "path": "jwt-pro.md",
+        "description": "Specializes in JSON Web Tokens (JWT) implementation, security, and optimization. Handles token creation, validation, and best practices for JWT usage."
+      },
+      {
+        "name": "kafka-pro",
+        "path": "kafka-pro.md",
+        "description": "Write highly efficient, scalable, and fault-tolerant Kafka architectures. Handles Kafka stream processing, cluster setup, and performance optimizat..."
+      },
+      {
+        "name": "keycloak-pro",
+        "path": "keycloak-pro.md",
+        "description": "Keycloak specialist for identity and access management, realm configuration, and user federation."
+      },
+      {
+        "name": "knex-pro",
+        "path": "knex-pro.md",
+        "description": "Expertise in Knex.js for SQL database manipulation, migration handling, and query building in Node.js environments."
+      },
+      {
+        "name": "kotlin-specialist",
+        "path": "kotlin-specialist.md",
+        "description": "Expert in Kotlin programming language, focusing on idiomatic Kotlin code, coroutines, extension functions, and memory management."
+      },
+      {
+        "name": "kubernetes-specialist",
+        "path": "kubernetes-specialist.md",
+        "description": "Container orchestration and K8s master"
+      },
+      {
+        "name": "laravel-specialist",
+        "path": "laravel-specialist.md",
+        "description": "Expert in Laravel framework, mastering modern Laravel features, Eloquent ORM, and comprehensive testing strategies. Use PROACTIVELY for Laravel opt..."
+      },
+      {
+        "name": "legacy-modernizer",
+        "path": "legacy-modernizer.md",
+        "description": "Legacy code modernization specialist"
+      },
+      {
+        "name": "liquibase-pro",
+        "path": "liquibase-pro.md",
+        "description": "Expert in Liquibase for database schema management, migrations, and version control. Use proactively for managing and automating database changes."
+      },
+      {
+        "name": "llm-architect",
+        "path": "llm-architect.md",
+        "description": "Large language model architecture expert"
+      },
+      {
+        "name": "loki-pro",
+        "path": "loki-pro.md",
+        "description": "Master in building, managing, and optimizing Loki for efficient log aggregation and querying."
+      },
+      {
+        "name": "mariadb-pro",
+        "path": "mariadb-pro.md",
+        "description": "Expert in MariaDB database management, optimization, and best practices."
+      },
+      {
+        "name": "mcp-developer",
+        "path": "mcp-developer.md",
+        "description": "Expert in developing Model Context Protocol (MCP) servers and integrations for Claude and other AI assistants."
+      },
+      {
+        "name": "ml-engineer",
+        "path": "ml-engineer.md",
+        "description": "Expert machine learning engineer specializing in model development, training pipelines, and production deployment."
+      },
+      {
+        "name": "mlops-engineer",
+        "path": "mlops-engineer.md",
+        "description": "MLOps and model deployment specialist"
+      },
+      {
+        "name": "mobile-developer",
+        "path": "mobile-developer.md",
+        "description": "Specialist in Flutter development, focusing on building high-quality, performant, and maintainable cross-platform applications."
+      },
+      {
+        "name": "mocha-pro",
+        "path": "mocha-pro.md",
+        "description": "Expertise in Mocha, the JavaScript test framework running on Node.js, focusing on writing, organizing, and executing tests efficiently."
+      },
+      {
+        "name": "model-evaluator",
+        "path": "model-evaluator.md",
+        "description": "Write efficient and idiomatic Lua code, mastering the language features, patterns, and performance optimization. Use PROACTIVELY for Lua scripting,..."
+      },
+      {
+        "name": "mongoose-pro",
+        "path": "mongoose-pro.md",
+        "description": "Mongoose ODM specialist for MongoDB, proficient in schema design, query optimization, and data validation."
+      },
+      {
+        "name": "monitoring-specialist",
+        "path": "monitoring-specialist.md",
+        "description": "Expert in Grafana dashboard creation, visualization best practices, and alerting systems. Proactively used for monitoring and reporting."
+      },
+      {
+        "name": "mqtt-pro",
+        "path": "mqtt-pro.md",
+        "description": "Master of MQTT protocol, focusing on message brokering, QoS levels, and efficient IoT communication. Handles connection management, topic hierarchy..."
+      },
+      {
+        "name": "mssql-pro",
+        "path": "mssql-pro.md",
+        "description": "Expert in Microsoft SQL Server handling query optimization, database design, and advanced T-SQL features."
+      },
+      {
+        "name": "mysql-pro",
+        "path": "mysql-pro.md",
+        "description": "Expert in MySQL database management, query optimization, and schema design. Provides efficient solutions for MySQL-related tasks."
+      },
+      {
+        "name": "nats-pro",
+        "path": "nats-pro.md",
+        "description": "Specialized in NATS, handling messaging patterns, scalability, and security features accurately within NATS deployments."
+      },
+      {
+        "name": "neo4j-pro",
+        "path": "neo4j-pro.md",
+        "description": "Expert in Neo4j graph database specializing in Cypher queries, graph modeling, and optimization."
+      },
+      {
+        "name": "neon-specialist",
+        "path": "neon-specialist.md",
+        "description": "Neon serverless Postgres architecture and optimization"
+      },
+      {
+        "name": "nestjs-pro",
+        "path": "nestjs-pro.md",
+        "description": "Expert in building scalable and efficient applications using the NestJS framework. Focused on design patterns, best practices, and performance opti..."
+      },
+      {
+        "name": "network-engineer",
+        "path": "network-engineer.md",
+        "description": "Network infrastructure specialist"
+      },
+      {
+        "name": "nextjs-architecture-expert",
+        "path": "nextjs-architecture-expert.md",
+        "description": "Expert in Next.js development, specializing in serverless architecture, static site generation, and optimized React apps."
+      },
+      {
+        "name": "nextjs-developer",
+        "path": "nextjs-developer.md",
+        "description": "Next.js 14+ full-stack specialist with App Router"
+      },
+      {
+        "name": "nlp-engineer",
+        "path": "nlp-engineer.md",
+        "description": "Expert in natural language processing, specializing in text processing, language models, and NLP applications."
+      },
+      {
+        "name": "numpy-pro",
+        "path": "numpy-pro.md",
+        "description": "Expert in NumPy for scientific computing, data analysis, and numerical operations. Masters array manipulations, broadcasting, and performance optim..."
+      },
+      {
+        "name": "oauth-oidc-pro",
+        "path": "oauth-oidc-pro.md",
+        "description": "Expert in OAuth 2.0 and OpenID Connect (OIDC) for secure authentication and authorization."
+      },
+      {
+        "name": "ocaml-pro",
+        "path": "ocaml-pro.md",
+        "description": "Expert in OCaml programming, covering functional programming, type systems, and performance optimization"
+      },
+      {
+        "name": "openai-api-pro",
+        "path": "openai-api-pro.md",
+        "description": "Trained to expertly handle OpenAI API features, usage patterns, and best practices."
+      },
+      {
+        "name": "opensearch-pro",
+        "path": "opensearch-pro.md",
+        "description": "Expert in OpenSearch cluster management, query optimization, indexing strategies, and performance tuning. Use PROACTIVELY for OpenSearch configurat..."
+      },
+      {
+        "name": "opentelemetry-pro",
+        "path": "opentelemetry-pro.md",
+        "description": "Master in OpenTelemetry for observability, tracing, metrics, and logs."
+      },
+      {
+        "name": "owasp-top10-pro",
+        "path": "owasp-top10-pro.md",
+        "description": "OWASP Top 10 expert specializing in identifying and mitigating the most critical web application security risks."
+      },
+      {
+        "name": "pandas-pro",
+        "path": "pandas-pro.md",
+        "description": "Expert in data manipulation and analysis using pandas library in Python."
+      },
+      {
+        "name": "payment-integration",
+        "path": "payment-integration.md",
+        "description": "Payment gateway integration specialist"
+      },
+      {
+        "name": "penetration-tester",
+        "path": "penetration-tester.md",
+        "description": "Ethical hacking and vulnerability testing"
+      },
+      {
+        "name": "performance-engineer",
+        "path": "performance-engineer.md",
+        "description": "Performance optimization and profiling expert"
+      },
+      {
+        "name": "perl-pro",
+        "path": "perl-pro.md",
+        "description": "Master Perl scripting with regular expressions, data manipulation, CPAN modules, and advanced text processing. Use PROACTIVELY for Perl scripting, ..."
+      },
+      {
+        "name": "phoenix-pro",
+        "path": "phoenix-pro.md",
+        "description": "Expert in Phoenix framework, optimizing web applications, and ensuring best practices. Handles performance tuning, real-time features, and idiomati..."
+      },
+      {
+        "name": "php-pro",
+        "path": "php-pro.md",
+        "description": "Specialized in developing efficient, secure, and modern PHP applications adhering to best practices."
+      },
+      {
+        "name": "platform-engineer",
+        "path": "platform-engineer.md",
+        "description": "Platform architecture and developer experience expert"
+      },
+      {
+        "name": "postgres-pro",
+        "path": "postgres-pro.md",
+        "description": "Expert PostgreSQL database administrator and developer specializing in performance optimization, schema design, and advanced features."
+      },
+      {
+        "name": "prisma-pro",
+        "path": "prisma-pro.md",
+        "description": "Write efficient, type-safe, and maintainable database queries using Prisma. Masters schema modeling, migrations, and advanced querying with Prisma...."
+      },
+      {
+        "name": "product-manager",
+        "path": "product-manager.md",
+        "description": "Product strategy and roadmap expert"
+      },
+      {
+        "name": "product-strategist",
+        "path": "product-strategist.md",
+        "description": "Product vision, MVP planning, and go-to-market strategy"
+      },
+      {
+        "name": "project-manager",
+        "path": "project-manager.md",
+        "description": "Project management and delivery specialist"
+      },
+      {
+        "name": "prompt-engineer",
+        "path": "prompt-engineer.md",
+        "description": "Expert at crafting, optimizing, and testing prompts for AI models."
+      },
+      {
+        "name": "pulumi-pro",
+        "path": "pulumi-pro.md",
+        "description": "Expert in Pulumi infrastructure as code for cloud resources"
+      },
+      {
+        "name": "puppeteer-pro",
+        "path": "puppeteer-pro.md",
+        "description": "Expert in automating browser interactions using Puppeteer. Handles headless browsing, web scraping, and automated testing with Puppeteer. Use PROAC..."
+      },
+      {
+        "name": "python-pro",
+        "path": "python-pro.md",
+        "description": "Master advanced Python features, optimize performance, and ensure code quality. Expert in clean, idiomatic Python and comprehensive testing."
+      },
+      {
+        "name": "pytorch-pro",
+        "path": "pytorch-pro.md",
+        "description": "Expert in PyTorch for building and optimizing deep learning models."
+      },
+      {
+        "name": "qa-expert",
+        "path": "qa-expert.md",
+        "description": "Test automation and quality assurance specialist"
+      },
+      {
+        "name": "rabbitmq-pro",
+        "path": "rabbitmq-pro.md",
+        "description": "Expert in RabbitMQ messaging, configuration, and optimization."
+      },
+      {
+        "name": "rails-expert",
+        "path": "rails-expert.md",
+        "description": "Master Ruby on Rails for building scalable, maintainable, and performant web applications. Use proactively for Rails optimization, refactoring, or ..."
+      },
+      {
+        "name": "react-performance-optimizer",
+        "path": "react-performance-optimizer.md",
+        "description": "React development expert with deep understanding of component architecture, hooks, state management, and performance optimization. Use PROACTIVELY ..."
+      },
+      {
+        "name": "react-specialist",
+        "path": "react-specialist.md",
+        "description": "React 18+ modern patterns and hooks expert"
+      },
+      {
+        "name": "refactoring-specialist",
+        "path": "refactoring-specialist.md",
+        "description": "Code refactoring and modernization expert"
+      },
+      {
+        "name": "remix-pro",
+        "path": "remix-pro.md",
+        "description": "Expert in building performant, scalable web applications using the Remix framework, with deep understanding of loaders, actions, and dynamic routing."
+      },
+      {
+        "name": "research-analyst",
+        "path": "research-analyst.md",
+        "description": "Comprehensive research and analysis expert"
+      },
+      {
+        "name": "rest-pro",
+        "path": "rest-pro.md",
+        "description": "Master in designing and implementing RESTful APIs with focus on best practices, HTTP methods, status codes, and resource modeling."
+      },
+      {
+        "name": "rollup-pro",
+        "path": "rollup-pro.md",
+        "description": "Expert in Rollup.js for bundling JavaScript projects with optimal performance and configuration."
+      },
+      {
+        "name": "ruby-pro",
+        "path": "ruby-pro.md",
+        "description": "Expert in Ruby programming language, focusing on idiomatic Ruby, performance optimization, and best practices."
+      },
+      {
+        "name": "rust-engineer",
+        "path": "rust-engineer.md",
+        "description": "Expert in writing idiomatic Rust code with focus on safety, concurrency, and performance. Masters ownership, borrowing concepts, and Rust's type sy..."
+      },
+      {
+        "name": "scala-pro",
+        "path": "scala-pro.md",
+        "description": "Scala expert specializing in functional programming, type safety, and performance optimization."
+      },
+      {
+        "name": "scikit-learn-pro",
+        "path": "scikit-learn-pro.md",
+        "description": "Master scikit-learn for machine learning, focusing on model selection, feature engineering, and hyperparameter tuning. Use this for machine learnin..."
+      },
+      {
+        "name": "scrum-master",
+        "path": "scrum-master.md",
+        "description": "Agile methodology and team facilitation expert"
+      },
+      {
+        "name": "security-auditor",
+        "path": "security-auditor.md",
+        "description": "Security vulnerability assessment expert"
+      },
+      {
+        "name": "security-engineer",
+        "path": "security-engineer.md",
+        "description": "Infrastructure security specialist"
+      },
+      {
+        "name": "selenium-pro",
+        "path": "selenium-pro.md",
+        "description": "Expert in automated browser testing using Selenium. Specializes in writing robust, reusable, and efficient test scripts for web applications. Ensur..."
+      },
+      {
+        "name": "seo-specialist",
+        "path": "seo-specialist.md",
+        "description": "Search engine optimization expert"
+      },
+      {
+        "name": "sequelize-pro",
+        "path": "sequelize-pro.md",
+        "description": "Expert in Sequelize ORM, proficient in database modeling, querying, associations, and migrations. Optimizes Sequelize usage for performance and dat..."
+      },
+      {
+        "name": "sidekiq-pro",
+        "path": "sidekiq-pro.md",
+        "description": "Specialist in optimizing and managing Sidekiq for efficient job processing and background task management."
+      },
+      {
+        "name": "sns-pro",
+        "path": "sns-pro.md",
+        "description": "Master of Amazon Simple Notification Service (SNS) for message management and notification solutions. Expertise includes topics, subscriptions, pol..."
+      },
+      {
+        "name": "solidjs-pro",
+        "path": "solidjs-pro.md",
+        "description": "SolidJS expert specializing in creating efficient and reactive UI components using SolidJS."
+      },
+      {
+        "name": "spring-boot-engineer",
+        "path": "spring-boot-engineer.md",
+        "description": "Expert in developing, optimizing, and maintaining Spring Boot applications with best practices and modern techniques for enterprise-grade applicati..."
+      },
+      {
+        "name": "sqlite-pro",
+        "path": "sqlite-pro.md",
+        "description": "SQLite database optimization, query writing, indexing, and best practices specialist. Proactively analyzes and optimizes SQLite databases for perfo..."
+      },
+      {
+        "name": "sqs-pro",
+        "path": "sqs-pro.md",
+        "description": "name: sqs-expert"
+      },
+      {
+        "name": "sre-engineer",
+        "path": "sre-engineer.md",
+        "description": "Site reliability and observability expert"
+      },
+      {
+        "name": "stripe-pro",
+        "path": "stripe-pro.md",
+        "description": "This agent specializes in managing and optimizing Stripe integrations, handling payments, managing subscriptions, and utilizing Stripe APIs."
+      },
+      {
+        "name": "svelte-pro",
+        "path": "svelte-pro.md",
+        "description": "Master Svelte.js development with a focus on building performant, maintainable, and idiomatic Svelte applications. Specializes in reactive programm..."
+      },
+      {
+        "name": "swift-expert",
+        "path": "swift-expert.md",
+        "description": "Write efficient, idiomatic Swift code with a focus on safety, performance, and modern features. Handles Swift UI, concurrency, and protocol-oriente..."
+      },
+      {
+        "name": "swiftui-pro",
+        "path": "swiftui-pro.md",
+        "description": "Expert in SwiftUI development, focusing on building dynamic, responsive, and maintainable applications for Apple platforms. Handles view compositio..."
+      },
+      {
+        "name": "tailwind-pro",
+        "path": "tailwind-pro.md",
+        "description": "Expert in Tailwind CSS for efficient and responsive styling of web projects, utilizing utility-first approaches and responsive design principles."
+      },
+      {
+        "name": "tauri-pro",
+        "path": "tauri-pro.md",
+        "description": "Expert in Tauri for building cross-platform desktop applications leveraging web technologies."
+      },
+      {
+        "name": "technical-writer",
+        "path": "technical-writer.md",
+        "description": "Technical documentation specialist"
+      },
+      {
+        "name": "tensorflow-pro",
+        "path": "tensorflow-pro.md",
+        "description": "Expert in TensorFlow, specializing in developing, optimizing, and deploying machine learning models using TensorFlow framework."
+      },
+      {
+        "name": "terraform-engineer",
+        "path": "terraform-engineer.md",
+        "description": "Infrastructure as Code expert"
+      },
+      {
+        "name": "test-automator",
+        "path": "test-automator.md",
+        "description": "Expert in test automation frameworks, CI/CD integration, and comprehensive testing strategies."
+      },
+      {
+        "name": "test-engineer",
+        "path": "test-engineer.md",
+        "description": "Expert in testing JavaScript applications using Jest, ensuring comprehensive test coverage and efficient test practices."
+      },
+      {
+        "name": "testcafe-pro",
+        "path": "testcafe-pro.md",
+        "description": "Expert in writing and optimizing TestCafe tests for reliable and maintainable UI testing."
+      },
+      {
+        "name": "trpc-pro",
+        "path": "trpc-pro.md",
+        "description": "Expert in building reliable, efficient, and type-safe backend services using tRPC."
+      },
+      {
+        "name": "typeorm-pro",
+        "path": "typeorm-pro.md",
+        "description": "Expertise in TypeORM for defining and managing data models with efficient database interactions in Node.js applications"
+      },
+      {
+        "name": "typescript-pro",
+        "path": "typescript-pro.md",
+        "description": "Expert in TypeScript specializing in type safety, async patterns, and modern ES features. Use PROACTIVELY for TypeScript development, refactoring, ..."
+      },
+      {
+        "name": "ui-designer",
+        "path": "ui-designer.md",
+        "description": "Visual design and interaction specialist"
+      },
+      {
+        "name": "unused-code-cleaner",
+        "path": "unused-code-cleaner.md",
+        "description": "Dead code detection, removal, and codebase cleanup"
+      },
+      {
+        "name": "ux-researcher",
+        "path": "ux-researcher.md",
+        "description": "User research and usability testing expert"
+      },
+      {
+        "name": "vector-db-pro",
+        "path": "vector-db-pro.md",
+        "description": "Expert in Vector Databases, handling indexing, querying, and optimization of vector data."
+      },
+      {
+        "name": "vitest-pro",
+        "path": "vitest-pro.md",
+        "description": "Create organized, comprehensive, and efficient unit tests with Vitest, ensuring high code quality and stability."
+      },
+      {
+        "name": "vue-expert",
+        "path": "vue-expert.md",
+        "description": "Vue.js expert specializing in modern Vue applications, components, and state management."
+      },
+      {
+        "name": "webpack-pro",
+        "path": "webpack-pro.md",
+        "description": "Expert in Webpack configuration, optimization, and troubleshooting for efficient bundling and module loading."
+      },
+      {
+        "name": "websocket-pro",
+        "path": "websocket-pro.md",
+        "description": "Specializes in WebSocket protocol, implementation, and application. Provides expertise for real-time data exchange using WebSockets."
+      }
+    ],
+    "commands": [
+      {
+        "name": "add-authentication-system",
+        "path": "add-authentication-system.md",
+        "description": "Add auth with JWT, OAuth, or Supabase"
+      },
+      {
+        "name": "add-changelog",
+        "path": "add-changelog.md",
+        "description": "Generate or update CHANGELOG.md based on git commits using conventional commits format."
+      },
+      {
+        "name": "ci-setup",
+        "path": "ci-setup.md",
+        "description": "Initialize CI configuration for your project"
+      },
+      {
+        "name": "create-architecture-documentation",
+        "path": "create-architecture-documentation.md",
+        "description": "Create system architecture docs"
+      },
+      {
+        "name": "create-onboarding-guide",
+        "path": "create-onboarding-guide.md",
+        "description": "Generate developer onboarding documentation"
+      },
+      {
+        "name": "create-pr",
+        "path": "create-pr.md",
+        "description": "Create a GitHub pull request with auto-generated description from commits and changes."
+      },
+      {
+        "name": "dependency-audit",
+        "path": "dependency-audit.md",
+        "description": "Audit dependencies for vulnerabilities"
+      },
+      {
+        "name": "deployment-monitoring",
+        "path": "deployment-monitoring.md",
+        "description": "Set up deployment monitoring and alerts"
+      },
+      {
+        "name": "doc-api",
+        "path": "doc-api.md",
+        "description": "Generate API documentation from code annotations"
+      },
+      {
+        "name": "docker-setup",
+        "path": "docker-setup.md",
+        "description": "Create Docker configuration for containerizing your application."
+      },
+      {
+        "name": "fix-github-issue",
+        "path": "fix-github-issue.md",
+        "description": "Analyze a GitHub issue and implement the fix with proper branching and PR creation."
+      },
+      {
+        "name": "generate-api-documentation",
+        "path": "generate-api-documentation.md",
+        "description": "Generate OpenAPI/Swagger documentation"
+      },
+      {
+        "name": "generate-tests",
+        "path": "generate-tests.md",
+        "description": "Generate comprehensive unit, integration, and E2E tests"
+      },
+      {
+        "name": "git-setup",
+        "path": "git-setup.md",
+        "description": "Initialize and configure Git for a new project with best practices."
+      },
+      {
+        "name": "implement-caching-strategy",
+        "path": "implement-caching-strategy.md",
+        "description": "Add intelligent caching layer"
+      },
+      {
+        "name": "migrate-to-typescript",
+        "path": "migrate-to-typescript.md",
+        "description": "Convert JavaScript to TypeScript"
+      },
+      {
+        "name": "nextjs-performance-audit",
+        "path": "nextjs-performance-audit.md",
+        "description": "Next.js specific performance analysis for SSR, SSG, and bundle optimization"
+      },
+      {
+        "name": "optimize-api-performance",
+        "path": "optimize-api-performance.md",
+        "description": "API latency analysis and optimization recommendations"
+      },
+      {
+        "name": "optimize-build",
+        "path": "optimize-build.md",
+        "description": "Optimize build process with caching and parallel execution"
+      },
+      {
+        "name": "optimize-bundle-size",
+        "path": "optimize-bundle-size.md",
+        "description": "Analyze and reduce JavaScript bundle size"
+      },
+      {
+        "name": "optimize-database-performance",
+        "path": "optimize-database-performance.md",
+        "description": "Optimize slow queries and indexes"
+      },
+      {
+        "name": "optimize-memory-usage",
+        "path": "optimize-memory-usage.md",
+        "description": "Detect and fix memory leaks"
+      },
+      {
+        "name": "penetration-test",
+        "path": "penetration-test.md",
+        "description": "Run penetration testing simulation on application"
+      },
+      {
+        "name": "performance-audit",
+        "path": "performance-audit.md",
+        "description": "Analyze performance and Core Web Vitals"
+      },
+      {
+        "name": "pr-review",
+        "path": "pr-review.md",
+        "description": "Perform comprehensive code review on a pull request with security, performance, and best practices checks."
+      },
+      {
+        "name": "prepare-release",
+        "path": "prepare-release.md",
+        "description": "Prepare release with changelog and version bump"
+      },
+      {
+        "name": "refactor-code",
+        "path": "refactor-code.md",
+        "description": "Intelligently refactor code for maintainability"
+      },
+      {
+        "name": "secrets-scanner",
+        "path": "secrets-scanner.md",
+        "description": "Scan codebase for exposed secrets and credentials"
+      },
+      {
+        "name": "security-audit",
+        "path": "security-audit.md",
+        "description": "Run OWASP Top 10 security audit on codebase"
+      },
+      {
+        "name": "setup-ci-cd-pipeline",
+        "path": "setup-ci-cd-pipeline.md",
+        "description": "Create CI/CD pipeline configuration"
+      },
+      {
+        "name": "setup-comprehensive-testing",
+        "path": "setup-comprehensive-testing.md",
+        "description": "Set up full testing infrastructure"
+      },
+      {
+        "name": "test-automation-orchestrator",
+        "path": "test-automation-orchestrator.md",
+        "description": "Orchestrate comprehensive test suites across unit, integration, and E2E"
+      },
+      {
+        "name": "test-coverage",
+        "path": "test-coverage.md",
+        "description": "Analyze and improve test coverage across the codebase with detailed reporting."
+      },
+      {
+        "name": "test-setup",
+        "path": "test-setup.md",
+        "description": "Set up a testing framework for your project."
+      },
+      {
+        "name": "update-docs",
+        "path": "update-docs.md",
+        "description": "Automatically update documentation based on code changes, including README, API docs, and inline comments."
+      }
+    ],
+    "mcps": [
+      {
+        "name": "astro-docs",
+        "path": "astro-docs.json",
+        "description": "MCP server: astro-docs"
+      },
+      {
+        "name": "aws",
+        "path": "aws.json",
+        "description": "MCP server: aws"
+      },
+      {
+        "name": "brave-search",
+        "path": "brave-search.json",
+        "description": "MCP server: brave-search"
+      },
+      {
+        "name": "cloudflare",
+        "path": "cloudflare.json",
+        "description": "MCP server: cloudflare"
+      },
+      {
+        "name": "docker",
+        "path": "docker.json",
+        "description": "MCP server: docker"
+      },
+      {
+        "name": "fetch",
+        "path": "fetch.json",
+        "description": "MCP server: fetch"
+      },
+      {
+        "name": "filesystem",
+        "path": "filesystem.json",
+        "description": "MCP server: filesystem"
+      },
+      {
+        "name": "git",
+        "path": "git.json",
+        "description": "MCP server: git"
+      },
+      {
+        "name": "github",
+        "path": "github.json",
+        "description": "MCP server: github"
+      },
+      {
+        "name": "huggingface",
+        "path": "huggingface.json",
+        "description": "MCP server: huggingface"
+      },
+      {
+        "name": "linear",
+        "path": "linear.json",
+        "description": "MCP server: linear"
+      },
+      {
+        "name": "memory",
+        "path": "memory.json",
+        "description": "MCP server: memory"
+      },
+      {
+        "name": "mongodb",
+        "path": "mongodb.json",
+        "description": "MCP server: mongodb"
+      },
+      {
+        "name": "neon",
+        "path": "neon.json",
+        "description": "MCP server: neon"
+      },
+      {
+        "name": "notion",
+        "path": "notion.json",
+        "description": "MCP server: notion"
+      },
+      {
+        "name": "postgresql",
+        "path": "postgresql.json",
+        "description": "MCP server: postgres"
+      },
+      {
+        "name": "puppeteer",
+        "path": "puppeteer.json",
+        "description": "MCP server: puppeteer"
+      },
+      {
+        "name": "redis",
+        "path": "redis.json",
+        "description": "MCP server: redis"
+      },
+      {
+        "name": "sentry",
+        "path": "sentry.json",
+        "description": "MCP server: sentry"
+      },
+      {
+        "name": "sequential-thinking",
+        "path": "sequential-thinking.json",
+        "description": "MCP server: sequential-thinking"
+      },
+      {
+        "name": "slack",
+        "path": "slack.json",
+        "description": "MCP server: slack"
+      },
+      {
+        "name": "sqlite",
+        "path": "sqlite.json",
+        "description": "MCP server: sqlite"
+      },
+      {
+        "name": "stripe",
+        "path": "stripe.json",
+        "description": "MCP server: stripe"
+      },
+      {
+        "name": "supabase",
+        "path": "supabase.json",
+        "description": "MCP server: supabase"
+      },
+      {
+        "name": "vercel",
+        "path": "vercel.json",
+        "description": "MCP server: vercel"
+      }
+    ],
+    "hooks": [
+      {
+        "name": "auto-commit",
+        "path": "auto-commit.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "auto-git-add",
+        "path": "auto-git-add.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "backup-before-edit",
+        "path": "backup-before-edit.json",
+        "description": "Create backup before editing files"
+      },
+      {
+        "name": "build-on-change",
+        "path": "build-on-change.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "conventional-commits",
+        "path": "conventional-commits.json",
+        "description": "Hook: PreToolUse trigger"
+      },
+      {
+        "name": "discord-notifications",
+        "path": "discord-notifications.json",
+        "description": "Hook: Stop trigger"
+      },
+      {
+        "name": "format-on-save",
+        "path": "format-on-save.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "lint-on-save",
+        "path": "lint-on-save.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "notify-on-complete",
+        "path": "notify-on-complete.json",
+        "description": "Hook: Stop trigger"
+      },
+      {
+        "name": "performance-monitor",
+        "path": "performance-monitor.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "security-scan",
+        "path": "security-scan.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "security-scanner",
+        "path": "security-scanner.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "slack-notifications",
+        "path": "slack-notifications.json",
+        "description": "Hook: Stop trigger"
+      },
+      {
+        "name": "smart-commit",
+        "path": "smart-commit.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "smart-formatting",
+        "path": "smart-formatting.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "telegram-notifications",
+        "path": "telegram-notifications.json",
+        "description": "Hook: Stop trigger"
+      },
+      {
+        "name": "test-on-edit",
+        "path": "test-on-edit.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "type-check",
+        "path": "type-check.json",
+        "description": "Hook: PostToolUse trigger"
+      },
+      {
+        "name": "vercel-auto-deploy",
+        "path": "vercel-auto-deploy.json",
+        "description": "Hook: PostToolUse trigger"
+      }
+    ],
+    "settings": [
+      {
+        "name": "allow-bun",
+        "path": "allow-bun.json",
+        "description": "Allow Bun runtime commands (bun, bunx) for fast JavaScript/TypeScript execution"
+      },
+      {
+        "name": "allow-docker",
+        "path": "allow-docker.json",
+        "description": "Permissions: 2 allow, 0 deny rules"
+      },
+      {
+        "name": "allow-git",
+        "path": "allow-git.json",
+        "description": "Allow common Git commands for version control operations"
+      },
+      {
+        "name": "allow-npm",
+        "path": "allow-npm.json",
+        "description": "Permissions: 6 allow, 0 deny rules"
+      },
+      {
+        "name": "allow-pnpm",
+        "path": "allow-pnpm.json",
+        "description": "Allow pnpm package manager commands for efficient dependency management"
+      },
+      {
+        "name": "allow-python",
+        "path": "allow-python.json",
+        "description": "Permissions: 3 allow, 0 deny rules"
+      },
+      {
+        "name": "deny-sensitive-files",
+        "path": "deny-sensitive-files.json",
+        "description": "Permissions: 0 allow, 4 deny rules"
+      },
+      {
+        "name": "strict-mode",
+        "path": "strict-mode.json",
+        "description": "Permissions: 0 allow, 3 deny rules"
+      }
+    ],
+    "skills": [
+      {
+        "name": "aesthetic",
+        "path": "aesthetic",
+        "description": "Create aesthetically beautiful interfaces following proven design principles. Use when building UI/UX, analyzing designs from inspiration sites, ge..."
+      },
+      {
+        "name": "ai-multimodal",
+        "path": "ai-multimodal",
+        "description": "Process and generate multimedia content using Google Gemini API. Capabilities include analyze audio files (transcription with timestamps, summariza..."
+      },
+      {
+        "name": "algorithmic-art",
+        "path": "algorithmic-art",
+        "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using c..."
+      },
+      {
+        "name": "backend-development",
+        "path": "backend-development",
+        "description": "Build robust backend systems with modern technologies (Node.js, Python, Go, Rust), frameworks (NestJS, FastAPI, Django), databases (PostgreSQL, Mon..."
+      },
+      {
+        "name": "better-auth",
+        "path": "better-auth",
+        "description": "Implement authentication and authorization with Better Auth - a framework-agnostic TypeScript authentication framework. Features include email/pass..."
+      },
+      {
+        "name": "brand-guidelines",
+        "path": "brand-guidelines",
+        "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it whe..."
+      },
+      {
+        "name": "canvas-design",
+        "path": "canvas-design",
+        "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, pi..."
+      },
+      {
+        "name": "chrome-devtools",
+        "path": "chrome-devtools",
+        "description": "Browser automation, debugging, and performance analysis using Puppeteer CLI scripts. Use for automating browsers, taking screenshots, analyzing per..."
+      },
+      {
+        "name": "claude-code",
+        "path": "claude-code",
+        "description": "Claude Code is Anthropic's agentic coding tool that lives in the terminal and helps turn ideas into code faster. It combines autonomous planning, e..."
+      },
+      {
+        "name": "code-review",
+        "path": "code-review",
+        "description": "Use when receiving code review feedback (especially if unclear or technically questionable), when completing tasks or major features requiring revi..."
+      },
+      {
+        "name": "context-engineering",
+        "path": "context-engineering",
+        "description": "Master context engineering for AI agents - token optimization, degradation patterns, compression, memory systems, multi-agent coordination, evaluat..."
+      },
+      {
+        "name": "databases",
+        "path": "databases",
+        "description": "Work with MongoDB (document database, BSON documents, aggregation pipelines, Atlas cloud) and PostgreSQL (relational database, SQL queries, psql CL..."
+      },
+      {
+        "name": "devops",
+        "path": "devops",
+        "description": "Deploy and manage cloud infrastructure on Cloudflare (Workers, R2, D1, KV, Pages, Durable Objects, Browser Rendering), Docker containers, and Googl..."
+      },
+      {
+        "name": "doc-coauthoring",
+        "path": "doc-coauthoring",
+        "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, d..."
+      },
+      {
+        "name": "docs-seeker",
+        "path": "docs-seeker",
+        "description": "\"Searching internet for technical documentation using llms.txt standard, GitHub repositories via Repomix, and parallel exploration. Use when user n..."
+      },
+      {
+        "name": "docx",
+        "path": "docx",
+        "description": "\"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. W..."
+      },
+      {
+        "name": "frontend-design",
+        "path": "frontend-design",
+        "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages..."
+      },
+      {
+        "name": "frontend-development",
+        "path": "frontend-development",
+        "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Suspense, lazy loading, useSuspenseQuery, file organiz..."
+      },
+      {
+        "name": "google-adk-python",
+        "path": "google-adk-python",
+        "description": "Build AI agents with Google's Agent Development Kit (ADK) Python - an open-source toolkit for building, evaluating, and deploying AI agents. Featur..."
+      },
+      {
+        "name": "internal-comms",
+        "path": "internal-comms",
+        "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this sk..."
+      },
+      {
+        "name": "mcp-builder",
+        "path": "mcp-builder",
+        "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tool..."
+      },
+      {
+        "name": "mcp-management",
+        "path": "mcp-management",
+        "description": "Manage Model Context Protocol (MCP) servers - discover, analyze, and execute tools/prompts/resources from configured MCP servers. Use when working ..."
+      },
+      {
+        "name": "media-processing",
+        "path": "media-processing",
+        "description": "Process multimedia files with FFmpeg (video/audio encoding, conversion, streaming, filtering, hardware acceleration) and ImageMagick (image manipul..."
+      },
+      {
+        "name": "mermaidjs-v11",
+        "path": "mermaidjs-v11",
+        "description": "Create diagrams and visualizations using Mermaid.js v11 syntax. Use when generating flowcharts, sequence diagrams, class diagrams, state diagrams, ..."
+      },
+      {
+        "name": "pdf",
+        "path": "pdf",
+        "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Cla..."
+      },
+      {
+        "name": "pptx",
+        "path": "pptx",
+        "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) ..."
+      },
+      {
+        "name": "repomix",
+        "path": "repomix",
+        "description": "Package entire code repositories into single AI-friendly files using Repomix. Capabilities include pack codebases with customizable include/exclude..."
+      },
+      {
+        "name": "sequential-thinking",
+        "path": "sequential-thinking",
+        "description": "Use when complex problems require systematic step-by-step reasoning with ability to revise thoughts, branch into alternative approaches, or dynamic..."
+      },
+      {
+        "name": "shopify",
+        "path": "shopify",
+        "description": "Build Shopify applications, extensions, and themes using GraphQL/REST APIs, Shopify CLI, Polaris UI components, and Liquid templating. Capabilities..."
+      },
+      {
+        "name": "skill-creator",
+        "path": "skill-creator",
+        "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Cla..."
+      },
+      {
+        "name": "slack-gif-creator",
+        "path": "slack-gif-creator",
+        "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when us..."
+      },
+      {
+        "name": "template-skill",
+        "path": "template-skill",
+        "description": "Replace with description of the skill and when Claude should use it."
+      },
+      {
+        "name": "theme-factory",
+        "path": "theme-factory",
+        "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes w..."
+      },
+      {
+        "name": "ui-styling",
+        "path": "ui-styling",
+        "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canv..."
+      },
+      {
+        "name": "ui-ux-pro-max",
+        "path": "ui-ux-pro-max",
+        "description": "\"UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 8 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flut..."
+      },
+      {
+        "name": "vibery-manager",
+        "path": "vibery-manager",
+        "description": "Unified management for Vibery monorepo (templates, kits, CLI, website). Use /template, /kit, /sync, /publish, /deploy commands."
+      },
+      {
+        "name": "web-artifacts-builder",
+        "path": "web-artifacts-builder",
+        "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
+      },
+      {
+        "name": "web-frameworks",
+        "path": "web-frameworks",
+        "description": "Build modern full-stack web applications with Next.js (App Router, Server Components, RSC, PPR, SSR, SSG, ISR), Turborepo (monorepo management, tas..."
+      },
+      {
+        "name": "webapp-testing",
+        "path": "webapp-testing",
+        "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior,..."
+      },
+      {
+        "name": "xlsx",
+        "path": "xlsx",
+        "description": "\"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude nee..."
+      }
+    ]
+  }
+}
