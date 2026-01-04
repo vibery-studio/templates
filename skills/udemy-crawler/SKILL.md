@@ -91,6 +91,7 @@ node evaluate.js \
 **URL:** {url}
 
 ## Course Info
+
 - **Instructor:** {instructor}
 - **Rating:** {rating} ({students})
 - **Language:** {language}
@@ -98,18 +99,23 @@ node evaluate.js \
 - **Last Updated:** {lastUpdated}
 
 ## What You'll Learn
+
 {whatYouWillLearn as bullets}
 
 ## Course Content
+
 {curriculum parsed into sections}
 
 ## Requirements
+
 {requirements as bullets}
 
 ## Description
+
 {description}
 
 ## Target Audience
+
 {targetAudience as bullets}
 ```
 

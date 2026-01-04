@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2025-12-31T08:32:26.884Z",
+  "generated": "2026-01-04T07:42:39.939Z",
   "templates": {
     "agents": [
       {
@@ -1573,6 +1573,11 @@
         "name": "theme-factory",
         "path": "theme-factory",
         "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes w..."
+      },
+      {
+        "name": "udemy-crawler",
+        "path": "udemy-crawler",
+        "description": "Extract Udemy course content to markdown. Use when user asks to scrape/crawl Udemy course pages."
       },
       {
         "name": "ui-styling",
