@@ -70,11 +70,13 @@ vibe-templates/ (local)
 ```
 
 **What `/sync` does:**
+
 1. Runs `node scripts/sync-all.js` (registry + website data)
 2. Runs `node cli/scripts/generate-templates-manifest.js` (manifest)
 3. Copies manifest to templates/
 
 **What `/publish` does:**
+
 1. `cd templates && git add . && git commit && git push`
 
 **CLI auto-fetches** from GitHub raw URLs (no npm publish needed for template updates).
@@ -109,32 +111,32 @@ description: What it does
 
 ## Script Locations
 
-| Script                                                       | Purpose                           |
-| ------------------------------------------------------------ | --------------------------------- |
-| `scripts/sync-all.js`                                        | Templates → CLI + website         |
-| `cli/scripts/generate-templates-manifest.js`                 | Generate templates-manifest.json  |
-| `.claude/skills/vibery-manager/scripts/manage.py`            | Kit management + kit sync         |
-| `.claude/skills/vibery-manager/scripts/validate-kits.py`     | Validate kit structures           |
+| Script                                                   | Purpose                          |
+| -------------------------------------------------------- | -------------------------------- |
+| `scripts/sync-all.js`                                    | Templates → CLI + website        |
+| `cli/scripts/generate-templates-manifest.js`             | Generate templates-manifest.json |
+| `.claude/skills/vibery-manager/scripts/manage.py`        | Kit management + kit sync        |
+| `.claude/skills/vibery-manager/scripts/validate-kits.py` | Validate kit structures          |
 
 ## Deployment Targets
 
-| Target      | URL/Package             | Update Method              |
-| ----------- | ----------------------- | -------------------------- |
-| **GitHub**  | vibery-studio/templates | `/publish` → git push      |
-| **CLI**     | `npx vibery`            | Auto-fetches from GitHub   |
-| **Website** | https://kits.vibery.app | Separate deploy if needed  |
+| Target      | URL/Package             | Update Method             |
+| ----------- | ----------------------- | ------------------------- |
+| **GitHub**  | vibery-studio/templates | `/publish` → git push     |
+| **CLI**     | `npx vibery`            | Auto-fetches from GitHub  |
+| **Website** | https://kits.vibery.app | Separate deploy if needed |
 
 **Note**: CLI npm package only needs update for CODE changes, not template updates.
 
 ## Generated Files
 
-| Source        | Output                            | Used By              |
-| ------------- | --------------------------------- | -------------------- |
-| `templates/*` | `templates/templates-manifest.json` | CLI (remote fetch) |
-| `templates/*` | `templates/registry.json`         | CLI (template list)  |
-| `templates/*` | `website/src/data/templates.json` | Website              |
-| `stacks/*`    | `website/src/data/kits.json`      | Website              |
-| `stacks/*`    | `cli/kits.json`                   | CLI                  |
+| Source        | Output                              | Used By             |
+| ------------- | ----------------------------------- | ------------------- |
+| `templates/*` | `templates/templates-manifest.json` | CLI (remote fetch)  |
+| `templates/*` | `templates/registry.json`           | CLI (template list) |
+| `templates/*` | `website/src/data/templates.json`   | Website             |
+| `stacks/*`    | `website/src/data/kits.json`        | Website             |
+| `stacks/*`    | `cli/kits.json`                     | CLI                 |
 
 ## Workflow Examples (Multi-Context Prompts)
 
