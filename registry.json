@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-04T07:57:20.329Z",
+  "generated": "2026-01-05T08:07:31.551Z",
   "templates": {
     "agents": [
       {
@@ -1267,6 +1267,11 @@
         "name": "vercel",
         "path": "vercel.json",
         "description": "MCP server: vercel"
+      },
+      {
+        "name": "youtube-transcript",
+        "path": "youtube-transcript.json",
+        "description": "MCP server: youtube-transcript"
       }
     ],
     "hooks": [
