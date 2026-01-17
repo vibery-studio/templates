@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-05T08:07:31.551Z",
+  "generated": "2026-01-17T03:29:51.961Z",
   "templates": {
     "agents": [
       {
@@ -1592,7 +1592,7 @@
       {
         "name": "ui-ux-pro-max",
         "path": "ui-ux-pro-max",
-        "description": "\"UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 8 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flut..."
+        "description": "Comprehensive design guide for web and mobile applications. Contains 50+ styles, 97 color palettes, 57 font pairings, 99 UX guidelines, and 25 char..."
       },
       {
         "name": "vibery-manager",
