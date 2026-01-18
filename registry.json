@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-17T03:29:51.961Z",
+  "generated": "2026-01-18T07:58:59.677Z",
   "templates": {
     "agents": [
       {
@@ -1164,6 +1164,11 @@
         "description": "MCP server: cloudflare"
       },
       {
+        "name": "ddd-template",
+        "path": "ddd-template.json",
+        "description": "MCP server: ddd-template"
+      },
+      {
         "name": "docker",
         "path": "docker.json",
         "description": "MCP server: docker"
@@ -1224,6 +1229,11 @@
         "description": "MCP server: postgres"
       },
       {
+        "name": "prd-creator",
+        "path": "prd-creator.json",
+        "description": "MCP server: prd-creator"
+      },
+      {
         "name": "puppeteer",
         "path": "puppeteer.json",
         "description": "MCP server: puppeteer"
@@ -1244,6 +1254,11 @@
         "description": "MCP server: sequential-thinking"
       },
       {
+        "name": "shopify",
+        "path": "shopify.json",
+        "description": "MCP server: shopify"
+      },
+      {
         "name": "slack",
         "path": "slack.json",
         "description": "MCP server: slack"
@@ -1262,6 +1277,16 @@
         "name": "supabase",
         "path": "supabase.json",
         "description": "MCP server: supabase"
+      },
+      {
+        "name": "swagger",
+        "path": "swagger.json",
+        "description": "MCP server: swagger"
+      },
+      {
+        "name": "todo",
+        "path": "todo.json",
+        "description": "MCP server: todo"
       },
       {
         "name": "vercel",
@@ -1592,7 +1617,7 @@
       {
         "name": "ui-ux-pro-max",
         "path": "ui-ux-pro-max",
-        "description": "Comprehensive design guide for web and mobile applications. Contains 50+ styles, 97 color palettes, 57 font pairings, 99 UX guidelines, and 25 char..."
+        "description": "\"UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flut..."
       },
       {
         "name": "vibery-manager",

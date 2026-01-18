@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "swagger": {
+      "command": "npx",
+      "args": ["-y", "git+https://github.com/Vizioz/Swagger-MCP"]
+    }
+  }
+}

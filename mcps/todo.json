@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "todo": {
+      "command": "npx",
+      "args": ["-y", "@floriscornel/todo-mcp@latest"],
+      "env": {
+        "DATABASE_URL": "${DATABASE_URL}"
+      }
+    }
+  }
+}

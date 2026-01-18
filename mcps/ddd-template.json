@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ddd-template": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "git+https://github.com/alexandresanlim/mcp-server-ddd-template"
+      ]
+    }
+  }
+}
