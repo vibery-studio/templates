@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-18T07:58:59.677Z",
+  "generated": "2026-01-18T08:24:02.459Z",
   "templates": {
     "agents": [
       {
@@ -58,6 +58,11 @@
         "name": "api-security-auditor",
         "path": "api-security-auditor.md",
         "description": "API endpoint security assessment for auth, injection, and rate limiting"
+      },
+      {
+        "name": "architect-planner",
+        "path": "architect-planner.md",
+        "description": ">"
       },
       {
         "name": "architect-reviewer",
@@ -1560,6 +1565,11 @@
         "description": "Create diagrams and visualizations using Mermaid.js v11 syntax. Use when generating flowcharts, sequence diagrams, class diagrams, state diagrams, ..."
       },
       {
+        "name": "migration-guide",
+        "path": "migration-guide",
+        "description": ">"
+      },
+      {
         "name": "pdf",
         "path": "pdf",
         "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Cla..."
@@ -1568,6 +1578,11 @@
         "name": "pptx",
         "path": "pptx",
         "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) ..."
+      },
+      {
+        "name": "project-blueprint",
+        "path": "project-blueprint",
+        "description": ">"
       },
       {
         "name": "repomix",
@@ -1593,6 +1608,11 @@
         "name": "slack-gif-creator",
         "path": "slack-gif-creator",
         "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when us..."
+      },
+      {
+        "name": "spec-writer",
+        "path": "spec-writer",
+        "description": ">"
       },
       {
         "name": "template-skill",
@@ -1638,6 +1658,11 @@
         "name": "webapp-testing",
         "path": "webapp-testing",
         "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior,..."
+      },
+      {
+        "name": "workflow-composer",
+        "path": "workflow-composer",
+        "description": ">"
       },
       {
         "name": "xlsx",
