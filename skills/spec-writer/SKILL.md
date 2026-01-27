@@ -20,6 +20,7 @@ Most AI coding failures happen because specifications are unclear. This skill ex
 ### Phase 1: Context Extraction
 
 #### Entry Check
+
 ```
 IF user provided: problem statement + target users + success criteria
     → Proceed to Phase 2
@@ -28,14 +29,16 @@ ELSE
 ```
 
 #### Information Needed
-| Item | Question | Why Required |
-|------|----------|--------------|
-| Problem | "What problem are you solving?" | Defines scope boundaries |
-| Users | "Who will use this?" | Shapes UX requirements |
-| Success | "How will you know it works?" | Creates acceptance criteria |
-| Constraints | "Any technical/business constraints?" | Prevents wasted effort |
+
+| Item        | Question                              | Why Required                |
+| ----------- | ------------------------------------- | --------------------------- |
+| Problem     | "What problem are you solving?"       | Defines scope boundaries    |
+| Users       | "Who will use this?"                  | Shapes UX requirements      |
+| Success     | "How will you know it works?"         | Creates acceptance criteria |
+| Constraints | "Any technical/business constraints?" | Prevents wasted effort      |
 
 #### Transition Criteria
+
 All four items gathered + user confirmed → Phase 2
 
 ---
@@ -43,6 +46,7 @@ All four items gathered + user confirmed → Phase 2
 ### Phase 2: Requirement Analysis
 
 #### Entry Check
+
 ```
 IF Phase 1 complete:
     → Analyze and categorize requirements
@@ -51,6 +55,7 @@ ELSE
 ```
 
 #### Categorization Framework
+
 ```
 FOR each requirement mentioned:
     Classify as:
@@ -61,11 +66,13 @@ FOR each requirement mentioned:
 ```
 
 #### Output: Requirements Table
-| ID | Requirement | Priority | Rationale |
-|----|-------------|----------|-----------|
-| R1 | [requirement] | MUST/SHOULD/COULD | [why this priority] |
+
+| ID  | Requirement   | Priority          | Rationale           |
+| --- | ------------- | ----------------- | ------------------- |
+| R1  | [requirement] | MUST/SHOULD/COULD | [why this priority] |
 
 #### Edge Case Discovery
+
 ```
 FOR each MUST requirement:
     Ask: "What happens when [edge case]?"
@@ -84,6 +91,7 @@ FOR each MUST requirement:
 ### Phase 3: User Story Generation
 
 #### Entry Check
+
 ```
 IF requirements table complete + edge cases documented:
     → Generate user stories
@@ -92,6 +100,7 @@ ELSE
 ```
 
 #### Story Format
+
 ```
 AS A [user type]
 I WANT TO [action]
@@ -110,6 +119,7 @@ TECHNICAL NOTES:
 ```
 
 #### Story Generation Rules
+
 ```
 FOR each MUST requirement:
     → Generate 1 user story
@@ -126,6 +136,7 @@ FOR each SHOULD requirement:
 ### Phase 4: Technical Specification
 
 #### Entry Check
+
 ```
 IF user stories generated:
     → Ask: "Ready for technical spec, or need to adjust stories first?"
@@ -137,30 +148,38 @@ ELSE
 ```
 
 #### Technical Spec Structure
+
 ```markdown
 ## Technical Specification: [Feature Name]
 
 ### Overview
+
 [1-2 sentences describing the feature]
 
 ### Data Models
+
 [If new data structures needed]
 
 ### API Endpoints
+
 [If applicable]
 | Method | Path | Request | Response |
 |--------|------|---------|----------|
 
 ### State Changes
+
 [What changes when this feature runs]
 
 ### Dependencies
+
 [External services, libraries, existing code]
 
 ### Security Considerations
+
 [Auth, validation, rate limits]
 
 ### Testing Strategy
+
 - Unit: [what to unit test]
 - Integration: [what to integration test]
 - E2E: [critical user flows]
@@ -171,6 +190,7 @@ ELSE
 ### Phase 5: Output Delivery
 
 #### Output Format Selection
+
 ```
 IF user's project has existing spec format:
     → Match that format
@@ -181,25 +201,32 @@ ELSE
 ```
 
 #### Default Output Structure
+
 ```markdown
 # [Feature Name] Specification
 
 ## Summary
+
 [One paragraph overview]
 
 ## Requirements
+
 [Requirements table from Phase 2]
 
 ## User Stories
+
 [Stories from Phase 3]
 
 ## Technical Specification
+
 [Spec from Phase 4]
 
 ## Out of Scope
+
 [Explicitly excluded items - prevents scope creep]
 
 ## Open Questions
+
 [Unresolved items needing decisions]
 ```
 
@@ -208,26 +235,26 @@ ELSE
 ## Self-Check (Read before every response)
 
 □ Am I gathering context or assuming?
-  → Missing info = ask, never fill in
+→ Missing info = ask, never fill in
 
 □ Am I asking one question at a time?
-  → Multiple questions overwhelm users
+→ Multiple questions overwhelm users
 
 □ Are requirements testable?
-  → Vague requirements = implementation arguments later
+→ Vague requirements = implementation arguments later
 
 □ Did I include edge cases?
-  → Happy path only = bugs in production
+→ Happy path only = bugs in production
 
 □ Is the spec implementable by Claude Code?
-  → Read it as if you'll code it: any ambiguity?
+→ Read it as if you'll code it: any ambiguity?
 
 □ Did I document what's OUT of scope?
-  → Scope creep starts with undefined boundaries
+→ Scope creep starts with undefined boundaries
 
 □ Are acceptance criteria specific?
-  → "Works correctly" is not acceptance criteria
-  → "Returns 200 with user object containing id, email" is
+→ "Works correctly" is not acceptance criteria
+→ "Returns 200 with user object containing id, email" is
 
 ---
 

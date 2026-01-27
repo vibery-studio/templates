@@ -43,6 +43,7 @@ Users manually run the same sequence of commands repeatedly. This skill captures
 ### Phase 1: Workflow Discovery
 
 #### Entry Check
+
 ```
 IF user described: repetitive process + trigger condition
     → Proceed to Phase 2
@@ -51,14 +52,16 @@ ELSE
 ```
 
 #### Discovery Questions
-| Question | Purpose |
-|----------|---------|
-| "Walk me through what you do repeatedly" | Capture full sequence |
-| "What triggers this process?" | Determines workflow type |
-| "Any variations or conditions?" | Identifies branching logic |
-| "How often do you do this?" | Prioritizes automation value |
+
+| Question                                 | Purpose                      |
+| ---------------------------------------- | ---------------------------- |
+| "Walk me through what you do repeatedly" | Capture full sequence        |
+| "What triggers this process?"            | Determines workflow type     |
+| "Any variations or conditions?"          | Identifies branching logic   |
+| "How often do you do this?"              | Prioritizes automation value |
 
 #### Workflow Trigger → Type Mapping
+
 ```
 IF trigger = "after I edit code"
     → Hook (PostToolUse)
@@ -84,6 +87,7 @@ IF trigger = "manually, but want one command"
 ### Phase 2: Workflow Analysis
 
 #### Entry Check
+
 ```
 IF workflow discovered:
     → Analyze and structure
@@ -92,6 +96,7 @@ ELSE
 ```
 
 #### Step Extraction
+
 ```
 FOR each step in user's process:
     Identify:
@@ -103,23 +108,28 @@ FOR each step in user's process:
 ```
 
 #### Workflow Structure
+
 ```markdown
 ## Workflow: [Name]
 
 ### Trigger
+
 [When this runs]
 
 ### Steps
-| # | Action | Tool | Condition |
-|---|--------|------|-----------|
-| 1 | [action] | [vibery component] | [if any] |
-| 2 | [action] | [vibery component] | [if any] |
+
+| #   | Action   | Tool               | Condition |
+| --- | -------- | ------------------ | --------- |
+| 1   | [action] | [vibery component] | [if any]  |
+| 2   | [action] | [vibery component] | [if any]  |
 
 ### Variables
+
 - [var1]: [source]
 - [var2]: [source]
 
 ### Error Handling
+
 - If [step] fails: [action]
 ```
 
@@ -128,6 +138,7 @@ FOR each step in user's process:
 ### Phase 3: Workflow Generation
 
 #### Entry Check
+
 ```
 IF workflow analyzed:
     → Generate appropriate format
@@ -136,14 +147,15 @@ ELSE
 ```
 
 #### Hook Generation
+
 ```yaml
 # hooks/[workflow-name].yaml
 name: [workflow-name]
 description: [what it does]
 
 triggers:
-  - type: PostToolUse    # or PreToolUse, Stop
-    tools: [Write, Edit]  # which tools trigger
+  - type: PostToolUse # or PreToolUse, Stop
+    tools: [Write, Edit] # which tools trigger
 
 actions:
   - name: [step-1-name]
@@ -155,12 +167,14 @@ actions:
 ```
 
 **Install command:**
+
 ```bash
 npx vibery install hook:[workflow-name]
 # Or copy to .claude/hooks/
 ```
 
 #### Custom Command Generation
+
 ```markdown
 # .claude/commands/[workflow-name].md
 
@@ -173,6 +187,7 @@ npx vibery install hook:[workflow-name]
 3. Finally, [action 3]
 
 ## Input
+
 $ARGUMENTS
 
 ## Execution
@@ -180,25 +195,29 @@ $ARGUMENTS
 [Detailed instructions for Claude to follow]
 
 ### Step 1: [Name]
+
 [Instructions]
 
 ### Step 2: [Name]
+
 [Instructions]
 
 ### Confirmation
+
 Before completing, verify:
+
 - [ ] [check 1]
 - [ ] [check 2]
 ```
 
 #### GitHub Action Generation
+
 ```yaml
 # .github/workflows/[workflow-name].yml
 name: [Workflow Name]
 
 on:
-  [trigger]:
-    [conditions]
+  [trigger]: [conditions]
 
 jobs:
   [job-name]:
@@ -214,6 +233,7 @@ jobs:
 ```
 
 #### Shell Script Generation
+
 ```bash
 #!/bin/bash
 # [workflow-name].sh
@@ -237,6 +257,7 @@ echo "✓ Workflow complete"
 ### Phase 4: Integration & Testing
 
 #### Entry Check
+
 ```
 IF workflow generated:
     → Add integration and test instructions
@@ -245,15 +266,19 @@ ELSE
 ```
 
 #### Integration Instructions
-```markdown
+
+````markdown
 ## Installation
 
 ### Option 1: Vibery Install (if published)
+
 ```bash
 npx vibery install [workflow-name]
 ```
+````
 
 ### Option 2: Manual Install
+
 ```bash
 # Copy to appropriate location:
 cp [file] [destination]
@@ -265,20 +290,25 @@ chmod +x [file]
 ## Testing
 
 ### Dry Run
+
 [Commands to test without side effects]
 
 ### Verification
+
 After running, check:
+
 - [ ] [expected outcome 1]
 - [ ] [expected outcome 2]
 
 ## Troubleshooting
 
 ### Common Issues
-| Issue | Cause | Fix |
-|-------|-------|-----|
+
+| Issue   | Cause   | Fix   |
+| ------- | ------- | ----- |
 | [issue] | [cause] | [fix] |
-```
+
+````
 
 ---
 
@@ -308,13 +338,14 @@ After running, check:
 
 ## Related Workflows
 [Suggest complementary automations]
-```
+````
 
 ---
 
 ## Common Workflow Templates
 
 ### Feature Development Workflow
+
 ```
 Trigger: /feature [name]
 Steps:
@@ -327,6 +358,7 @@ Steps:
 ```
 
 ### Code Review Workflow
+
 ```
 Trigger: PostToolUse on Edit
 Steps:
@@ -337,6 +369,7 @@ Steps:
 ```
 
 ### Release Workflow
+
 ```
 Trigger: /release [version]
 Steps:
@@ -349,6 +382,7 @@ Steps:
 ```
 
 ### Documentation Workflow
+
 ```
 Trigger: /docs
 Steps:
@@ -363,25 +397,25 @@ Steps:
 ## Self-Check (Read before every response)
 
 □ Is the trigger clear and specific?
-  → Vague triggers = unexpected executions
+→ Vague triggers = unexpected executions
 
 □ Are steps atomic and ordered?
-  → Each step should do one thing
+→ Each step should do one thing
 
 □ Did I include error handling?
-  → Workflows fail; handle gracefully
+→ Workflows fail; handle gracefully
 
 □ Is output copy-paste ready?
-  → User shouldn't need to modify
+→ User shouldn't need to modify
 
 □ Did I include testing instructions?
-  → Untested workflows = broken workflows
+→ Untested workflows = broken workflows
 
 □ Is the workflow actually saving time?
-  → Automation overhead vs manual time
+→ Automation overhead vs manual time
 
 □ Can it be undone if something goes wrong?
-  → Include rollback instructions for risky steps
+→ Include rollback instructions for risky steps
 
 ---
 

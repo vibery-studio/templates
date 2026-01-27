@@ -18,6 +18,7 @@ Instead of manually researching which agents, skills, MCPs, and commands to inst
 ## Available Components
 
 ### Vibery Ecosystem (auto-updated)
+
 ```
 RUN: npx vibery list
 TO: Get current available templates
@@ -38,6 +39,7 @@ Categories:
 ### Phase 1: Project Classification
 
 #### Entry Check
+
 ```
 IF user provided: project type + tech stack + scale
     → Proceed to Phase 2
@@ -46,14 +48,16 @@ ELSE
 ```
 
 #### Classification Questions
-| Question | Options | Why |
-|----------|---------|-----|
+
+| Question                | Options                                                                        | Why                       |
+| ----------------------- | ------------------------------------------------------------------------------ | ------------------------- |
 | "What type of project?" | SaaS, E-commerce, API, CLI, Mobile, Landing Page, Chrome Extension, MCP Server | Determines base blueprint |
-| "Primary tech stack?" | [Detect from context or ask] | Matches agents/skills |
-| "Solo or team?" | Solo, Small team (2-5), Large team (5+) | Affects workflow setup |
-| "Deploy where?" | Vercel, Cloudflare, AWS, Railway, Self-hosted | Adds deployment hooks |
+| "Primary tech stack?"   | [Detect from context or ask]                                                   | Matches agents/skills     |
+| "Solo or team?"         | Solo, Small team (2-5), Large team (5+)                                        | Affects workflow setup    |
+| "Deploy where?"         | Vercel, Cloudflare, AWS, Railway, Self-hosted                                  | Adds deployment hooks     |
 
 #### Project Type → Base Blueprint Mapping
+
 ```
 SaaS MVP:
     → nextjs-developer + supabase + stripe-pro
@@ -95,6 +99,7 @@ MCP Server:
 ### Phase 2: Stack Analysis
 
 #### Entry Check
+
 ```
 IF project classified:
     → Analyze tech stack requirements
@@ -103,6 +108,7 @@ ELSE
 ```
 
 #### Stack Detection
+
 ```
 IF existing project:
     → Read package.json, requirements.txt, go.mod, Cargo.toml
@@ -115,6 +121,7 @@ IF new project:
 ```
 
 #### Component Selection Rules
+
 ```
 FOR each technology in stack:
     → Search: npx vibery search [technology]
@@ -131,6 +138,7 @@ Example:
 ### Phase 3: Blueprint Generation
 
 #### Entry Check
+
 ```
 IF stack analyzed + components selected:
     → Generate blueprint
@@ -139,10 +147,12 @@ ELSE
 ```
 
 #### Blueprint Structure
-```markdown
+
+````markdown
 # Project Blueprint: [Project Name]
 
 ## Quick Start
+
 ```bash
 # 1. Install Vibery templates
 npx vibery install [agent-1]
@@ -157,27 +167,32 @@ npx vibery install [hook-1]
 # 3. Verify installation
 npx vibery list --installed
 ```
+````
 
 ## Components Installed
 
 ### Agents
-| Agent | Purpose | When Used |
-|-------|---------|-----------|
+
+| Agent        | Purpose        | When Used         |
+| ------------ | -------------- | ----------------- |
 | [agent-name] | [what it does] | [trigger context] |
 
 ### MCPs
-| MCP | Purpose | Setup Required |
-|-----|---------|----------------|
+
+| MCP        | Purpose               | Setup Required   |
+| ---------- | --------------------- | ---------------- |
 | [mcp-name] | [what it connects to] | [env vars, auth] |
 
 ### Commands
-| Command | Purpose | Usage |
-|---------|---------|-------|
+
+| Command    | Purpose        | Usage         |
+| ---------- | -------------- | ------------- |
 | /[command] | [what it does] | [when to run] |
 
 ### Hooks
-| Hook | Trigger | Action |
-|------|---------|--------|
+
+| Hook        | Trigger      | Action         |
+| ----------- | ------------ | -------------- |
 | [hook-name] | [when fires] | [what happens] |
 
 ## CLAUDE.md
@@ -191,6 +206,7 @@ npx vibery list --installed
 ## Workflows
 
 [Generate common workflows - see Phase 4]
+
 ```
 
 ---
@@ -199,8 +215,9 @@ npx vibery list --installed
 
 #### CLAUDE.md Generation
 ```
+
 BASED ON project type + stack:
-    → Generate CLAUDE.md with:
+→ Generate CLAUDE.md with:
 
     # Project Context
     - Tech stack summary
@@ -218,12 +235,14 @@ BASED ON project type + stack:
     # Agent Instructions
     - When to use which installed agent
     - MCP usage patterns
+
 ```
 
 #### Folder Structure Generation
 ```
+
 BASED ON project type:
-    → Generate tree structure with:
+→ Generate tree structure with:
 
     - Source code organization
     - Test file locations
@@ -231,10 +250,12 @@ BASED ON project type:
     - Documentation structure
 
     Match conventions of chosen framework
+
 ```
 
 #### Workflow Generation
 ```
+
 GENERATE common workflows:
 
 1. Feature Development:
@@ -250,7 +271,8 @@ GENERATE common workflows:
    - Pre-deploy checks
    - Deploy commands
    - Post-deploy verification
-```
+
+````
 
 ---
 
@@ -268,26 +290,31 @@ GENERATE common workflows:
 ### CLAUDE.md
 ```markdown
 [generated CLAUDE.md content]
-```
+````
 
 ### .claude/settings.json (if needed)
+
 ```json
 [settings content]
 ```
 
 ## Project Structure
+
 ```
 [folder tree]
 ```
 
 ## Development Workflow
+
 [step by step workflow]
 
 ## Next Steps
+
 1. Run installation commands
 2. Copy CLAUDE.md to project root
 3. Create folder structure
 4. Start with: [first recommended action]
+
 ```
 
 ---
@@ -324,3 +351,4 @@ See `references/blueprints/` for complete examples:
 - `landing-astro.md`
 - `extension-chrome.md`
 - `mcp-server.md`
+```

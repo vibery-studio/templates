@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-18T08:24:02.459Z",
+  "generated": "2026-01-27T08:00:56.380Z",
   "templates": {
     "agents": [
       {
@@ -1578,6 +1578,11 @@
         "name": "pptx",
         "path": "pptx",
         "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) ..."
+      },
+      {
+        "name": "product-spec",
+        "path": "product-spec",
+        "description": ">"
       },
       {
         "name": "project-blueprint",

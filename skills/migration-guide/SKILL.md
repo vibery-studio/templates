@@ -46,6 +46,7 @@ Migrations fail when users try to switch everything at once. This skill creates 
 ### Phase 1: Migration Assessment
 
 #### Entry Check
+
 ```
 IF user provided: current state + target state + reason
     → Proceed to Phase 2
@@ -54,15 +55,17 @@ ELSE
 ```
 
 #### Assessment Questions
-| Question | Purpose |
-|----------|---------|
-| "What are you migrating from?" | Identify source |
-| "What are you migrating to?" | Identify target |
-| "Why are you migrating?" | Validate motivation |
-| "What's your timeline?" | Scope the phases |
-| "Can you run both simultaneously?" | Determine strategy |
+
+| Question                           | Purpose             |
+| ---------------------------------- | ------------------- |
+| "What are you migrating from?"     | Identify source     |
+| "What are you migrating to?"       | Identify target     |
+| "Why are you migrating?"           | Validate motivation |
+| "What's your timeline?"            | Scope the phases    |
+| "Can you run both simultaneously?" | Determine strategy  |
 
 #### Migration Type Detection
+
 ```
 IF source and target can coexist:
     → Recommend: Parallel Migration (lowest risk)
@@ -82,6 +85,7 @@ IF partial migration possible:
 ### Phase 2: Compatibility Mapping
 
 #### Entry Check
+
 ```
 IF migration assessed:
     → Map compatibility
@@ -90,18 +94,20 @@ ELSE
 ```
 
 #### Feature Mapping Table
+
 ```markdown
 ## Feature Compatibility
 
-| Feature | [Source] | [Target] | Migration Effort |
-|---------|----------|----------|------------------|
-| [feature 1] | ✓ How it works | ✓ Equivalent | Low/Med/High |
-| [feature 2] | ✓ How it works | ⚠ Different approach | Med |
-| [feature 3] | ✓ How it works | ✗ Not available | High (workaround needed) |
-| [feature 4] | ✗ N/A | ✓ New capability | Gain |
+| Feature     | [Source]       | [Target]             | Migration Effort         |
+| ----------- | -------------- | -------------------- | ------------------------ |
+| [feature 1] | ✓ How it works | ✓ Equivalent         | Low/Med/High             |
+| [feature 2] | ✓ How it works | ⚠ Different approach | Med                      |
+| [feature 3] | ✓ How it works | ✗ Not available      | High (workaround needed) |
+| [feature 4] | ✗ N/A          | ✓ New capability     | Gain                     |
 ```
 
 #### Breaking Changes Identification
+
 ```
 FOR each feature in source:
     Compare with target:
@@ -119,6 +125,7 @@ FOR each feature in source:
 ```
 
 #### Dependency Analysis
+
 ```
 LIST all dependencies:
     - Which work with both?
@@ -138,6 +145,7 @@ OUTPUT:
 ### Phase 3: Migration Plan Generation
 
 #### Entry Check
+
 ```
 IF compatibility mapped:
     → Generate phased plan
@@ -146,14 +154,17 @@ ELSE
 ```
 
 #### Phase Structure
+
 ```markdown
 ## Migration Plan: [Source] → [Target]
 
 ### Phase 0: Preparation (Before Starting)
+
 **Duration:** [estimate]
 **Risk:** Low
 
 Actions:
+
 - [ ] Document current configuration
 - [ ] Create backup/snapshot
 - [ ] Set up target environment
@@ -164,10 +175,12 @@ Rollback: N/A (nothing changed yet)
 ---
 
 ### Phase 1: Parallel Setup
+
 **Duration:** [estimate]
 **Risk:** Low
 
 Actions:
+
 - [ ] Install [target] alongside [source]
 - [ ] Configure [target] with basic settings
 - [ ] Verify [target] works independently
@@ -176,16 +189,19 @@ Actions:
 Rollback: Remove [target], continue with [source]
 
 Success Criteria:
+
 - [Target] runs without errors
 - No impact on [source] workflow
 
 ---
 
 ### Phase 2: Feature Migration
+
 **Duration:** [estimate]
 **Risk:** Medium
 
 Actions:
+
 - [ ] Migrate [feature 1] (easiest first)
 - [ ] Test [feature 1] in [target]
 - [ ] Migrate [feature 2]
@@ -195,16 +211,19 @@ Actions:
 Rollback: Switch back to [source] for migrated features
 
 Success Criteria:
+
 - All migrated features work in [target]
 - No data loss or corruption
 
 ---
 
 ### Phase 3: Workflow Transition
+
 **Duration:** [estimate]
 **Risk:** Medium
 
 Actions:
+
 - [ ] Switch primary workflow to [target]
 - [ ] Use [source] only for unsupported features
 - [ ] Document any gaps or issues
@@ -213,16 +232,19 @@ Actions:
 Rollback: Return to [source] as primary
 
 Success Criteria:
+
 - 80%+ of work done in [target]
 - Team comfortable with new workflow
 
 ---
 
 ### Phase 4: Full Cutover
+
 **Duration:** [estimate]
 **Risk:** Low (if previous phases succeeded)
 
 Actions:
+
 - [ ] Disable/uninstall [source]
 - [ ] Remove [source] configurations
 - [ ] Update documentation
@@ -231,6 +253,7 @@ Actions:
 Rollback: Reinstall [source] from backup
 
 Success Criteria:
+
 - [Source] fully removed
 - No references to [source] in workflow
 ```
@@ -242,39 +265,50 @@ Success Criteria:
 #### Tool-Specific Templates
 
 ##### Cursor → Claude Code Migration
-```markdown
+
+````markdown
 ## Cursor → Claude Code
 
 ### What Changes
-| Cursor | Claude Code |
-|--------|-------------|
-| GUI-based | Terminal-based |
-| .cursorrules | CLAUDE.md |
-| Cmd+K | Direct prompt |
+
+| Cursor         | Claude Code        |
+| -------------- | ------------------ |
+| GUI-based      | Terminal-based     |
+| .cursorrules   | CLAUDE.md          |
+| Cmd+K          | Direct prompt      |
 | Tab completion | Different paradigm |
 
 ### Phase 1: Parallel (Keep Both)
+
 1. Install Claude Code: `npm install -g @anthropic-ai/claude-code`
 2. Run from project: `claude`
 3. Use for multi-file tasks only
 
 ### Phase 2: Translate Configuration
+
 Convert .cursorrules to CLAUDE.md:
+
 ```markdown
 # From .cursorrules
+
 [content]
 
 # To CLAUDE.md
+
 [translated content]
 ```
+````
 
 ### Phase 3: Workflow Integration
+
 - Keep Cursor for: Quick edits, tab completion
 - Use Claude Code for: Complex tasks, multi-file, planning
 
 ### Phase 4: Optional Full Switch
+
 Only if comfortable. Hybrid is valid long-term.
-```
+
+````
 
 ##### Copilot → Claude Migration
 ```markdown
@@ -291,11 +325,13 @@ Only if comfortable. Hybrid is valid long-term.
 4. Use Claude for: "Do X for me"
 
 ### Phase 2: Task Differentiation
-```
+````
+
 Small (single line) → Copilot
 Medium (function) → Either
 Large (multi-file) → Claude Code
 Planning → Claude Code (Plan Mode)
+
 ```
 
 ### Phase 3: Evaluate Value
@@ -315,6 +351,7 @@ After 2 weeks:
 ### Phase 5: Rollback Strategy
 
 #### Entry Check
+
 ```
 IF migration plan generated:
     → Add rollback details
@@ -323,24 +360,29 @@ ELSE
 ```
 
 #### Rollback Documentation
+
 ```markdown
 ## Rollback Strategy
 
 ### Checkpoints
-| Phase | Checkpoint | Rollback Command |
-|-------|------------|------------------|
-| 1 | Before install | N/A |
-| 2 | After config | Restore [source] config |
-| 3 | After workflow | Switch back to [source] |
-| 4 | After cutover | Reinstall [source] |
+
+| Phase | Checkpoint     | Rollback Command        |
+| ----- | -------------- | ----------------------- |
+| 1     | Before install | N/A                     |
+| 2     | After config   | Restore [source] config |
+| 3     | After workflow | Switch back to [source] |
+| 4     | After cutover  | Reinstall [source]      |
 
 ### Data Preservation
+
 - Backup location: [path]
 - Backup command: [command]
 - Restore command: [command]
 
 ### Emergency Rollback
+
 If critical failure during migration:
+
 1. Stop current action
 2. Run: [rollback command]
 3. Verify: [verification steps]
@@ -352,25 +394,25 @@ If critical failure during migration:
 ## Self-Check (Read before every response)
 
 □ Did I identify the migration type?
-  → Parallel vs Big Bang vs Strangler changes everything
+→ Parallel vs Big Bang vs Strangler changes everything
 
 □ Is every phase reversible?
-  → No rollback = no safety net
+→ No rollback = no safety net
 
 □ Did I map feature compatibility?
-  → Surprise gaps kill migrations
+→ Surprise gaps kill migrations
 
 □ Are phases small enough?
-  → Large phases = large risks
+→ Large phases = large risks
 
 □ Did I include success criteria?
-  → "Done" must be measurable
+→ "Done" must be measurable
 
 □ Is the timeline realistic?
-  → Rushed migrations fail
+→ Rushed migrations fail
 
 □ Did I account for team learning curve?
-  → New tool = temporary slowdown
+→ New tool = temporary slowdown
 
 ---
 

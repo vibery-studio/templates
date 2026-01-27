@@ -30,6 +30,7 @@ DO NOT ACTIVATE when:
 ## Core Competencies
 
 ### 1. Architecture Patterns
+
 ```
 Domain-Driven Design (DDD):
     - Entities, Value Objects, Aggregates
@@ -53,6 +54,7 @@ Vertical Slice:
 ```
 
 ### 2. Framework-Specific Patterns
+
 ```
 Next.js App Router:
     - app/ for routes
@@ -83,6 +85,7 @@ Python:
 ### Phase 1: Context Gathering
 
 #### Entry Check
+
 ```
 IF user provided: feature description + existing codebase context
     → Analyze and proceed to Phase 2
@@ -91,14 +94,16 @@ ELSE
 ```
 
 #### Context Questions
-| Question | Purpose |
-|----------|---------|
-| "What feature are you building?" | Scope definition |
-| "Show me your current folder structure" | Match existing patterns |
-| "What's your tech stack?" | Framework-specific guidance |
-| "Any existing patterns to follow?" | Consistency over perfection |
+
+| Question                                | Purpose                     |
+| --------------------------------------- | --------------------------- |
+| "What feature are you building?"        | Scope definition            |
+| "Show me your current folder structure" | Match existing patterns     |
+| "What's your tech stack?"               | Framework-specific guidance |
+| "Any existing patterns to follow?"      | Consistency over perfection |
 
 #### Codebase Analysis
+
 ```
 IF access to codebase:
     → Read existing structure
@@ -117,6 +122,7 @@ OUTPUT:
 ### Phase 2: Architecture Design
 
 #### Entry Check
+
 ```
 IF context gathered:
     → Design architecture
@@ -125,6 +131,7 @@ ELSE
 ```
 
 #### Design Process
+
 ```
 1. IDENTIFY bounded contexts
    - What domain concepts are involved?
@@ -147,22 +154,26 @@ ELSE
 ```
 
 #### Output: Architecture Overview
+
 ```markdown
 ## Architecture Overview
 
 ### Bounded Contexts
+
 - [Context 1]: [responsibility]
 - [Context 2]: [responsibility]
 
 ### Layer Responsibilities
-| Layer | Contains | Depends On |
-|-------|----------|------------|
-| Domain | Entities, Value Objects | Nothing |
-| Application | Use Cases, Commands | Domain |
-| Infrastructure | Repos, External APIs | Application, Domain |
-| Presentation | Controllers, Views | Application |
+
+| Layer          | Contains                | Depends On          |
+| -------------- | ----------------------- | ------------------- |
+| Domain         | Entities, Value Objects | Nothing             |
+| Application    | Use Cases, Commands     | Domain              |
+| Infrastructure | Repos, External APIs    | Application, Domain |
+| Presentation   | Controllers, Views      | Application         |
 
 ### Key Interfaces
+
 - [Interface 1]: [what it abstracts]
 - [Interface 2]: [what it abstracts]
 ```
@@ -172,6 +183,7 @@ ELSE
 ### Phase 3: File Structure Planning
 
 #### Entry Check
+
 ```
 IF architecture designed:
     → Plan file structure
@@ -180,30 +192,32 @@ ELSE
 ```
 
 #### Structure Output Format
+
 ```markdown
 ## Folder Structure
-
 ```
+
 src/
 ├── features/
-│   └── [feature-name]/
-│       ├── components/           # UI components
-│       │   ├── [Component].tsx
-│       │   └── [Component].test.tsx
-│       ├── hooks/                # Feature-specific hooks
-│       │   └── use[Feature].ts
-│       ├── services/             # Business logic
-│       │   └── [feature].service.ts
-│       ├── types/                # TypeScript types
-│       │   └── [feature].types.ts
-│       └── index.ts              # Public exports
-├── shared/                       # Cross-feature code
-│   ├── components/
-│   ├── hooks/
-│   └── utils/
-└── lib/                          # Infrastructure
-    ├── api/
-    └── db/
+│ └── [feature-name]/
+│ ├── components/ # UI components
+│ │ ├── [Component].tsx
+│ │ └── [Component].test.tsx
+│ ├── hooks/ # Feature-specific hooks
+│ │ └── use[Feature].ts
+│ ├── services/ # Business logic
+│ │ └── [feature].service.ts
+│ ├── types/ # TypeScript types
+│ │ └── [feature].types.ts
+│ └── index.ts # Public exports
+├── shared/ # Cross-feature code
+│ ├── components/
+│ ├── hooks/
+│ └── utils/
+└── lib/ # Infrastructure
+├── api/
+└── db/
+
 ```
 
 ### File Naming Convention
@@ -219,6 +233,7 @@ src/
 ### Phase 4: Implementation Plan
 
 #### Entry Check
+
 ```
 IF file structure planned:
     → Create implementation plan
@@ -227,31 +242,36 @@ ELSE
 ```
 
 #### Plan Format
-```markdown
+
+````markdown
 ## Implementation Plan
 
 ### Order of Implementation
+
 Files should be created in this order (dependencies first):
 
-| Step | File | Purpose | Dependencies |
-|------|------|---------|--------------|
-| 1 | `types/[feature].types.ts` | Type definitions | None |
-| 2 | `services/[feature].service.ts` | Business logic | Types |
-| 3 | `hooks/use[Feature].ts` | State management | Service, Types |
-| 4 | `components/[Component].tsx` | UI | Hooks, Types |
-| 5 | `index.ts` | Public exports | All above |
-| 6 | `[Component].test.tsx` | Tests | Components |
+| Step | File                            | Purpose          | Dependencies   |
+| ---- | ------------------------------- | ---------------- | -------------- |
+| 1    | `types/[feature].types.ts`      | Type definitions | None           |
+| 2    | `services/[feature].service.ts` | Business logic   | Types          |
+| 3    | `hooks/use[Feature].ts`         | State management | Service, Types |
+| 4    | `components/[Component].tsx`    | UI               | Hooks, Types   |
+| 5    | `index.ts`                      | Public exports   | All above      |
+| 6    | `[Component].test.tsx`          | Tests            | Components     |
 
 ### File Contents Outline
 
 #### 1. types/[feature].types.ts
+
 ```typescript
 // Define these types:
 // - [Type1]: [purpose]
 // - [Type2]: [purpose]
 ```
+````
 
 #### 2. services/[feature].service.ts
+
 ```typescript
 // Implement these functions:
 // - [function1]: [what it does]
@@ -261,8 +281,10 @@ Files should be created in this order (dependencies first):
 [Continue for each file...]
 
 ### Integration Points
+
 - Connects to [existing code] via [interface]
 - Exposes [exports] for use by [consumers]
+
 ```
 
 ---
@@ -271,15 +293,17 @@ Files should be created in this order (dependencies first):
 
 #### Before Delivering Plan
 ```
+
 VALIDATE:
-    □ Structure matches existing codebase patterns
-    □ No circular dependencies in plan
-    □ Each file has single responsibility
-    □ Implementation order respects dependencies
-    □ Types are defined before use
-    □ Tests are included
-    □ Public API is clear (index.ts exports)
-```
+□ Structure matches existing codebase patterns
+□ No circular dependencies in plan
+□ Each file has single responsibility
+□ Implementation order respects dependencies
+□ Types are defined before use
+□ Tests are included
+□ Public API is clear (index.ts exports)
+
+````
 
 #### Delivery Format
 ```markdown
@@ -304,32 +328,32 @@ VALIDATE:
 
 ## Questions to Resolve
 [Any decisions that need user input]
-```
+````
 
 ---
 
 ## Self-Check (Read before every response)
 
 □ Did I analyze existing codebase first?
-  → New patterns in old codebase = inconsistency
+→ New patterns in old codebase = inconsistency
 
 □ Is the structure too deep?
-  → 4+ nesting levels = navigation pain
+→ 4+ nesting levels = navigation pain
 
 □ Are dependencies one-directional?
-  → Circular deps = refactoring nightmare
+→ Circular deps = refactoring nightmare
 
 □ Did I specify implementation order?
-  → Random order = missing dependencies
+→ Random order = missing dependencies
 
 □ Is each file focused?
-  → Multiple responsibilities = hard to test
+→ Multiple responsibilities = hard to test
 
 □ Did I include tests in the plan?
-  → Tests are architecture, not afterthought
+→ Tests are architecture, not afterthought
 
 □ Can user start coding immediately?
-  → Plan should be actionable, not theoretical
+→ Plan should be actionable, not theoretical
 
 ---
 
