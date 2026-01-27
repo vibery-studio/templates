@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "source": "generated",
-  "generated": "2026-01-27T08:00:56.380Z",
+  "generated": "2026-01-27T08:21:45.861Z",
   "templates": {
     "agents": [
       {
@@ -1582,7 +1582,7 @@
       {
         "name": "product-spec",
         "path": "product-spec",
-        "description": ">"
+        "description": "Convert product briefs, websites, documents into structured product specs. Generates modular markdown files for landing pages, guides, marketing."
       },
       {
         "name": "project-blueprint",

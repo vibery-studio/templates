@@ -1,9 +1,6 @@
 ---
 name: product-spec
-description: >
-  Convert product briefs, websites, documents into structured product specs.
-  Generates modular markdown files for landing pages, guides, marketing.
-  Triggers: /product-spec, create product spec, document product
+description: Convert product briefs, websites, documents into structured product specs. Generates modular markdown files for landing pages, guides, marketing.
 ---
 
 # Product Spec Generator
@@ -11,6 +8,7 @@ description: >
 ## Purpose
 
 Transform unstructured product information into structured, modular specs that can generate:
+
 - Landing pages
 - Marketing copy
 - User guides
@@ -33,14 +31,14 @@ Transform unstructured product information into structured, modular specs that c
 
 ## Module Structure
 
-| Module | Purpose | Generates |
-|--------|---------|-----------|
-| `core.md` | Identity, problem, solution | Hero, about |
-| `audience.md` | Personas, JTBD, pains | Targeting |
-| `offer.md` | Pricing, value stack, guarantee | Pricing cards |
-| `copy.md` | Headlines, hooks, CTAs | Landing, ads |
-| `faq.md` | Objections & responses | FAQ sections |
-| `guide.md` | How to use | User docs |
+| Module        | Purpose                         | Generates     |
+| ------------- | ------------------------------- | ------------- |
+| `core.md`     | Identity, problem, solution     | Hero, about   |
+| `audience.md` | Personas, JTBD, pains           | Targeting     |
+| `offer.md`    | Pricing, value stack, guarantee | Pricing cards |
+| `copy.md`     | Headlines, hooks, CTAs          | Landing, ads  |
+| `faq.md`      | Objections & responses          | FAQ sections  |
+| `guide.md`    | How to use                      | User docs     |
 
 ---
 
@@ -90,18 +88,22 @@ PROOF
 If information is missing, ask:
 
 **Identity:**
+
 - "Đây là loại gì? (workshop/course/membership/product)"
 - "Target segment nào? (AI Office/Vibe Coder/both)"
 
 **Problem:**
+
 - "Vấn đề cụ thể họ đang gặp là gì?"
 - "Nếu không giải quyết thì chuyện gì xảy ra?"
 
 **Solution:**
+
 - "Cách tiếp cận của bạn khác gì competitor?"
 - "Kết quả cuối cùng (dream outcome) là gì?"
 
 **Offer:**
+
 - "Giá bao nhiêu? Model nào (one-time/monthly)?"
 - "Có guarantee không? Loại nào?"
 
@@ -110,6 +112,7 @@ If information is missing, ask:
 For each module, use template from `data/products/_templates/`
 
 **Output:**
+
 1. Create folder: `data/products/[slug]/`
 2. Generate each module file
 3. Update `data/products/index.csv`
@@ -119,6 +122,7 @@ For each module, use template from `data/products/_templates/`
 ## Process: URL → Spec
 
 ### Step 1: Fetch & Parse
+
 ```
 WebFetch URL → Extract:
 - Headlines, taglines
@@ -129,6 +133,7 @@ WebFetch URL → Extract:
 ```
 
 ### Step 2: Map to Structure
+
 ```
 Website Section → Module
 ─────────────────────────
@@ -141,6 +146,7 @@ FAQ            → faq.md
 ```
 
 ### Step 3: Fill Gaps
+
 Ask user for missing information before generating.
 
 ---
@@ -196,6 +202,7 @@ vip-membership,VIP Membership,membership,vibe-coder,349000,VND/mo,active,"Ship p
 ## Example: Brief → Spec
 
 **Input:**
+
 ```
 Tôi muốn tạo spec cho workshop AI Office Masterclass.
 - 3 giờ, live
@@ -208,6 +215,7 @@ Tôi muốn tạo spec cho workshop AI Office Masterclass.
 **Output:**
 
 Creates `data/products/ai-office-masterclass/`:
+
 - `core.md` - Workshop identity, problem (manual AI usage), solution (workflow approach)
 - `audience.md` - AI Office persona, pains (time wasted, no scaling)
 - `offer.md` - 399K pricing, value stack (workshop + recording + templates)
@@ -229,12 +237,14 @@ Updates `data/products/index.csv` with new row.
 ## Voice & Tone
 
 When generating copy modules, follow brand voice:
+
 - Personal (mình/bạn)
 - Direct (no fluff)
 - Practical (actionable)
 - Mix Anh-Việt naturally
 
 Avoid:
+
 - Corporate speak
 - Hype words
 - Empty promises
