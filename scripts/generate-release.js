@@ -35,18 +35,36 @@ function isSafeFilename(filename) {
 }
 
 /**
- * Extract description from markdown file (first line after # heading or first paragraph)
+ * Extract description from markdown file (from YAML frontmatter or first paragraph)
  */
 function extractDescription(filePath) {
   try {
     const content = fs.readFileSync(filePath, "utf-8");
     const lines = content.split("\n");
 
+    // Check for YAML frontmatter
+    if (lines[0]?.trim() === "---") {
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i];
+        if (line.trim() === "---") break; // End of frontmatter
+        const match = line.match(/^description:\s*(.+)$/);
+        if (match) {
+          return match[1].trim().slice(0, 150);
+        }
+      }
+    }
+
+    // Fallback: find first non-empty, non-heading, non-frontmatter line
+    let inFrontmatter = lines[0]?.trim() === "---";
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
+      if (inFrontmatter) {
+        if (line === "---" && i > 0) inFrontmatter = false;
+        continue;
+      }
       // Skip empty lines and headings
       if (!line || line.startsWith("#")) continue;
-      // Return first non-empty, non-heading line (truncated)
+      // Return first content line (truncated)
       return line.slice(0, 150).replace(/[*_`]/g, "");
     }
   } catch (e) {

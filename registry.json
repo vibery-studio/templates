@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "updated": "2026-03-03T08:55:36.469Z",
+  "updated": "2026-03-03T09:12:32.232Z",
   "base_url": "https://github.com/vibery-studio/templates/releases/latest/download",
   "templates": [
     {
       "name": "accessibility-tester",
       "type": "agent",
-      "description": "---",
+      "description": "C language expert specializing in efficient, reliable systems-level programming.",
       "size": 2114,
       "archive": "agent--accessibility-tester.tar.gz",
       "rawFile": "agent--accessibility-tester.md"
@@ -14,7 +14,7 @@
     {
       "name": "actix-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Actix for building high-performance web applications with Rust",
       "size": 2162,
       "archive": "agent--actix-pro.tar.gz",
       "rawFile": "agent--actix-pro.md"
@@ -22,7 +22,7 @@
     {
       "name": "ai-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Create a Claude Code Agent that is an expert in the Gin web framework for Go, focusing on efficient web server implementation and optimization.",
       "size": 1821,
       "archive": "agent--ai-engineer.tar.gz",
       "rawFile": "agent--ai-engineer.md"
@@ -30,7 +30,7 @@
     {
       "name": "ai-ethics-advisor",
       "type": "agent",
-      "description": "---",
+      "description": "Responsible AI practices, bias detection, and EU AI Act compliance",
       "size": 2090,
       "archive": "agent--ai-ethics-advisor.tar.gz",
       "rawFile": "agent--ai-ethics-advisor.md"
@@ -38,7 +38,7 @@
     {
       "name": "android-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Android development, specializing in modern Android practices, optimizing performance, and ensuring robust application architecture. Use PRO",
       "size": 2809,
       "archive": "agent--android-pro.tar.gz",
       "rawFile": "agent--android-pro.md"
@@ -46,7 +46,7 @@
     {
       "name": "angular-architect",
       "type": "agent",
-      "description": "---",
+      "description": "Write idiomatic Angular code with best practices, performance optimizations, and modern Angular features. Specializes in component architecture, RxJS,",
       "size": 2267,
       "archive": "agent--angular-architect.tar.gz",
       "rawFile": "agent--angular-architect.md"
@@ -54,7 +54,7 @@
     {
       "name": "angularjs-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in AngularJS development, focusing on optimizing code structure, improving performance, and ensuring best practices.",
       "size": 2335,
       "archive": "agent--angularjs-pro.tar.gz",
       "rawFile": "agent--angularjs-pro.md"
@@ -62,7 +62,7 @@
     {
       "name": "ansible-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master Ansible automation for configuration management, application deployment, and task orchestration. Use PROACTIVELY for Ansible optimization, play",
       "size": 2502,
       "archive": "agent--ansible-pro.tar.gz",
       "rawFile": "agent--ansible-pro.md"
@@ -70,7 +70,7 @@
     {
       "name": "api-designer",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in GraphQL API design, query optimization, and implementation. Master introspection, schemas, and GraphQL best practices. Use PROACTIVELY for G",
       "size": 2649,
       "archive": "agent--api-designer.tar.gz",
       "rawFile": "agent--api-designer.md"
@@ -78,7 +78,7 @@
     {
       "name": "api-documenter",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in designing, documenting, and optimizing APIs using OpenAPI specifications.",
       "size": 2204,
       "archive": "agent--api-documenter.tar.gz",
       "rawFile": "agent--api-documenter.md"
@@ -86,7 +86,7 @@
     {
       "name": "api-security-auditor",
       "type": "agent",
-      "description": "---",
+      "description": "API endpoint security assessment for auth, injection, and rate limiting",
       "size": 1360,
       "archive": "agent--api-security-auditor.tar.gz",
       "rawFile": "agent--api-security-auditor.md"
@@ -94,7 +94,7 @@
     {
       "name": "architect-planner",
       "type": "agent",
-      "description": "---",
+      "description": ">",
       "size": 8437,
       "archive": "agent--architect-planner.tar.gz",
       "rawFile": "agent--architect-planner.md"
@@ -102,7 +102,7 @@
     {
       "name": "architect-reviewer",
       "type": "agent",
-      "description": "---",
+      "description": "Architecture review and design patterns expert",
       "size": 1072,
       "archive": "agent--architect-reviewer.tar.gz",
       "rawFile": "agent--architect-reviewer.md"
@@ -110,7 +110,7 @@
     {
       "name": "aspnet-core-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in ASP.NET Core web application development, optimization, and best practices.",
       "size": 2422,
       "archive": "agent--aspnet-core-pro.tar.gz",
       "rawFile": "agent--aspnet-core-pro.md"
@@ -118,7 +118,7 @@
     {
       "name": "astro-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Astro with deep understanding of component architecture, content collections, and static site optimization. Specializes in leveraging Astro'",
       "size": 2981,
       "archive": "agent--astro-pro.tar.gz",
       "rawFile": "agent--astro-pro.md"
@@ -126,7 +126,7 @@
     {
       "name": "auth0-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Auth0 implementation, configuration, and best practices",
       "size": 2544,
       "archive": "agent--auth0-pro.tar.gz",
       "rawFile": "agent--auth0-pro.md"
@@ -134,7 +134,7 @@
     {
       "name": "backend-architect",
       "type": "agent",
-      "description": "---",
+      "description": "FastAPI development with an emphasis on best practices, optimization, and robust design patterns.",
       "size": 2401,
       "archive": "agent--backend-architect.tar.gz",
       "rawFile": "agent--backend-architect.md"
@@ -142,7 +142,7 @@
     {
       "name": "backend-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in Node.js development, focusing on performance optimization, asynchronous programming, and best practices for building scalable server-si",
       "size": 2670,
       "archive": "agent--backend-developer.tar.gz",
       "rawFile": "agent--backend-developer.md"
@@ -150,7 +150,7 @@
     {
       "name": "bash-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell scri",
       "size": 5381,
       "archive": "agent--bash-pro.tar.gz",
       "rawFile": "agent--bash-pro.md"
@@ -158,7 +158,7 @@
     {
       "name": "blockchain-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Web3, smart contracts, and DeFi specialist",
       "size": 817,
       "archive": "agent--blockchain-developer.tar.gz",
       "rawFile": "agent--blockchain-developer.md"
@@ -166,7 +166,7 @@
     {
       "name": "braintree-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Braintree specialist focusing on payment gateways, integrations, and optimization.",
       "size": 1996,
       "archive": "agent--braintree-pro.tar.gz",
       "rawFile": "agent--braintree-pro.md"
@@ -174,7 +174,7 @@
     {
       "name": "build-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Build system and toolchain specialist",
       "size": 806,
       "archive": "agent--build-engineer.tar.gz",
       "rawFile": "agent--build-engineer.md"
@@ -182,7 +182,7 @@
     {
       "name": "bullmq-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in BullMQ task queue library for Node.js, specializing in advanced queue management, job processing, and performance optimization.",
       "size": 2268,
       "archive": "agent--bullmq-pro.tar.gz",
       "rawFile": "agent--bullmq-pro.md"
@@ -190,7 +190,7 @@
     {
       "name": "bun-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expertise in Bun, focusing on high-performance JavaScript runtime, efficient module execution, and optimized bundling.",
       "size": 2776,
       "archive": "agent--bun-pro.tar.gz",
       "rawFile": "agent--bun-pro.md"
@@ -198,7 +198,7 @@
     {
       "name": "business-analyst",
       "type": "agent",
-      "description": "---",
+      "description": "Requirements gathering and analysis specialist",
       "size": 717,
       "archive": "agent--business-analyst.tar.gz",
       "rawFile": "agent--business-analyst.md"
@@ -206,7 +206,7 @@
     {
       "name": "cassandra-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master in Cassandra database design, optimization, and management. Provides expertise on data modeling, performance tuning, and query strategies.",
       "size": 2798,
       "archive": "agent--cassandra-pro.tar.gz",
       "rawFile": "agent--cassandra-pro.md"
@@ -214,7 +214,7 @@
     {
       "name": "celery-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Celery for distributed task queue management, optimizing task execution, and ensuring robust Celery deployments.",
       "size": 2034,
       "archive": "agent--celery-pro.tar.gz",
       "rawFile": "agent--celery-pro.md"
@@ -222,7 +222,7 @@
     {
       "name": "chaos-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "System resilience and chaos testing expert",
       "size": 811,
       "archive": "agent--chaos-engineer.tar.gz",
       "rawFile": "agent--chaos-engineer.md"
@@ -230,7 +230,7 @@
     {
       "name": "circleci-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in CircleCI configuration, optimization, and troubleshooting for seamless continuous integration and delivery.",
       "size": 2790,
       "archive": "agent--circleci-pro.tar.gz",
       "rawFile": "agent--circleci-pro.md"
@@ -238,7 +238,7 @@
     {
       "name": "cli-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Command-line tool and CLI framework expert",
       "size": 810,
       "archive": "agent--cli-developer.tar.gz",
       "rawFile": "agent--cli-developer.md"
@@ -246,7 +246,7 @@
     {
       "name": "clojure-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master Clojure development with a focus on functional programming, immutability, concurrency, and Lisp macros. Use PROACTIVELY for Clojure optimizatio",
       "size": 2918,
       "archive": "agent--clojure-pro.tar.gz",
       "rawFile": "agent--clojure-pro.md"
@@ -254,7 +254,7 @@
     {
       "name": "cloud-architect",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in infrastructure-as-code using Terraform, specializing in efficient and reliable infrastructure provisioning and management.",
       "size": 2752,
       "archive": "agent--cloud-architect.tar.gz",
       "rawFile": "agent--cloud-architect.md"
@@ -262,7 +262,7 @@
     {
       "name": "cockroachdb-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in CockroachDB setup, optimization, and best practices. Handles deployment, configuration, and performance tuning. Use PROACTIVELY for Coc",
       "size": 2436,
       "archive": "agent--cockroachdb-pro.tar.gz",
       "rawFile": "agent--cockroachdb-pro.md"
@@ -278,7 +278,7 @@
     {
       "name": "competitive-analyst",
       "type": "agent",
-      "description": "---",
+      "description": "Competitive intelligence specialist",
       "size": 709,
       "archive": "agent--competitive-analyst.tar.gz",
       "rawFile": "agent--competitive-analyst.md"
@@ -286,7 +286,7 @@
     {
       "name": "compliance-auditor",
       "type": "agent",
-      "description": "---",
+      "description": "Regulatory compliance (GDPR, HIPAA, SOC2) expert",
       "size": 1335,
       "archive": "agent--compliance-auditor.tar.gz",
       "rawFile": "agent--compliance-auditor.md"
@@ -294,7 +294,7 @@
     {
       "name": "cpp-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in writing high-quality, efficient, and modern C++ code.",
       "size": 2782,
       "archive": "agent--cpp-pro.tar.gz",
       "rawFile": "agent--cpp-pro.md"
@@ -302,7 +302,7 @@
     {
       "name": "csharp-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in C# programming focusing on best practices, performance optimization, and code quality. Use PROACTIVELY for C# refactoring, optimization, or ",
       "size": 2447,
       "archive": "agent--csharp-pro.tar.gz",
       "rawFile": "agent--csharp-pro.md"
@@ -310,7 +310,7 @@
     {
       "name": "css-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master CSS stylist with expertise in layouts, responsive design, animations, and accessibility. Handles complex layouts, and optimizes for performance",
       "size": 2329,
       "archive": "agent--css-pro.tar.gz",
       "rawFile": "agent--css-pro.md"
@@ -318,7 +318,7 @@
     {
       "name": "cypress-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Cypress testing framework for end-to-end testing and automation. Handles browser-based testing, custom commands, and Cypress plugins. Use PR",
       "size": 2304,
       "archive": "agent--cypress-pro.tar.gz",
       "rawFile": "agent--cypress-pro.md"
@@ -326,7 +326,7 @@
     {
       "name": "dart-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Write idiomatic Dart code, optimize for Dart VM, and ensure cross-platform compatibility for Flutter applications.",
       "size": 2064,
       "archive": "agent--dart-pro.tar.gz",
       "rawFile": "agent--dart-pro.md"
@@ -334,7 +334,7 @@
     {
       "name": "data-analyst",
       "type": "agent",
-      "description": "---",
+      "description": "Data insights and visualization specialist",
       "size": 709,
       "archive": "agent--data-analyst.tar.gz",
       "rawFile": "agent--data-analyst.md"
@@ -350,7 +350,7 @@
     {
       "name": "data-scientist",
       "type": "agent",
-      "description": "---",
+      "description": "Analytics, modeling, and insights expert",
       "size": 1910,
       "archive": "agent--data-scientist.tar.gz",
       "rawFile": "agent--data-scientist.md"
@@ -358,7 +358,7 @@
     {
       "name": "database-administrator",
       "type": "agent",
-      "description": "---",
+      "description": "Database management and optimization expert",
       "size": 2051,
       "archive": "agent--database-administrator.tar.gz",
       "rawFile": "agent--database-administrator.md"
@@ -366,7 +366,7 @@
     {
       "name": "database-architect",
       "type": "agent",
-      "description": "---",
+      "description": "Master MongoDB operations, schema design, performance optimization, and data modeling. Handles indexing, aggregations, and replication. Use PROACTIVEL",
       "size": 2575,
       "archive": "agent--database-architect.tar.gz",
       "rawFile": "agent--database-architect.md"
@@ -374,7 +374,7 @@
     {
       "name": "database-optimizer",
       "type": "agent",
-      "description": "---",
+      "description": "Master Elasticsearch operations, query optimizations, and cluster management. Expert in indexing, searching, and aggregating data efficiently. Use for",
       "size": 2691,
       "archive": "agent--database-optimizer.tar.gz",
       "rawFile": "agent--database-optimizer.md"
@@ -382,7 +382,7 @@
     {
       "name": "debugger",
       "type": "agent",
-      "description": "---",
+      "description": "Advanced debugging and troubleshooting specialist",
       "size": 2170,
       "archive": "agent--debugger.tar.gz",
       "rawFile": "agent--debugger.md"
@@ -390,7 +390,7 @@
     {
       "name": "deno-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Deno for modern JavaScript and TypeScript runtime, security, performance, and tooling.",
       "size": 2379,
       "archive": "agent--deno-pro.tar.gz",
       "rawFile": "agent--deno-pro.md"
@@ -398,7 +398,7 @@
     {
       "name": "dependency-manager",
       "type": "agent",
-      "description": "---",
+      "description": "Package and dependency management specialist",
       "size": 1935,
       "archive": "agent--dependency-manager.tar.gz",
       "rawFile": "agent--dependency-manager.md"
@@ -406,7 +406,7 @@
     {
       "name": "deployment-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Deployment automation and release management",
       "size": 818,
       "archive": "agent--deployment-engineer.tar.gz",
       "rawFile": "agent--deployment-engineer.md"
@@ -414,7 +414,7 @@
     {
       "name": "devops-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in all aspects of Docker, including containerization, image creation, and orchestration.",
       "size": 2435,
       "archive": "agent--devops-engineer.tar.gz",
       "rawFile": "agent--devops-engineer.md"
@@ -422,7 +422,7 @@
     {
       "name": "django-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Write expert Django code with optimized models, views, and templates. Handles complex queries, middleware, and RESTful APIs. Use proactively for Djang",
       "size": 2725,
       "archive": "agent--django-developer.tar.gz",
       "rawFile": "agent--django-developer.md"
@@ -430,7 +430,7 @@
     {
       "name": "documentation-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Technical documentation architect",
       "size": 810,
       "archive": "agent--documentation-engineer.tar.gz",
       "rawFile": "agent--documentation-engineer.md"
@@ -446,7 +446,7 @@
     {
       "name": "dynamodb-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in DynamoDB optimization, best practices, and data modeling. Use PROACTIVELY for performance tuning, efficient querying, and DynamoDB schema de",
       "size": 2627,
       "archive": "agent--dynamodb-pro.tar.gz",
       "rawFile": "agent--dynamodb-pro.md"
@@ -454,7 +454,7 @@
     {
       "name": "electron-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in building cross-platform desktop applications using Electron. Focuses on performance optimization, security best practices, and deliveri",
       "size": 2969,
       "archive": "agent--electron-pro.tar.gz",
       "rawFile": "agent--electron-pro.md"
@@ -462,7 +462,7 @@
     {
       "name": "elixir-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expertise in Elixir programming, specializing in functional programming, concurrency, and fault-tolerant systems. Utilizes OTP, pattern matching, and ",
       "size": 2171,
       "archive": "agent--elixir-pro.tar.gz",
       "rawFile": "agent--elixir-pro.md"
@@ -470,7 +470,7 @@
     {
       "name": "elk-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in ELK stack management, optimization, and deployment. Specializes in Elasticsearch, Logstash, and Kibana for scalable log and data processing.",
       "size": 2284,
       "archive": "agent--elk-pro.tar.gz",
       "rawFile": "agent--elk-pro.md"
@@ -478,7 +478,7 @@
     {
       "name": "embedded-systems",
       "type": "agent",
-      "description": "---",
+      "description": "Embedded and real-time systems expert",
       "size": 1890,
       "archive": "agent--embedded-systems.tar.gz",
       "rawFile": "agent--embedded-systems.md"
@@ -486,7 +486,7 @@
     {
       "name": "erlang-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in writing efficient, concurrent, and robust Erlang applications. Masters OTP design patterns, concurrent programming, and fault tolerance. Use",
       "size": 2509,
       "archive": "agent--erlang-pro.tar.gz",
       "rawFile": "agent--erlang-pro.md"
@@ -494,7 +494,7 @@
     {
       "name": "expo-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in developing, optimizing, and maintaining applications using the Expo framework for React Native.",
       "size": 2384,
       "archive": "agent--expo-pro.tar.gz",
       "rawFile": "agent--expo-pro.md"
@@ -502,7 +502,7 @@
     {
       "name": "express-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in building performant and scalable web applications using Express.js.",
       "size": 2064,
       "archive": "agent--express-pro.tar.gz",
       "rawFile": "agent--express-pro.md"
@@ -510,7 +510,7 @@
     {
       "name": "fastify-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in building high-performance Node.js applications using Fastify framework. Specializes in plugins, lifecycle management, and performance optimi",
       "size": 2208,
       "archive": "agent--fastify-pro.tar.gz",
       "rawFile": "agent--fastify-pro.md"
@@ -518,7 +518,7 @@
     {
       "name": "fiber-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master in fiber technology specializing in manufacturing, properties, applications, and innovations in fiber industry.",
       "size": 2133,
       "archive": "agent--fiber-pro.tar.gz",
       "rawFile": "agent--fiber-pro.md"
@@ -526,7 +526,7 @@
     {
       "name": "fintech-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Financial technology and payment systems expert",
       "size": 818,
       "archive": "agent--fintech-engineer.tar.gz",
       "rawFile": "agent--fintech-engineer.md"
@@ -534,7 +534,7 @@
     {
       "name": "flask-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in developing and optimizing web applications using the Flask framework. Masters routing, templating, request handling, and Flask extensions. U",
       "size": 2303,
       "archive": "agent--flask-pro.tar.gz",
       "rawFile": "agent--flask-pro.md"
@@ -542,7 +542,7 @@
     {
       "name": "flutter-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Flutter 3+ cross-platform mobile expert",
       "size": 1832,
       "archive": "agent--flutter-expert.tar.gz",
       "rawFile": "agent--flutter-expert.md"
@@ -550,7 +550,7 @@
     {
       "name": "flyway-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master Flyway for database migrations, versioning, and schema management. Optimizes migration scripts, ensures version compatibility, and improves dep",
       "size": 2154,
       "archive": "agent--flyway-pro.tar.gz",
       "rawFile": "agent--flyway-pro.md"
@@ -558,7 +558,7 @@
     {
       "name": "frontend-developer",
       "type": "agent",
-      "description": "---",
+      "description": "UI/UX specialist for React, Vue, and Angular applications",
       "size": 830,
       "archive": "agent--frontend-developer.tar.gz",
       "rawFile": "agent--frontend-developer.md"
@@ -566,7 +566,7 @@
     {
       "name": "fullstack-developer",
       "type": "agent",
-      "description": "---",
+      "description": "End-to-end feature development across the entire stack",
       "size": 828,
       "archive": "agent--fullstack-developer.tar.gz",
       "rawFile": "agent--fullstack-developer.md"
@@ -574,7 +574,7 @@
     {
       "name": "game-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Game development and engine expert",
       "size": 803,
       "archive": "agent--game-developer.tar.gz",
       "rawFile": "agent--game-developer.md"
@@ -582,7 +582,7 @@
     {
       "name": "git-workflow-manager",
       "type": "agent",
-      "description": "---",
+      "description": "Git workflow and branching strategy expert",
       "size": 1610,
       "archive": "agent--git-workflow-manager.tar.gz",
       "rawFile": "agent--git-workflow-manager.md"
@@ -590,7 +590,7 @@
     {
       "name": "github-actions-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in GitHub Actions for automating workflows and CI/CD processes.",
       "size": 2477,
       "archive": "agent--github-actions-pro.tar.gz",
       "rawFile": "agent--github-actions-pro.md"
@@ -598,7 +598,7 @@
     {
       "name": "gitlab-ci-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in configuring, optimizing, and maintaining GitLab CI/CD pipelines for efficient software delivery.",
       "size": 2696,
       "archive": "agent--gitlab-ci-pro.tar.gz",
       "rawFile": "agent--gitlab-ci-pro.md"
@@ -606,7 +606,7 @@
     {
       "name": "golang-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Go concurrency and performance specialist",
       "size": 1812,
       "archive": "agent--golang-pro.tar.gz",
       "rawFile": "agent--golang-pro.md"
@@ -614,7 +614,7 @@
     {
       "name": "grpc-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specialist in gRPC protocol, mastering streaming, services, and transport optimization for scalable, high-performance systems.",
       "size": 2639,
       "archive": "agent--grpc-pro.tar.gz",
       "rawFile": "agent--grpc-pro.md"
@@ -622,7 +622,7 @@
     {
       "name": "haskell-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Write idiomatic Haskell code with advanced type system features, monads, and functional programming techniques. Optimizes for purity, laziness, and pe",
       "size": 2520,
       "archive": "agent--haskell-pro.tar.gz",
       "rawFile": "agent--haskell-pro.md"
@@ -630,7 +630,7 @@
     {
       "name": "html-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in HTML structure, semantics, and best practices for building clean, accessible, and optimized web pages.",
       "size": 2160,
       "archive": "agent--html-pro.tar.gz",
       "rawFile": "agent--html-pro.md"
@@ -638,7 +638,7 @@
     {
       "name": "incident-responder",
       "type": "agent",
-      "description": "---",
+      "description": "System incident response and recovery expert",
       "size": 2003,
       "archive": "agent--incident-responder.tar.gz",
       "rawFile": "agent--incident-responder.md"
@@ -646,7 +646,7 @@
     {
       "name": "ios-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Write high-quality iOS applications using Swift and SwiftUI, ensuring optimal performance, user-friendly interfaces, and adherence to Apple's guidelin",
       "size": 2401,
       "archive": "agent--ios-pro.tar.gz",
       "rawFile": "agent--ios-pro.md"
@@ -654,7 +654,7 @@
     {
       "name": "iot-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "IoT systems and edge computing developer",
       "size": 807,
       "archive": "agent--iot-engineer.tar.gz",
       "rawFile": "agent--iot-engineer.md"
@@ -662,7 +662,7 @@
     {
       "name": "jasmine-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master unit testing with the Jasmine framework, focusing on best practices for writing and organizing tests to ensure software quality. Handles asynch",
       "size": 3011,
       "archive": "agent--jasmine-pro.tar.gz",
       "rawFile": "agent--jasmine-pro.md"
@@ -670,7 +670,7 @@
     {
       "name": "java-architect",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Ava for running tests and managing test suites efficiently.",
       "size": 2104,
       "archive": "agent--java-architect.tar.gz",
       "rawFile": "agent--java-architect.md"
@@ -678,7 +678,7 @@
     {
       "name": "javascript-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in modern JavaScript specializing in language features, optimization, and best practices. Handles asynchronous patterns, code quality, and perf",
       "size": 2350,
       "archive": "agent--javascript-pro.tar.gz",
       "rawFile": "agent--javascript-pro.md"
@@ -686,7 +686,7 @@
     {
       "name": "jenkins-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Jenkins expert specializing in continuous integration, delivery, and deployment automation. Mastery of Jenkinsfile scripting, pipelines, and integrati",
       "size": 1943,
       "archive": "agent--jenkins-pro.tar.gz",
       "rawFile": "agent--jenkins-pro.md"
@@ -694,7 +694,7 @@
     {
       "name": "jquery-pro",
       "type": "agent",
-      "description": "---",
+      "description": "jQuery specialist focusing on efficient DOM manipulation, event handling, and AJAX interactions. Expert in optimizing jQuery code and ensuring cross-b",
       "size": 2318,
       "archive": "agent--jquery-pro.tar.gz",
       "rawFile": "agent--jquery-pro.md"
@@ -702,7 +702,7 @@
     {
       "name": "jwt-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in JSON Web Tokens (JWT) implementation, security, and optimization. Handles token creation, validation, and best practices for JWT usage.",
       "size": 2324,
       "archive": "agent--jwt-pro.tar.gz",
       "rawFile": "agent--jwt-pro.md"
@@ -710,7 +710,7 @@
     {
       "name": "kafka-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Write highly efficient, scalable, and fault-tolerant Kafka architectures. Handles Kafka stream processing, cluster setup, and performance optimization",
       "size": 2344,
       "archive": "agent--kafka-pro.tar.gz",
       "rawFile": "agent--kafka-pro.md"
@@ -718,7 +718,7 @@
     {
       "name": "keycloak-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Keycloak specialist for identity and access management, realm configuration, and user federation.",
       "size": 2350,
       "archive": "agent--keycloak-pro.tar.gz",
       "rawFile": "agent--keycloak-pro.md"
@@ -726,7 +726,7 @@
     {
       "name": "knex-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expertise in Knex.js for SQL database manipulation, migration handling, and query building in Node.js environments.",
       "size": 2305,
       "archive": "agent--knex-pro.tar.gz",
       "rawFile": "agent--knex-pro.md"
@@ -734,7 +734,7 @@
     {
       "name": "kotlin-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Kotlin programming language, focusing on idiomatic Kotlin code, coroutines, extension functions, and memory management.",
       "size": 2260,
       "archive": "agent--kotlin-specialist.tar.gz",
       "rawFile": "agent--kotlin-specialist.md"
@@ -742,7 +742,7 @@
     {
       "name": "kubernetes-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Container orchestration and K8s master",
       "size": 814,
       "archive": "agent--kubernetes-specialist.tar.gz",
       "rawFile": "agent--kubernetes-specialist.md"
@@ -750,7 +750,7 @@
     {
       "name": "laravel-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Laravel framework, mastering modern Laravel features, Eloquent ORM, and comprehensive testing strategies. Use PROACTIVELY for Laravel optimi",
       "size": 2239,
       "archive": "agent--laravel-specialist.tar.gz",
       "rawFile": "agent--laravel-specialist.md"
@@ -758,7 +758,7 @@
     {
       "name": "legacy-modernizer",
       "type": "agent",
-      "description": "---",
+      "description": "Legacy code modernization specialist",
       "size": 2036,
       "archive": "agent--legacy-modernizer.tar.gz",
       "rawFile": "agent--legacy-modernizer.md"
@@ -766,7 +766,7 @@
     {
       "name": "liquibase-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Liquibase for database schema management, migrations, and version control. Use proactively for managing and automating database changes.",
       "size": 2147,
       "archive": "agent--liquibase-pro.tar.gz",
       "rawFile": "agent--liquibase-pro.md"
@@ -774,7 +774,7 @@
     {
       "name": "llm-architect",
       "type": "agent",
-      "description": "---",
+      "description": "Large language model architecture expert",
       "size": 1061,
       "archive": "agent--llm-architect.tar.gz",
       "rawFile": "agent--llm-architect.md"
@@ -782,7 +782,7 @@
     {
       "name": "loki-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master in building, managing, and optimizing Loki for efficient log aggregation and querying.",
       "size": 2515,
       "archive": "agent--loki-pro.tar.gz",
       "rawFile": "agent--loki-pro.md"
@@ -790,7 +790,7 @@
     {
       "name": "mariadb-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in MariaDB database management, optimization, and best practices.",
       "size": 2264,
       "archive": "agent--mariadb-pro.tar.gz",
       "rawFile": "agent--mariadb-pro.md"
@@ -814,7 +814,7 @@
     {
       "name": "mlops-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "MLOps and model deployment specialist",
       "size": 806,
       "archive": "agent--mlops-engineer.tar.gz",
       "rawFile": "agent--mlops-engineer.md"
@@ -822,7 +822,7 @@
     {
       "name": "mobile-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Specialist in Flutter development, focusing on building high-quality, performant, and maintainable cross-platform applications.",
       "size": 2492,
       "archive": "agent--mobile-developer.tar.gz",
       "rawFile": "agent--mobile-developer.md"
@@ -830,7 +830,7 @@
     {
       "name": "mocha-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expertise in Mocha, the JavaScript test framework running on Node.js, focusing on writing, organizing, and executing tests efficiently.",
       "size": 2490,
       "archive": "agent--mocha-pro.tar.gz",
       "rawFile": "agent--mocha-pro.md"
@@ -838,7 +838,7 @@
     {
       "name": "model-evaluator",
       "type": "agent",
-      "description": "---",
+      "description": "Write efficient and idiomatic Lua code, mastering the language features, patterns, and performance optimization. Use PROACTIVELY for Lua scripting, op",
       "size": 2542,
       "archive": "agent--model-evaluator.tar.gz",
       "rawFile": "agent--model-evaluator.md"
@@ -846,7 +846,7 @@
     {
       "name": "mongoose-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Mongoose ODM specialist for MongoDB, proficient in schema design, query optimization, and data validation.",
       "size": 2292,
       "archive": "agent--mongoose-pro.tar.gz",
       "rawFile": "agent--mongoose-pro.md"
@@ -854,7 +854,7 @@
     {
       "name": "monitoring-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Grafana dashboard creation, visualization best practices, and alerting systems. Proactively used for monitoring and reporting.",
       "size": 2184,
       "archive": "agent--monitoring-specialist.tar.gz",
       "rawFile": "agent--monitoring-specialist.md"
@@ -862,7 +862,7 @@
     {
       "name": "mqtt-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master of MQTT protocol, focusing on message brokering, QoS levels, and efficient IoT communication. Handles connection management, topic hierarchy, a",
       "size": 2063,
       "archive": "agent--mqtt-pro.tar.gz",
       "rawFile": "agent--mqtt-pro.md"
@@ -870,7 +870,7 @@
     {
       "name": "mssql-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Microsoft SQL Server handling query optimization, database design, and advanced T-SQL features.",
       "size": 2307,
       "archive": "agent--mssql-pro.tar.gz",
       "rawFile": "agent--mssql-pro.md"
@@ -878,7 +878,7 @@
     {
       "name": "mysql-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in MySQL database management, query optimization, and schema design. Provides efficient solutions for MySQL-related tasks.",
       "size": 2041,
       "archive": "agent--mysql-pro.tar.gz",
       "rawFile": "agent--mysql-pro.md"
@@ -886,7 +886,7 @@
     {
       "name": "nats-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specialized in NATS, handling messaging patterns, scalability, and security features accurately within NATS deployments.",
       "size": 1963,
       "archive": "agent--nats-pro.tar.gz",
       "rawFile": "agent--nats-pro.md"
@@ -894,7 +894,7 @@
     {
       "name": "neo4j-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Neo4j graph database specializing in Cypher queries, graph modeling, and optimization.",
       "size": 1835,
       "archive": "agent--neo4j-pro.tar.gz",
       "rawFile": "agent--neo4j-pro.md"
@@ -902,7 +902,7 @@
     {
       "name": "neon-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Neon serverless Postgres architecture and optimization",
       "size": 824,
       "archive": "agent--neon-specialist.tar.gz",
       "rawFile": "agent--neon-specialist.md"
@@ -910,7 +910,7 @@
     {
       "name": "nestjs-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in building scalable and efficient applications using the NestJS framework. Focused on design patterns, best practices, and performance optimiz",
       "size": 2415,
       "archive": "agent--nestjs-pro.tar.gz",
       "rawFile": "agent--nestjs-pro.md"
@@ -918,7 +918,7 @@
     {
       "name": "network-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Network infrastructure specialist",
       "size": 804,
       "archive": "agent--network-engineer.tar.gz",
       "rawFile": "agent--network-engineer.md"
@@ -926,7 +926,7 @@
     {
       "name": "nextjs-architecture-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Next.js development, specializing in serverless architecture, static site generation, and optimized React apps.",
       "size": 2581,
       "archive": "agent--nextjs-architecture-expert.tar.gz",
       "rawFile": "agent--nextjs-architecture-expert.md"
@@ -934,7 +934,7 @@
     {
       "name": "nextjs-developer",
       "type": "agent",
-      "description": "---",
+      "description": "Next.js 14+ full-stack specialist with App Router",
       "size": 820,
       "archive": "agent--nextjs-developer.tar.gz",
       "rawFile": "agent--nextjs-developer.md"
@@ -950,7 +950,7 @@
     {
       "name": "numpy-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in NumPy for scientific computing, data analysis, and numerical operations. Masters array manipulations, broadcasting, and performance optimiza",
       "size": 2845,
       "archive": "agent--numpy-pro.tar.gz",
       "rawFile": "agent--numpy-pro.md"
@@ -958,7 +958,7 @@
     {
       "name": "oauth-oidc-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in OAuth 2.0 and OpenID Connect (OIDC) for secure authentication and authorization.",
       "size": 2457,
       "archive": "agent--oauth-oidc-pro.tar.gz",
       "rawFile": "agent--oauth-oidc-pro.md"
@@ -966,7 +966,7 @@
     {
       "name": "ocaml-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in OCaml programming, covering functional programming, type systems, and performance optimization",
       "size": 2204,
       "archive": "agent--ocaml-pro.tar.gz",
       "rawFile": "agent--ocaml-pro.md"
@@ -974,7 +974,7 @@
     {
       "name": "openai-api-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Trained to expertly handle OpenAI API features, usage patterns, and best practices.",
       "size": 2253,
       "archive": "agent--openai-api-pro.tar.gz",
       "rawFile": "agent--openai-api-pro.md"
@@ -982,7 +982,7 @@
     {
       "name": "opensearch-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in OpenSearch cluster management, query optimization, indexing strategies, and performance tuning. Use PROACTIVELY for OpenSearch configuration",
       "size": 2186,
       "archive": "agent--opensearch-pro.tar.gz",
       "rawFile": "agent--opensearch-pro.md"
@@ -990,7 +990,7 @@
     {
       "name": "opentelemetry-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master in OpenTelemetry for observability, tracing, metrics, and logs.",
       "size": 2133,
       "archive": "agent--opentelemetry-pro.tar.gz",
       "rawFile": "agent--opentelemetry-pro.md"
@@ -998,7 +998,7 @@
     {
       "name": "owasp-top10-pro",
       "type": "agent",
-      "description": "---",
+      "description": "OWASP Top 10 expert specializing in identifying and mitigating the most critical web application security risks.",
       "size": 2244,
       "archive": "agent--owasp-top10-pro.tar.gz",
       "rawFile": "agent--owasp-top10-pro.md"
@@ -1006,7 +1006,7 @@
     {
       "name": "pandas-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in data manipulation and analysis using pandas library in Python.",
       "size": 2001,
       "archive": "agent--pandas-pro.tar.gz",
       "rawFile": "agent--pandas-pro.md"
@@ -1014,7 +1014,7 @@
     {
       "name": "payment-integration",
       "type": "agent",
-      "description": "---",
+      "description": "Payment gateway integration specialist",
       "size": 2049,
       "archive": "agent--payment-integration.tar.gz",
       "rawFile": "agent--payment-integration.md"
@@ -1022,7 +1022,7 @@
     {
       "name": "penetration-tester",
       "type": "agent",
-      "description": "---",
+      "description": "Ethical hacking and vulnerability testing",
       "size": 1328,
       "archive": "agent--penetration-tester.tar.gz",
       "rawFile": "agent--penetration-tester.md"
@@ -1030,7 +1030,7 @@
     {
       "name": "performance-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Performance optimization and profiling expert",
       "size": 820,
       "archive": "agent--performance-engineer.tar.gz",
       "rawFile": "agent--performance-engineer.md"
@@ -1038,7 +1038,7 @@
     {
       "name": "perl-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master Perl scripting with regular expressions, data manipulation, CPAN modules, and advanced text processing. Use PROACTIVELY for Perl scripting, dat",
       "size": 2418,
       "archive": "agent--perl-pro.tar.gz",
       "rawFile": "agent--perl-pro.md"
@@ -1046,7 +1046,7 @@
     {
       "name": "phoenix-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Phoenix framework, optimizing web applications, and ensuring best practices. Handles performance tuning, real-time features, and idiomatic E",
       "size": 3325,
       "archive": "agent--phoenix-pro.tar.gz",
       "rawFile": "agent--phoenix-pro.md"
@@ -1054,7 +1054,7 @@
     {
       "name": "php-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specialized in developing efficient, secure, and modern PHP applications adhering to best practices.",
       "size": 2417,
       "archive": "agent--php-pro.tar.gz",
       "rawFile": "agent--php-pro.md"
@@ -1062,7 +1062,7 @@
     {
       "name": "platform-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Platform architecture and developer experience expert",
       "size": 825,
       "archive": "agent--platform-engineer.tar.gz",
       "rawFile": "agent--platform-engineer.md"
@@ -1078,7 +1078,7 @@
     {
       "name": "prisma-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Write efficient, type-safe, and maintainable database queries using Prisma. Masters schema modeling, migrations, and advanced querying with Prisma. Pr",
       "size": 2700,
       "archive": "agent--prisma-pro.tar.gz",
       "rawFile": "agent--prisma-pro.md"
@@ -1086,7 +1086,7 @@
     {
       "name": "product-manager",
       "type": "agent",
-      "description": "---",
+      "description": "Product strategy and roadmap expert",
       "size": 1385,
       "archive": "agent--product-manager.tar.gz",
       "rawFile": "agent--product-manager.md"
@@ -1094,7 +1094,7 @@
     {
       "name": "product-strategist",
       "type": "agent",
-      "description": "---",
+      "description": "Product vision, MVP planning, and go-to-market strategy",
       "size": 728,
       "archive": "agent--product-strategist.tar.gz",
       "rawFile": "agent--product-strategist.md"
@@ -1102,7 +1102,7 @@
     {
       "name": "project-manager",
       "type": "agent",
-      "description": "---",
+      "description": "Project management and delivery specialist",
       "size": 1714,
       "archive": "agent--project-manager.tar.gz",
       "rawFile": "agent--project-manager.md"
@@ -1118,7 +1118,7 @@
     {
       "name": "pulumi-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Pulumi infrastructure as code for cloud resources",
       "size": 2343,
       "archive": "agent--pulumi-pro.tar.gz",
       "rawFile": "agent--pulumi-pro.md"
@@ -1126,7 +1126,7 @@
     {
       "name": "puppeteer-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in automating browser interactions using Puppeteer. Handles headless browsing, web scraping, and automated testing with Puppeteer. Use PROACTIV",
       "size": 2540,
       "archive": "agent--puppeteer-pro.tar.gz",
       "rawFile": "agent--puppeteer-pro.md"
@@ -1134,7 +1134,7 @@
     {
       "name": "python-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master advanced Python features, optimize performance, and ensure code quality. Expert in clean, idiomatic Python and comprehensive testing.",
       "size": 2318,
       "archive": "agent--python-pro.tar.gz",
       "rawFile": "agent--python-pro.md"
@@ -1142,7 +1142,7 @@
     {
       "name": "pytorch-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in PyTorch for building and optimizing deep learning models.",
       "size": 1957,
       "archive": "agent--pytorch-pro.tar.gz",
       "rawFile": "agent--pytorch-pro.md"
@@ -1150,7 +1150,7 @@
     {
       "name": "qa-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Test automation and quality assurance specialist",
       "size": 1612,
       "archive": "agent--qa-expert.tar.gz",
       "rawFile": "agent--qa-expert.md"
@@ -1158,7 +1158,7 @@
     {
       "name": "rabbitmq-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in RabbitMQ messaging, configuration, and optimization.",
       "size": 2577,
       "archive": "agent--rabbitmq-pro.tar.gz",
       "rawFile": "agent--rabbitmq-pro.md"
@@ -1166,7 +1166,7 @@
     {
       "name": "rails-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Master Ruby on Rails for building scalable, maintainable, and performant web applications. Use proactively for Rails optimization, refactoring, or ens",
       "size": 2676,
       "archive": "agent--rails-expert.tar.gz",
       "rawFile": "agent--rails-expert.md"
@@ -1174,7 +1174,7 @@
     {
       "name": "react-performance-optimizer",
       "type": "agent",
-      "description": "---",
+      "description": "React development expert with deep understanding of component architecture, hooks, state management, and performance optimization. Use PROACTIVELY for",
       "size": 2464,
       "archive": "agent--react-performance-optimizer.tar.gz",
       "rawFile": "agent--react-performance-optimizer.md"
@@ -1182,7 +1182,7 @@
     {
       "name": "react-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "React 18+ modern patterns and hooks expert",
       "size": 813,
       "archive": "agent--react-specialist.tar.gz",
       "rawFile": "agent--react-specialist.md"
@@ -1190,7 +1190,7 @@
     {
       "name": "refactoring-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Code refactoring and modernization expert",
       "size": 818,
       "archive": "agent--refactoring-specialist.tar.gz",
       "rawFile": "agent--refactoring-specialist.md"
@@ -1198,7 +1198,7 @@
     {
       "name": "remix-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in building performant, scalable web applications using the Remix framework, with deep understanding of loaders, actions, and dynamic routing.",
       "size": 3034,
       "archive": "agent--remix-pro.tar.gz",
       "rawFile": "agent--remix-pro.md"
@@ -1206,7 +1206,7 @@
     {
       "name": "research-analyst",
       "type": "agent",
-      "description": "---",
+      "description": "Comprehensive research and analysis expert",
       "size": 713,
       "archive": "agent--research-analyst.tar.gz",
       "rawFile": "agent--research-analyst.md"
@@ -1214,7 +1214,7 @@
     {
       "name": "rest-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master in designing and implementing RESTful APIs with focus on best practices, HTTP methods, status codes, and resource modeling.",
       "size": 2215,
       "archive": "agent--rest-pro.tar.gz",
       "rawFile": "agent--rest-pro.md"
@@ -1222,7 +1222,7 @@
     {
       "name": "rollup-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Rollup.js for bundling JavaScript projects with optimal performance and configuration.",
       "size": 2005,
       "archive": "agent--rollup-pro.tar.gz",
       "rawFile": "agent--rollup-pro.md"
@@ -1230,7 +1230,7 @@
     {
       "name": "ruby-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Ruby programming language, focusing on idiomatic Ruby, performance optimization, and best practices.",
       "size": 2780,
       "archive": "agent--ruby-pro.tar.gz",
       "rawFile": "agent--ruby-pro.md"
@@ -1238,7 +1238,7 @@
     {
       "name": "rust-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in writing idiomatic Rust code with focus on safety, concurrency, and performance. Masters ownership, borrowing concepts, and Rust's type syste",
       "size": 2297,
       "archive": "agent--rust-engineer.tar.gz",
       "rawFile": "agent--rust-engineer.md"
@@ -1246,7 +1246,7 @@
     {
       "name": "scala-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Scala expert specializing in functional programming, type safety, and performance optimization.",
       "size": 2500,
       "archive": "agent--scala-pro.tar.gz",
       "rawFile": "agent--scala-pro.md"
@@ -1254,7 +1254,7 @@
     {
       "name": "scikit-learn-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master scikit-learn for machine learning, focusing on model selection, feature engineering, and hyperparameter tuning. Use this for machine learning t",
       "size": 2525,
       "archive": "agent--scikit-learn-pro.tar.gz",
       "rawFile": "agent--scikit-learn-pro.md"
@@ -1262,7 +1262,7 @@
     {
       "name": "scrum-master",
       "type": "agent",
-      "description": "---",
+      "description": "Agile methodology and team facilitation expert",
       "size": 1509,
       "archive": "agent--scrum-master.tar.gz",
       "rawFile": "agent--scrum-master.md"
@@ -1270,7 +1270,7 @@
     {
       "name": "security-auditor",
       "type": "agent",
-      "description": "---",
+      "description": "Security vulnerability assessment expert",
       "size": 1325,
       "archive": "agent--security-auditor.tar.gz",
       "rawFile": "agent--security-auditor.md"
@@ -1278,7 +1278,7 @@
     {
       "name": "security-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Infrastructure security specialist",
       "size": 1320,
       "archive": "agent--security-engineer.tar.gz",
       "rawFile": "agent--security-engineer.md"
@@ -1286,7 +1286,7 @@
     {
       "name": "selenium-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in automated browser testing using Selenium. Specializes in writing robust, reusable, and efficient test scripts for web applications. Ensures ",
       "size": 2258,
       "archive": "agent--selenium-pro.tar.gz",
       "rawFile": "agent--selenium-pro.md"
@@ -1294,7 +1294,7 @@
     {
       "name": "seo-specialist",
       "type": "agent",
-      "description": "---",
+      "description": "Search engine optimization expert",
       "size": 802,
       "archive": "agent--seo-specialist.tar.gz",
       "rawFile": "agent--seo-specialist.md"
@@ -1302,7 +1302,7 @@
     {
       "name": "sequelize-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Sequelize ORM, proficient in database modeling, querying, associations, and migrations. Optimizes Sequelize usage for performance and data i",
       "size": 2334,
       "archive": "agent--sequelize-pro.tar.gz",
       "rawFile": "agent--sequelize-pro.md"
@@ -1310,7 +1310,7 @@
     {
       "name": "sidekiq-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specialist in optimizing and managing Sidekiq for efficient job processing and background task management.",
       "size": 2310,
       "archive": "agent--sidekiq-pro.tar.gz",
       "rawFile": "agent--sidekiq-pro.md"
@@ -1318,7 +1318,7 @@
     {
       "name": "sns-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master of Amazon Simple Notification Service (SNS) for message management and notification solutions. Expertise includes topics, subscriptions, polici",
       "size": 2239,
       "archive": "agent--sns-pro.tar.gz",
       "rawFile": "agent--sns-pro.md"
@@ -1326,7 +1326,7 @@
     {
       "name": "solidjs-pro",
       "type": "agent",
-      "description": "---",
+      "description": "SolidJS expert specializing in creating efficient and reactive UI components using SolidJS.",
       "size": 1836,
       "archive": "agent--solidjs-pro.tar.gz",
       "rawFile": "agent--solidjs-pro.md"
@@ -1334,7 +1334,7 @@
     {
       "name": "spring-boot-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in developing, optimizing, and maintaining Spring Boot applications with best practices and modern techniques for enterprise-grade applications",
       "size": 2961,
       "archive": "agent--spring-boot-engineer.tar.gz",
       "rawFile": "agent--spring-boot-engineer.md"
@@ -1342,7 +1342,7 @@
     {
       "name": "sqlite-pro",
       "type": "agent",
-      "description": "---",
+      "description": "SQLite database optimization, query writing, indexing, and best practices specialist. Proactively analyzes and optimizes SQLite databases for performa",
       "size": 2728,
       "archive": "agent--sqlite-pro.tar.gz",
       "rawFile": "agent--sqlite-pro.md"
@@ -1350,7 +1350,7 @@
     {
       "name": "sqs-pro",
       "type": "agent",
-      "description": "---",
+      "description": "- Understanding SQS standard and FIFO queue types",
       "size": 2413,
       "archive": "agent--sqs-pro.tar.gz",
       "rawFile": "agent--sqs-pro.md"
@@ -1358,7 +1358,7 @@
     {
       "name": "sre-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Site reliability and observability expert",
       "size": 808,
       "archive": "agent--sre-engineer.tar.gz",
       "rawFile": "agent--sre-engineer.md"
@@ -1366,7 +1366,7 @@
     {
       "name": "stripe-pro",
       "type": "agent",
-      "description": "---",
+      "description": "This agent specializes in managing and optimizing Stripe integrations, handling payments, managing subscriptions, and utilizing Stripe APIs.",
       "size": 2110,
       "archive": "agent--stripe-pro.tar.gz",
       "rawFile": "agent--stripe-pro.md"
@@ -1374,7 +1374,7 @@
     {
       "name": "svelte-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Master Svelte.js development with a focus on building performant, maintainable, and idiomatic Svelte applications. Specializes in reactive programming",
       "size": 2504,
       "archive": "agent--svelte-pro.tar.gz",
       "rawFile": "agent--svelte-pro.md"
@@ -1382,7 +1382,7 @@
     {
       "name": "swift-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Write efficient, idiomatic Swift code with a focus on safety, performance, and modern features. Handles Swift UI, concurrency, and protocol-oriented p",
       "size": 1982,
       "archive": "agent--swift-expert.tar.gz",
       "rawFile": "agent--swift-expert.md"
@@ -1390,7 +1390,7 @@
     {
       "name": "swiftui-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in SwiftUI development, focusing on building dynamic, responsive, and maintainable applications for Apple platforms. Handles view composition, ",
       "size": 2508,
       "archive": "agent--swiftui-pro.tar.gz",
       "rawFile": "agent--swiftui-pro.md"
@@ -1398,7 +1398,7 @@
     {
       "name": "tailwind-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Tailwind CSS for efficient and responsive styling of web projects, utilizing utility-first approaches and responsive design principles.",
       "size": 2560,
       "archive": "agent--tailwind-pro.tar.gz",
       "rawFile": "agent--tailwind-pro.md"
@@ -1406,7 +1406,7 @@
     {
       "name": "tauri-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Tauri for building cross-platform desktop applications leveraging web technologies.",
       "size": 2213,
       "archive": "agent--tauri-pro.tar.gz",
       "rawFile": "agent--tauri-pro.md"
@@ -1414,7 +1414,7 @@
     {
       "name": "technical-writer",
       "type": "agent",
-      "description": "---",
+      "description": "Technical documentation specialist",
       "size": 1414,
       "archive": "agent--technical-writer.tar.gz",
       "rawFile": "agent--technical-writer.md"
@@ -1422,7 +1422,7 @@
     {
       "name": "tensorflow-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in TensorFlow, specializing in developing, optimizing, and deploying machine learning models using TensorFlow framework.",
       "size": 2756,
       "archive": "agent--tensorflow-pro.tar.gz",
       "rawFile": "agent--tensorflow-pro.md"
@@ -1430,7 +1430,7 @@
     {
       "name": "terraform-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Infrastructure as Code expert",
       "size": 802,
       "archive": "agent--terraform-engineer.tar.gz",
       "rawFile": "agent--terraform-engineer.md"
@@ -1446,7 +1446,7 @@
     {
       "name": "test-engineer",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in testing JavaScript applications using Jest, ensuring comprehensive test coverage and efficient test practices.",
       "size": 1958,
       "archive": "agent--test-engineer.tar.gz",
       "rawFile": "agent--test-engineer.md"
@@ -1454,7 +1454,7 @@
     {
       "name": "testcafe-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in writing and optimizing TestCafe tests for reliable and maintainable UI testing.",
       "size": 2281,
       "archive": "agent--testcafe-pro.tar.gz",
       "rawFile": "agent--testcafe-pro.md"
@@ -1462,7 +1462,7 @@
     {
       "name": "trpc-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in building reliable, efficient, and type-safe backend services using tRPC.",
       "size": 2280,
       "archive": "agent--trpc-pro.tar.gz",
       "rawFile": "agent--trpc-pro.md"
@@ -1470,7 +1470,7 @@
     {
       "name": "typeorm-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expertise in TypeORM for defining and managing data models with efficient database interactions in Node.js applications",
       "size": 2325,
       "archive": "agent--typeorm-pro.tar.gz",
       "rawFile": "agent--typeorm-pro.md"
@@ -1478,7 +1478,7 @@
     {
       "name": "typescript-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in TypeScript specializing in type safety, async patterns, and modern ES features. Use PROACTIVELY for TypeScript development, refactoring, or ",
       "size": 2315,
       "archive": "agent--typescript-pro.tar.gz",
       "rawFile": "agent--typescript-pro.md"
@@ -1486,7 +1486,7 @@
     {
       "name": "ui-designer",
       "type": "agent",
-      "description": "---",
+      "description": "Visual design and interaction specialist",
       "size": 1059,
       "archive": "agent--ui-designer.tar.gz",
       "rawFile": "agent--ui-designer.md"
@@ -1494,7 +1494,7 @@
     {
       "name": "unused-code-cleaner",
       "type": "agent",
-      "description": "---",
+      "description": "Dead code detection, removal, and codebase cleanup",
       "size": 1492,
       "archive": "agent--unused-code-cleaner.tar.gz",
       "rawFile": "agent--unused-code-cleaner.md"
@@ -1502,7 +1502,7 @@
     {
       "name": "ux-researcher",
       "type": "agent",
-      "description": "---",
+      "description": "User research and usability testing expert",
       "size": 1601,
       "archive": "agent--ux-researcher.tar.gz",
       "rawFile": "agent--ux-researcher.md"
@@ -1510,7 +1510,7 @@
     {
       "name": "vector-db-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Vector Databases, handling indexing, querying, and optimization of vector data.",
       "size": 2002,
       "archive": "agent--vector-db-pro.tar.gz",
       "rawFile": "agent--vector-db-pro.md"
@@ -1518,7 +1518,7 @@
     {
       "name": "vitest-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Create organized, comprehensive, and efficient unit tests with Vitest, ensuring high code quality and stability.",
       "size": 2288,
       "archive": "agent--vitest-pro.tar.gz",
       "rawFile": "agent--vitest-pro.md"
@@ -1526,7 +1526,7 @@
     {
       "name": "vue-expert",
       "type": "agent",
-      "description": "---",
+      "description": "Vue.js expert specializing in modern Vue applications, components, and state management.",
       "size": 1840,
       "archive": "agent--vue-expert.tar.gz",
       "rawFile": "agent--vue-expert.md"
@@ -1534,7 +1534,7 @@
     {
       "name": "webpack-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Expert in Webpack configuration, optimization, and troubleshooting for efficient bundling and module loading.",
       "size": 2254,
       "archive": "agent--webpack-pro.tar.gz",
       "rawFile": "agent--webpack-pro.md"
@@ -1542,7 +1542,7 @@
     {
       "name": "websocket-pro",
       "type": "agent",
-      "description": "---",
+      "description": "Specializes in WebSocket protocol, implementation, and application. Provides expertise for real-time data exchange using WebSockets.",
       "size": 2308,
       "archive": "agent--websocket-pro.tar.gz",
       "rawFile": "agent--websocket-pro.md"
@@ -1550,7 +1550,7 @@
     {
       "name": "aesthetic",
       "type": "skill",
-      "description": "---",
+      "description": "Create aesthetically beautiful interfaces following proven design principles. Use when building UI/UX, analyzing designs from inspiration sites, gener",
       "size": 20732,
       "files": 7,
       "archive": "skill--aesthetic.tar.gz"
@@ -1558,7 +1558,7 @@
     {
       "name": "ai-multimodal",
       "type": "skill",
-      "description": "---",
+      "description": "Process and generate multimedia content using Google Gemini API. Capabilities include analyze audio files (transcription with timestamps, summarizatio",
       "size": 136951,
       "files": 13,
       "archive": "skill--ai-multimodal.tar.gz"
@@ -1566,7 +1566,7 @@
     {
       "name": "algorithmic-art",
       "type": "skill",
-      "description": "---",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code",
       "size": 58848,
       "files": 4,
       "archive": "skill--algorithmic-art.tar.gz"
@@ -1574,7 +1574,7 @@
     {
       "name": "backend-development",
       "type": "skill",
-      "description": "---",
+      "description": "Build robust backend systems with modern technologies (Node.js, Python, Go, Rust), frameworks (NestJS, FastAPI, Django), databases (PostgreSQL, MongoD",
       "size": 129300,
       "files": 12,
       "archive": "skill--backend-development.tar.gz"
@@ -1582,7 +1582,7 @@
     {
       "name": "better-auth",
       "type": "skill",
-      "description": "---",
+      "description": "Implement authentication and authorization with Better Auth - a framework-agnostic TypeScript authentication framework. Features include email/passwor",
       "size": 79536,
       "files": 8,
       "archive": "skill--better-auth.tar.gz"
@@ -1590,7 +1590,7 @@
     {
       "name": "brand-guidelines",
       "type": "skill",
-      "description": "---",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when b",
       "size": 13592,
       "files": 2,
       "archive": "skill--brand-guidelines.tar.gz"
@@ -1598,7 +1598,7 @@
     {
       "name": "canvas-design",
       "type": "skill",
-      "description": "---",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece",
       "size": 5554021,
       "files": 83,
       "archive": "skill--canvas-design.tar.gz"
@@ -1606,7 +1606,7 @@
     {
       "name": "chrome-devtools",
       "type": "skill",
-      "description": "---",
+      "description": "Browser automation, debugging, and performance analysis using Puppeteer CLI scripts. Use for automating browsers, taking screenshots, analyzing perfor",
       "size": 163393,
       "files": 21,
       "archive": "skill--chrome-devtools.tar.gz"
@@ -1622,7 +1622,7 @@
     {
       "name": "code-review",
       "type": "skill",
-      "description": "---",
+      "description": "Use when receiving code review feedback (especially if unclear or technically questionable), when completing tasks or major features requiring review ",
       "size": 19279,
       "files": 4,
       "archive": "skill--code-review.tar.gz"
@@ -1630,7 +1630,7 @@
     {
       "name": "context-engineering",
       "type": "skill",
-      "description": "---",
+      "description": "Master context engineering for AI agents - token optimization, degradation patterns, compression, memory systems, multi-agent coordination, evaluation",
       "size": 49002,
       "files": 12,
       "archive": "skill--context-engineering.tar.gz"
@@ -1638,7 +1638,7 @@
     {
       "name": "databases",
       "type": "skill",
-      "description": "---",
+      "description": "Work with MongoDB (document database, BSON documents, aggregation pipelines, Atlas cloud) and PostgreSQL (relational database, SQL queries, psql CLI, ",
       "size": 237612,
       "files": 18,
       "archive": "skill--databases.tar.gz"
@@ -1646,7 +1646,7 @@
     {
       "name": "devops",
       "type": "skill",
-      "description": "---",
+      "description": "Deploy and manage cloud infrastructure on Cloudflare (Workers, R2, D1, KV, Pages, Durable Objects, Browser Rendering), Docker containers, and Google C",
       "size": 121455,
       "files": 18,
       "archive": "skill--devops.tar.gz"
@@ -1654,7 +1654,7 @@
     {
       "name": "doc-coauthoring",
       "type": "skill",
-      "description": "---",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, deci",
       "size": 15834,
       "files": 1,
       "archive": "skill--doc-coauthoring.tar.gz"
@@ -1662,7 +1662,7 @@
     {
       "name": "docs-seeker",
       "type": "skill",
-      "description": "---",
+      "description": "\"Searching internet for technical documentation using llms.txt standard, GitHub repositories via Repomix, and parallel exploration. Use when user need",
       "size": 92360,
       "files": 8,
       "archive": "skill--docs-seeker.tar.gz"
@@ -1670,7 +1670,7 @@
     {
       "name": "docx",
       "type": "skill",
-      "description": "---",
+      "description": "\"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. When",
       "size": 1187389,
       "files": 59,
       "archive": "skill--docx.tar.gz"
@@ -1678,7 +1678,7 @@
     {
       "name": "frontend-design",
       "type": "skill",
-      "description": "---",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, a",
       "size": 14617,
       "files": 2,
       "archive": "skill--frontend-design.tar.gz"
@@ -1686,7 +1686,7 @@
     {
       "name": "frontend-development",
       "type": "skill",
-      "description": "---",
+      "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Suspense, lazy loading, useSuspenseQuery, file organizati",
       "size": 130952,
       "files": 11,
       "archive": "skill--frontend-development.tar.gz"
@@ -1694,7 +1694,7 @@
     {
       "name": "google-adk-python",
       "type": "skill",
-      "description": "---",
+      "description": "Build AI agents with Google's Agent Development Kit (ADK) Python - an open-source toolkit for building, evaluating, and deploying AI agents. Features ",
       "size": 2809,
       "files": 1,
       "archive": "skill--google-adk-python.tar.gz"
@@ -1702,7 +1702,7 @@
     {
       "name": "internal-comms",
       "type": "skill",
-      "description": "---",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill",
       "size": 22384,
       "files": 6,
       "archive": "skill--internal-comms.tar.gz"
@@ -1710,7 +1710,7 @@
     {
       "name": "mcp-builder",
       "type": "skill",
-      "description": "---",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. ",
       "size": 122548,
       "files": 10,
       "archive": "skill--mcp-builder.tar.gz"
@@ -1718,7 +1718,7 @@
     {
       "name": "mcp-management",
       "type": "skill",
-      "description": "---",
+      "description": "Manage Model Context Protocol (MCP) servers - discover, analyze, and execute tools/prompts/resources from configured MCP servers. Use when working wit",
       "size": 111777,
       "files": 10,
       "archive": "skill--mcp-management.tar.gz"
@@ -1726,7 +1726,7 @@
     {
       "name": "media-processing",
       "type": "skill",
-      "description": "---",
+      "description": "Process multimedia files with FFmpeg (video/audio encoding, conversion, streaming, filtering, hardware acceleration) and ImageMagick (image manipulati",
       "size": 139017,
       "files": 15,
       "archive": "skill--media-processing.tar.gz"
@@ -1734,7 +1734,7 @@
     {
       "name": "mermaidjs-v11",
       "type": "skill",
-      "description": "---",
+      "description": "Create diagrams and visualizations using Mermaid.js v11 syntax. Use when generating flowcharts, sequence diagrams, class diagrams, state diagrams, ER ",
       "size": 30378,
       "files": 6,
       "archive": "skill--mermaidjs-v11.tar.gz"
@@ -1742,7 +1742,7 @@
     {
       "name": "migration-guide",
       "type": "skill",
-      "description": "---",
+      "description": ">",
       "size": 9106,
       "files": 1,
       "archive": "skill--migration-guide.tar.gz"
@@ -1750,7 +1750,7 @@
     {
       "name": "pdf",
       "type": "skill",
-      "description": "---",
+      "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Claude",
       "size": 64221,
       "files": 12,
       "archive": "skill--pdf.tar.gz"
@@ -1758,7 +1758,7 @@
     {
       "name": "pptx",
       "type": "skill",
-      "description": "---",
+      "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) Mod",
       "size": 1232045,
       "files": 56,
       "archive": "skill--pptx.tar.gz"
@@ -1766,7 +1766,7 @@
     {
       "name": "product-spec",
       "type": "skill",
-      "description": "---",
+      "description": "Convert product briefs, websites, documents into structured product specs. Generates modular markdown files for landing pages, guides, marketing.",
       "size": 6046,
       "files": 1,
       "archive": "skill--product-spec.tar.gz"
@@ -1774,7 +1774,7 @@
     {
       "name": "project-blueprint",
       "type": "skill",
-      "description": "---",
+      "description": ">",
       "size": 8069,
       "files": 1,
       "archive": "skill--project-blueprint.tar.gz"
@@ -1782,7 +1782,7 @@
     {
       "name": "repomix",
       "type": "skill",
-      "description": "---",
+      "description": "Package entire code repositories into single AI-friendly files using Repomix. Capabilities include pack codebases with customizable include/exclude pa",
       "size": 53861,
       "files": 8,
       "archive": "skill--repomix.tar.gz"
@@ -1790,7 +1790,7 @@
     {
       "name": "sequential-thinking",
       "type": "skill",
-      "description": "---",
+      "description": "Use when complex problems require systematic step-by-step reasoning with ability to revise thoughts, branch into alternative approaches, or dynamicall",
       "size": 17396,
       "files": 4,
       "archive": "skill--sequential-thinking.tar.gz"
@@ -1798,7 +1798,7 @@
     {
       "name": "session-sync",
       "type": "skill",
-      "description": "---",
+      "description": "Export Claude Code sessions to searchable markdown with QMD integration. Use when user says \"sync sessions\", \"export sessions\", \"search sessions\", \"se",
       "size": 31622,
       "files": 7,
       "archive": "skill--session-sync.tar.gz"
@@ -1806,7 +1806,7 @@
     {
       "name": "shopify",
       "type": "skill",
-      "description": "---",
+      "description": "Build Shopify applications, extensions, and themes using GraphQL/REST APIs, Shopify CLI, Polaris UI components, and Liquid templating. Capabilities in",
       "size": 66935,
       "files": 8,
       "archive": "skill--shopify.tar.gz"
@@ -1814,7 +1814,7 @@
     {
       "name": "skill-creator",
       "type": "skill",
-      "description": "---",
+      "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Claude",
       "size": 49509,
       "files": 7,
       "archive": "skill--skill-creator.tar.gz"
@@ -1822,7 +1822,7 @@
     {
       "name": "slack-gif-creator",
       "type": "skill",
-      "description": "---",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users",
       "size": 43745,
       "files": 7,
       "archive": "skill--slack-gif-creator.tar.gz"
@@ -1830,7 +1830,7 @@
     {
       "name": "spec-writer",
       "type": "skill",
-      "description": "---",
+      "description": ">",
       "size": 5717,
       "files": 1,
       "archive": "skill--spec-writer.tar.gz"
@@ -1838,7 +1838,7 @@
     {
       "name": "template-skill",
       "type": "skill",
-      "description": "---",
+      "description": "Replace with description of the skill and when Claude should use it.",
       "size": 939,
       "files": 1,
       "archive": "skill--template-skill.tar.gz"
@@ -1846,7 +1846,7 @@
     {
       "name": "theme-factory",
       "type": "skill",
-      "description": "---",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with",
       "size": 144109,
       "files": 13,
       "archive": "skill--theme-factory.tar.gz"
@@ -1854,7 +1854,7 @@
     {
       "name": "udemy-crawler",
       "type": "skill",
-      "description": "---",
+      "description": "Extract Udemy course content to markdown. Use when user asks to scrape/crawl Udemy course pages.",
       "size": 4318,
       "files": 1,
       "archive": "skill--udemy-crawler.tar.gz"
@@ -1862,7 +1862,7 @@
     {
       "name": "ui-styling",
       "type": "skill",
-      "description": "---",
+      "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canvas-",
       "size": 5713197,
       "files": 97,
       "archive": "skill--ui-styling.tar.gz"
@@ -1870,7 +1870,7 @@
     {
       "name": "ui-ux-pro-max",
       "type": "skill",
-      "description": "---",
+      "description": "\"UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter",
       "size": 435674,
       "files": 28,
       "archive": "skill--ui-ux-pro-max.tar.gz"
@@ -1878,7 +1878,7 @@
     {
       "name": "vibery-manager",
       "type": "skill",
-      "description": "---",
+      "description": "Unified management for Vibery monorepo (templates, kits, CLI, website). Use /template, /kit, /sync, /publish, /deploy commands.",
       "size": 115599,
       "files": 13,
       "archive": "skill--vibery-manager.tar.gz"
@@ -1886,7 +1886,7 @@
     {
       "name": "web-artifacts-builder",
       "type": "skill",
-      "description": "---",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui",
       "size": 45858,
       "files": 5,
       "archive": "skill--web-artifacts-builder.tar.gz"
@@ -1894,7 +1894,7 @@
     {
       "name": "web-frameworks",
       "type": "skill",
-      "description": "---",
+      "description": "Build modern full-stack web applications with Next.js (App Router, Server Components, RSC, PPR, SSR, SSG, ISR), Turborepo (monorepo management, task p",
       "size": 192177,
       "files": 17,
       "archive": "skill--web-frameworks.tar.gz"
@@ -1902,7 +1902,7 @@
     {
       "name": "webapp-testing",
       "type": "skill",
-      "description": "---",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, ca",
       "size": 22411,
       "files": 6,
       "archive": "skill--webapp-testing.tar.gz"
@@ -1910,7 +1910,7 @@
     {
       "name": "workflow-composer",
       "type": "skill",
-      "description": "---",
+      "description": ">",
       "size": 7546,
       "files": 1,
       "archive": "skill--workflow-composer.tar.gz"
@@ -1918,7 +1918,7 @@
     {
       "name": "xlsx",
       "type": "skill",
-      "description": "---",
+      "description": "\"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude needs ",
       "size": 18489,
       "files": 3,
       "archive": "skill--xlsx.tar.gz"
