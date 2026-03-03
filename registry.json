@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-03-03T09:12:32.232Z",
+  "updated": "2026-03-03T09:17:36.693Z",
   "base_url": "https://github.com/vibery-studio/templates/releases/latest/download",
   "templates": [
     {
@@ -1799,7 +1799,7 @@
       "name": "session-sync",
       "type": "skill",
       "description": "Export Claude Code sessions to searchable markdown with QMD integration. Use when user says \"sync sessions\", \"export sessions\", \"search sessions\", \"se",
-      "size": 31622,
+      "size": 31934,
       "files": 7,
       "archive": "skill--session-sync.tar.gz"
     },
@@ -1874,14 +1874,6 @@
       "size": 435674,
       "files": 28,
       "archive": "skill--ui-ux-pro-max.tar.gz"
-    },
-    {
-      "name": "vibery-manager",
-      "type": "skill",
-      "description": "Unified management for Vibery monorepo (templates, kits, CLI, website). Use /template, /kit, /sync, /publish, /deploy commands.",
-      "size": 115599,
-      "files": 13,
-      "archive": "skill--vibery-manager.tar.gz"
     },
     {
       "name": "web-artifacts-builder",
