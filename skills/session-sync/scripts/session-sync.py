@@ -175,6 +175,9 @@ def extract_session_data(jsonl_path: Path) -> dict | None:
         "git_branch": None,
     }
 
+    # Patterns to skip for title extraction
+    skip_patterns = ["<command-name>", "<local-command", "/clear", "/help", "/exit"]
+
     for record in records:
         if record.get("sessionId") and not data["session_id"]:
             data["session_id"] = record["sessionId"]
@@ -206,19 +209,36 @@ def extract_session_data(jsonl_path: Path) -> dict | None:
                         text = item.get("text", "")
                         break
 
+            # Skip meta messages and command outputs
             if text and not record.get("isMeta"):
-                data["conversation"].append({"role": "user", "content": text})
+                # Skip system/command messages for conversation
+                if not any(p in text for p in ["<local-command", "<system-reminder", "<command-name>"]):
+                    data["conversation"].append({"role": "user", "content": text})
 
         if record.get("type") == "assistant":
             msg = record.get("message", {})
             contents = msg.get("content", [])
             text_parts = []
+            tool_uses = []
+
             if isinstance(contents, list):
                 for item in contents:
-                    if isinstance(item, dict) and item.get("type") == "text":
-                        text_parts.append(item.get("text", ""))
-            if text_parts:
-                data["conversation"].append({"role": "assistant", "content": "\n".join(text_parts)})
+                    if isinstance(item, dict):
+                        if item.get("type") == "text":
+                            text_parts.append(item.get("text", ""))
+                        elif item.get("type") == "tool_use":
+                            tool_name = item.get("name", "unknown")
+                            tool_uses.append(tool_name)
+
+            # Combine text and tool use summary
+            output_parts = text_parts.copy()
+            if tool_uses:
+                # Summarize tool calls
+                tool_summary = f"*[Used: {', '.join(tool_uses)}]*"
+                output_parts.append(tool_summary)
+
+            if output_parts:
+                data["conversation"].append({"role": "assistant", "content": "\n".join(output_parts)})
 
         if record.get("type") == "custom-title":
             custom_title = record.get("customTitle", "")
@@ -230,11 +250,22 @@ def extract_session_data(jsonl_path: Path) -> dict | None:
             if summary:
                 data["title"] = summary.split("\n")[0].strip()[:100]
 
+    # Find first meaningful user message for title (skip commands/system)
     if not data["title"] and data["conversation"]:
         for msg in data["conversation"]:
             if msg["role"] == "user":
-                data["title"] = msg["content"].replace("\n", " ").strip()[:80]
-                break
+                content = msg["content"]
+                # Skip messages that are commands or system messages
+                if any(p in content for p in skip_patterns):
+                    continue
+                # Clean and use as title
+                clean_title = content.replace("\n", " ").strip()
+                if len(clean_title) > 10:  # Must be meaningful
+                    data["title"] = clean_title[:80]
+                    break
+
+    if not data["title"]:
+        data["title"] = "Untitled Session"
 
     if not data["date"]:
         data["date"] = datetime.now().strftime("%Y-%m-%d")
@@ -375,9 +406,14 @@ def cmd_sync(args):
     """Sync current session (called by hook or manually)."""
     config = load_config()
     output_dir = get_output_dir(config)
+    log_file = SKILL_DIR / "sync.log"
 
     session_id = None
     transcript_path = None
+
+    # Log invocation
+    with open(log_file, "a") as f:
+        f.write(f"{datetime.now().isoformat()} sync called, isatty={sys.stdin.isatty()}\n")
 
     # Try stdin first (for hook usage)
     if not sys.stdin.isatty():
@@ -385,8 +421,12 @@ def cmd_sync(args):
             stdin_data = json.load(sys.stdin)
             session_id = stdin_data.get("session_id")
             transcript_path = stdin_data.get("transcript_path")
-        except Exception:
-            pass
+            with open(log_file, "a") as f:
+                f.write(f"{datetime.now().isoformat()} stdin: session_id={session_id}, path={transcript_path}\n")
+        except Exception as e:
+            # Log error for debugging
+            with open(log_file, "a") as f:
+                f.write(f"{datetime.now().isoformat()} stdin error: {e}\n")
 
     # Fallback to env vars (for manual usage)
     if not session_id:
@@ -412,6 +452,10 @@ def cmd_sync(args):
 
     if export_session(jsonl_path, output_dir):
         print(f"✓ Synced: {session_id[:8]}")
+        # Log success for debugging
+        log_file = SKILL_DIR / "sync.log"
+        with open(log_file, "a") as f:
+            f.write(f"{datetime.now().isoformat()} synced: {session_id[:8]}\n")
 
     return 0
 
