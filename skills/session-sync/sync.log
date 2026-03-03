@@ -8,3 +8,67 @@
 2026-03-03T21:54:54.546386 sync called, isatty=False
 2026-03-03T21:54:54.546612 stdin: session_id=ac14bddc-4e80-4fcd-ade4-3f7f6d889ea1, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-vibe-templates/ac14bddc-4e80-4fcd-ade4-3f7f6d889ea1.jsonl
 2026-03-03T21:54:54.574807 synced: ac14bddc
+2026-03-03T21:56:20.521839 sync called, isatty=False
+2026-03-03T21:56:20.522082 stdin: session_id=ac14bddc-4e80-4fcd-ade4-3f7f6d889ea1, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-vibe-templates/ac14bddc-4e80-4fcd-ade4-3f7f6d889ea1.jsonl
+2026-03-03T21:56:20.559588 synced: ac14bddc
+2026-03-03T22:01:41.972838 sync called, isatty=False
+2026-03-03T22:01:41.973171 stdin: session_id=4c09b97d-0af9-4469-bcc6-d30aa7d9e51f, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-email2webhook/4c09b97d-0af9-4469-bcc6-d30aa7d9e51f.jsonl
+2026-03-03T22:01:41.973817 synced: 4c09b97d
+2026-03-03T22:02:38.460993 sync called, isatty=False
+2026-03-03T22:02:38.461450 stdin: session_id=4c09b97d-0af9-4469-bcc6-d30aa7d9e51f, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-email2webhook/4c09b97d-0af9-4469-bcc6-d30aa7d9e51f.jsonl
+2026-03-03T22:02:38.462905 synced: 4c09b97d
+2026-03-03T22:08:49.794445 sync called, isatty=False
+2026-03-03T22:08:49.794622 stdin: session_id=aa1c3b1a-ba89-46a6-b030-d1758b1d77f7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-vibe-templates/aa1c3b1a-ba89-46a6-b030-d1758b1d77f7.jsonl
+2026-03-03T22:08:49.797133 synced: aa1c3b1a
+2026-03-03T22:09:18.240952 sync called, isatty=False
+2026-03-03T22:09:18.241209 stdin: session_id=aa1c3b1a-ba89-46a6-b030-d1758b1d77f7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-vibe-templates/aa1c3b1a-ba89-46a6-b030-d1758b1d77f7.jsonl
+2026-03-03T22:09:18.243430 synced: aa1c3b1a
+2026-03-03T22:13:59.426154 sync called, isatty=False
+2026-03-03T22:13:59.426459 stdin: session_id=aa1c3b1a-ba89-46a6-b030-d1758b1d77f7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-vibe-templates/aa1c3b1a-ba89-46a6-b030-d1758b1d77f7.jsonl
+2026-03-03T22:13:59.429124 synced: aa1c3b1a
+2026-03-03T22:28:22.812498 sync called, isatty=False
+2026-03-03T22:28:22.812825 stdin: session_id=a28bd60c-6306-42b7-ad70-a3e1749d444c, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/a28bd60c-6306-42b7-ad70-a3e1749d444c.jsonl
+2026-03-03T22:28:22.814487 synced: a28bd60c
+2026-03-03T22:29:01.512251 sync called, isatty=False
+2026-03-03T22:29:01.512473 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:29:01.513452 synced: 22bd5f8f
+2026-03-03T22:30:11.050745 sync called, isatty=False
+2026-03-03T22:30:11.051322 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:30:11.051993 synced: 22bd5f8f
+2026-03-03T22:33:18.942131 sync called, isatty=False
+2026-03-03T22:33:18.942382 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:33:18.943811 synced: 22bd5f8f
+2026-03-03T22:33:43.384382 sync called, isatty=False
+2026-03-03T22:33:43.384856 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:33:43.386250 synced: 22bd5f8f
+2026-03-03T22:33:48.448486 sync called, isatty=False
+2026-03-03T22:33:48.448637 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:33:48.450028 synced: 22bd5f8f
+2026-03-03T22:34:01.795681 sync called, isatty=False
+2026-03-03T22:34:01.796009 stdin: session_id=4a1a1e36-7099-4499-a83d-6cbca4c361c9, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/4a1a1e36-7099-4499-a83d-6cbca4c361c9.jsonl
+2026-03-03T22:34:01.796401 synced: 4a1a1e36
+2026-03-03T22:34:30.071147 sync called, isatty=False
+2026-03-03T22:34:30.071418 stdin: session_id=4a1a1e36-7099-4499-a83d-6cbca4c361c9, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/4a1a1e36-7099-4499-a83d-6cbca4c361c9.jsonl
+2026-03-03T22:34:30.071871 synced: 4a1a1e36
+2026-03-03T22:34:35.387308 sync called, isatty=False
+2026-03-03T22:34:35.387592 stdin: session_id=4a1a1e36-7099-4499-a83d-6cbca4c361c9, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/4a1a1e36-7099-4499-a83d-6cbca4c361c9.jsonl
+2026-03-03T22:34:35.388545 synced: 4a1a1e36
+2026-03-03T22:35:10.082108 sync called, isatty=False
+2026-03-03T22:35:10.082537 stdin error: Expecting value: line 1 column 1 (char 0)
+2026-03-03T22:35:10.093460 synced: 22bd5f8f
+2026-03-03T22:35:42.157742 sync called, isatty=False
+2026-03-03T22:35:42.158180 stdin: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:35:42.160081 synced: 22bd5f8f
+2026-03-03T22:40:08.459709 sync called, isatty=False
+2026-03-03T22:40:08.460011 raw stdin (295 bytes): {"session_id":"22bd5f8f-2b87-44a0-a211-9183c75624a7","transcript_path":"/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl","cwd":"/Applications/MAMP/htdocs/tonyfriendhq","hook_event_name":"SessionEnd","reason":"prompt_input_exit"}
+
+2026-03-03T22:40:08.460097 parsed: session_id=22bd5f8f-2b87-44a0-a211-9183c75624a7, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-tonyfriendhq/22bd5f8f-2b87-44a0-a211-9183c75624a7.jsonl
+2026-03-03T22:40:08.463397 synced: 22bd5f8f
+2026-03-03T22:41:53.428687 sync called, isatty=False
+2026-03-03T22:41:53.428806 raw stdin (0 bytes): 
+2026-03-03T22:41:53.434290 synced: 22bd5f8f
+2026-03-03T22:44:34.738453 sync called, isatty=False
+2026-03-03T22:44:34.738628 raw stdin (285 bytes): {"session_id":"9c2959b9-e2bf-493d-a022-1b1660a20037","transcript_path":"/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-email2webhook/9c2959b9-e2bf-493d-a022-1b1660a20037.jsonl","cwd":"/Applications/MAMP/htdocs/email2webhook","hook_event_name":"SessionEnd","reason":"other"}
+
+2026-03-03T22:44:34.738709 parsed: session_id=9c2959b9-e2bf-493d-a022-1b1660a20037, path=/Users/bnqtoan/.claude/projects/-Applications-MAMP-htdocs-email2webhook/9c2959b9-e2bf-493d-a022-1b1660a20037.jsonl
+2026-03-03T22:44:34.739640 synced: 9c2959b9

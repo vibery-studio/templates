@@ -330,7 +330,15 @@ def export_session(jsonl_path: Path, output_dir: Path) -> bool:
     project_output = output_dir / project_name
     project_output.mkdir(parents=True, exist_ok=True)
 
-    filename = f"{data['date']}-{data['session_id'][:8]}.md"
+    # Include hour-minute for better sorting
+    time_part = ""
+    if data.get("first_timestamp"):
+        try:
+            ts = datetime.fromisoformat(data["first_timestamp"].replace("Z", "+00:00"))
+            time_part = f"-{ts.strftime('%H%M')}"
+        except Exception:
+            pass
+    filename = f"{data['date']}{time_part}-{data['session_id'][:8]}.md"
     output_file = project_output / filename
 
     md_content = generate_markdown(data, project_name)
@@ -418,13 +426,16 @@ def cmd_sync(args):
     # Try stdin first (for hook usage)
     if not sys.stdin.isatty():
         try:
-            stdin_data = json.load(sys.stdin)
-            session_id = stdin_data.get("session_id")
-            transcript_path = stdin_data.get("transcript_path")
+            raw_stdin = sys.stdin.read()
             with open(log_file, "a") as f:
-                f.write(f"{datetime.now().isoformat()} stdin: session_id={session_id}, path={transcript_path}\n")
+                f.write(f"{datetime.now().isoformat()} raw stdin ({len(raw_stdin)} bytes): {raw_stdin[:500]}\n")
+            if raw_stdin.strip():
+                stdin_data = json.loads(raw_stdin)
+                session_id = stdin_data.get("session_id")
+                transcript_path = stdin_data.get("transcript_path")
+                with open(log_file, "a") as f:
+                    f.write(f"{datetime.now().isoformat()} parsed: session_id={session_id}, path={transcript_path}\n")
         except Exception as e:
-            # Log error for debugging
             with open(log_file, "a") as f:
                 f.write(f"{datetime.now().isoformat()} stdin error: {e}\n")
 
