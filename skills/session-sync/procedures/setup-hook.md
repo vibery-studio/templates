@@ -13,7 +13,6 @@ If output contains `session-sync.py sync`, hook is already configured.
 ## Add Hook
 
 1. Read current settings:
-
 ```bash
 cat ~/.claude/settings.json
 ```
@@ -21,7 +20,6 @@ cat ~/.claude/settings.json
 2. Edit `~/.claude/settings.json` to add Stop hook.
 
 If `hooks` key exists, add to it:
-
 ```json
 {
   "hooks": {
@@ -44,7 +42,6 @@ If `hooks` key exists, add to it:
 If `hooks.Stop` already exists, append to the array.
 
 3. Validate JSON syntax:
-
 ```bash
 python3 -c "import json; json.load(open('$HOME/.claude/settings.json'))"
 ```
@@ -54,7 +51,6 @@ If error, fix JSON syntax before proceeding.
 ## Update Config
 
 Mark auto_sync as enabled:
-
 ```bash
 python3 ~/.claude/skills/session-sync/scripts/session-sync.py config --auto-sync true
 ```
@@ -70,7 +66,6 @@ Should show: `✓ Auto-sync hook: enabled`
 ## How It Works
 
 On session Stop event, Claude Code:
-
 1. Passes `{"session_id": "...", "transcript_path": "..."}` via stdin
 2. Script reads current session JSONL
 3. Exports to `{target_folder}/Claude-Sessions/{project}/`
@@ -81,7 +76,6 @@ On session Stop event, Claude Code:
 Remove the Stop hook entry from `~/.claude/settings.json`.
 
 Then update config:
-
 ```bash
 python3 ~/.claude/skills/session-sync/scripts/session-sync.py config --auto-sync false
 ```

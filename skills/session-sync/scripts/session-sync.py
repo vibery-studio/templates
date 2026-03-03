@@ -61,24 +61,57 @@ def save_config(config: dict):
 
 def get_output_dir(config: dict) -> Path:
     """Get output directory from config."""
-    return Path(config["target_folder"]).expanduser() / "Claude-Sessions"
+    target = config.get("target_folder") or str(Path.home() / "Documents")
+    return Path(target).expanduser() / "Claude-Sessions"
 
 
 def find_qmd() -> str | None:
     """Find QMD executable."""
-    # Check common locations
-    candidates = [
-        "qmd",
-        str(Path.home() / ".nvm/versions/node/v20.20.0/bin/qmd"),
-        str(Path.home() / ".bun/bin/qmd"),
-        "/usr/local/bin/qmd",
-    ]
+    import platform
+    is_windows = platform.system() == "Windows"
+
+    # First check PATH
+    qmd_in_path = shutil.which("qmd")
+    if qmd_in_path:
+        return qmd_in_path
+
+    home = Path.home()
+    candidates = []
+
+    if is_windows:
+        # Windows: npm global, AppData, etc.
+        appdata = Path(os.environ.get("APPDATA", home / "AppData/Roaming"))
+        localappdata = Path(os.environ.get("LOCALAPPDATA", home / "AppData/Local"))
+        candidates = [
+            appdata / "npm/qmd.cmd",
+            appdata / "npm/qmd",
+            localappdata / "pnpm/qmd.cmd",
+            home / ".bun/bin/qmd.exe",
+        ]
+        # Check nvm-windows
+        nvm_home = Path(os.environ.get("NVM_HOME", home / "AppData/Roaming/nvm"))
+        if nvm_home.exists():
+            for node_ver in nvm_home.iterdir():
+                if node_ver.is_dir():
+                    candidates.append(node_ver / "qmd.cmd")
+    else:
+        # Unix: common locations
+        candidates = [
+            home / ".bun/bin/qmd",
+            home / ".local/bin/qmd",
+            Path("/usr/local/bin/qmd"),
+        ]
+        # Check nvm versions dynamically
+        nvm_dir = home / ".nvm/versions/node"
+        if nvm_dir.exists():
+            for node_ver in nvm_dir.iterdir():
+                qmd_path = node_ver / "bin/qmd"
+                if qmd_path.exists():
+                    candidates.insert(0, qmd_path)
 
     for qmd in candidates:
-        if shutil.which(qmd):
-            return qmd
-        if Path(qmd).exists():
-            return qmd
+        if qmd.exists():
+            return str(qmd)
 
     return None
 
@@ -96,9 +129,18 @@ def parse_project_name(cwd: str) -> str:
     name = name.lstrip("-")
 
     # Remove common prefixes (from Claude's project directory naming)
-    for prefix in ["Applications-MAMP-htdocs-", "Users-bnqtoan-"]:
-        if name.startswith(prefix):
-            name = name[len(prefix):]
+    # Handle paths like "Applications-MAMP-htdocs-project" or "Users-username-projects-project"
+    parts = name.split("-")
+    # Find where the actual project name starts (after common path segments)
+    common_segments = {"Applications", "Users", "MAMP", "htdocs", "home", "projects", "code", "dev", "src", "repos"}
+    start_idx = 0
+    for i, part in enumerate(parts):
+        if part in common_segments or (len(part) <= 2 and part.isalpha()):
+            start_idx = i + 1
+        else:
+            break
+    if start_idx > 0 and start_idx < len(parts):
+        name = "-".join(parts[start_idx:])
 
     return name or "unknown"
 
@@ -330,26 +372,46 @@ def cmd_status(args):
 
 
 def cmd_sync(args):
-    """Sync current session (called by hook)."""
+    """Sync current session (called by hook or manually)."""
     config = load_config()
     output_dir = get_output_dir(config)
 
-    try:
-        stdin_data = json.load(sys.stdin)
-        session_id = stdin_data.get("session_id")
-        transcript_path = stdin_data.get("transcript_path")
-    except Exception:
-        return 1
+    session_id = None
+    transcript_path = None
+
+    # Try stdin first (for hook usage)
+    if not sys.stdin.isatty():
+        try:
+            stdin_data = json.load(sys.stdin)
+            session_id = stdin_data.get("session_id")
+            transcript_path = stdin_data.get("transcript_path")
+        except Exception:
+            pass
+
+    # Fallback to env vars (for manual usage)
+    if not session_id:
+        session_id = os.environ.get("CK_SESSION_ID")
+    if not transcript_path and session_id:
+        # Find transcript in projects dir
+        for project_dir in PROJECTS_DIR.iterdir():
+            if not project_dir.is_dir():
+                continue
+            jsonl = project_dir / f"{session_id}.jsonl"
+            if jsonl.exists():
+                transcript_path = str(jsonl)
+                break
 
     if not session_id or not transcript_path:
+        print("No session found. Use 'export --days 1' instead.")
         return 1
 
     jsonl_path = Path(transcript_path)
     if not jsonl_path.exists():
+        print(f"Session file not found: {transcript_path}")
         return 1
 
     if export_session(jsonl_path, output_dir):
-        print(f"Synced: {session_id[:8]}")
+        print(f"✓ Synced: {session_id[:8]}")
 
     return 0
 
@@ -523,6 +585,11 @@ def cmd_list_projects(args):
 
 def cmd_setup(args):
     """Interactive setup."""
+    import platform
+    is_windows = platform.system() == "Windows"
+    py_cmd = "python" if is_windows else "python3"
+    skill_path = str(SKILL_DIR / "scripts" / "session-sync.py")
+
     print("Session Sync Setup")
     print("=" * 40)
     print()
@@ -533,26 +600,30 @@ def cmd_setup(args):
     print("To complete setup, the agent should:")
     print()
     print("1. DETECT INSTALL STATUS")
-    print("   Run: python3 ~/.claude/skills/session-sync/scripts/session-sync.py status")
+    print(f"   Run: {py_cmd} \"{skill_path}\" status")
     print()
     print("2. SET TARGET FOLDER")
     print("   Ask user for target folder (default: ~/Documents)")
-    print("   Run: python3 ~/.claude/skills/session-sync/scripts/session-sync.py config --target-folder PATH")
+    print(f"   Run: {py_cmd} \"{skill_path}\" config --target-folder PATH")
     print()
     print("3. INSTALL QMD (if not installed)")
     print("   Run: npm install -g @tobilu/qmd")
-    print("   If errors: npm rebuild better-sqlite3 -g")
+    if is_windows:
+        print("   If errors: npm rebuild better-sqlite3 -g")
+    else:
+        print("   If errors on macOS/Linux: npm rebuild better-sqlite3 -g")
     print()
     print("4. EXPORT SESSIONS")
-    print("   Run: python3 ~/.claude/skills/session-sync/scripts/session-sync.py export --all")
+    print(f"   Run: {py_cmd} \"{skill_path}\" export --all")
     print("   Or with filter: export --days 90")
     print()
     print("5. INDEX IN QMD")
-    print("   Run: python3 ~/.claude/skills/session-sync/scripts/session-sync.py index")
+    print(f"   Run: {py_cmd} \"{skill_path}\" index")
     print()
-    print("6. SETUP AUTO-SYNC HOOK")
-    print("   Add to ~/.claude/settings.json hooks.Stop:")
-    print('   {"type": "command", "command": "python3 ~/.claude/skills/session-sync/scripts/session-sync.py sync", "timeout": 10}')
+    print("6. SETUP AUTO-SYNC HOOK (optional)")
+    settings_path = "~/.claude/settings.json" if not is_windows else "%USERPROFILE%\\.claude\\settings.json"
+    print(f"   Add to {settings_path} hooks.Stop:")
+    print(f'   {{"type": "command", "command": "{py_cmd} \\"{skill_path}\\" sync", "timeout": 10}}')
     print()
 
     return 0

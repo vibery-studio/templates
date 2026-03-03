@@ -10,41 +10,59 @@ Export Claude Code sessions to project-organized markdown. Integrates with QMD f
 ## Quick Start
 
 ```bash
-# First time setup
-python3 ~/.claude/skills/session-sync/scripts/session-sync.py setup
+# First time setup (cross-platform)
+python ~/.claude/skills/session-sync/scripts/session-sync.py setup
 
 # Export all sessions
-python3 ~/.claude/skills/session-sync/scripts/session-sync.py export --all
+python ~/.claude/skills/session-sync/scripts/session-sync.py export --all
 
 # Search sessions
-python3 ~/.claude/skills/session-sync/scripts/session-sync.py search "authentication"
+python ~/.claude/skills/session-sync/scripts/session-sync.py search "authentication"
 ```
+
+> **Note:** Use `python` on Windows, `python3` on macOS/Linux. The setup command auto-detects your platform.
 
 ## Commands
 
-| Command         | Description                                                                     |
-| --------------- | ------------------------------------------------------------------------------- |
-| `setup`         | Interactive onboarding. See procedures/setup.md                                 |
-| `status`        | Show config, QMD status, export stats                                           |
-| `export`        | Export sessions. Filters: `--all`, `--days N`, `--project NAME`, `--since DATE` |
-| `index`         | Re-index exported sessions in QMD                                               |
-| `search QUERY`  | BM25 keyword search via QMD                                                     |
-| `vsearch QUERY` | Semantic vector search via QMD                                                  |
-| `config`        | Set `--target-folder`, `--collection-name`                                      |
-| `list-projects` | List available Claude Code projects                                             |
-| `sync`          | Sync current session (used by Stop hook)                                        |
+| Command | Description |
+|---------|-------------|
+| `setup` | Interactive onboarding (auto-detects platform) |
+| `status` | Show config, QMD status, export stats |
+| `export` | Export sessions. Filters: `--all`, `--days N`, `--project NAME`, `--since DATE` |
+| `index` | Re-index exported sessions in QMD |
+| `search QUERY` | BM25 keyword search via QMD |
+| `vsearch QUERY` | Semantic vector search via QMD |
+| `config` | Set `--target-folder`, `--collection-name` |
+| `list-projects` | List available Claude Code projects |
+| `sync` | Sync current session (used by Stop hook or manually) |
+
+## Cross-Platform Paths
+
+| Platform | Claude Data | Default Output |
+|----------|-------------|----------------|
+| macOS    | `~/.claude` | `~/Documents/Claude-Sessions` |
+| Linux    | `~/.claude` | `~/Documents/Claude-Sessions` |
+| Windows  | `C:\Users\<user>\.claude` | `C:\Users\<user>\Documents\Claude-Sessions` |
 
 ## Procedures
 
 ### Setup (First Time)
 
-1. Run status check: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py status`
-2. If target folder not set, ask user for path (default: `~/Documents`)
-3. Run: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py config --target-folder PATH`
-4. If QMD not installed, see procedures/install-qmd.md
-5. Export sessions: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py export --all`
-6. Index in QMD: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py index`
-7. Ask user if they want auto-sync hook. If yes, see procedures/setup-hook.md
+1. Run setup (auto-detects platform):
+   ```bash
+   # macOS/Linux
+   python3 ~/.claude/skills/session-sync/scripts/session-sync.py setup
+
+   # Windows (PowerShell)
+   python $env:USERPROFILE\.claude\skills\session-sync\scripts\session-sync.py setup
+   ```
+
+2. Follow prompts to set target folder and install QMD if needed
+
+3. Export sessions:
+   ```bash
+   python ~/.claude/skills/session-sync/scripts/session-sync.py export --all
+   ```
 
 ### Export Sessions
 
@@ -53,23 +71,68 @@ python3 ~/.claude/skills/session-sync/scripts/session-sync.py search "authentica
    - "last N days" → `--days N`
    - "project X" → `--project X`
    - "since DATE" → `--since YYYY-MM-DD`
-2. Run: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py export [FLAGS]`
-3. After export, ask if user wants to re-index QMD
-4. If yes: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py index`
+
+2. Run export:
+   ```bash
+   python ~/.claude/skills/session-sync/scripts/session-sync.py export [FLAGS]
+   ```
+
+3. Re-index QMD:
+   ```bash
+   python ~/.claude/skills/session-sync/scripts/session-sync.py index
+   ```
 
 ### Search Sessions
 
-1. Determine search type:
-   - Exact keywords → `search`
-   - Conceptual/semantic → `vsearch`
-2. Run: `python3 ~/.claude/skills/session-sync/scripts/session-sync.py [search|vsearch] "QUERY" -n 10`
-3. If no results, suggest alternative query or check if sessions are indexed
+1. Keyword search:
+   ```bash
+   python ~/.claude/skills/session-sync/scripts/session-sync.py search "QUERY" -n 10
+   ```
 
-### Troubleshooting
+2. Semantic search:
+   ```bash
+   python ~/.claude/skills/session-sync/scripts/session-sync.py vsearch "QUERY" -n 10
+   ```
 
-- QMD not found: See procedures/install-qmd.md
-- Hook not working: See procedures/setup-hook.md
-- No sessions exported: Check `~/.claude/projects/` contains JSONL files
+### Sync Current Session
+
+For manual sync (without hook):
+```bash
+export CK_SESSION_ID=<session-id>
+python ~/.claude/skills/session-sync/scripts/session-sync.py sync
+```
+
+## Troubleshooting
+
+### QMD Not Found
+
+**macOS/Linux:**
+```bash
+npm install -g qmd
+# or
+bun install -g qmd
+```
+
+**Windows:**
+```powershell
+npm install -g qmd
+```
+
+If using nvm, ensure QMD is installed in active Node version.
+
+### QMD Vector Search Crash (Bun)
+
+If you see `NAPI finalizer` errors with `vsearch`:
+```bash
+# Add to shell profile (~/.zshrc, ~/.bashrc, or PowerShell $PROFILE)
+alias qmd="QMD_RUNTIME=node qmd"
+```
+
+### No Sessions Found
+
+Check Claude Code data exists:
+- macOS/Linux: `ls ~/.claude/projects/`
+- Windows: `dir $env:USERPROFILE\.claude\projects\`
 
 ## Output Format
 
@@ -94,11 +157,11 @@ git_branch: main
 
 Config file: `~/.claude/skills/session-sync/config.json`
 
-| Key               | Default           | Description                       |
-| ----------------- | ----------------- | --------------------------------- |
-| `target_folder`   | `~/Documents`     | Parent folder for Claude-Sessions |
-| `collection_name` | `claude-sessions` | QMD collection name               |
-| `auto_sync`       | `false`           | Whether hook is configured        |
+| Key | Default | Description |
+|-----|---------|-------------|
+| `target_folder` | `~/Documents` | Parent folder for Claude-Sessions |
+| `collection_name` | `claude-sessions` | QMD collection name |
+| `auto_sync` | `false` | Whether hook is configured |
 
 ## References
 

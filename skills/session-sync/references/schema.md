@@ -2,18 +2,18 @@
 
 ## Frontmatter Fields
 
-| Field           | Type   | Required | Description                                        |
-| --------------- | ------ | -------- | -------------------------------------------------- |
-| `type`          | string | yes      | Always `claude-session`                            |
-| `project`       | string | yes      | Project name extracted from CWD                    |
-| `date`          | string | yes      | Session date `YYYY-MM-DD`                          |
-| `session_id`    | string | yes      | Full UUID of session                               |
-| `title`         | string | yes      | First user message or custom title (max 100 chars) |
-| `messages`      | number | yes      | Count of user messages                             |
-| `created`       | string | no       | ISO timestamp of first message                     |
-| `last_activity` | string | no       | ISO timestamp of last message                      |
-| `cwd`           | string | no       | Working directory path                             |
-| `git_branch`    | string | no       | Git branch name                                    |
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `type` | string | yes | Always `claude-session` |
+| `project` | string | yes | Project name extracted from CWD |
+| `date` | string | yes | Session date `YYYY-MM-DD` |
+| `session_id` | string | yes | Full UUID of session |
+| `title` | string | yes | First user message or custom title (max 100 chars) |
+| `messages` | number | yes | Count of user messages |
+| `created` | string | no | ISO timestamp of first message |
+| `last_activity` | string | no | ISO timestamp of last message |
+| `cwd` | string | no | Working directory path |
+| `git_branch` | string | no | Git branch name |
 
 ## Example
 
@@ -80,6 +80,5 @@ Example: `2026-03-03-abc12345.md`
 ```
 
 Project names derived from CWD by stripping common prefixes:
-
 - `Applications-MAMP-htdocs-`
 - `Users-{username}-`

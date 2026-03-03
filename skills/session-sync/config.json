@@ -1,6 +1,6 @@
 {
   "target_folder": "",
-  "qmd_path": "qmd",
+  "qmd_path": "",
   "collection_name": "claude-sessions",
   "auto_sync": false
 }

@@ -9,7 +9,6 @@ which qmd || echo "NOT_INSTALLED"
 ```
 
 If installed, verify working:
-
 ```bash
 qmd --version
 qmd status
@@ -42,13 +41,11 @@ Expected output: version number like `1.x.x`
 Error message contains: `NODE_MODULE_VERSION` mismatch
 
 Fix:
-
 ```bash
 npm rebuild better-sqlite3 -g
 ```
 
 Or reinstall:
-
 ```bash
 npm uninstall -g @tobilu/qmd && npm install -g @tobilu/qmd
 ```
@@ -58,14 +55,12 @@ npm uninstall -g @tobilu/qmd && npm install -g @tobilu/qmd
 The npm/bun bin path may not be in PATH.
 
 Find QMD location:
-
 ```bash
 npm root -g
 # QMD at: $(npm root -g)/../bin/qmd
 ```
 
 Or use full path in commands:
-
 ```bash
 /Users/$(whoami)/.nvm/versions/node/v20.20.0/bin/qmd status
 ```
@@ -81,7 +76,6 @@ Or use nvm to manage Node without sudo.
 ## Verify Integration
 
 After successful install:
-
 ```bash
 python3 ~/.claude/skills/session-sync/scripts/session-sync.py status
 ```

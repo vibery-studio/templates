@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "updated": "2026-03-03T09:17:36.693Z",
+  "updated": "2026-03-03T10:30:19.184Z",
   "base_url": "https://github.com/vibery-studio/templates/releases/latest/download",
   "templates": [
     {
@@ -1799,7 +1799,7 @@
       "name": "session-sync",
       "type": "skill",
       "description": "Export Claude Code sessions to searchable markdown with QMD integration. Use when user says \"sync sessions\", \"export sessions\", \"search sessions\", \"se",
-      "size": 31934,
+      "size": 34278,
       "files": 7,
       "archive": "skill--session-sync.tar.gz"
     },
