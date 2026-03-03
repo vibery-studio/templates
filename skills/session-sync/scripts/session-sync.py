@@ -83,12 +83,23 @@ def find_qmd() -> str | None:
     return None
 
 
-def parse_project_name(dirname: str) -> str:
-    """Extract clean project name from directory name."""
-    name = dirname.lstrip("-")
+def parse_project_name(cwd: str) -> str:
+    """Extract clean project name from CWD path or project dirname."""
+    if not cwd:
+        return "unknown"
+
+    # If it's a full path, extract the last component
+    path = Path(cwd)
+    name = path.name if path.name else cwd
+
+    # Clean up the name (remove leading dashes from Claude project dirs)
+    name = name.lstrip("-")
+
+    # Remove common prefixes (from Claude's project directory naming)
     for prefix in ["Applications-MAMP-htdocs-", "Users-bnqtoan-"]:
         if name.startswith(prefix):
             name = name[len(prefix):]
+
     return name or "unknown"
 
 
