@@ -1,1679 +1,2671 @@
 {
   "version": "1.0.0",
-  "source": "generated",
-  "generated": "2026-01-27T08:21:45.861Z",
-  "templates": {
-    "agents": [
-      {
-        "name": "accessibility-tester",
-        "path": "accessibility-tester.md",
-        "description": "C language expert specializing in efficient, reliable systems-level programming."
-      },
-      {
-        "name": "actix-pro",
-        "path": "actix-pro.md",
-        "description": "Expert in Actix for building high-performance web applications with Rust"
-      },
-      {
-        "name": "ai-engineer",
-        "path": "ai-engineer.md",
-        "description": "Create a Claude Code Agent that is an expert in the Gin web framework for Go, focusing on efficient web server implementation and optimization."
-      },
-      {
-        "name": "ai-ethics-advisor",
-        "path": "ai-ethics-advisor.md",
-        "description": "Responsible AI practices, bias detection, and EU AI Act compliance"
-      },
-      {
-        "name": "android-pro",
-        "path": "android-pro.md",
-        "description": "Expert in Android development, specializing in modern Android practices, optimizing performance, and ensuring robust application architecture. Use ..."
-      },
-      {
-        "name": "angular-architect",
-        "path": "angular-architect.md",
-        "description": "Write idiomatic Angular code with best practices, performance optimizations, and modern Angular features. Specializes in component architecture, Rx..."
-      },
-      {
-        "name": "angularjs-pro",
-        "path": "angularjs-pro.md",
-        "description": "Expert in AngularJS development, focusing on optimizing code structure, improving performance, and ensuring best practices."
-      },
-      {
-        "name": "ansible-pro",
-        "path": "ansible-pro.md",
-        "description": "Master Ansible automation for configuration management, application deployment, and task orchestration. Use PROACTIVELY for Ansible optimization, p..."
-      },
-      {
-        "name": "api-designer",
-        "path": "api-designer.md",
-        "description": "Expert in GraphQL API design, query optimization, and implementation. Master introspection, schemas, and GraphQL best practices. Use PROACTIVELY fo..."
-      },
-      {
-        "name": "api-documenter",
-        "path": "api-documenter.md",
-        "description": "Expert in designing, documenting, and optimizing APIs using OpenAPI specifications."
-      },
-      {
-        "name": "api-security-auditor",
-        "path": "api-security-auditor.md",
-        "description": "API endpoint security assessment for auth, injection, and rate limiting"
-      },
-      {
-        "name": "architect-planner",
-        "path": "architect-planner.md",
-        "description": ">"
-      },
-      {
-        "name": "architect-reviewer",
-        "path": "architect-reviewer.md",
-        "description": "Architecture review and design patterns expert"
-      },
-      {
-        "name": "aspnet-core-pro",
-        "path": "aspnet-core-pro.md",
-        "description": "Expert in ASP.NET Core web application development, optimization, and best practices."
-      },
-      {
-        "name": "astro-pro",
-        "path": "astro-pro.md",
-        "description": "Expert in Astro with deep understanding of component architecture, content collections, and static site optimization. Specializes in leveraging Ast..."
-      },
-      {
-        "name": "auth0-pro",
-        "path": "auth0-pro.md",
-        "description": "Expert in Auth0 implementation, configuration, and best practices"
-      },
-      {
-        "name": "backend-architect",
-        "path": "backend-architect.md",
-        "description": "FastAPI development with an emphasis on best practices, optimization, and robust design patterns."
-      },
-      {
-        "name": "backend-developer",
-        "path": "backend-developer.md",
-        "description": "Specializes in Node.js development, focusing on performance optimization, asynchronous programming, and best practices for building scalable server..."
-      },
-      {
-        "name": "bash-pro",
-        "path": "bash-pro.md",
-        "description": "Master of defensive Bash scripting for production automation, CI/CD pipelines, and system utilities. Expert in safe, portable, and testable shell s..."
-      },
-      {
-        "name": "blockchain-developer",
-        "path": "blockchain-developer.md",
-        "description": "Web3, smart contracts, and DeFi specialist"
-      },
-      {
-        "name": "braintree-pro",
-        "path": "braintree-pro.md",
-        "description": "Braintree specialist focusing on payment gateways, integrations, and optimization."
-      },
-      {
-        "name": "build-engineer",
-        "path": "build-engineer.md",
-        "description": "Build system and toolchain specialist"
-      },
-      {
-        "name": "bullmq-pro",
-        "path": "bullmq-pro.md",
-        "description": "Expert in BullMQ task queue library for Node.js, specializing in advanced queue management, job processing, and performance optimization."
-      },
-      {
-        "name": "bun-pro",
-        "path": "bun-pro.md",
-        "description": "Expertise in Bun, focusing on high-performance JavaScript runtime, efficient module execution, and optimized bundling."
-      },
-      {
-        "name": "business-analyst",
-        "path": "business-analyst.md",
-        "description": "Requirements gathering and analysis specialist"
-      },
-      {
-        "name": "cassandra-pro",
-        "path": "cassandra-pro.md",
-        "description": "Master in Cassandra database design, optimization, and management. Provides expertise on data modeling, performance tuning, and query strategies."
-      },
-      {
-        "name": "celery-pro",
-        "path": "celery-pro.md",
-        "description": "Expert in Celery for distributed task queue management, optimizing task execution, and ensuring robust Celery deployments."
-      },
-      {
-        "name": "chaos-engineer",
-        "path": "chaos-engineer.md",
-        "description": "System resilience and chaos testing expert"
-      },
-      {
-        "name": "circleci-pro",
-        "path": "circleci-pro.md",
-        "description": "Expert in CircleCI configuration, optimization, and troubleshooting for seamless continuous integration and delivery."
-      },
-      {
-        "name": "cli-developer",
-        "path": "cli-developer.md",
-        "description": "Command-line tool and CLI framework expert"
-      },
-      {
-        "name": "clojure-pro",
-        "path": "clojure-pro.md",
-        "description": "Master Clojure development with a focus on functional programming, immutability, concurrency, and Lisp macros. Use PROACTIVELY for Clojure optimiza..."
-      },
-      {
-        "name": "cloud-architect",
-        "path": "cloud-architect.md",
-        "description": "Expert in infrastructure-as-code using Terraform, specializing in efficient and reliable infrastructure provisioning and management."
-      },
-      {
-        "name": "cockroachdb-pro",
-        "path": "cockroachdb-pro.md",
-        "description": "Specializes in CockroachDB setup, optimization, and best practices. Handles deployment, configuration, and performance tuning. Use PROACTIVELY for ..."
-      },
-      {
-        "name": "code-reviewer",
-        "path": "code-reviewer.md",
-        "description": "Expert at reviewing code for quality, security, and best practices."
-      },
-      {
-        "name": "competitive-analyst",
-        "path": "competitive-analyst.md",
-        "description": "Competitive intelligence specialist"
-      },
-      {
-        "name": "compliance-auditor",
-        "path": "compliance-auditor.md",
-        "description": "Regulatory compliance (GDPR, HIPAA, SOC2) expert"
-      },
-      {
-        "name": "cpp-pro",
-        "path": "cpp-pro.md",
-        "description": "Expert in writing high-quality, efficient, and modern C++ code."
-      },
-      {
-        "name": "csharp-pro",
-        "path": "csharp-pro.md",
-        "description": "Expert in C# programming focusing on best practices, performance optimization, and code quality. Use PROACTIVELY for C# refactoring, optimization, ..."
-      },
-      {
-        "name": "css-pro",
-        "path": "css-pro.md",
-        "description": "Master CSS stylist with expertise in layouts, responsive design, animations, and accessibility. Handles complex layouts, and optimizes for performa..."
-      },
-      {
-        "name": "cypress-pro",
-        "path": "cypress-pro.md",
-        "description": "Expert in Cypress testing framework for end-to-end testing and automation. Handles browser-based testing, custom commands, and Cypress plugins. Use..."
-      },
-      {
-        "name": "dart-pro",
-        "path": "dart-pro.md",
-        "description": "Write idiomatic Dart code, optimize for Dart VM, and ensure cross-platform compatibility for Flutter applications."
-      },
-      {
-        "name": "data-analyst",
-        "path": "data-analyst.md",
-        "description": "Data insights and visualization specialist"
-      },
-      {
-        "name": "data-engineer",
-        "path": "data-engineer.md",
-        "description": "Expert data engineer specializing in data pipelines, ETL/ELT processes, data warehousing, and analytics infrastructure."
-      },
-      {
-        "name": "data-scientist",
-        "path": "data-scientist.md",
-        "description": "Analytics, modeling, and insights expert"
-      },
-      {
-        "name": "database-administrator",
-        "path": "database-administrator.md",
-        "description": "Database management and optimization expert"
-      },
-      {
-        "name": "database-architect",
-        "path": "database-architect.md",
-        "description": "Master MongoDB operations, schema design, performance optimization, and data modeling. Handles indexing, aggregations, and replication. Use PROACTI..."
-      },
-      {
-        "name": "database-optimizer",
-        "path": "database-optimizer.md",
-        "description": "Master Elasticsearch operations, query optimizations, and cluster management. Expert in indexing, searching, and aggregating data efficiently. Use ..."
-      },
-      {
-        "name": "debugger",
-        "path": "debugger.md",
-        "description": "Advanced debugging and troubleshooting specialist"
-      },
-      {
-        "name": "deno-pro",
-        "path": "deno-pro.md",
-        "description": "Expert in Deno for modern JavaScript and TypeScript runtime, security, performance, and tooling."
-      },
-      {
-        "name": "dependency-manager",
-        "path": "dependency-manager.md",
-        "description": "Package and dependency management specialist"
-      },
-      {
-        "name": "deployment-engineer",
-        "path": "deployment-engineer.md",
-        "description": "Deployment automation and release management"
-      },
-      {
-        "name": "devops-engineer",
-        "path": "devops-engineer.md",
-        "description": "Expert in all aspects of Docker, including containerization, image creation, and orchestration."
-      },
-      {
-        "name": "django-developer",
-        "path": "django-developer.md",
-        "description": "Write expert Django code with optimized models, views, and templates. Handles complex queries, middleware, and RESTful APIs. Use proactively for Dj..."
-      },
-      {
-        "name": "documentation-engineer",
-        "path": "documentation-engineer.md",
-        "description": "Technical documentation architect"
-      },
-      {
-        "name": "documentation-writer",
-        "path": "documentation-writer.md",
-        "description": "Expert at creating clear, comprehensive technical documentation."
-      },
-      {
-        "name": "dynamodb-pro",
-        "path": "dynamodb-pro.md",
-        "description": "Expert in DynamoDB optimization, best practices, and data modeling. Use PROACTIVELY for performance tuning, efficient querying, and DynamoDB schema..."
-      },
-      {
-        "name": "electron-pro",
-        "path": "electron-pro.md",
-        "description": "Specializes in building cross-platform desktop applications using Electron. Focuses on performance optimization, security best practices, and deliv..."
-      },
-      {
-        "name": "elixir-pro",
-        "path": "elixir-pro.md",
-        "description": "Expertise in Elixir programming, specializing in functional programming, concurrency, and fault-tolerant systems. Utilizes OTP, pattern matching, a..."
-      },
-      {
-        "name": "elk-pro",
-        "path": "elk-pro.md",
-        "description": "Expert in ELK stack management, optimization, and deployment. Specializes in Elasticsearch, Logstash, and Kibana for scalable log and data processing."
-      },
-      {
-        "name": "embedded-systems",
-        "path": "embedded-systems.md",
-        "description": "Embedded and real-time systems expert"
-      },
-      {
-        "name": "erlang-pro",
-        "path": "erlang-pro.md",
-        "description": "Expert in writing efficient, concurrent, and robust Erlang applications. Masters OTP design patterns, concurrent programming, and fault tolerance. ..."
-      },
-      {
-        "name": "expo-pro",
-        "path": "expo-pro.md",
-        "description": "Expert in developing, optimizing, and maintaining applications using the Expo framework for React Native."
-      },
-      {
-        "name": "express-pro",
-        "path": "express-pro.md",
-        "description": "Specializes in building performant and scalable web applications using Express.js."
-      },
-      {
-        "name": "fastify-pro",
-        "path": "fastify-pro.md",
-        "description": "Expert in building high-performance Node.js applications using Fastify framework. Specializes in plugins, lifecycle management, and performance opt..."
-      },
-      {
-        "name": "fiber-pro",
-        "path": "fiber-pro.md",
-        "description": "Master in fiber technology specializing in manufacturing, properties, applications, and innovations in fiber industry."
-      },
-      {
-        "name": "fintech-engineer",
-        "path": "fintech-engineer.md",
-        "description": "Financial technology and payment systems expert"
-      },
-      {
-        "name": "flask-pro",
-        "path": "flask-pro.md",
-        "description": "Expert in developing and optimizing web applications using the Flask framework. Masters routing, templating, request handling, and Flask extensions..."
-      },
-      {
-        "name": "flutter-expert",
-        "path": "flutter-expert.md",
-        "description": "Flutter 3+ cross-platform mobile expert"
-      },
-      {
-        "name": "flyway-pro",
-        "path": "flyway-pro.md",
-        "description": "Master Flyway for database migrations, versioning, and schema management. Optimizes migration scripts, ensures version compatibility, and improves ..."
-      },
-      {
-        "name": "frontend-developer",
-        "path": "frontend-developer.md",
-        "description": "UI/UX specialist for React, Vue, and Angular applications"
-      },
-      {
-        "name": "fullstack-developer",
-        "path": "fullstack-developer.md",
-        "description": "End-to-end feature development across the entire stack"
-      },
-      {
-        "name": "game-developer",
-        "path": "game-developer.md",
-        "description": "Game development and engine expert"
-      },
-      {
-        "name": "git-workflow-manager",
-        "path": "git-workflow-manager.md",
-        "description": "Git workflow and branching strategy expert"
-      },
-      {
-        "name": "github-actions-pro",
-        "path": "github-actions-pro.md",
-        "description": "Expert in GitHub Actions for automating workflows and CI/CD processes."
-      },
-      {
-        "name": "gitlab-ci-pro",
-        "path": "gitlab-ci-pro.md",
-        "description": "Expert in configuring, optimizing, and maintaining GitLab CI/CD pipelines for efficient software delivery."
-      },
-      {
-        "name": "golang-pro",
-        "path": "golang-pro.md",
-        "description": "Go concurrency and performance specialist"
-      },
-      {
-        "name": "grpc-pro",
-        "path": "grpc-pro.md",
-        "description": "Specialist in gRPC protocol, mastering streaming, services, and transport optimization for scalable, high-performance systems."
-      },
-      {
-        "name": "haskell-pro",
-        "path": "haskell-pro.md",
-        "description": "Write idiomatic Haskell code with advanced type system features, monads, and functional programming techniques. Optimizes for purity, laziness, and..."
-      },
-      {
-        "name": "html-pro",
-        "path": "html-pro.md",
-        "description": "Expert in HTML structure, semantics, and best practices for building clean, accessible, and optimized web pages."
-      },
-      {
-        "name": "incident-responder",
-        "path": "incident-responder.md",
-        "description": "System incident response and recovery expert"
-      },
-      {
-        "name": "ios-pro",
-        "path": "ios-pro.md",
-        "description": "Write high-quality iOS applications using Swift and SwiftUI, ensuring optimal performance, user-friendly interfaces, and adherence to Apple's guide..."
-      },
-      {
-        "name": "iot-engineer",
-        "path": "iot-engineer.md",
-        "description": "IoT systems and edge computing developer"
-      },
-      {
-        "name": "jasmine-pro",
-        "path": "jasmine-pro.md",
-        "description": "Master unit testing with the Jasmine framework, focusing on best practices for writing and organizing tests to ensure software quality. Handles asy..."
-      },
-      {
-        "name": "java-architect",
-        "path": "java-architect.md",
-        "description": "Expert in Ava for running tests and managing test suites efficiently."
-      },
-      {
-        "name": "javascript-pro",
-        "path": "javascript-pro.md",
-        "description": "Expert in modern JavaScript specializing in language features, optimization, and best practices. Handles asynchronous patterns, code quality, and p..."
-      },
-      {
-        "name": "jenkins-pro",
-        "path": "jenkins-pro.md",
-        "description": "Jenkins expert specializing in continuous integration, delivery, and deployment automation. Mastery of Jenkinsfile scripting, pipelines, and integr..."
-      },
-      {
-        "name": "jquery-pro",
-        "path": "jquery-pro.md",
-        "description": "jQuery specialist focusing on efficient DOM manipulation, event handling, and AJAX interactions. Expert in optimizing jQuery code and ensuring cros..."
-      },
-      {
-        "name": "jwt-pro",
-        "path": "jwt-pro.md",
-        "description": "Specializes in JSON Web Tokens (JWT) implementation, security, and optimization. Handles token creation, validation, and best practices for JWT usage."
-      },
-      {
-        "name": "kafka-pro",
-        "path": "kafka-pro.md",
-        "description": "Write highly efficient, scalable, and fault-tolerant Kafka architectures. Handles Kafka stream processing, cluster setup, and performance optimizat..."
-      },
-      {
-        "name": "keycloak-pro",
-        "path": "keycloak-pro.md",
-        "description": "Keycloak specialist for identity and access management, realm configuration, and user federation."
-      },
-      {
-        "name": "knex-pro",
-        "path": "knex-pro.md",
-        "description": "Expertise in Knex.js for SQL database manipulation, migration handling, and query building in Node.js environments."
-      },
-      {
-        "name": "kotlin-specialist",
-        "path": "kotlin-specialist.md",
-        "description": "Expert in Kotlin programming language, focusing on idiomatic Kotlin code, coroutines, extension functions, and memory management."
-      },
-      {
-        "name": "kubernetes-specialist",
-        "path": "kubernetes-specialist.md",
-        "description": "Container orchestration and K8s master"
-      },
-      {
-        "name": "laravel-specialist",
-        "path": "laravel-specialist.md",
-        "description": "Expert in Laravel framework, mastering modern Laravel features, Eloquent ORM, and comprehensive testing strategies. Use PROACTIVELY for Laravel opt..."
-      },
-      {
-        "name": "legacy-modernizer",
-        "path": "legacy-modernizer.md",
-        "description": "Legacy code modernization specialist"
-      },
-      {
-        "name": "liquibase-pro",
-        "path": "liquibase-pro.md",
-        "description": "Expert in Liquibase for database schema management, migrations, and version control. Use proactively for managing and automating database changes."
-      },
-      {
-        "name": "llm-architect",
-        "path": "llm-architect.md",
-        "description": "Large language model architecture expert"
-      },
-      {
-        "name": "loki-pro",
-        "path": "loki-pro.md",
-        "description": "Master in building, managing, and optimizing Loki for efficient log aggregation and querying."
-      },
-      {
-        "name": "mariadb-pro",
-        "path": "mariadb-pro.md",
-        "description": "Expert in MariaDB database management, optimization, and best practices."
-      },
-      {
-        "name": "mcp-developer",
-        "path": "mcp-developer.md",
-        "description": "Expert in developing Model Context Protocol (MCP) servers and integrations for Claude and other AI assistants."
-      },
-      {
-        "name": "ml-engineer",
-        "path": "ml-engineer.md",
-        "description": "Expert machine learning engineer specializing in model development, training pipelines, and production deployment."
-      },
-      {
-        "name": "mlops-engineer",
-        "path": "mlops-engineer.md",
-        "description": "MLOps and model deployment specialist"
-      },
-      {
-        "name": "mobile-developer",
-        "path": "mobile-developer.md",
-        "description": "Specialist in Flutter development, focusing on building high-quality, performant, and maintainable cross-platform applications."
-      },
-      {
-        "name": "mocha-pro",
-        "path": "mocha-pro.md",
-        "description": "Expertise in Mocha, the JavaScript test framework running on Node.js, focusing on writing, organizing, and executing tests efficiently."
-      },
-      {
-        "name": "model-evaluator",
-        "path": "model-evaluator.md",
-        "description": "Write efficient and idiomatic Lua code, mastering the language features, patterns, and performance optimization. Use PROACTIVELY for Lua scripting,..."
-      },
-      {
-        "name": "mongoose-pro",
-        "path": "mongoose-pro.md",
-        "description": "Mongoose ODM specialist for MongoDB, proficient in schema design, query optimization, and data validation."
-      },
-      {
-        "name": "monitoring-specialist",
-        "path": "monitoring-specialist.md",
-        "description": "Expert in Grafana dashboard creation, visualization best practices, and alerting systems. Proactively used for monitoring and reporting."
-      },
-      {
-        "name": "mqtt-pro",
-        "path": "mqtt-pro.md",
-        "description": "Master of MQTT protocol, focusing on message brokering, QoS levels, and efficient IoT communication. Handles connection management, topic hierarchy..."
-      },
-      {
-        "name": "mssql-pro",
-        "path": "mssql-pro.md",
-        "description": "Expert in Microsoft SQL Server handling query optimization, database design, and advanced T-SQL features."
-      },
-      {
-        "name": "mysql-pro",
-        "path": "mysql-pro.md",
-        "description": "Expert in MySQL database management, query optimization, and schema design. Provides efficient solutions for MySQL-related tasks."
-      },
-      {
-        "name": "nats-pro",
-        "path": "nats-pro.md",
-        "description": "Specialized in NATS, handling messaging patterns, scalability, and security features accurately within NATS deployments."
-      },
-      {
-        "name": "neo4j-pro",
-        "path": "neo4j-pro.md",
-        "description": "Expert in Neo4j graph database specializing in Cypher queries, graph modeling, and optimization."
-      },
-      {
-        "name": "neon-specialist",
-        "path": "neon-specialist.md",
-        "description": "Neon serverless Postgres architecture and optimization"
-      },
-      {
-        "name": "nestjs-pro",
-        "path": "nestjs-pro.md",
-        "description": "Expert in building scalable and efficient applications using the NestJS framework. Focused on design patterns, best practices, and performance opti..."
-      },
-      {
-        "name": "network-engineer",
-        "path": "network-engineer.md",
-        "description": "Network infrastructure specialist"
-      },
-      {
-        "name": "nextjs-architecture-expert",
-        "path": "nextjs-architecture-expert.md",
-        "description": "Expert in Next.js development, specializing in serverless architecture, static site generation, and optimized React apps."
-      },
-      {
-        "name": "nextjs-developer",
-        "path": "nextjs-developer.md",
-        "description": "Next.js 14+ full-stack specialist with App Router"
-      },
-      {
-        "name": "nlp-engineer",
-        "path": "nlp-engineer.md",
-        "description": "Expert in natural language processing, specializing in text processing, language models, and NLP applications."
-      },
-      {
-        "name": "numpy-pro",
-        "path": "numpy-pro.md",
-        "description": "Expert in NumPy for scientific computing, data analysis, and numerical operations. Masters array manipulations, broadcasting, and performance optim..."
-      },
-      {
-        "name": "oauth-oidc-pro",
-        "path": "oauth-oidc-pro.md",
-        "description": "Expert in OAuth 2.0 and OpenID Connect (OIDC) for secure authentication and authorization."
-      },
-      {
-        "name": "ocaml-pro",
-        "path": "ocaml-pro.md",
-        "description": "Expert in OCaml programming, covering functional programming, type systems, and performance optimization"
-      },
-      {
-        "name": "openai-api-pro",
-        "path": "openai-api-pro.md",
-        "description": "Trained to expertly handle OpenAI API features, usage patterns, and best practices."
-      },
-      {
-        "name": "opensearch-pro",
-        "path": "opensearch-pro.md",
-        "description": "Expert in OpenSearch cluster management, query optimization, indexing strategies, and performance tuning. Use PROACTIVELY for OpenSearch configurat..."
-      },
-      {
-        "name": "opentelemetry-pro",
-        "path": "opentelemetry-pro.md",
-        "description": "Master in OpenTelemetry for observability, tracing, metrics, and logs."
-      },
-      {
-        "name": "owasp-top10-pro",
-        "path": "owasp-top10-pro.md",
-        "description": "OWASP Top 10 expert specializing in identifying and mitigating the most critical web application security risks."
-      },
-      {
-        "name": "pandas-pro",
-        "path": "pandas-pro.md",
-        "description": "Expert in data manipulation and analysis using pandas library in Python."
-      },
-      {
-        "name": "payment-integration",
-        "path": "payment-integration.md",
-        "description": "Payment gateway integration specialist"
-      },
-      {
-        "name": "penetration-tester",
-        "path": "penetration-tester.md",
-        "description": "Ethical hacking and vulnerability testing"
-      },
-      {
-        "name": "performance-engineer",
-        "path": "performance-engineer.md",
-        "description": "Performance optimization and profiling expert"
-      },
-      {
-        "name": "perl-pro",
-        "path": "perl-pro.md",
-        "description": "Master Perl scripting with regular expressions, data manipulation, CPAN modules, and advanced text processing. Use PROACTIVELY for Perl scripting, ..."
-      },
-      {
-        "name": "phoenix-pro",
-        "path": "phoenix-pro.md",
-        "description": "Expert in Phoenix framework, optimizing web applications, and ensuring best practices. Handles performance tuning, real-time features, and idiomati..."
-      },
-      {
-        "name": "php-pro",
-        "path": "php-pro.md",
-        "description": "Specialized in developing efficient, secure, and modern PHP applications adhering to best practices."
-      },
-      {
-        "name": "platform-engineer",
-        "path": "platform-engineer.md",
-        "description": "Platform architecture and developer experience expert"
-      },
-      {
-        "name": "postgres-pro",
-        "path": "postgres-pro.md",
-        "description": "Expert PostgreSQL database administrator and developer specializing in performance optimization, schema design, and advanced features."
-      },
-      {
-        "name": "prisma-pro",
-        "path": "prisma-pro.md",
-        "description": "Write efficient, type-safe, and maintainable database queries using Prisma. Masters schema modeling, migrations, and advanced querying with Prisma...."
-      },
-      {
-        "name": "product-manager",
-        "path": "product-manager.md",
-        "description": "Product strategy and roadmap expert"
-      },
-      {
-        "name": "product-strategist",
-        "path": "product-strategist.md",
-        "description": "Product vision, MVP planning, and go-to-market strategy"
-      },
-      {
-        "name": "project-manager",
-        "path": "project-manager.md",
-        "description": "Project management and delivery specialist"
-      },
-      {
-        "name": "prompt-engineer",
-        "path": "prompt-engineer.md",
-        "description": "Expert at crafting, optimizing, and testing prompts for AI models."
-      },
-      {
-        "name": "pulumi-pro",
-        "path": "pulumi-pro.md",
-        "description": "Expert in Pulumi infrastructure as code for cloud resources"
-      },
-      {
-        "name": "puppeteer-pro",
-        "path": "puppeteer-pro.md",
-        "description": "Expert in automating browser interactions using Puppeteer. Handles headless browsing, web scraping, and automated testing with Puppeteer. Use PROAC..."
-      },
-      {
-        "name": "python-pro",
-        "path": "python-pro.md",
-        "description": "Master advanced Python features, optimize performance, and ensure code quality. Expert in clean, idiomatic Python and comprehensive testing."
-      },
-      {
-        "name": "pytorch-pro",
-        "path": "pytorch-pro.md",
-        "description": "Expert in PyTorch for building and optimizing deep learning models."
-      },
-      {
-        "name": "qa-expert",
-        "path": "qa-expert.md",
-        "description": "Test automation and quality assurance specialist"
-      },
-      {
-        "name": "rabbitmq-pro",
-        "path": "rabbitmq-pro.md",
-        "description": "Expert in RabbitMQ messaging, configuration, and optimization."
-      },
-      {
-        "name": "rails-expert",
-        "path": "rails-expert.md",
-        "description": "Master Ruby on Rails for building scalable, maintainable, and performant web applications. Use proactively for Rails optimization, refactoring, or ..."
-      },
-      {
-        "name": "react-performance-optimizer",
-        "path": "react-performance-optimizer.md",
-        "description": "React development expert with deep understanding of component architecture, hooks, state management, and performance optimization. Use PROACTIVELY ..."
-      },
-      {
-        "name": "react-specialist",
-        "path": "react-specialist.md",
-        "description": "React 18+ modern patterns and hooks expert"
-      },
-      {
-        "name": "refactoring-specialist",
-        "path": "refactoring-specialist.md",
-        "description": "Code refactoring and modernization expert"
-      },
-      {
-        "name": "remix-pro",
-        "path": "remix-pro.md",
-        "description": "Expert in building performant, scalable web applications using the Remix framework, with deep understanding of loaders, actions, and dynamic routing."
-      },
-      {
-        "name": "research-analyst",
-        "path": "research-analyst.md",
-        "description": "Comprehensive research and analysis expert"
-      },
-      {
-        "name": "rest-pro",
-        "path": "rest-pro.md",
-        "description": "Master in designing and implementing RESTful APIs with focus on best practices, HTTP methods, status codes, and resource modeling."
-      },
-      {
-        "name": "rollup-pro",
-        "path": "rollup-pro.md",
-        "description": "Expert in Rollup.js for bundling JavaScript projects with optimal performance and configuration."
-      },
-      {
-        "name": "ruby-pro",
-        "path": "ruby-pro.md",
-        "description": "Expert in Ruby programming language, focusing on idiomatic Ruby, performance optimization, and best practices."
-      },
-      {
-        "name": "rust-engineer",
-        "path": "rust-engineer.md",
-        "description": "Expert in writing idiomatic Rust code with focus on safety, concurrency, and performance. Masters ownership, borrowing concepts, and Rust's type sy..."
-      },
-      {
-        "name": "scala-pro",
-        "path": "scala-pro.md",
-        "description": "Scala expert specializing in functional programming, type safety, and performance optimization."
-      },
-      {
-        "name": "scikit-learn-pro",
-        "path": "scikit-learn-pro.md",
-        "description": "Master scikit-learn for machine learning, focusing on model selection, feature engineering, and hyperparameter tuning. Use this for machine learnin..."
-      },
-      {
-        "name": "scrum-master",
-        "path": "scrum-master.md",
-        "description": "Agile methodology and team facilitation expert"
-      },
-      {
-        "name": "security-auditor",
-        "path": "security-auditor.md",
-        "description": "Security vulnerability assessment expert"
-      },
-      {
-        "name": "security-engineer",
-        "path": "security-engineer.md",
-        "description": "Infrastructure security specialist"
-      },
-      {
-        "name": "selenium-pro",
-        "path": "selenium-pro.md",
-        "description": "Expert in automated browser testing using Selenium. Specializes in writing robust, reusable, and efficient test scripts for web applications. Ensur..."
-      },
-      {
-        "name": "seo-specialist",
-        "path": "seo-specialist.md",
-        "description": "Search engine optimization expert"
-      },
-      {
-        "name": "sequelize-pro",
-        "path": "sequelize-pro.md",
-        "description": "Expert in Sequelize ORM, proficient in database modeling, querying, associations, and migrations. Optimizes Sequelize usage for performance and dat..."
-      },
-      {
-        "name": "sidekiq-pro",
-        "path": "sidekiq-pro.md",
-        "description": "Specialist in optimizing and managing Sidekiq for efficient job processing and background task management."
-      },
-      {
-        "name": "sns-pro",
-        "path": "sns-pro.md",
-        "description": "Master of Amazon Simple Notification Service (SNS) for message management and notification solutions. Expertise includes topics, subscriptions, pol..."
-      },
-      {
-        "name": "solidjs-pro",
-        "path": "solidjs-pro.md",
-        "description": "SolidJS expert specializing in creating efficient and reactive UI components using SolidJS."
-      },
-      {
-        "name": "spring-boot-engineer",
-        "path": "spring-boot-engineer.md",
-        "description": "Expert in developing, optimizing, and maintaining Spring Boot applications with best practices and modern techniques for enterprise-grade applicati..."
-      },
-      {
-        "name": "sqlite-pro",
-        "path": "sqlite-pro.md",
-        "description": "SQLite database optimization, query writing, indexing, and best practices specialist. Proactively analyzes and optimizes SQLite databases for perfo..."
-      },
-      {
-        "name": "sqs-pro",
-        "path": "sqs-pro.md",
-        "description": "name: sqs-expert"
-      },
-      {
-        "name": "sre-engineer",
-        "path": "sre-engineer.md",
-        "description": "Site reliability and observability expert"
-      },
-      {
-        "name": "stripe-pro",
-        "path": "stripe-pro.md",
-        "description": "This agent specializes in managing and optimizing Stripe integrations, handling payments, managing subscriptions, and utilizing Stripe APIs."
-      },
-      {
-        "name": "svelte-pro",
-        "path": "svelte-pro.md",
-        "description": "Master Svelte.js development with a focus on building performant, maintainable, and idiomatic Svelte applications. Specializes in reactive programm..."
-      },
-      {
-        "name": "swift-expert",
-        "path": "swift-expert.md",
-        "description": "Write efficient, idiomatic Swift code with a focus on safety, performance, and modern features. Handles Swift UI, concurrency, and protocol-oriente..."
-      },
-      {
-        "name": "swiftui-pro",
-        "path": "swiftui-pro.md",
-        "description": "Expert in SwiftUI development, focusing on building dynamic, responsive, and maintainable applications for Apple platforms. Handles view compositio..."
-      },
-      {
-        "name": "tailwind-pro",
-        "path": "tailwind-pro.md",
-        "description": "Expert in Tailwind CSS for efficient and responsive styling of web projects, utilizing utility-first approaches and responsive design principles."
-      },
-      {
-        "name": "tauri-pro",
-        "path": "tauri-pro.md",
-        "description": "Expert in Tauri for building cross-platform desktop applications leveraging web technologies."
-      },
-      {
-        "name": "technical-writer",
-        "path": "technical-writer.md",
-        "description": "Technical documentation specialist"
-      },
-      {
-        "name": "tensorflow-pro",
-        "path": "tensorflow-pro.md",
-        "description": "Expert in TensorFlow, specializing in developing, optimizing, and deploying machine learning models using TensorFlow framework."
-      },
-      {
-        "name": "terraform-engineer",
-        "path": "terraform-engineer.md",
-        "description": "Infrastructure as Code expert"
-      },
-      {
-        "name": "test-automator",
-        "path": "test-automator.md",
-        "description": "Expert in test automation frameworks, CI/CD integration, and comprehensive testing strategies."
-      },
-      {
-        "name": "test-engineer",
-        "path": "test-engineer.md",
-        "description": "Expert in testing JavaScript applications using Jest, ensuring comprehensive test coverage and efficient test practices."
-      },
-      {
-        "name": "testcafe-pro",
-        "path": "testcafe-pro.md",
-        "description": "Expert in writing and optimizing TestCafe tests for reliable and maintainable UI testing."
-      },
-      {
-        "name": "trpc-pro",
-        "path": "trpc-pro.md",
-        "description": "Expert in building reliable, efficient, and type-safe backend services using tRPC."
-      },
-      {
-        "name": "typeorm-pro",
-        "path": "typeorm-pro.md",
-        "description": "Expertise in TypeORM for defining and managing data models with efficient database interactions in Node.js applications"
-      },
-      {
-        "name": "typescript-pro",
-        "path": "typescript-pro.md",
-        "description": "Expert in TypeScript specializing in type safety, async patterns, and modern ES features. Use PROACTIVELY for TypeScript development, refactoring, ..."
-      },
-      {
-        "name": "ui-designer",
-        "path": "ui-designer.md",
-        "description": "Visual design and interaction specialist"
-      },
-      {
-        "name": "unused-code-cleaner",
-        "path": "unused-code-cleaner.md",
-        "description": "Dead code detection, removal, and codebase cleanup"
-      },
-      {
-        "name": "ux-researcher",
-        "path": "ux-researcher.md",
-        "description": "User research and usability testing expert"
-      },
-      {
-        "name": "vector-db-pro",
-        "path": "vector-db-pro.md",
-        "description": "Expert in Vector Databases, handling indexing, querying, and optimization of vector data."
-      },
-      {
-        "name": "vitest-pro",
-        "path": "vitest-pro.md",
-        "description": "Create organized, comprehensive, and efficient unit tests with Vitest, ensuring high code quality and stability."
-      },
-      {
-        "name": "vue-expert",
-        "path": "vue-expert.md",
-        "description": "Vue.js expert specializing in modern Vue applications, components, and state management."
-      },
-      {
-        "name": "webpack-pro",
-        "path": "webpack-pro.md",
-        "description": "Expert in Webpack configuration, optimization, and troubleshooting for efficient bundling and module loading."
-      },
-      {
-        "name": "websocket-pro",
-        "path": "websocket-pro.md",
-        "description": "Specializes in WebSocket protocol, implementation, and application. Provides expertise for real-time data exchange using WebSockets."
-      }
-    ],
-    "commands": [
-      {
-        "name": "add-authentication-system",
-        "path": "add-authentication-system.md",
-        "description": "Add auth with JWT, OAuth, or Supabase"
-      },
-      {
-        "name": "add-changelog",
-        "path": "add-changelog.md",
-        "description": "Generate or update CHANGELOG.md based on git commits using conventional commits format."
-      },
-      {
-        "name": "ci-setup",
-        "path": "ci-setup.md",
-        "description": "Initialize CI configuration for your project"
-      },
-      {
-        "name": "create-architecture-documentation",
-        "path": "create-architecture-documentation.md",
-        "description": "Create system architecture docs"
-      },
-      {
-        "name": "create-onboarding-guide",
-        "path": "create-onboarding-guide.md",
-        "description": "Generate developer onboarding documentation"
-      },
-      {
-        "name": "create-pr",
-        "path": "create-pr.md",
-        "description": "Create a GitHub pull request with auto-generated description from commits and changes."
-      },
-      {
-        "name": "dependency-audit",
-        "path": "dependency-audit.md",
-        "description": "Audit dependencies for vulnerabilities"
-      },
-      {
-        "name": "deployment-monitoring",
-        "path": "deployment-monitoring.md",
-        "description": "Set up deployment monitoring and alerts"
-      },
-      {
-        "name": "doc-api",
-        "path": "doc-api.md",
-        "description": "Generate API documentation from code annotations"
-      },
-      {
-        "name": "docker-setup",
-        "path": "docker-setup.md",
-        "description": "Create Docker configuration for containerizing your application."
-      },
-      {
-        "name": "fix-github-issue",
-        "path": "fix-github-issue.md",
-        "description": "Analyze a GitHub issue and implement the fix with proper branching and PR creation."
-      },
-      {
-        "name": "generate-api-documentation",
-        "path": "generate-api-documentation.md",
-        "description": "Generate OpenAPI/Swagger documentation"
-      },
-      {
-        "name": "generate-tests",
-        "path": "generate-tests.md",
-        "description": "Generate comprehensive unit, integration, and E2E tests"
-      },
-      {
-        "name": "git-setup",
-        "path": "git-setup.md",
-        "description": "Initialize and configure Git for a new project with best practices."
-      },
-      {
-        "name": "implement-caching-strategy",
-        "path": "implement-caching-strategy.md",
-        "description": "Add intelligent caching layer"
-      },
-      {
-        "name": "migrate-to-typescript",
-        "path": "migrate-to-typescript.md",
-        "description": "Convert JavaScript to TypeScript"
-      },
-      {
-        "name": "nextjs-performance-audit",
-        "path": "nextjs-performance-audit.md",
-        "description": "Next.js specific performance analysis for SSR, SSG, and bundle optimization"
-      },
-      {
-        "name": "optimize-api-performance",
-        "path": "optimize-api-performance.md",
-        "description": "API latency analysis and optimization recommendations"
-      },
-      {
-        "name": "optimize-build",
-        "path": "optimize-build.md",
-        "description": "Optimize build process with caching and parallel execution"
-      },
-      {
-        "name": "optimize-bundle-size",
-        "path": "optimize-bundle-size.md",
-        "description": "Analyze and reduce JavaScript bundle size"
-      },
-      {
-        "name": "optimize-database-performance",
-        "path": "optimize-database-performance.md",
-        "description": "Optimize slow queries and indexes"
-      },
-      {
-        "name": "optimize-memory-usage",
-        "path": "optimize-memory-usage.md",
-        "description": "Detect and fix memory leaks"
-      },
-      {
-        "name": "penetration-test",
-        "path": "penetration-test.md",
-        "description": "Run penetration testing simulation on application"
-      },
-      {
-        "name": "performance-audit",
-        "path": "performance-audit.md",
-        "description": "Analyze performance and Core Web Vitals"
-      },
-      {
-        "name": "pr-review",
-        "path": "pr-review.md",
-        "description": "Perform comprehensive code review on a pull request with security, performance, and best practices checks."
-      },
-      {
-        "name": "prepare-release",
-        "path": "prepare-release.md",
-        "description": "Prepare release with changelog and version bump"
-      },
-      {
-        "name": "refactor-code",
-        "path": "refactor-code.md",
-        "description": "Intelligently refactor code for maintainability"
-      },
-      {
-        "name": "secrets-scanner",
-        "path": "secrets-scanner.md",
-        "description": "Scan codebase for exposed secrets and credentials"
-      },
-      {
-        "name": "security-audit",
-        "path": "security-audit.md",
-        "description": "Run OWASP Top 10 security audit on codebase"
-      },
-      {
-        "name": "setup-ci-cd-pipeline",
-        "path": "setup-ci-cd-pipeline.md",
-        "description": "Create CI/CD pipeline configuration"
-      },
-      {
-        "name": "setup-comprehensive-testing",
-        "path": "setup-comprehensive-testing.md",
-        "description": "Set up full testing infrastructure"
-      },
-      {
-        "name": "test-automation-orchestrator",
-        "path": "test-automation-orchestrator.md",
-        "description": "Orchestrate comprehensive test suites across unit, integration, and E2E"
-      },
-      {
-        "name": "test-coverage",
-        "path": "test-coverage.md",
-        "description": "Analyze and improve test coverage across the codebase with detailed reporting."
-      },
-      {
-        "name": "test-setup",
-        "path": "test-setup.md",
-        "description": "Set up a testing framework for your project."
-      },
-      {
-        "name": "update-docs",
-        "path": "update-docs.md",
-        "description": "Automatically update documentation based on code changes, including README, API docs, and inline comments."
-      }
-    ],
-    "mcps": [
-      {
-        "name": "astro-docs",
-        "path": "astro-docs.json",
-        "description": "MCP server: astro-docs"
-      },
-      {
-        "name": "aws",
-        "path": "aws.json",
-        "description": "MCP server: aws"
-      },
-      {
-        "name": "brave-search",
-        "path": "brave-search.json",
-        "description": "MCP server: brave-search"
-      },
-      {
-        "name": "cloudflare",
-        "path": "cloudflare.json",
-        "description": "MCP server: cloudflare"
-      },
-      {
-        "name": "ddd-template",
-        "path": "ddd-template.json",
-        "description": "MCP server: ddd-template"
-      },
-      {
-        "name": "docker",
-        "path": "docker.json",
-        "description": "MCP server: docker"
-      },
-      {
-        "name": "fetch",
-        "path": "fetch.json",
-        "description": "MCP server: fetch"
-      },
-      {
-        "name": "filesystem",
-        "path": "filesystem.json",
-        "description": "MCP server: filesystem"
-      },
-      {
-        "name": "git",
-        "path": "git.json",
-        "description": "MCP server: git"
-      },
-      {
-        "name": "github",
-        "path": "github.json",
-        "description": "MCP server: github"
-      },
-      {
-        "name": "huggingface",
-        "path": "huggingface.json",
-        "description": "MCP server: huggingface"
-      },
-      {
-        "name": "linear",
-        "path": "linear.json",
-        "description": "MCP server: linear"
-      },
-      {
-        "name": "memory",
-        "path": "memory.json",
-        "description": "MCP server: memory"
-      },
-      {
-        "name": "mongodb",
-        "path": "mongodb.json",
-        "description": "MCP server: mongodb"
-      },
-      {
-        "name": "neon",
-        "path": "neon.json",
-        "description": "MCP server: neon"
-      },
-      {
-        "name": "notion",
-        "path": "notion.json",
-        "description": "MCP server: notion"
-      },
-      {
-        "name": "postgresql",
-        "path": "postgresql.json",
-        "description": "MCP server: postgres"
-      },
-      {
-        "name": "prd-creator",
-        "path": "prd-creator.json",
-        "description": "MCP server: prd-creator"
-      },
-      {
-        "name": "puppeteer",
-        "path": "puppeteer.json",
-        "description": "MCP server: puppeteer"
-      },
-      {
-        "name": "redis",
-        "path": "redis.json",
-        "description": "MCP server: redis"
-      },
-      {
-        "name": "sentry",
-        "path": "sentry.json",
-        "description": "MCP server: sentry"
-      },
-      {
-        "name": "sequential-thinking",
-        "path": "sequential-thinking.json",
-        "description": "MCP server: sequential-thinking"
-      },
-      {
-        "name": "shopify",
-        "path": "shopify.json",
-        "description": "MCP server: shopify"
-      },
-      {
-        "name": "slack",
-        "path": "slack.json",
-        "description": "MCP server: slack"
-      },
-      {
-        "name": "sqlite",
-        "path": "sqlite.json",
-        "description": "MCP server: sqlite"
-      },
-      {
-        "name": "stripe",
-        "path": "stripe.json",
-        "description": "MCP server: stripe"
-      },
-      {
-        "name": "supabase",
-        "path": "supabase.json",
-        "description": "MCP server: supabase"
-      },
-      {
-        "name": "swagger",
-        "path": "swagger.json",
-        "description": "MCP server: swagger"
-      },
-      {
-        "name": "todo",
-        "path": "todo.json",
-        "description": "MCP server: todo"
-      },
-      {
-        "name": "vercel",
-        "path": "vercel.json",
-        "description": "MCP server: vercel"
-      },
-      {
-        "name": "youtube-transcript",
-        "path": "youtube-transcript.json",
-        "description": "MCP server: youtube-transcript"
-      }
-    ],
-    "hooks": [
-      {
-        "name": "auto-commit",
-        "path": "auto-commit.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "auto-git-add",
-        "path": "auto-git-add.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "backup-before-edit",
-        "path": "backup-before-edit.json",
-        "description": "Create backup before editing files"
-      },
-      {
-        "name": "build-on-change",
-        "path": "build-on-change.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "conventional-commits",
-        "path": "conventional-commits.json",
-        "description": "Hook: PreToolUse trigger"
-      },
-      {
-        "name": "discord-notifications",
-        "path": "discord-notifications.json",
-        "description": "Hook: Stop trigger"
-      },
-      {
-        "name": "format-on-save",
-        "path": "format-on-save.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "lint-on-save",
-        "path": "lint-on-save.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "notify-on-complete",
-        "path": "notify-on-complete.json",
-        "description": "Hook: Stop trigger"
-      },
-      {
-        "name": "performance-monitor",
-        "path": "performance-monitor.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "security-scan",
-        "path": "security-scan.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "security-scanner",
-        "path": "security-scanner.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "slack-notifications",
-        "path": "slack-notifications.json",
-        "description": "Hook: Stop trigger"
-      },
-      {
-        "name": "smart-commit",
-        "path": "smart-commit.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "smart-formatting",
-        "path": "smart-formatting.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "telegram-notifications",
-        "path": "telegram-notifications.json",
-        "description": "Hook: Stop trigger"
-      },
-      {
-        "name": "test-on-edit",
-        "path": "test-on-edit.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "type-check",
-        "path": "type-check.json",
-        "description": "Hook: PostToolUse trigger"
-      },
-      {
-        "name": "vercel-auto-deploy",
-        "path": "vercel-auto-deploy.json",
-        "description": "Hook: PostToolUse trigger"
-      }
-    ],
-    "settings": [
-      {
-        "name": "allow-bun",
-        "path": "allow-bun.json",
-        "description": "Allow Bun runtime commands (bun, bunx) for fast JavaScript/TypeScript execution"
-      },
-      {
-        "name": "allow-docker",
-        "path": "allow-docker.json",
-        "description": "Permissions: 2 allow, 0 deny rules"
-      },
-      {
-        "name": "allow-git",
-        "path": "allow-git.json",
-        "description": "Allow common Git commands for version control operations"
-      },
-      {
-        "name": "allow-npm",
-        "path": "allow-npm.json",
-        "description": "Permissions: 6 allow, 0 deny rules"
-      },
-      {
-        "name": "allow-pnpm",
-        "path": "allow-pnpm.json",
-        "description": "Allow pnpm package manager commands for efficient dependency management"
-      },
-      {
-        "name": "allow-python",
-        "path": "allow-python.json",
-        "description": "Permissions: 3 allow, 0 deny rules"
-      },
-      {
-        "name": "deny-sensitive-files",
-        "path": "deny-sensitive-files.json",
-        "description": "Permissions: 0 allow, 4 deny rules"
-      },
-      {
-        "name": "strict-mode",
-        "path": "strict-mode.json",
-        "description": "Permissions: 0 allow, 3 deny rules"
-      }
-    ],
-    "skills": [
-      {
-        "name": "aesthetic",
-        "path": "aesthetic",
-        "description": "Create aesthetically beautiful interfaces following proven design principles. Use when building UI/UX, analyzing designs from inspiration sites, ge..."
-      },
-      {
-        "name": "ai-multimodal",
-        "path": "ai-multimodal",
-        "description": "Process and generate multimedia content using Google Gemini API. Capabilities include analyze audio files (transcription with timestamps, summariza..."
-      },
-      {
-        "name": "algorithmic-art",
-        "path": "algorithmic-art",
-        "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using c..."
-      },
-      {
-        "name": "backend-development",
-        "path": "backend-development",
-        "description": "Build robust backend systems with modern technologies (Node.js, Python, Go, Rust), frameworks (NestJS, FastAPI, Django), databases (PostgreSQL, Mon..."
-      },
-      {
-        "name": "better-auth",
-        "path": "better-auth",
-        "description": "Implement authentication and authorization with Better Auth - a framework-agnostic TypeScript authentication framework. Features include email/pass..."
-      },
-      {
-        "name": "brand-guidelines",
-        "path": "brand-guidelines",
-        "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it whe..."
-      },
-      {
-        "name": "canvas-design",
-        "path": "canvas-design",
-        "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, pi..."
-      },
-      {
-        "name": "chrome-devtools",
-        "path": "chrome-devtools",
-        "description": "Browser automation, debugging, and performance analysis using Puppeteer CLI scripts. Use for automating browsers, taking screenshots, analyzing per..."
-      },
-      {
-        "name": "claude-code",
-        "path": "claude-code",
-        "description": "Claude Code is Anthropic's agentic coding tool that lives in the terminal and helps turn ideas into code faster. It combines autonomous planning, e..."
-      },
-      {
-        "name": "code-review",
-        "path": "code-review",
-        "description": "Use when receiving code review feedback (especially if unclear or technically questionable), when completing tasks or major features requiring revi..."
-      },
-      {
-        "name": "context-engineering",
-        "path": "context-engineering",
-        "description": "Master context engineering for AI agents - token optimization, degradation patterns, compression, memory systems, multi-agent coordination, evaluat..."
-      },
-      {
-        "name": "databases",
-        "path": "databases",
-        "description": "Work with MongoDB (document database, BSON documents, aggregation pipelines, Atlas cloud) and PostgreSQL (relational database, SQL queries, psql CL..."
-      },
-      {
-        "name": "devops",
-        "path": "devops",
-        "description": "Deploy and manage cloud infrastructure on Cloudflare (Workers, R2, D1, KV, Pages, Durable Objects, Browser Rendering), Docker containers, and Googl..."
-      },
-      {
-        "name": "doc-coauthoring",
-        "path": "doc-coauthoring",
-        "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, d..."
-      },
-      {
-        "name": "docs-seeker",
-        "path": "docs-seeker",
-        "description": "\"Searching internet for technical documentation using llms.txt standard, GitHub repositories via Repomix, and parallel exploration. Use when user n..."
-      },
-      {
-        "name": "docx",
-        "path": "docx",
-        "description": "\"Comprehensive document creation, editing, and analysis with support for tracked changes, comments, formatting preservation, and text extraction. W..."
-      },
-      {
-        "name": "frontend-design",
-        "path": "frontend-design",
-        "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages..."
-      },
-      {
-        "name": "frontend-development",
-        "path": "frontend-development",
-        "description": "Frontend development guidelines for React/TypeScript applications. Modern patterns including Suspense, lazy loading, useSuspenseQuery, file organiz..."
-      },
-      {
-        "name": "google-adk-python",
-        "path": "google-adk-python",
-        "description": "Build AI agents with Google's Agent Development Kit (ADK) Python - an open-source toolkit for building, evaluating, and deploying AI agents. Featur..."
-      },
-      {
-        "name": "internal-comms",
-        "path": "internal-comms",
-        "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this sk..."
-      },
-      {
-        "name": "mcp-builder",
-        "path": "mcp-builder",
-        "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tool..."
-      },
-      {
-        "name": "mcp-management",
-        "path": "mcp-management",
-        "description": "Manage Model Context Protocol (MCP) servers - discover, analyze, and execute tools/prompts/resources from configured MCP servers. Use when working ..."
-      },
-      {
-        "name": "media-processing",
-        "path": "media-processing",
-        "description": "Process multimedia files with FFmpeg (video/audio encoding, conversion, streaming, filtering, hardware acceleration) and ImageMagick (image manipul..."
-      },
-      {
-        "name": "mermaidjs-v11",
-        "path": "mermaidjs-v11",
-        "description": "Create diagrams and visualizations using Mermaid.js v11 syntax. Use when generating flowcharts, sequence diagrams, class diagrams, state diagrams, ..."
-      },
-      {
-        "name": "migration-guide",
-        "path": "migration-guide",
-        "description": ">"
-      },
-      {
-        "name": "pdf",
-        "path": "pdf",
-        "description": "Comprehensive PDF manipulation toolkit for extracting text and tables, creating new PDFs, merging/splitting documents, and handling forms. When Cla..."
-      },
-      {
-        "name": "pptx",
-        "path": "pptx",
-        "description": "\"Presentation creation, editing, and analysis. When Claude needs to work with presentations (.pptx files) for: (1) Creating new presentations, (2) ..."
-      },
-      {
-        "name": "product-spec",
-        "path": "product-spec",
-        "description": "Convert product briefs, websites, documents into structured product specs. Generates modular markdown files for landing pages, guides, marketing."
-      },
-      {
-        "name": "project-blueprint",
-        "path": "project-blueprint",
-        "description": ">"
-      },
-      {
-        "name": "repomix",
-        "path": "repomix",
-        "description": "Package entire code repositories into single AI-friendly files using Repomix. Capabilities include pack codebases with customizable include/exclude..."
-      },
-      {
-        "name": "sequential-thinking",
-        "path": "sequential-thinking",
-        "description": "Use when complex problems require systematic step-by-step reasoning with ability to revise thoughts, branch into alternative approaches, or dynamic..."
-      },
-      {
-        "name": "shopify",
-        "path": "shopify",
-        "description": "Build Shopify applications, extensions, and themes using GraphQL/REST APIs, Shopify CLI, Polaris UI components, and Liquid templating. Capabilities..."
-      },
-      {
-        "name": "skill-creator",
-        "path": "skill-creator",
-        "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Cla..."
-      },
-      {
-        "name": "slack-gif-creator",
-        "path": "slack-gif-creator",
-        "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when us..."
-      },
-      {
-        "name": "spec-writer",
-        "path": "spec-writer",
-        "description": ">"
-      },
-      {
-        "name": "template-skill",
-        "path": "template-skill",
-        "description": "Replace with description of the skill and when Claude should use it."
-      },
-      {
-        "name": "theme-factory",
-        "path": "theme-factory",
-        "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes w..."
-      },
-      {
-        "name": "udemy-crawler",
-        "path": "udemy-crawler",
-        "description": "Extract Udemy course content to markdown. Use when user asks to scrape/crawl Udemy course pages."
-      },
-      {
-        "name": "ui-styling",
-        "path": "ui-styling",
-        "description": "Create beautiful, accessible user interfaces with shadcn/ui components (built on Radix UI + Tailwind), Tailwind CSS utility-first styling, and canv..."
-      },
-      {
-        "name": "ui-ux-pro-max",
-        "path": "ui-ux-pro-max",
-        "description": "\"UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flut..."
-      },
-      {
-        "name": "vibery-manager",
-        "path": "vibery-manager",
-        "description": "Unified management for Vibery monorepo (templates, kits, CLI, website). Use /template, /kit, /sync, /publish, /deploy commands."
-      },
-      {
-        "name": "web-artifacts-builder",
-        "path": "web-artifacts-builder",
-        "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn..."
-      },
-      {
-        "name": "web-frameworks",
-        "path": "web-frameworks",
-        "description": "Build modern full-stack web applications with Next.js (App Router, Server Components, RSC, PPR, SSR, SSG, ISR), Turborepo (monorepo management, tas..."
-      },
-      {
-        "name": "webapp-testing",
-        "path": "webapp-testing",
-        "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior,..."
-      },
-      {
-        "name": "workflow-composer",
-        "path": "workflow-composer",
-        "description": ">"
-      },
-      {
-        "name": "xlsx",
-        "path": "xlsx",
-        "description": "\"Comprehensive spreadsheet creation, editing, and analysis with support for formulas, formatting, data analysis, and visualization. When Claude nee..."
-      }
-    ]
-  }
+  "updated": "2026-03-03T08:55:36.469Z",
+  "base_url": "https://github.com/vibery-studio/templates/releases/latest/download",
+  "templates": [
+    {
+      "name": "accessibility-tester",
+      "type": "agent",
+      "description": "---",
+      "size": 2114,
+      "archive": "agent--accessibility-tester.tar.gz",
+      "rawFile": "agent--accessibility-tester.md"
+    },
+    {
+      "name": "actix-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2162,
+      "archive": "agent--actix-pro.tar.gz",
+      "rawFile": "agent--actix-pro.md"
+    },
+    {
+      "name": "ai-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 1821,
+      "archive": "agent--ai-engineer.tar.gz",
+      "rawFile": "agent--ai-engineer.md"
+    },
+    {
+      "name": "ai-ethics-advisor",
+      "type": "agent",
+      "description": "---",
+      "size": 2090,
+      "archive": "agent--ai-ethics-advisor.tar.gz",
+      "rawFile": "agent--ai-ethics-advisor.md"
+    },
+    {
+      "name": "android-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2809,
+      "archive": "agent--android-pro.tar.gz",
+      "rawFile": "agent--android-pro.md"
+    },
+    {
+      "name": "angular-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 2267,
+      "archive": "agent--angular-architect.tar.gz",
+      "rawFile": "agent--angular-architect.md"
+    },
+    {
+      "name": "angularjs-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2335,
+      "archive": "agent--angularjs-pro.tar.gz",
+      "rawFile": "agent--angularjs-pro.md"
+    },
+    {
+      "name": "ansible-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2502,
+      "archive": "agent--ansible-pro.tar.gz",
+      "rawFile": "agent--ansible-pro.md"
+    },
+    {
+      "name": "api-designer",
+      "type": "agent",
+      "description": "---",
+      "size": 2649,
+      "archive": "agent--api-designer.tar.gz",
+      "rawFile": "agent--api-designer.md"
+    },
+    {
+      "name": "api-documenter",
+      "type": "agent",
+      "description": "---",
+      "size": 2204,
+      "archive": "agent--api-documenter.tar.gz",
+      "rawFile": "agent--api-documenter.md"
+    },
+    {
+      "name": "api-security-auditor",
+      "type": "agent",
+      "description": "---",
+      "size": 1360,
+      "archive": "agent--api-security-auditor.tar.gz",
+      "rawFile": "agent--api-security-auditor.md"
+    },
+    {
+      "name": "architect-planner",
+      "type": "agent",
+      "description": "---",
+      "size": 8437,
+      "archive": "agent--architect-planner.tar.gz",
+      "rawFile": "agent--architect-planner.md"
+    },
+    {
+      "name": "architect-reviewer",
+      "type": "agent",
+      "description": "---",
+      "size": 1072,
+      "archive": "agent--architect-reviewer.tar.gz",
+      "rawFile": "agent--architect-reviewer.md"
+    },
+    {
+      "name": "aspnet-core-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2422,
+      "archive": "agent--aspnet-core-pro.tar.gz",
+      "rawFile": "agent--aspnet-core-pro.md"
+    },
+    {
+      "name": "astro-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2981,
+      "archive": "agent--astro-pro.tar.gz",
+      "rawFile": "agent--astro-pro.md"
+    },
+    {
+      "name": "auth0-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2544,
+      "archive": "agent--auth0-pro.tar.gz",
+      "rawFile": "agent--auth0-pro.md"
+    },
+    {
+      "name": "backend-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 2401,
+      "archive": "agent--backend-architect.tar.gz",
+      "rawFile": "agent--backend-architect.md"
+    },
+    {
+      "name": "backend-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 2670,
+      "archive": "agent--backend-developer.tar.gz",
+      "rawFile": "agent--backend-developer.md"
+    },
+    {
+      "name": "bash-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 5381,
+      "archive": "agent--bash-pro.tar.gz",
+      "rawFile": "agent--bash-pro.md"
+    },
+    {
+      "name": "blockchain-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 817,
+      "archive": "agent--blockchain-developer.tar.gz",
+      "rawFile": "agent--blockchain-developer.md"
+    },
+    {
+      "name": "braintree-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1996,
+      "archive": "agent--braintree-pro.tar.gz",
+      "rawFile": "agent--braintree-pro.md"
+    },
+    {
+      "name": "build-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 806,
+      "archive": "agent--build-engineer.tar.gz",
+      "rawFile": "agent--build-engineer.md"
+    },
+    {
+      "name": "bullmq-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2268,
+      "archive": "agent--bullmq-pro.tar.gz",
+      "rawFile": "agent--bullmq-pro.md"
+    },
+    {
+      "name": "bun-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2776,
+      "archive": "agent--bun-pro.tar.gz",
+      "rawFile": "agent--bun-pro.md"
+    },
+    {
+      "name": "business-analyst",
+      "type": "agent",
+      "description": "---",
+      "size": 717,
+      "archive": "agent--business-analyst.tar.gz",
+      "rawFile": "agent--business-analyst.md"
+    },
+    {
+      "name": "cassandra-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2798,
+      "archive": "agent--cassandra-pro.tar.gz",
+      "rawFile": "agent--cassandra-pro.md"
+    },
+    {
+      "name": "celery-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2034,
+      "archive": "agent--celery-pro.tar.gz",
+      "rawFile": "agent--celery-pro.md"
+    },
+    {
+      "name": "chaos-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 811,
+      "archive": "agent--chaos-engineer.tar.gz",
+      "rawFile": "agent--chaos-engineer.md"
+    },
+    {
+      "name": "circleci-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2790,
+      "archive": "agent--circleci-pro.tar.gz",
+      "rawFile": "agent--circleci-pro.md"
+    },
+    {
+      "name": "cli-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 810,
+      "archive": "agent--cli-developer.tar.gz",
+      "rawFile": "agent--cli-developer.md"
+    },
+    {
+      "name": "clojure-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2918,
+      "archive": "agent--clojure-pro.tar.gz",
+      "rawFile": "agent--clojure-pro.md"
+    },
+    {
+      "name": "cloud-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 2752,
+      "archive": "agent--cloud-architect.tar.gz",
+      "rawFile": "agent--cloud-architect.md"
+    },
+    {
+      "name": "cockroachdb-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2436,
+      "archive": "agent--cockroachdb-pro.tar.gz",
+      "rawFile": "agent--cockroachdb-pro.md"
+    },
+    {
+      "name": "code-reviewer",
+      "type": "agent",
+      "description": "Expert at reviewing code for quality, security, and best practices.",
+      "size": 1112,
+      "archive": "agent--code-reviewer.tar.gz",
+      "rawFile": "agent--code-reviewer.md"
+    },
+    {
+      "name": "competitive-analyst",
+      "type": "agent",
+      "description": "---",
+      "size": 709,
+      "archive": "agent--competitive-analyst.tar.gz",
+      "rawFile": "agent--competitive-analyst.md"
+    },
+    {
+      "name": "compliance-auditor",
+      "type": "agent",
+      "description": "---",
+      "size": 1335,
+      "archive": "agent--compliance-auditor.tar.gz",
+      "rawFile": "agent--compliance-auditor.md"
+    },
+    {
+      "name": "cpp-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2782,
+      "archive": "agent--cpp-pro.tar.gz",
+      "rawFile": "agent--cpp-pro.md"
+    },
+    {
+      "name": "csharp-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2447,
+      "archive": "agent--csharp-pro.tar.gz",
+      "rawFile": "agent--csharp-pro.md"
+    },
+    {
+      "name": "css-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2329,
+      "archive": "agent--css-pro.tar.gz",
+      "rawFile": "agent--css-pro.md"
+    },
+    {
+      "name": "cypress-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2304,
+      "archive": "agent--cypress-pro.tar.gz",
+      "rawFile": "agent--cypress-pro.md"
+    },
+    {
+      "name": "dart-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2064,
+      "archive": "agent--dart-pro.tar.gz",
+      "rawFile": "agent--dart-pro.md"
+    },
+    {
+      "name": "data-analyst",
+      "type": "agent",
+      "description": "---",
+      "size": 709,
+      "archive": "agent--data-analyst.tar.gz",
+      "rawFile": "agent--data-analyst.md"
+    },
+    {
+      "name": "data-engineer",
+      "type": "agent",
+      "description": "Expert data engineer specializing in data pipelines, ETL/ELT processes, data warehousing, and analytics infrastructure.",
+      "size": 1253,
+      "archive": "agent--data-engineer.tar.gz",
+      "rawFile": "agent--data-engineer.md"
+    },
+    {
+      "name": "data-scientist",
+      "type": "agent",
+      "description": "---",
+      "size": 1910,
+      "archive": "agent--data-scientist.tar.gz",
+      "rawFile": "agent--data-scientist.md"
+    },
+    {
+      "name": "database-administrator",
+      "type": "agent",
+      "description": "---",
+      "size": 2051,
+      "archive": "agent--database-administrator.tar.gz",
+      "rawFile": "agent--database-administrator.md"
+    },
+    {
+      "name": "database-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 2575,
+      "archive": "agent--database-architect.tar.gz",
+      "rawFile": "agent--database-architect.md"
+    },
+    {
+      "name": "database-optimizer",
+      "type": "agent",
+      "description": "---",
+      "size": 2691,
+      "archive": "agent--database-optimizer.tar.gz",
+      "rawFile": "agent--database-optimizer.md"
+    },
+    {
+      "name": "debugger",
+      "type": "agent",
+      "description": "---",
+      "size": 2170,
+      "archive": "agent--debugger.tar.gz",
+      "rawFile": "agent--debugger.md"
+    },
+    {
+      "name": "deno-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2379,
+      "archive": "agent--deno-pro.tar.gz",
+      "rawFile": "agent--deno-pro.md"
+    },
+    {
+      "name": "dependency-manager",
+      "type": "agent",
+      "description": "---",
+      "size": 1935,
+      "archive": "agent--dependency-manager.tar.gz",
+      "rawFile": "agent--dependency-manager.md"
+    },
+    {
+      "name": "deployment-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 818,
+      "archive": "agent--deployment-engineer.tar.gz",
+      "rawFile": "agent--deployment-engineer.md"
+    },
+    {
+      "name": "devops-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 2435,
+      "archive": "agent--devops-engineer.tar.gz",
+      "rawFile": "agent--devops-engineer.md"
+    },
+    {
+      "name": "django-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 2725,
+      "archive": "agent--django-developer.tar.gz",
+      "rawFile": "agent--django-developer.md"
+    },
+    {
+      "name": "documentation-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 810,
+      "archive": "agent--documentation-engineer.tar.gz",
+      "rawFile": "agent--documentation-engineer.md"
+    },
+    {
+      "name": "documentation-writer",
+      "type": "agent",
+      "description": "Expert at creating clear, comprehensive technical documentation.",
+      "size": 1310,
+      "archive": "agent--documentation-writer.tar.gz",
+      "rawFile": "agent--documentation-writer.md"
+    },
+    {
+      "name": "dynamodb-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2627,
+      "archive": "agent--dynamodb-pro.tar.gz",
+      "rawFile": "agent--dynamodb-pro.md"
+    },
+    {
+      "name": "electron-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2969,
+      "archive": "agent--electron-pro.tar.gz",
+      "rawFile": "agent--electron-pro.md"
+    },
+    {
+      "name": "elixir-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2171,
+      "archive": "agent--elixir-pro.tar.gz",
+      "rawFile": "agent--elixir-pro.md"
+    },
+    {
+      "name": "elk-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2284,
+      "archive": "agent--elk-pro.tar.gz",
+      "rawFile": "agent--elk-pro.md"
+    },
+    {
+      "name": "embedded-systems",
+      "type": "agent",
+      "description": "---",
+      "size": 1890,
+      "archive": "agent--embedded-systems.tar.gz",
+      "rawFile": "agent--embedded-systems.md"
+    },
+    {
+      "name": "erlang-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2509,
+      "archive": "agent--erlang-pro.tar.gz",
+      "rawFile": "agent--erlang-pro.md"
+    },
+    {
+      "name": "expo-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2384,
+      "archive": "agent--expo-pro.tar.gz",
+      "rawFile": "agent--expo-pro.md"
+    },
+    {
+      "name": "express-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2064,
+      "archive": "agent--express-pro.tar.gz",
+      "rawFile": "agent--express-pro.md"
+    },
+    {
+      "name": "fastify-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2208,
+      "archive": "agent--fastify-pro.tar.gz",
+      "rawFile": "agent--fastify-pro.md"
+    },
+    {
+      "name": "fiber-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2133,
+      "archive": "agent--fiber-pro.tar.gz",
+      "rawFile": "agent--fiber-pro.md"
+    },
+    {
+      "name": "fintech-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 818,
+      "archive": "agent--fintech-engineer.tar.gz",
+      "rawFile": "agent--fintech-engineer.md"
+    },
+    {
+      "name": "flask-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2303,
+      "archive": "agent--flask-pro.tar.gz",
+      "rawFile": "agent--flask-pro.md"
+    },
+    {
+      "name": "flutter-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 1832,
+      "archive": "agent--flutter-expert.tar.gz",
+      "rawFile": "agent--flutter-expert.md"
+    },
+    {
+      "name": "flyway-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2154,
+      "archive": "agent--flyway-pro.tar.gz",
+      "rawFile": "agent--flyway-pro.md"
+    },
+    {
+      "name": "frontend-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 830,
+      "archive": "agent--frontend-developer.tar.gz",
+      "rawFile": "agent--frontend-developer.md"
+    },
+    {
+      "name": "fullstack-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 828,
+      "archive": "agent--fullstack-developer.tar.gz",
+      "rawFile": "agent--fullstack-developer.md"
+    },
+    {
+      "name": "game-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 803,
+      "archive": "agent--game-developer.tar.gz",
+      "rawFile": "agent--game-developer.md"
+    },
+    {
+      "name": "git-workflow-manager",
+      "type": "agent",
+      "description": "---",
+      "size": 1610,
+      "archive": "agent--git-workflow-manager.tar.gz",
+      "rawFile": "agent--git-workflow-manager.md"
+    },
+    {
+      "name": "github-actions-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2477,
+      "archive": "agent--github-actions-pro.tar.gz",
+      "rawFile": "agent--github-actions-pro.md"
+    },
+    {
+      "name": "gitlab-ci-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2696,
+      "archive": "agent--gitlab-ci-pro.tar.gz",
+      "rawFile": "agent--gitlab-ci-pro.md"
+    },
+    {
+      "name": "golang-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1812,
+      "archive": "agent--golang-pro.tar.gz",
+      "rawFile": "agent--golang-pro.md"
+    },
+    {
+      "name": "grpc-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2639,
+      "archive": "agent--grpc-pro.tar.gz",
+      "rawFile": "agent--grpc-pro.md"
+    },
+    {
+      "name": "haskell-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2520,
+      "archive": "agent--haskell-pro.tar.gz",
+      "rawFile": "agent--haskell-pro.md"
+    },
+    {
+      "name": "html-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2160,
+      "archive": "agent--html-pro.tar.gz",
+      "rawFile": "agent--html-pro.md"
+    },
+    {
+      "name": "incident-responder",
+      "type": "agent",
+      "description": "---",
+      "size": 2003,
+      "archive": "agent--incident-responder.tar.gz",
+      "rawFile": "agent--incident-responder.md"
+    },
+    {
+      "name": "ios-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2401,
+      "archive": "agent--ios-pro.tar.gz",
+      "rawFile": "agent--ios-pro.md"
+    },
+    {
+      "name": "iot-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 807,
+      "archive": "agent--iot-engineer.tar.gz",
+      "rawFile": "agent--iot-engineer.md"
+    },
+    {
+      "name": "jasmine-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 3011,
+      "archive": "agent--jasmine-pro.tar.gz",
+      "rawFile": "agent--jasmine-pro.md"
+    },
+    {
+      "name": "java-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 2104,
+      "archive": "agent--java-architect.tar.gz",
+      "rawFile": "agent--java-architect.md"
+    },
+    {
+      "name": "javascript-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2350,
+      "archive": "agent--javascript-pro.tar.gz",
+      "rawFile": "agent--javascript-pro.md"
+    },
+    {
+      "name": "jenkins-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1943,
+      "archive": "agent--jenkins-pro.tar.gz",
+      "rawFile": "agent--jenkins-pro.md"
+    },
+    {
+      "name": "jquery-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2318,
+      "archive": "agent--jquery-pro.tar.gz",
+      "rawFile": "agent--jquery-pro.md"
+    },
+    {
+      "name": "jwt-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2324,
+      "archive": "agent--jwt-pro.tar.gz",
+      "rawFile": "agent--jwt-pro.md"
+    },
+    {
+      "name": "kafka-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2344,
+      "archive": "agent--kafka-pro.tar.gz",
+      "rawFile": "agent--kafka-pro.md"
+    },
+    {
+      "name": "keycloak-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2350,
+      "archive": "agent--keycloak-pro.tar.gz",
+      "rawFile": "agent--keycloak-pro.md"
+    },
+    {
+      "name": "knex-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2305,
+      "archive": "agent--knex-pro.tar.gz",
+      "rawFile": "agent--knex-pro.md"
+    },
+    {
+      "name": "kotlin-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 2260,
+      "archive": "agent--kotlin-specialist.tar.gz",
+      "rawFile": "agent--kotlin-specialist.md"
+    },
+    {
+      "name": "kubernetes-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 814,
+      "archive": "agent--kubernetes-specialist.tar.gz",
+      "rawFile": "agent--kubernetes-specialist.md"
+    },
+    {
+      "name": "laravel-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 2239,
+      "archive": "agent--laravel-specialist.tar.gz",
+      "rawFile": "agent--laravel-specialist.md"
+    },
+    {
+      "name": "legacy-modernizer",
+      "type": "agent",
+      "description": "---",
+      "size": 2036,
+      "archive": "agent--legacy-modernizer.tar.gz",
+      "rawFile": "agent--legacy-modernizer.md"
+    },
+    {
+      "name": "liquibase-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2147,
+      "archive": "agent--liquibase-pro.tar.gz",
+      "rawFile": "agent--liquibase-pro.md"
+    },
+    {
+      "name": "llm-architect",
+      "type": "agent",
+      "description": "---",
+      "size": 1061,
+      "archive": "agent--llm-architect.tar.gz",
+      "rawFile": "agent--llm-architect.md"
+    },
+    {
+      "name": "loki-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2515,
+      "archive": "agent--loki-pro.tar.gz",
+      "rawFile": "agent--loki-pro.md"
+    },
+    {
+      "name": "mariadb-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2264,
+      "archive": "agent--mariadb-pro.tar.gz",
+      "rawFile": "agent--mariadb-pro.md"
+    },
+    {
+      "name": "mcp-developer",
+      "type": "agent",
+      "description": "Expert in developing Model Context Protocol (MCP) servers and integrations for Claude and other AI assistants.",
+      "size": 1566,
+      "archive": "agent--mcp-developer.tar.gz",
+      "rawFile": "agent--mcp-developer.md"
+    },
+    {
+      "name": "ml-engineer",
+      "type": "agent",
+      "description": "Expert machine learning engineer specializing in model development, training pipelines, and production deployment.",
+      "size": 1709,
+      "archive": "agent--ml-engineer.tar.gz",
+      "rawFile": "agent--ml-engineer.md"
+    },
+    {
+      "name": "mlops-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 806,
+      "archive": "agent--mlops-engineer.tar.gz",
+      "rawFile": "agent--mlops-engineer.md"
+    },
+    {
+      "name": "mobile-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 2492,
+      "archive": "agent--mobile-developer.tar.gz",
+      "rawFile": "agent--mobile-developer.md"
+    },
+    {
+      "name": "mocha-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2490,
+      "archive": "agent--mocha-pro.tar.gz",
+      "rawFile": "agent--mocha-pro.md"
+    },
+    {
+      "name": "model-evaluator",
+      "type": "agent",
+      "description": "---",
+      "size": 2542,
+      "archive": "agent--model-evaluator.tar.gz",
+      "rawFile": "agent--model-evaluator.md"
+    },
+    {
+      "name": "mongoose-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2292,
+      "archive": "agent--mongoose-pro.tar.gz",
+      "rawFile": "agent--mongoose-pro.md"
+    },
+    {
+      "name": "monitoring-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 2184,
+      "archive": "agent--monitoring-specialist.tar.gz",
+      "rawFile": "agent--monitoring-specialist.md"
+    },
+    {
+      "name": "mqtt-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2063,
+      "archive": "agent--mqtt-pro.tar.gz",
+      "rawFile": "agent--mqtt-pro.md"
+    },
+    {
+      "name": "mssql-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2307,
+      "archive": "agent--mssql-pro.tar.gz",
+      "rawFile": "agent--mssql-pro.md"
+    },
+    {
+      "name": "mysql-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2041,
+      "archive": "agent--mysql-pro.tar.gz",
+      "rawFile": "agent--mysql-pro.md"
+    },
+    {
+      "name": "nats-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1963,
+      "archive": "agent--nats-pro.tar.gz",
+      "rawFile": "agent--nats-pro.md"
+    },
+    {
+      "name": "neo4j-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1835,
+      "archive": "agent--neo4j-pro.tar.gz",
+      "rawFile": "agent--neo4j-pro.md"
+    },
+    {
+      "name": "neon-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 824,
+      "archive": "agent--neon-specialist.tar.gz",
+      "rawFile": "agent--neon-specialist.md"
+    },
+    {
+      "name": "nestjs-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2415,
+      "archive": "agent--nestjs-pro.tar.gz",
+      "rawFile": "agent--nestjs-pro.md"
+    },
+    {
+      "name": "network-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 804,
+      "archive": "agent--network-engineer.tar.gz",
+      "rawFile": "agent--network-engineer.md"
+    },
+    {
+      "name": "nextjs-architecture-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 2581,
+      "archive": "agent--nextjs-architecture-expert.tar.gz",
+      "rawFile": "agent--nextjs-architecture-expert.md"
+    },
+    {
+      "name": "nextjs-developer",
+      "type": "agent",
+      "description": "---",
+      "size": 820,
+      "archive": "agent--nextjs-developer.tar.gz",
+      "rawFile": "agent--nextjs-developer.md"
+    },
+    {
+      "name": "nlp-engineer",
+      "type": "agent",
+      "description": "Expert in natural language processing, specializing in text processing, language models, and NLP applications.",
+      "size": 1843,
+      "archive": "agent--nlp-engineer.tar.gz",
+      "rawFile": "agent--nlp-engineer.md"
+    },
+    {
+      "name": "numpy-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2845,
+      "archive": "agent--numpy-pro.tar.gz",
+      "rawFile": "agent--numpy-pro.md"
+    },
+    {
+      "name": "oauth-oidc-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2457,
+      "archive": "agent--oauth-oidc-pro.tar.gz",
+      "rawFile": "agent--oauth-oidc-pro.md"
+    },
+    {
+      "name": "ocaml-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2204,
+      "archive": "agent--ocaml-pro.tar.gz",
+      "rawFile": "agent--ocaml-pro.md"
+    },
+    {
+      "name": "openai-api-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2253,
+      "archive": "agent--openai-api-pro.tar.gz",
+      "rawFile": "agent--openai-api-pro.md"
+    },
+    {
+      "name": "opensearch-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2186,
+      "archive": "agent--opensearch-pro.tar.gz",
+      "rawFile": "agent--opensearch-pro.md"
+    },
+    {
+      "name": "opentelemetry-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2133,
+      "archive": "agent--opentelemetry-pro.tar.gz",
+      "rawFile": "agent--opentelemetry-pro.md"
+    },
+    {
+      "name": "owasp-top10-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2244,
+      "archive": "agent--owasp-top10-pro.tar.gz",
+      "rawFile": "agent--owasp-top10-pro.md"
+    },
+    {
+      "name": "pandas-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2001,
+      "archive": "agent--pandas-pro.tar.gz",
+      "rawFile": "agent--pandas-pro.md"
+    },
+    {
+      "name": "payment-integration",
+      "type": "agent",
+      "description": "---",
+      "size": 2049,
+      "archive": "agent--payment-integration.tar.gz",
+      "rawFile": "agent--payment-integration.md"
+    },
+    {
+      "name": "penetration-tester",
+      "type": "agent",
+      "description": "---",
+      "size": 1328,
+      "archive": "agent--penetration-tester.tar.gz",
+      "rawFile": "agent--penetration-tester.md"
+    },
+    {
+      "name": "performance-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 820,
+      "archive": "agent--performance-engineer.tar.gz",
+      "rawFile": "agent--performance-engineer.md"
+    },
+    {
+      "name": "perl-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2418,
+      "archive": "agent--perl-pro.tar.gz",
+      "rawFile": "agent--perl-pro.md"
+    },
+    {
+      "name": "phoenix-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 3325,
+      "archive": "agent--phoenix-pro.tar.gz",
+      "rawFile": "agent--phoenix-pro.md"
+    },
+    {
+      "name": "php-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2417,
+      "archive": "agent--php-pro.tar.gz",
+      "rawFile": "agent--php-pro.md"
+    },
+    {
+      "name": "platform-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 825,
+      "archive": "agent--platform-engineer.tar.gz",
+      "rawFile": "agent--platform-engineer.md"
+    },
+    {
+      "name": "postgres-pro",
+      "type": "agent",
+      "description": "Expert PostgreSQL database administrator and developer specializing in performance optimization, schema design, and advanced features.",
+      "size": 1606,
+      "archive": "agent--postgres-pro.tar.gz",
+      "rawFile": "agent--postgres-pro.md"
+    },
+    {
+      "name": "prisma-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2700,
+      "archive": "agent--prisma-pro.tar.gz",
+      "rawFile": "agent--prisma-pro.md"
+    },
+    {
+      "name": "product-manager",
+      "type": "agent",
+      "description": "---",
+      "size": 1385,
+      "archive": "agent--product-manager.tar.gz",
+      "rawFile": "agent--product-manager.md"
+    },
+    {
+      "name": "product-strategist",
+      "type": "agent",
+      "description": "---",
+      "size": 728,
+      "archive": "agent--product-strategist.tar.gz",
+      "rawFile": "agent--product-strategist.md"
+    },
+    {
+      "name": "project-manager",
+      "type": "agent",
+      "description": "---",
+      "size": 1714,
+      "archive": "agent--project-manager.tar.gz",
+      "rawFile": "agent--project-manager.md"
+    },
+    {
+      "name": "prompt-engineer",
+      "type": "agent",
+      "description": "Expert at crafting, optimizing, and testing prompts for AI models.",
+      "size": 1139,
+      "archive": "agent--prompt-engineer.tar.gz",
+      "rawFile": "agent--prompt-engineer.md"
+    },
+    {
+      "name": "pulumi-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2343,
+      "archive": "agent--pulumi-pro.tar.gz",
+      "rawFile": "agent--pulumi-pro.md"
+    },
+    {
+      "name": "puppeteer-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2540,
+      "archive": "agent--puppeteer-pro.tar.gz",
+      "rawFile": "agent--puppeteer-pro.md"
+    },
+    {
+      "name": "python-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2318,
+      "archive": "agent--python-pro.tar.gz",
+      "rawFile": "agent--python-pro.md"
+    },
+    {
+      "name": "pytorch-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1957,
+      "archive": "agent--pytorch-pro.tar.gz",
+      "rawFile": "agent--pytorch-pro.md"
+    },
+    {
+      "name": "qa-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 1612,
+      "archive": "agent--qa-expert.tar.gz",
+      "rawFile": "agent--qa-expert.md"
+    },
+    {
+      "name": "rabbitmq-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2577,
+      "archive": "agent--rabbitmq-pro.tar.gz",
+      "rawFile": "agent--rabbitmq-pro.md"
+    },
+    {
+      "name": "rails-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 2676,
+      "archive": "agent--rails-expert.tar.gz",
+      "rawFile": "agent--rails-expert.md"
+    },
+    {
+      "name": "react-performance-optimizer",
+      "type": "agent",
+      "description": "---",
+      "size": 2464,
+      "archive": "agent--react-performance-optimizer.tar.gz",
+      "rawFile": "agent--react-performance-optimizer.md"
+    },
+    {
+      "name": "react-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 813,
+      "archive": "agent--react-specialist.tar.gz",
+      "rawFile": "agent--react-specialist.md"
+    },
+    {
+      "name": "refactoring-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 818,
+      "archive": "agent--refactoring-specialist.tar.gz",
+      "rawFile": "agent--refactoring-specialist.md"
+    },
+    {
+      "name": "remix-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 3034,
+      "archive": "agent--remix-pro.tar.gz",
+      "rawFile": "agent--remix-pro.md"
+    },
+    {
+      "name": "research-analyst",
+      "type": "agent",
+      "description": "---",
+      "size": 713,
+      "archive": "agent--research-analyst.tar.gz",
+      "rawFile": "agent--research-analyst.md"
+    },
+    {
+      "name": "rest-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2215,
+      "archive": "agent--rest-pro.tar.gz",
+      "rawFile": "agent--rest-pro.md"
+    },
+    {
+      "name": "rollup-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2005,
+      "archive": "agent--rollup-pro.tar.gz",
+      "rawFile": "agent--rollup-pro.md"
+    },
+    {
+      "name": "ruby-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2780,
+      "archive": "agent--ruby-pro.tar.gz",
+      "rawFile": "agent--ruby-pro.md"
+    },
+    {
+      "name": "rust-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 2297,
+      "archive": "agent--rust-engineer.tar.gz",
+      "rawFile": "agent--rust-engineer.md"
+    },
+    {
+      "name": "scala-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2500,
+      "archive": "agent--scala-pro.tar.gz",
+      "rawFile": "agent--scala-pro.md"
+    },
+    {
+      "name": "scikit-learn-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2525,
+      "archive": "agent--scikit-learn-pro.tar.gz",
+      "rawFile": "agent--scikit-learn-pro.md"
+    },
+    {
+      "name": "scrum-master",
+      "type": "agent",
+      "description": "---",
+      "size": 1509,
+      "archive": "agent--scrum-master.tar.gz",
+      "rawFile": "agent--scrum-master.md"
+    },
+    {
+      "name": "security-auditor",
+      "type": "agent",
+      "description": "---",
+      "size": 1325,
+      "archive": "agent--security-auditor.tar.gz",
+      "rawFile": "agent--security-auditor.md"
+    },
+    {
+      "name": "security-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 1320,
+      "archive": "agent--security-engineer.tar.gz",
+      "rawFile": "agent--security-engineer.md"
+    },
+    {
+      "name": "selenium-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2258,
+      "archive": "agent--selenium-pro.tar.gz",
+      "rawFile": "agent--selenium-pro.md"
+    },
+    {
+      "name": "seo-specialist",
+      "type": "agent",
+      "description": "---",
+      "size": 802,
+      "archive": "agent--seo-specialist.tar.gz",
+      "rawFile": "agent--seo-specialist.md"
+    },
+    {
+      "name": "sequelize-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2334,
+      "archive": "agent--sequelize-pro.tar.gz",
+      "rawFile": "agent--sequelize-pro.md"
+    },
+    {
+      "name": "sidekiq-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2310,
+      "archive": "agent--sidekiq-pro.tar.gz",
+      "rawFile": "agent--sidekiq-pro.md"
+    },
+    {
+      "name": "sns-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2239,
+      "archive": "agent--sns-pro.tar.gz",
+      "rawFile": "agent--sns-pro.md"
+    },
+    {
+      "name": "solidjs-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 1836,
+      "archive": "agent--solidjs-pro.tar.gz",
+      "rawFile": "agent--solidjs-pro.md"
+    },
+    {
+      "name": "spring-boot-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 2961,
+      "archive": "agent--spring-boot-engineer.tar.gz",
+      "rawFile": "agent--spring-boot-engineer.md"
+    },
+    {
+      "name": "sqlite-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2728,
+      "archive": "agent--sqlite-pro.tar.gz",
+      "rawFile": "agent--sqlite-pro.md"
+    },
+    {
+      "name": "sqs-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2413,
+      "archive": "agent--sqs-pro.tar.gz",
+      "rawFile": "agent--sqs-pro.md"
+    },
+    {
+      "name": "sre-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 808,
+      "archive": "agent--sre-engineer.tar.gz",
+      "rawFile": "agent--sre-engineer.md"
+    },
+    {
+      "name": "stripe-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2110,
+      "archive": "agent--stripe-pro.tar.gz",
+      "rawFile": "agent--stripe-pro.md"
+    },
+    {
+      "name": "svelte-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2504,
+      "archive": "agent--svelte-pro.tar.gz",
+      "rawFile": "agent--svelte-pro.md"
+    },
+    {
+      "name": "swift-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 1982,
+      "archive": "agent--swift-expert.tar.gz",
+      "rawFile": "agent--swift-expert.md"
+    },
+    {
+      "name": "swiftui-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2508,
+      "archive": "agent--swiftui-pro.tar.gz",
+      "rawFile": "agent--swiftui-pro.md"
+    },
+    {
+      "name": "tailwind-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2560,
+      "archive": "agent--tailwind-pro.tar.gz",
+      "rawFile": "agent--tailwind-pro.md"
+    },
+    {
+      "name": "tauri-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2213,
+      "archive": "agent--tauri-pro.tar.gz",
+      "rawFile": "agent--tauri-pro.md"
+    },
+    {
+      "name": "technical-writer",
+      "type": "agent",
+      "description": "---",
+      "size": 1414,
+      "archive": "agent--technical-writer.tar.gz",
+      "rawFile": "agent--technical-writer.md"
+    },
+    {
+      "name": "tensorflow-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2756,
+      "archive": "agent--tensorflow-pro.tar.gz",
+      "rawFile": "agent--tensorflow-pro.md"
+    },
+    {
+      "name": "terraform-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 802,
+      "archive": "agent--terraform-engineer.tar.gz",
+      "rawFile": "agent--terraform-engineer.md"
+    },
+    {
+      "name": "test-automator",
+      "type": "agent",
+      "description": "Expert in test automation frameworks, CI/CD integration, and comprehensive testing strategies.",
+      "size": 2001,
+      "archive": "agent--test-automator.tar.gz",
+      "rawFile": "agent--test-automator.md"
+    },
+    {
+      "name": "test-engineer",
+      "type": "agent",
+      "description": "---",
+      "size": 1958,
+      "archive": "agent--test-engineer.tar.gz",
+      "rawFile": "agent--test-engineer.md"
+    },
+    {
+      "name": "testcafe-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2281,
+      "archive": "agent--testcafe-pro.tar.gz",
+      "rawFile": "agent--testcafe-pro.md"
+    },
+    {
+      "name": "trpc-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2280,
+      "archive": "agent--trpc-pro.tar.gz",
+      "rawFile": "agent--trpc-pro.md"
+    },
+    {
+      "name": "typeorm-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2325,
+      "archive": "agent--typeorm-pro.tar.gz",
+      "rawFile": "agent--typeorm-pro.md"
+    },
+    {
+      "name": "typescript-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2315,
+      "archive": "agent--typescript-pro.tar.gz",
+      "rawFile": "agent--typescript-pro.md"
+    },
+    {
+      "name": "ui-designer",
+      "type": "agent",
+      "description": "---",
+      "size": 1059,
+      "archive": "agent--ui-designer.tar.gz",
+      "rawFile": "agent--ui-designer.md"
+    },
+    {
+      "name": "unused-code-cleaner",
+      "type": "agent",
+      "description": "---",
+      "size": 1492,
+      "archive": "agent--unused-code-cleaner.tar.gz",
+      "rawFile": "agent--unused-code-cleaner.md"
+    },
+    {
+      "name": "ux-researcher",
+      "type": "agent",
+      "description": "---",
+      "size": 1601,
+      "archive": "agent--ux-researcher.tar.gz",
+      "rawFile": "agent--ux-researcher.md"
+    },
+    {
+      "name": "vector-db-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2002,
+      "archive": "agent--vector-db-pro.tar.gz",
+      "rawFile": "agent--vector-db-pro.md"
+    },
+    {
+      "name": "vitest-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2288,
+      "archive": "agent--vitest-pro.tar.gz",
+      "rawFile": "agent--vitest-pro.md"
+    },
+    {
+      "name": "vue-expert",
+      "type": "agent",
+      "description": "---",
+      "size": 1840,
+      "archive": "agent--vue-expert.tar.gz",
+      "rawFile": "agent--vue-expert.md"
+    },
+    {
+      "name": "webpack-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2254,
+      "archive": "agent--webpack-pro.tar.gz",
+      "rawFile": "agent--webpack-pro.md"
+    },
+    {
+      "name": "websocket-pro",
+      "type": "agent",
+      "description": "---",
+      "size": 2308,
+      "archive": "agent--websocket-pro.tar.gz",
+      "rawFile": "agent--websocket-pro.md"
+    },
+    {
+      "name": "aesthetic",
+      "type": "skill",
+      "description": "---",
+      "size": 20732,
+      "files": 7,
+      "archive": "skill--aesthetic.tar.gz"
+    },
+    {
+      "name": "ai-multimodal",
+      "type": "skill",
+      "description": "---",
+      "size": 136951,
+      "files": 13,
+      "archive": "skill--ai-multimodal.tar.gz"
+    },
+    {
+      "name": "algorithmic-art",
+      "type": "skill",
+      "description": "---",
+      "size": 58848,
+      "files": 4,
+      "archive": "skill--algorithmic-art.tar.gz"
+    },
+    {
+      "name": "backend-development",
+      "type": "skill",
+      "description": "---",
+      "size": 129300,
+      "files": 12,
+      "archive": "skill--backend-development.tar.gz"
+    },
+    {
+      "name": "better-auth",
+      "type": "skill",
+      "description": "---",
+      "size": 79536,
+      "files": 8,
+      "archive": "skill--better-auth.tar.gz"
+    },
+    {
+      "name": "brand-guidelines",
+      "type": "skill",
+      "description": "---",
+      "size": 13592,
+      "files": 2,
+      "archive": "skill--brand-guidelines.tar.gz"
+    },
+    {
+      "name": "canvas-design",
+      "type": "skill",
+      "description": "---",
+      "size": 5554021,
+      "files": 83,
+      "archive": "skill--canvas-design.tar.gz"
+    },
+    {
+      "name": "chrome-devtools",
+      "type": "skill",
+      "description": "---",
+      "size": 163393,
+      "files": 21,
+      "archive": "skill--chrome-devtools.tar.gz"
+    },
+    {
+      "name": "claude-code",
+      "type": "skill",
+      "description": "Claude Code is Anthropic's agentic coding tool that lives in the terminal and helps turn ideas into code faster. It combines autonomous planning, exec",
+      "size": 107840,
+      "files": 16,
+      "archive": "skill--claude-code.tar.gz"
+    },
+    {
+      "name": "code-review",
+      "type": "skill",
+      "description": "---",
+      "size": 19279,
+      "files": 4,
+      "archive": "skill--code-review.tar.gz"
+    },
+    {
+      "name": "context-engineering",
+      "type": "skill",
+      "description": "---",
+      "size": 49002,
+      "files": 12,
+      "archive": "skill--context-engineering.tar.gz"
+    },
+    {
+      "name": "databases",
+      "type": "skill",
+      "description": "---",
+      "size": 237612,
+      "files": 18,
+      "archive": "skill--databases.tar.gz"
+    },
+    {
+      "name": "devops",
+      "type": "skill",
+      "description": "---",
+      "size": 121455,
+      "files": 18,
+      "archive": "skill--devops.tar.gz"
+    },
+    {
+      "name": "doc-coauthoring",
+      "type": "skill",
+      "description": "---",
+      "size": 15834,
+      "files": 1,
+      "archive": "skill--doc-coauthoring.tar.gz"
+    },
+    {
+      "name": "docs-seeker",
+      "type": "skill",
+      "description": "---",
+      "size": 92360,
+      "files": 8,
+      "archive": "skill--docs-seeker.tar.gz"
+    },
+    {
+      "name": "docx",
+      "type": "skill",
+      "description": "---",
+      "size": 1187389,
+      "files": 59,
+      "archive": "skill--docx.tar.gz"
+    },
+    {
+      "name": "frontend-design",
+      "type": "skill",
+      "description": "---",
+      "size": 14617,
+      "files": 2,
+      "archive": "skill--frontend-design.tar.gz"
+    },
+    {
+      "name": "frontend-development",
+      "type": "skill",
+      "description": "---",
+      "size": 130952,
+      "files": 11,
+      "archive": "skill--frontend-development.tar.gz"
+    },
+    {
+      "name": "google-adk-python",
+      "type": "skill",
+      "description": "---",
+      "size": 2809,
+      "files": 1,
+      "archive": "skill--google-adk-python.tar.gz"
+    },
+    {
+      "name": "internal-comms",
+      "type": "skill",
+      "description": "---",
+      "size": 22384,
+      "files": 6,
+      "archive": "skill--internal-comms.tar.gz"
+    },
+    {
+      "name": "mcp-builder",
+      "type": "skill",
+      "description": "---",
+      "size": 122548,
+      "files": 10,
+      "archive": "skill--mcp-builder.tar.gz"
+    },
+    {
+      "name": "mcp-management",
+      "type": "skill",
+      "description": "---",
+      "size": 111777,
+      "files": 10,
+      "archive": "skill--mcp-management.tar.gz"
+    },
+    {
+      "name": "media-processing",
+      "type": "skill",
+      "description": "---",
+      "size": 139017,
+      "files": 15,
+      "archive": "skill--media-processing.tar.gz"
+    },
+    {
+      "name": "mermaidjs-v11",
+      "type": "skill",
+      "description": "---",
+      "size": 30378,
+      "files": 6,
+      "archive": "skill--mermaidjs-v11.tar.gz"
+    },
+    {
+      "name": "migration-guide",
+      "type": "skill",
+      "description": "---",
+      "size": 9106,
+      "files": 1,
+      "archive": "skill--migration-guide.tar.gz"
+    },
+    {
+      "name": "pdf",
+      "type": "skill",
+      "description": "---",
+      "size": 64221,
+      "files": 12,
+      "archive": "skill--pdf.tar.gz"
+    },
+    {
+      "name": "pptx",
+      "type": "skill",
+      "description": "---",
+      "size": 1232045,
+      "files": 56,
+      "archive": "skill--pptx.tar.gz"
+    },
+    {
+      "name": "product-spec",
+      "type": "skill",
+      "description": "---",
+      "size": 6046,
+      "files": 1,
+      "archive": "skill--product-spec.tar.gz"
+    },
+    {
+      "name": "project-blueprint",
+      "type": "skill",
+      "description": "---",
+      "size": 8069,
+      "files": 1,
+      "archive": "skill--project-blueprint.tar.gz"
+    },
+    {
+      "name": "repomix",
+      "type": "skill",
+      "description": "---",
+      "size": 53861,
+      "files": 8,
+      "archive": "skill--repomix.tar.gz"
+    },
+    {
+      "name": "sequential-thinking",
+      "type": "skill",
+      "description": "---",
+      "size": 17396,
+      "files": 4,
+      "archive": "skill--sequential-thinking.tar.gz"
+    },
+    {
+      "name": "session-sync",
+      "type": "skill",
+      "description": "---",
+      "size": 31622,
+      "files": 7,
+      "archive": "skill--session-sync.tar.gz"
+    },
+    {
+      "name": "shopify",
+      "type": "skill",
+      "description": "---",
+      "size": 66935,
+      "files": 8,
+      "archive": "skill--shopify.tar.gz"
+    },
+    {
+      "name": "skill-creator",
+      "type": "skill",
+      "description": "---",
+      "size": 49509,
+      "files": 7,
+      "archive": "skill--skill-creator.tar.gz"
+    },
+    {
+      "name": "slack-gif-creator",
+      "type": "skill",
+      "description": "---",
+      "size": 43745,
+      "files": 7,
+      "archive": "skill--slack-gif-creator.tar.gz"
+    },
+    {
+      "name": "spec-writer",
+      "type": "skill",
+      "description": "---",
+      "size": 5717,
+      "files": 1,
+      "archive": "skill--spec-writer.tar.gz"
+    },
+    {
+      "name": "template-skill",
+      "type": "skill",
+      "description": "---",
+      "size": 939,
+      "files": 1,
+      "archive": "skill--template-skill.tar.gz"
+    },
+    {
+      "name": "theme-factory",
+      "type": "skill",
+      "description": "---",
+      "size": 144109,
+      "files": 13,
+      "archive": "skill--theme-factory.tar.gz"
+    },
+    {
+      "name": "udemy-crawler",
+      "type": "skill",
+      "description": "---",
+      "size": 4318,
+      "files": 1,
+      "archive": "skill--udemy-crawler.tar.gz"
+    },
+    {
+      "name": "ui-styling",
+      "type": "skill",
+      "description": "---",
+      "size": 5713197,
+      "files": 97,
+      "archive": "skill--ui-styling.tar.gz"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "type": "skill",
+      "description": "---",
+      "size": 435674,
+      "files": 28,
+      "archive": "skill--ui-ux-pro-max.tar.gz"
+    },
+    {
+      "name": "vibery-manager",
+      "type": "skill",
+      "description": "---",
+      "size": 115599,
+      "files": 13,
+      "archive": "skill--vibery-manager.tar.gz"
+    },
+    {
+      "name": "web-artifacts-builder",
+      "type": "skill",
+      "description": "---",
+      "size": 45858,
+      "files": 5,
+      "archive": "skill--web-artifacts-builder.tar.gz"
+    },
+    {
+      "name": "web-frameworks",
+      "type": "skill",
+      "description": "---",
+      "size": 192177,
+      "files": 17,
+      "archive": "skill--web-frameworks.tar.gz"
+    },
+    {
+      "name": "webapp-testing",
+      "type": "skill",
+      "description": "---",
+      "size": 22411,
+      "files": 6,
+      "archive": "skill--webapp-testing.tar.gz"
+    },
+    {
+      "name": "workflow-composer",
+      "type": "skill",
+      "description": "---",
+      "size": 7546,
+      "files": 1,
+      "archive": "skill--workflow-composer.tar.gz"
+    },
+    {
+      "name": "xlsx",
+      "type": "skill",
+      "description": "---",
+      "size": 18489,
+      "files": 3,
+      "archive": "skill--xlsx.tar.gz"
+    },
+    {
+      "name": "add-authentication-system",
+      "type": "command",
+      "description": "Add auth with JWT, OAuth, or Supabase",
+      "size": 610,
+      "archive": "command--add-authentication-system.tar.gz",
+      "rawFile": "command--add-authentication-system.md"
+    },
+    {
+      "name": "add-changelog",
+      "type": "command",
+      "description": "Generate or update CHANGELOG.md based on git commits using conventional commits format.",
+      "size": 1301,
+      "archive": "command--add-changelog.tar.gz",
+      "rawFile": "command--add-changelog.md"
+    },
+    {
+      "name": "ci-setup",
+      "type": "command",
+      "description": "Initialize CI configuration for your project",
+      "size": 711,
+      "archive": "command--ci-setup.tar.gz",
+      "rawFile": "command--ci-setup.md"
+    },
+    {
+      "name": "create-architecture-documentation",
+      "type": "command",
+      "description": "Create system architecture docs",
+      "size": 684,
+      "archive": "command--create-architecture-documentation.tar.gz",
+      "rawFile": "command--create-architecture-documentation.md"
+    },
+    {
+      "name": "create-onboarding-guide",
+      "type": "command",
+      "description": "Generate developer onboarding documentation",
+      "size": 686,
+      "archive": "command--create-onboarding-guide.tar.gz",
+      "rawFile": "command--create-onboarding-guide.md"
+    },
+    {
+      "name": "create-pr",
+      "type": "command",
+      "description": "Create a GitHub pull request with auto-generated description from commits and changes.",
+      "size": 1381,
+      "archive": "command--create-pr.tar.gz",
+      "rawFile": "command--create-pr.md"
+    },
+    {
+      "name": "dependency-audit",
+      "type": "command",
+      "description": "Audit dependencies for vulnerabilities",
+      "size": 666,
+      "archive": "command--dependency-audit.tar.gz",
+      "rawFile": "command--dependency-audit.md"
+    },
+    {
+      "name": "deployment-monitoring",
+      "type": "command",
+      "description": "Set up deployment monitoring and alerts",
+      "size": 719,
+      "archive": "command--deployment-monitoring.tar.gz",
+      "rawFile": "command--deployment-monitoring.md"
+    },
+    {
+      "name": "doc-api",
+      "type": "command",
+      "description": "Generate API documentation from code annotations",
+      "size": 675,
+      "archive": "command--doc-api.tar.gz",
+      "rawFile": "command--doc-api.md"
+    },
+    {
+      "name": "docker-setup",
+      "type": "command",
+      "description": "Create Docker configuration for containerizing your application.",
+      "size": 1009,
+      "archive": "command--docker-setup.tar.gz",
+      "rawFile": "command--docker-setup.md"
+    },
+    {
+      "name": "fix-github-issue",
+      "type": "command",
+      "description": "Analyze a GitHub issue and implement the fix with proper branching and PR creation.",
+      "size": 1270,
+      "archive": "command--fix-github-issue.tar.gz",
+      "rawFile": "command--fix-github-issue.md"
+    },
+    {
+      "name": "generate-api-documentation",
+      "type": "command",
+      "description": "Generate OpenAPI/Swagger documentation",
+      "size": 684,
+      "archive": "command--generate-api-documentation.tar.gz",
+      "rawFile": "command--generate-api-documentation.md"
+    },
+    {
+      "name": "generate-tests",
+      "type": "command",
+      "description": "Generate comprehensive unit, integration, and E2E tests",
+      "size": 855,
+      "archive": "command--generate-tests.tar.gz",
+      "rawFile": "command--generate-tests.md"
+    },
+    {
+      "name": "git-setup",
+      "type": "command",
+      "description": "Initialize and configure Git for a new project with best practices.",
+      "size": 922,
+      "archive": "command--git-setup.tar.gz",
+      "rawFile": "command--git-setup.md"
+    },
+    {
+      "name": "implement-caching-strategy",
+      "type": "command",
+      "description": "Add intelligent caching layer",
+      "size": 605,
+      "archive": "command--implement-caching-strategy.tar.gz",
+      "rawFile": "command--implement-caching-strategy.md"
+    },
+    {
+      "name": "migrate-to-typescript",
+      "type": "command",
+      "description": "Convert JavaScript to TypeScript",
+      "size": 593,
+      "archive": "command--migrate-to-typescript.tar.gz",
+      "rawFile": "command--migrate-to-typescript.md"
+    },
+    {
+      "name": "nextjs-performance-audit",
+      "type": "command",
+      "description": "Next.js specific performance analysis for SSR, SSG, and bundle optimization",
+      "size": 711,
+      "archive": "command--nextjs-performance-audit.tar.gz",
+      "rawFile": "command--nextjs-performance-audit.md"
+    },
+    {
+      "name": "optimize-api-performance",
+      "type": "command",
+      "description": "API latency analysis and optimization recommendations",
+      "size": 769,
+      "archive": "command--optimize-api-performance.tar.gz",
+      "rawFile": "command--optimize-api-performance.md"
+    },
+    {
+      "name": "optimize-build",
+      "type": "command",
+      "description": "Optimize build process with caching and parallel execution",
+      "size": 764,
+      "archive": "command--optimize-build.tar.gz",
+      "rawFile": "command--optimize-build.md"
+    },
+    {
+      "name": "optimize-bundle-size",
+      "type": "command",
+      "description": "Analyze and reduce JavaScript bundle size",
+      "size": 753,
+      "archive": "command--optimize-bundle-size.tar.gz",
+      "rawFile": "command--optimize-bundle-size.md"
+    },
+    {
+      "name": "optimize-database-performance",
+      "type": "command",
+      "description": "Optimize slow queries and indexes",
+      "size": 754,
+      "archive": "command--optimize-database-performance.tar.gz",
+      "rawFile": "command--optimize-database-performance.md"
+    },
+    {
+      "name": "optimize-memory-usage",
+      "type": "command",
+      "description": "Detect and fix memory leaks",
+      "size": 740,
+      "archive": "command--optimize-memory-usage.tar.gz",
+      "rawFile": "command--optimize-memory-usage.md"
+    },
+    {
+      "name": "penetration-test",
+      "type": "command",
+      "description": "Run penetration testing simulation on application",
+      "size": 677,
+      "archive": "command--penetration-test.tar.gz",
+      "rawFile": "command--penetration-test.md"
+    },
+    {
+      "name": "performance-audit",
+      "type": "command",
+      "description": "Analyze performance and Core Web Vitals",
+      "size": 668,
+      "archive": "command--performance-audit.tar.gz",
+      "rawFile": "command--performance-audit.md"
+    },
+    {
+      "name": "pr-review",
+      "type": "command",
+      "description": "Perform comprehensive code review on a pull request with security, performance, and best practices checks.",
+      "size": 1504,
+      "archive": "command--pr-review.tar.gz",
+      "rawFile": "command--pr-review.md"
+    },
+    {
+      "name": "prepare-release",
+      "type": "command",
+      "description": "Prepare release with changelog and version bump",
+      "size": 590,
+      "archive": "command--prepare-release.tar.gz",
+      "rawFile": "command--prepare-release.md"
+    },
+    {
+      "name": "refactor-code",
+      "type": "command",
+      "description": "Intelligently refactor code for maintainability",
+      "size": 584,
+      "archive": "command--refactor-code.tar.gz",
+      "rawFile": "command--refactor-code.md"
+    },
+    {
+      "name": "secrets-scanner",
+      "type": "command",
+      "description": "Scan codebase for exposed secrets and credentials",
+      "size": 676,
+      "archive": "command--secrets-scanner.tar.gz",
+      "rawFile": "command--secrets-scanner.md"
+    },
+    {
+      "name": "security-audit",
+      "type": "command",
+      "description": "Run OWASP Top 10 security audit on codebase",
+      "size": 669,
+      "archive": "command--security-audit.tar.gz",
+      "rawFile": "command--security-audit.md"
+    },
+    {
+      "name": "setup-ci-cd-pipeline",
+      "type": "command",
+      "description": "Create CI/CD pipeline configuration",
+      "size": 714,
+      "archive": "command--setup-ci-cd-pipeline.tar.gz",
+      "rawFile": "command--setup-ci-cd-pipeline.md"
+    },
+    {
+      "name": "setup-comprehensive-testing",
+      "type": "command",
+      "description": "Set up full testing infrastructure",
+      "size": 847,
+      "archive": "command--setup-comprehensive-testing.tar.gz",
+      "rawFile": "command--setup-comprehensive-testing.md"
+    },
+    {
+      "name": "test-automation-orchestrator",
+      "type": "command",
+      "description": "Orchestrate comprehensive test suites across unit, integration, and E2E",
+      "size": 885,
+      "archive": "command--test-automation-orchestrator.tar.gz",
+      "rawFile": "command--test-automation-orchestrator.md"
+    },
+    {
+      "name": "test-coverage",
+      "type": "command",
+      "description": "Analyze and improve test coverage across the codebase with detailed reporting.",
+      "size": 2039,
+      "archive": "command--test-coverage.tar.gz",
+      "rawFile": "command--test-coverage.md"
+    },
+    {
+      "name": "test-setup",
+      "type": "command",
+      "description": "Set up a testing framework for your project.",
+      "size": 942,
+      "archive": "command--test-setup.tar.gz",
+      "rawFile": "command--test-setup.md"
+    },
+    {
+      "name": "update-docs",
+      "type": "command",
+      "description": "Automatically update documentation based on code changes, including README, API docs, and inline comments.",
+      "size": 1663,
+      "archive": "command--update-docs.tar.gz",
+      "rawFile": "command--update-docs.md"
+    },
+    {
+      "name": "astro-docs",
+      "type": "mcp",
+      "description": "{",
+      "size": 122,
+      "archive": "mcp--astro-docs.tar.gz",
+      "rawFile": "mcp--astro-docs.json"
+    },
+    {
+      "name": "aws",
+      "type": "mcp",
+      "description": "{",
+      "size": 245,
+      "archive": "mcp--aws.tar.gz",
+      "rawFile": "mcp--aws.json"
+    },
+    {
+      "name": "brave-search",
+      "type": "mcp",
+      "description": "{",
+      "size": 208,
+      "archive": "mcp--brave-search.tar.gz",
+      "rawFile": "mcp--brave-search.json"
+    },
+    {
+      "name": "cloudflare",
+      "type": "mcp",
+      "description": "{",
+      "size": 204,
+      "archive": "mcp--cloudflare.tar.gz",
+      "rawFile": "mcp--cloudflare.json"
+    },
+    {
+      "name": "ddd-template",
+      "type": "mcp",
+      "description": "{",
+      "size": 189,
+      "archive": "mcp--ddd-template.tar.gz",
+      "rawFile": "mcp--ddd-template.json"
+    },
+    {
+      "name": "docker",
+      "type": "mcp",
+      "description": "{",
+      "size": 114,
+      "archive": "mcp--docker.tar.gz",
+      "rawFile": "mcp--docker.json"
+    },
+    {
+      "name": "fetch",
+      "type": "mcp",
+      "description": "{",
+      "size": 130,
+      "archive": "mcp--fetch.tar.gz",
+      "rawFile": "mcp--fetch.json"
+    },
+    {
+      "name": "filesystem",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--filesystem.tar.gz",
+      "rawFile": "mcp--filesystem.json"
+    },
+    {
+      "name": "git",
+      "type": "mcp",
+      "description": "{",
+      "size": 126,
+      "archive": "mcp--git.tar.gz",
+      "rawFile": "mcp--git.json"
+    },
+    {
+      "name": "github",
+      "type": "mcp",
+      "description": "{",
+      "size": 198,
+      "archive": "mcp--github.tar.gz",
+      "rawFile": "mcp--github.json"
+    },
+    {
+      "name": "huggingface",
+      "type": "mcp",
+      "description": "{",
+      "size": 182,
+      "archive": "mcp--huggingface.tar.gz",
+      "rawFile": "mcp--huggingface.json"
+    },
+    {
+      "name": "linear",
+      "type": "mcp",
+      "description": "{",
+      "size": 184,
+      "archive": "mcp--linear.tar.gz",
+      "rawFile": "mcp--linear.json"
+    },
+    {
+      "name": "memory",
+      "type": "mcp",
+      "description": "{",
+      "size": 132,
+      "archive": "mcp--memory.tar.gz",
+      "rawFile": "mcp--memory.json"
+    },
+    {
+      "name": "mongodb",
+      "type": "mcp",
+      "description": "{",
+      "size": 180,
+      "archive": "mcp--mongodb.tar.gz",
+      "rawFile": "mcp--mongodb.json"
+    },
+    {
+      "name": "neon",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--neon.tar.gz",
+      "rawFile": "mcp--neon.json"
+    },
+    {
+      "name": "notion",
+      "type": "mcp",
+      "description": "{",
+      "size": 180,
+      "archive": "mcp--notion.tar.gz",
+      "rawFile": "mcp--notion.json"
+    },
+    {
+      "name": "postgresql",
+      "type": "mcp",
+      "description": "{",
+      "size": 202,
+      "archive": "mcp--postgresql.tar.gz",
+      "rawFile": "mcp--postgresql.json"
+    },
+    {
+      "name": "prd-creator",
+      "type": "mcp",
+      "description": "{",
+      "size": 117,
+      "archive": "mcp--prd-creator.tar.gz",
+      "rawFile": "mcp--prd-creator.json"
+    },
+    {
+      "name": "puppeteer",
+      "type": "mcp",
+      "description": "{",
+      "size": 134,
+      "archive": "mcp--puppeteer.tar.gz",
+      "rawFile": "mcp--puppeteer.json"
+    },
+    {
+      "name": "redis",
+      "type": "mcp",
+      "description": "{",
+      "size": 172,
+      "archive": "mcp--redis.tar.gz",
+      "rawFile": "mcp--redis.json"
+    },
+    {
+      "name": "sentry",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--sentry.tar.gz",
+      "rawFile": "mcp--sentry.json"
+    },
+    {
+      "name": "sequential-thinking",
+      "type": "mcp",
+      "description": "{",
+      "size": 154,
+      "archive": "mcp--sequential-thinking.tar.gz",
+      "rawFile": "mcp--sequential-thinking.json"
+    },
+    {
+      "name": "shopify",
+      "type": "mcp",
+      "description": "{",
+      "size": 242,
+      "archive": "mcp--shopify.tar.gz",
+      "rawFile": "mcp--shopify.json"
+    },
+    {
+      "name": "slack",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--slack.tar.gz",
+      "rawFile": "mcp--slack.json"
+    },
+    {
+      "name": "sqlite",
+      "type": "mcp",
+      "description": "{",
+      "size": 195,
+      "archive": "mcp--sqlite.tar.gz",
+      "rawFile": "mcp--sqlite.json"
+    },
+    {
+      "name": "stripe",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--stripe.tar.gz",
+      "rawFile": "mcp--stripe.json"
+    },
+    {
+      "name": "supabase",
+      "type": "mcp",
+      "description": "{",
+      "size": 254,
+      "archive": "mcp--supabase.tar.gz",
+      "rawFile": "mcp--supabase.json"
+    },
+    {
+      "name": "swagger",
+      "type": "mcp",
+      "description": "{",
+      "size": 139,
+      "archive": "mcp--swagger.tar.gz",
+      "rawFile": "mcp--swagger.json"
+    },
+    {
+      "name": "todo",
+      "type": "mcp",
+      "description": "{",
+      "size": 190,
+      "archive": "mcp--todo.tar.gz",
+      "rawFile": "mcp--todo.json"
+    },
+    {
+      "name": "vercel",
+      "type": "mcp",
+      "description": "{",
+      "size": 180,
+      "archive": "mcp--vercel.tar.gz",
+      "rawFile": "mcp--vercel.json"
+    },
+    {
+      "name": "youtube-transcript",
+      "type": "mcp",
+      "description": "{",
+      "size": 226,
+      "archive": "mcp--youtube-transcript.tar.gz",
+      "rawFile": "mcp--youtube-transcript.json"
+    },
+    {
+      "name": "auto-commit",
+      "type": "hook",
+      "description": "{",
+      "size": 283,
+      "archive": "hook--auto-commit.tar.gz",
+      "rawFile": "hook--auto-commit.json"
+    },
+    {
+      "name": "auto-git-add",
+      "type": "hook",
+      "description": "{",
+      "size": 237,
+      "archive": "hook--auto-git-add.tar.gz",
+      "rawFile": "hook--auto-git-add.json"
+    },
+    {
+      "name": "backup-before-edit",
+      "type": "hook",
+      "description": "{",
+      "size": 350,
+      "archive": "hook--backup-before-edit.tar.gz",
+      "rawFile": "hook--backup-before-edit.json"
+    },
+    {
+      "name": "build-on-change",
+      "type": "hook",
+      "description": "{",
+      "size": 240,
+      "archive": "hook--build-on-change.tar.gz",
+      "rawFile": "hook--build-on-change.json"
+    },
+    {
+      "name": "conventional-commits",
+      "type": "hook",
+      "description": "{",
+      "size": 254,
+      "archive": "hook--conventional-commits.tar.gz",
+      "rawFile": "hook--conventional-commits.json"
+    },
+    {
+      "name": "discord-notifications",
+      "type": "hook",
+      "description": "{",
+      "size": 296,
+      "archive": "hook--discord-notifications.tar.gz",
+      "rawFile": "hook--discord-notifications.json"
+    },
+    {
+      "name": "format-on-save",
+      "type": "hook",
+      "description": "{",
+      "size": 274,
+      "archive": "hook--format-on-save.tar.gz",
+      "rawFile": "hook--format-on-save.json"
+    },
+    {
+      "name": "lint-on-save",
+      "type": "hook",
+      "description": "{",
+      "size": 245,
+      "archive": "hook--lint-on-save.tar.gz",
+      "rawFile": "hook--lint-on-save.json"
+    },
+    {
+      "name": "notify-on-complete",
+      "type": "hook",
+      "description": "{",
+      "size": 268,
+      "archive": "hook--notify-on-complete.tar.gz",
+      "rawFile": "hook--notify-on-complete.json"
+    },
+    {
+      "name": "performance-monitor",
+      "type": "hook",
+      "description": "{",
+      "size": 288,
+      "archive": "hook--performance-monitor.tar.gz",
+      "rawFile": "hook--performance-monitor.json"
+    },
+    {
+      "name": "security-scan",
+      "type": "hook",
+      "description": "{",
+      "size": 239,
+      "archive": "hook--security-scan.tar.gz",
+      "rawFile": "hook--security-scan.json"
+    },
+    {
+      "name": "security-scanner",
+      "type": "hook",
+      "description": "{",
+      "size": 240,
+      "archive": "hook--security-scanner.tar.gz",
+      "rawFile": "hook--security-scanner.json"
+    },
+    {
+      "name": "slack-notifications",
+      "type": "hook",
+      "description": "{",
+      "size": 291,
+      "archive": "hook--slack-notifications.tar.gz",
+      "rawFile": "hook--slack-notifications.json"
+    },
+    {
+      "name": "smart-commit",
+      "type": "hook",
+      "description": "{",
+      "size": 283,
+      "archive": "hook--smart-commit.tar.gz",
+      "rawFile": "hook--smart-commit.json"
+    },
+    {
+      "name": "smart-formatting",
+      "type": "hook",
+      "description": "{",
+      "size": 333,
+      "archive": "hook--smart-formatting.tar.gz",
+      "rawFile": "hook--smart-formatting.json"
+    },
+    {
+      "name": "telegram-notifications",
+      "type": "hook",
+      "description": "{",
+      "size": 316,
+      "archive": "hook--telegram-notifications.tar.gz",
+      "rawFile": "hook--telegram-notifications.json"
+    },
+    {
+      "name": "test-on-edit",
+      "type": "hook",
+      "description": "{",
+      "size": 229,
+      "archive": "hook--test-on-edit.tar.gz",
+      "rawFile": "hook--test-on-edit.json"
+    },
+    {
+      "name": "type-check",
+      "type": "hook",
+      "description": "{",
+      "size": 243,
+      "archive": "hook--type-check.tar.gz",
+      "rawFile": "hook--type-check.json"
+    },
+    {
+      "name": "vercel-auto-deploy",
+      "type": "hook",
+      "description": "{",
+      "size": 261,
+      "archive": "hook--vercel-auto-deploy.tar.gz",
+      "rawFile": "hook--vercel-auto-deploy.json"
+    },
+    {
+      "name": "allow-bun",
+      "type": "setting",
+      "description": "{",
+      "size": 350,
+      "archive": "setting--allow-bun.tar.gz",
+      "rawFile": "setting--allow-bun.json"
+    },
+    {
+      "name": "allow-docker",
+      "type": "setting",
+      "description": "{",
+      "size": 85,
+      "archive": "setting--allow-docker.tar.gz",
+      "rawFile": "setting--allow-docker.json"
+    },
+    {
+      "name": "allow-git",
+      "type": "setting",
+      "description": "{",
+      "size": 548,
+      "archive": "setting--allow-git.tar.gz",
+      "rawFile": "setting--allow-git.json"
+    },
+    {
+      "name": "allow-npm",
+      "type": "setting",
+      "description": "{",
+      "size": 202,
+      "archive": "setting--allow-npm.tar.gz",
+      "rawFile": "setting--allow-npm.json"
+    },
+    {
+      "name": "allow-pnpm",
+      "type": "setting",
+      "description": "{",
+      "size": 463,
+      "archive": "setting--allow-pnpm.tar.gz",
+      "rawFile": "setting--allow-pnpm.json"
+    },
+    {
+      "name": "allow-python",
+      "type": "setting",
+      "description": "{",
+      "size": 92,
+      "archive": "setting--allow-python.tar.gz",
+      "rawFile": "setting--allow-python.json"
+    },
+    {
+      "name": "deny-sensitive-files",
+      "type": "setting",
+      "description": "{",
+      "size": 152,
+      "archive": "setting--deny-sensitive-files.tar.gz",
+      "rawFile": "setting--deny-sensitive-files.json"
+    },
+    {
+      "name": "strict-mode",
+      "type": "setting",
+      "description": "{",
+      "size": 91,
+      "archive": "setting--strict-mode.tar.gz",
+      "rawFile": "setting--strict-mode.json"
+    }
+  ]
 }
