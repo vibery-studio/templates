@@ -1,1 +1,0 @@
-# Vibery Manager Operations
